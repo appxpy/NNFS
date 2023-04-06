@@ -1,0 +1,8 @@
+<map id="NNFSCore::Activation" name="NNFSCore::Activation">
+<area shape="rect" id="node1" title="Rectified Linear Unit (ReLU) activation function." alt="" coords="229,79,382,104"/>
+<area shape="rect" id="node3" href="$class_n_n_f_s_core_1_1_linear.html" title="Rectified Linear Unit (ReLU) activation function." alt="" coords="5,152,136,177"/>
+<area shape="rect" id="node4" href="$class_n_n_f_s_core_1_1_re_l_u.html" title="Rectified Linear Unit (ReLU) activation function." alt="" coords="161,152,290,177"/>
+<area shape="rect" id="node5" href="$class_n_n_f_s_core_1_1_sigmoid.html" title="Sigmoid activation function." alt="" coords="314,152,457,177"/>
+<area shape="rect" id="node6" href="$class_n_n_f_s_core_1_1_softmax.html" title=" " alt="" coords="481,152,625,177"/>
+<area shape="rect" id="node2" href="$class_n_n_f_s_core_1_1_differentiable.html" title="Abstract base class for functions with gradients." alt="" coords="219,5,391,31"/>
+</map>
