@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hello_21_0',['HELLO!',['../index.html',1,'']]]
+  ['nnfs_20init_0',['NNFS INIT',['../index.html',1,'']]]
 ];

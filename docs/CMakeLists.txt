@@ -9,7 +9,7 @@ cmake_minimum_required (VERSION 3.5)
 find_package(Doxygen)
 
 if (DOXYGEN_FOUND)
-    set(DOXYGEN_IN ${CMAKE_CURRENT_SOURCE_DIR}/Doxygen.in)
+    set(DOXYGEN_IN ${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile)
     set(DOXYGEN_OUT ${CMAKE_CURRENT_BINARY_DIR}/DoxygenConfig)
 
     configure_file(${DOXYGEN_IN} ${DOXYGEN_OUT} @ONLY)

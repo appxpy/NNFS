@@ -1,7 +1,0 @@
-GENERATE_TREEVIEW      = YES # required!
-RECURSIVE              = YES
-DISABLE_INDEX          = NO
-FULL_SIDEBAR           = NO
-HTML_EXTRA_STYLESHEET  = external/doxygen-awesome-css/doxygen-awesome.css \
-                         external/doxygen-awesome-css/doxygen-awesome-sidebar-only.css
-HTML_COLORSTYLE        = LIGHT # required with Doxygen >= 1.9.5

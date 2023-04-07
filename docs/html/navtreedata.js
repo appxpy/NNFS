@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "NNFS", "index.html", [
-    [ "HELLO!", "index.html", null ],
+    [ "NNFS INIT", "index.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],
