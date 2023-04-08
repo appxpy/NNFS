@@ -132,6 +132,9 @@ $(document).ready(function(){initNavTree('class_n_n_f_s_core_1_1_layer.html','')
 </div><!--header-->
 <div class="contents">
 
+<p>An abstract base class representing a neural network layer.  
+ <a href="class_n_n_f_s_core_1_1_layer.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_layer_8hpp_source.html">Layer.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for NNFSCore::Layer:</div>
@@ -143,17 +146,24 @@ Inheritance diagram for NNFSCore::Layer:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9a1e7163ae37c6856b8f206e27eb1507"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#a9a1e7163ae37c6856b8f206e27eb1507">~Layer</a> ()=default</td></tr>
+<tr class="memdesc:a9a1e7163ae37c6856b8f206e27eb1507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
 <tr class="separator:a9a1e7163ae37c6856b8f206e27eb1507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3bae6cc54a86e93ac9aa0d3f675b8aa"><td class="memItemLeft" align="right" valign="top">virtual MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#ad3bae6cc54a86e93ac9aa0d3f675b8aa">operator()</a> (const MatrixXd &amp;input_tensor)=0</td></tr>
+<tr class="memdesc:ad3bae6cc54a86e93ac9aa0d3f675b8aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function for forward propagation.  <br /></td></tr>
 <tr class="separator:ad3bae6cc54a86e93ac9aa0d3f675b8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa30b791a57199c759afdff4d18cc47de"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#aa30b791a57199c759afdff4d18cc47de">build</a> (const MatrixXd &amp;input_tensor)=0</td></tr>
+<tr class="memdesc:aa30b791a57199c759afdff4d18cc47de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function to build the layer.  <br /></td></tr>
 <tr class="separator:aa30b791a57199c759afdff4d18cc47de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a839a9479b75dc233dae0e384f5454557"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#a839a9479b75dc233dae0e384f5454557">update</a> (double lr)=0</td></tr>
+<tr class="memdesc:a839a9479b75dc233dae0e384f5454557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function to update the layer's parameters.  <br /></td></tr>
 <tr class="separator:a839a9479b75dc233dae0e384f5454557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae64985d0be81ee06946d6b18cf01e403"><td class="memItemLeft" align="right" valign="top">virtual MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#ae64985d0be81ee06946d6b18cf01e403">get_output</a> () const =0</td></tr>
+<tr class="memdesc:ae64985d0be81ee06946d6b18cf01e403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function to get the output tensor of the layer.  <br /></td></tr>
 <tr class="separator:ae64985d0be81ee06946d6b18cf01e403"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An abstract base class representing a neural network layer. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9a1e7163ae37c6856b8f206e27eb1507" name="a9a1e7163ae37c6856b8f206e27eb1507"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9a1e7163ae37c6856b8f206e27eb1507">&#9670;&#160;</a></span>~Layer()</h2>
 
@@ -176,6 +186,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Destructor. </p>
 
 </div>
 </div>
@@ -204,6 +216,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Pure virtual function to build the layer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_tensor</td><td>The input tensor (matrix) for the layer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_dense.html#a196d52bc32a2e95873d14f1758c2a770">NNFSCore::Dense</a>.</p>
 
 </div>
@@ -230,6 +250,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Pure virtual function to get the output tensor of the layer. </p>
+<dl class="section return"><dt>Returns</dt><dd>The output tensor (matrix) of the layer. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_dense.html#a2aee4198586eeb839bbd1cc533d281e1">NNFSCore::Dense</a>.</p>
 
@@ -259,6 +282,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Pure virtual function for forward propagation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_tensor</td><td>The input tensor (matrix) for the layer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The output tensor (matrix) after forward propagation. </dd></dl>
+
 <p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_dense.html#a5b0ed2959ce65f7ac72caaec54004880">NNFSCore::Dense</a>.</p>
 
 </div>
@@ -286,6 +318,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Pure virtual function to update the layer's parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lr</td><td>The learning rate. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_dense.html#aa8285bc57f2aa39fb48c8d826bb657b7">NNFSCore::Dense</a>.</p>
 

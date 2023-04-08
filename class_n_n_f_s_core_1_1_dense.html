@@ -132,6 +132,9 @@ $(document).ready(function(){initNavTree('class_n_n_f_s_core_1_1_dense.html','')
 </div><!--header-->
 <div class="contents">
 
+<p>A dense (fully connected) layer derived from the <a class="el" href="class_n_n_f_s_core_1_1_layer.html" title="An abstract base class representing a neural network layer.">Layer</a> base class.  
+ <a href="class_n_n_f_s_core_1_1_dense.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_layer_8hpp_source.html">Layer.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for NNFSCore::Dense:</div>
@@ -143,32 +146,46 @@ Inheritance diagram for NNFSCore::Dense:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1f6a45fd924fa44c590e5e4e86e5d2a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a1f6a45fd924fa44c590e5e4e86e5d2a3">Dense</a> (int units)</td></tr>
+<tr class="memdesc:a1f6a45fd924fa44c590e5e4e86e5d2a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:a1f6a45fd924fa44c590e5e4e86e5d2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b0ed2959ce65f7ac72caaec54004880"><td class="memItemLeft" align="right" valign="top">MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a5b0ed2959ce65f7ac72caaec54004880">operator()</a> (const MatrixXd &amp;input_tensor) override</td></tr>
+<tr class="memdesc:a5b0ed2959ce65f7ac72caaec54004880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward propagation for the dense layer.  <br /></td></tr>
 <tr class="separator:a5b0ed2959ce65f7ac72caaec54004880"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a196d52bc32a2e95873d14f1758c2a770"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a196d52bc32a2e95873d14f1758c2a770">build</a> (const MatrixXd &amp;input_tensor) override</td></tr>
+<tr class="memdesc:a196d52bc32a2e95873d14f1758c2a770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the dense layer.  <br /></td></tr>
 <tr class="separator:a196d52bc32a2e95873d14f1758c2a770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8285bc57f2aa39fb48c8d826bb657b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#aa8285bc57f2aa39fb48c8d826bb657b7">update</a> (double lr) override</td></tr>
+<tr class="memdesc:aa8285bc57f2aa39fb48c8d826bb657b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the layer's parameters.  <br /></td></tr>
 <tr class="separator:aa8285bc57f2aa39fb48c8d826bb657b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aee4198586eeb839bbd1cc533d281e1"><td class="memItemLeft" align="right" valign="top">MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a2aee4198586eeb839bbd1cc533d281e1">get_output</a> () const override</td></tr>
+<tr class="memdesc:a2aee4198586eeb839bbd1cc533d281e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the output tensor of the layer.  <br /></td></tr>
 <tr class="separator:a2aee4198586eeb839bbd1cc533d281e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed3d1ce98b84a9a49e12ee6669987124"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#aed3d1ce98b84a9a49e12ee6669987124">set_grad_weights</a> (const MatrixXd &amp;gradients)</td></tr>
+<tr class="memdesc:aed3d1ce98b84a9a49e12ee6669987124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the gradient for the weights.  <br /></td></tr>
 <tr class="separator:aed3d1ce98b84a9a49e12ee6669987124"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5930769f5a1dad2c7b40869ff7579299"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a5930769f5a1dad2c7b40869ff7579299">set_grad_bias</a> (const MatrixXd &amp;gradients)</td></tr>
+<tr class="memdesc:a5930769f5a1dad2c7b40869ff7579299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the gradient for the bias.  <br /></td></tr>
 <tr class="separator:a5930769f5a1dad2c7b40869ff7579299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_n_n_f_s_core_1_1_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_n_n_f_s_core_1_1_layer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_n_n_f_s_core_1_1_layer.html">NNFSCore::Layer</a></td></tr>
 <tr class="memitem:a9a1e7163ae37c6856b8f206e27eb1507 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#a9a1e7163ae37c6856b8f206e27eb1507">~Layer</a> ()=default</td></tr>
+<tr class="memdesc:a9a1e7163ae37c6856b8f206e27eb1507 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
 <tr class="separator:a9a1e7163ae37c6856b8f206e27eb1507 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3bae6cc54a86e93ac9aa0d3f675b8aa inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#ad3bae6cc54a86e93ac9aa0d3f675b8aa">operator()</a> (const MatrixXd &amp;input_tensor)=0</td></tr>
+<tr class="memdesc:ad3bae6cc54a86e93ac9aa0d3f675b8aa inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function for forward propagation.  <br /></td></tr>
 <tr class="separator:ad3bae6cc54a86e93ac9aa0d3f675b8aa inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa30b791a57199c759afdff4d18cc47de inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#aa30b791a57199c759afdff4d18cc47de">build</a> (const MatrixXd &amp;input_tensor)=0</td></tr>
+<tr class="memdesc:aa30b791a57199c759afdff4d18cc47de inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function to build the layer.  <br /></td></tr>
 <tr class="separator:aa30b791a57199c759afdff4d18cc47de inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a839a9479b75dc233dae0e384f5454557 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#a839a9479b75dc233dae0e384f5454557">update</a> (double lr)=0</td></tr>
+<tr class="memdesc:a839a9479b75dc233dae0e384f5454557 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function to update the layer's parameters.  <br /></td></tr>
 <tr class="separator:a839a9479b75dc233dae0e384f5454557 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae64985d0be81ee06946d6b18cf01e403 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#ae64985d0be81ee06946d6b18cf01e403">get_output</a> () const =0</td></tr>
+<tr class="memdesc:ae64985d0be81ee06946d6b18cf01e403 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function to get the output tensor of the layer.  <br /></td></tr>
 <tr class="separator:ae64985d0be81ee06946d6b18cf01e403 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A dense (fully connected) layer derived from the <a class="el" href="class_n_n_f_s_core_1_1_layer.html" title="An abstract base class representing a neural network layer.">Layer</a> base class. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1f6a45fd924fa44c590e5e4e86e5d2a3" name="a1f6a45fd924fa44c590e5e4e86e5d2a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f6a45fd924fa44c590e5e4e86e5d2a3">&#9670;&#160;</a></span>Dense()</h2>
 
@@ -192,6 +209,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">units</td><td>The number of output units in the dense layer. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -220,6 +245,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Builds the dense layer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_tensor</td><td>The input tensor (matrix) for the layer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implements <a class="el" href="class_n_n_f_s_core_1_1_layer.html#aa30b791a57199c759afdff4d18cc47de">NNFSCore::Layer</a>.</p>
 
 </div>
@@ -246,6 +279,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Gets the output tensor of the layer. </p>
+<dl class="section return"><dt>Returns</dt><dd>The output tensor (matrix) of the layer. </dd></dl>
 
 <p>Implements <a class="el" href="class_n_n_f_s_core_1_1_layer.html#ae64985d0be81ee06946d6b18cf01e403">NNFSCore::Layer</a>.</p>
 
@@ -275,6 +311,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Forward propagation for the dense layer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_tensor</td><td>The input tensor (matrix) for the layer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The output tensor (matrix) after forward propagation. </dd></dl>
+
 <p>Implements <a class="el" href="class_n_n_f_s_core_1_1_layer.html#ad3bae6cc54a86e93ac9aa0d3f675b8aa">NNFSCore::Layer</a>.</p>
 
 </div>
@@ -303,6 +348,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Sets the gradient for the bias. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gradients</td><td>The gradient tensor (matrix) for the bias. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aed3d1ce98b84a9a49e12ee6669987124" name="aed3d1ce98b84a9a49e12ee6669987124"></a>
@@ -329,6 +382,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Sets the gradient for the weights. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gradients</td><td>The gradient tensor (matrix) for the weights. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aa8285bc57f2aa39fb48c8d826bb657b7" name="aa8285bc57f2aa39fb48c8d826bb657b7"></a>
@@ -354,6 +415,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Updates the layer's parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lr</td><td>The learning rate. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="class_n_n_f_s_core_1_1_layer.html#a839a9479b75dc233dae0e384f5454557">NNFSCore::Layer</a>.</p>
 
