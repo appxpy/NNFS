@@ -1,4 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_n_n_f_s_core_1_1_layer.html" title=" " alt="" coords="5,5,129,31"/>
-<area shape="rect" id="node2" href="$class_n_n_f_s_core_1_1_dense.html" title=" " alt="" coords="177,5,307,31"/>
+<area shape="rect" id="node1" href="$class_n_n_f_s_core_1_1_differentiable.html" title="Abstract base class for functions with gradients." alt="" coords="5,55,172,80"/>
+<area shape="rect" id="node2" href="$class_n_n_f_s_core_1_1_activation.html" title="Abstract base class for activation functions." alt="" coords="220,55,371,80"/>
+<area shape="rect" id="node3" href="$class_n_n_f_s_core_1_1_linear.html" title="Linear activation function." alt="" coords="424,5,552,31"/>
+<area shape="rect" id="node4" href="$class_n_n_f_s_core_1_1_re_l_u.html" title="Rectified Linear Unit (ReLU) activation function." alt="" coords="425,55,551,80"/>
+<area shape="rect" id="node5" href="$class_n_n_f_s_core_1_1_sigmoid.html" title="Sigmoid activation function." alt="" coords="419,104,557,129"/>
 </map>

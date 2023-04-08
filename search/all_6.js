@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['operator_28_29_0',['operator()',['../class_n_n_f_s_core_1_1_activation.html#a53627c0c2f79bff1016271790c4524b5',1,'NNFSCore::Activation::operator()()'],['../class_n_n_f_s_core_1_1_linear.html#a0bd546badccc63e1dc37aa125f5577e4',1,'NNFSCore::Linear::operator()()'],['../class_n_n_f_s_core_1_1_re_l_u.html#a0eea38c9c86264665f7ea5d81f718c8a',1,'NNFSCore::ReLU::operator()()'],['../class_n_n_f_s_core_1_1_sigmoid.html#a4c74c64e007cd6b57e16f50edd847246',1,'NNFSCore::Sigmoid::operator()()'],['../class_n_n_f_s_core_1_1_softmax.html#a88c0b8aedf6f00f48eb73e3ade74bd8c',1,'NNFSCore::Softmax::operator()()'],['../class_n_n_f_s_core_1_1_layer.html#ad3bae6cc54a86e93ac9aa0d3f675b8aa',1,'NNFSCore::Layer::operator()()'],['../class_n_n_f_s_core_1_1_dense.html#a5b0ed2959ce65f7ac72caaec54004880',1,'NNFSCore::Dense::operator()()'],['../class_n_n_f_s_core_1_1_binary_cross_entropy.html#a98d9584d841a8a704953bd47f68df8bd',1,'NNFSCore::BinaryCrossEntropy::operator()()'],['../class_n_n_f_s_core_1_1_loss.html#a10450b97e743516ac8519ee77d0e028c',1,'NNFSCore::Loss::operator()()']]]
+  ['layer_0',['Layer',['../class_n_n_f_s_core_1_1_layer.html',1,'NNFSCore']]],
+  ['layer_2ehpp_1',['Layer.hpp',['../_layer_8hpp.html',1,'']]],
+  ['linear_2',['Linear',['../class_n_n_f_s_core_1_1_linear.html',1,'NNFSCore']]],
+  ['linear_2ehpp_3',['Linear.hpp',['../_linear_8hpp.html',1,'']]],
+  ['loss_4',['Loss',['../class_n_n_f_s_core_1_1_loss.html',1,'NNFSCore']]],
+  ['loss_2ehpp_5',['Loss.hpp',['../_loss_8hpp.html',1,'']]]
 ];

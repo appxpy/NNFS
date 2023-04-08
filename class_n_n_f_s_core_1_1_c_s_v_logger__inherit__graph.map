@@ -1,0 +1,4 @@
+<map id="NNFSCore::CSVLogger" name="NNFSCore::CSVLogger">
+<area shape="rect" id="node1" title="Class to log epoch and loss data to a CSV file." alt="" coords="5,79,164,104"/>
+<area shape="rect" id="node2" href="$class_n_n_f_s_core_1_1_callback.html" title="Abstract base class for callback functions." alt="" coords="13,5,156,31"/>
+</map>

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['relu_2ehpp_1',['ReLU.hpp',['../_re_l_u_8hpp.html',1,'']]]
+  ['layer_2ehpp_0',['Layer.hpp',['../_layer_8hpp.html',1,'']]],
+  ['linear_2ehpp_1',['Linear.hpp',['../_linear_8hpp.html',1,'']]],
+  ['loss_2ehpp_2',['Loss.hpp',['../_loss_8hpp.html',1,'']]]
 ];

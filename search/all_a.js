@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['_7elayer_0',['~Layer',['../class_n_n_f_s_core_1_1_layer.html#a9a1e7163ae37c6856b8f206e27eb1507',1,'NNFSCore::Layer']]]
+  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['relu_1',['ReLU',['../class_n_n_f_s_core_1_1_re_l_u.html',1,'NNFSCore']]],
+  ['relu_2ehpp_2',['ReLU.hpp',['../_re_l_u_8hpp.html',1,'']]]
 ];
