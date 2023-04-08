@@ -1,14 +1,13 @@
 #ifndef LOSS_H_
 #define LOSS_H_
 
-/**
- * @brief Abstract base class for loss functions.
- */
-
 #include <Eigen/Core>
 
 namespace NNFSCore
 {
+    /**
+     * @brief Abstract base class for loss functions.
+     */
     class Loss
     {
     public:

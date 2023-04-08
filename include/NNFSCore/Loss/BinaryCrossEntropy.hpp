@@ -3,12 +3,12 @@
 
 #include "Loss.hpp"
 
-/**
- * Binary Cross-Entropy loss function.
- */
-
 namespace NNFSCore
 {
+    /**
+     * @brief Binary cross entropy loss implementation.
+     *
+     */
     class BinaryCrossEntropy : public Loss
     {
     public:

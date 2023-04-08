@@ -2,14 +2,10 @@
 
 #include "Activation.hpp"
 
-/**
- * @brief Linear activation function.
- *
- */
 namespace NNFSCore
 {
     /**
-     * @brief Rectified Linear Unit (ReLU) activation function.
+     * @brief Linear activation function.
      *
      */
     class Linear : public Activation

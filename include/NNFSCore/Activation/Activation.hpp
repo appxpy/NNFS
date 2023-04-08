@@ -2,15 +2,10 @@
 
 #include "../Common/Differentiable.hpp"
 
-/**
- * @brief Abstract base class for activation functions.
- *
- */
-
 namespace NNFSCore
 {
     /**
-     * @brief Rectified Linear Unit (ReLU) activation function.
+     * @brief Abstract base class for activation functions.
      *
      */
     class Activation : public Differentiable

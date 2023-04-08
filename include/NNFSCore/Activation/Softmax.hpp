@@ -5,6 +5,10 @@
 
 namespace NNFSCore
 {
+    /**
+     * @brief Softmax activation function.
+     *
+     */
     class Softmax : public Activation
     {
     public:
