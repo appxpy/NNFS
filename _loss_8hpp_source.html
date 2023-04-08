@@ -131,26 +131,26 @@ $(document).ready(function(){initNavTree('_loss_8hpp_source.html',''); initResiz
 <a href="_loss_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef LOSS_H_</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define LOSS_H_</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_n_f_s_core.html">NNFSCore</a></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_loss.html">   12</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_n_n_f_s_core_1_1_loss.html">Loss</a></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_loss.html#a10450b97e743516ac8519ee77d0e028c">   22</a></span>        <span class="keyword">virtual</span> Eigen::MatrixXd <a class="code hl_function" href="class_n_n_f_s_core_1_1_loss.html#a10450b97e743516ac8519ee77d0e028c">operator()</a>(<span class="keyword">const</span> Eigen::VectorXd &amp;predictions,</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                                           <span class="keyword">const</span> Eigen::VectorXd &amp;labels) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_loss.html#afb1c9fb7add5c236dfa750836478a288">   32</a></span>        <span class="keyword">virtual</span> Eigen::VectorXd <a class="code hl_function" href="class_n_n_f_s_core_1_1_loss.html#afb1c9fb7add5c236dfa750836478a288">gradient</a>(<span class="keyword">const</span> Eigen::VectorXd &amp;predictions,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                                         <span class="keyword">const</span> Eigen::VectorXd &amp;labels) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    };</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif </span><span class="comment">// NN_LOSS_H_</span></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_loss_html"><div class="ttname"><a href="class_n_n_f_s_core_1_1_loss.html">NNFSCore::Loss</a></div><div class="ttdef"><b>Definition:</b> Loss.hpp:13</div></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_n_f_s_core.html">NNFSCore</a></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_loss.html">   11</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_n_n_f_s_core_1_1_loss.html">Loss</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_loss.html#a10450b97e743516ac8519ee77d0e028c">   21</a></span>        <span class="keyword">virtual</span> Eigen::MatrixXd <a class="code hl_function" href="class_n_n_f_s_core_1_1_loss.html#a10450b97e743516ac8519ee77d0e028c">operator()</a>(<span class="keyword">const</span> Eigen::VectorXd &amp;predictions,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                                           <span class="keyword">const</span> Eigen::VectorXd &amp;labels) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_loss.html#afb1c9fb7add5c236dfa750836478a288">   31</a></span>        <span class="keyword">virtual</span> Eigen::VectorXd <a class="code hl_function" href="class_n_n_f_s_core_1_1_loss.html#afb1c9fb7add5c236dfa750836478a288">gradient</a>(<span class="keyword">const</span> Eigen::VectorXd &amp;predictions,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                                         <span class="keyword">const</span> Eigen::VectorXd &amp;labels) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    };</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#endif </span><span class="comment">// NN_LOSS_H_</span></div>
+<div class="ttc" id="aclass_n_n_f_s_core_1_1_loss_html"><div class="ttname"><a href="class_n_n_f_s_core_1_1_loss.html">NNFSCore::Loss</a></div><div class="ttdoc">Abstract base class for loss functions.</div><div class="ttdef"><b>Definition:</b> Loss.hpp:12</div></div>
 <div class="ttc" id="aclass_n_n_f_s_core_1_1_loss_html_a10450b97e743516ac8519ee77d0e028c"><div class="ttname"><a href="class_n_n_f_s_core_1_1_loss.html#a10450b97e743516ac8519ee77d0e028c">NNFSCore::Loss::operator()</a></div><div class="ttdeci">virtual Eigen::MatrixXd operator()(const Eigen::VectorXd &amp;predictions, const Eigen::VectorXd &amp;labels) const =0</div><div class="ttdoc">Computes the loss given predictions and ground truth labels.</div></div>
 <div class="ttc" id="aclass_n_n_f_s_core_1_1_loss_html_afb1c9fb7add5c236dfa750836478a288"><div class="ttname"><a href="class_n_n_f_s_core_1_1_loss.html#afb1c9fb7add5c236dfa750836478a288">NNFSCore::Loss::gradient</a></div><div class="ttdeci">virtual Eigen::VectorXd gradient(const Eigen::VectorXd &amp;predictions, const Eigen::VectorXd &amp;labels) const =0</div><div class="ttdoc">Computes the gradient of the loss function w.r.t predictions.</div></div>
-<div class="ttc" id="anamespace_n_n_f_s_core_html"><div class="ttname"><a href="namespace_n_n_f_s_core.html">NNFSCore</a></div><div class="ttdoc">Abstract base class for activation functions.</div><div class="ttdef"><b>Definition:</b> Activation.hpp:11</div></div>
+<div class="ttc" id="anamespace_n_n_f_s_core_html"><div class="ttname"><a href="namespace_n_n_f_s_core.html">NNFSCore</a></div><div class="ttdef"><b>Definition:</b> Activation.hpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

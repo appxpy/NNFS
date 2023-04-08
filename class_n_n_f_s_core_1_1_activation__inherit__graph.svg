@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Rectified Linear Unit (ReLU) activation function.">
+<g id="a_node1"><a xlink:title="Abstract base class for activation functions.">
 <polygon fill="#999999" stroke="#666666" points="277.5,-74 164.5,-74 164.5,-55 277.5,-55 277.5,-74"/>
 <text text-anchor="middle" x="221" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">NNFSCore::Activation</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="class_n_n_f_s_core_1_1_linear.html" target="_top" xlink:title="Rectified Linear Unit (ReLU) activation function.">
+<g id="a_node3"><a xlink:href="class_n_n_f_s_core_1_1_linear.html" target="_top" xlink:title="Linear activation function.">
 <polygon fill="white" stroke="#666666" points="96,-19 0,-19 0,0 96,0 96,-19"/>
 <text text-anchor="middle" x="48" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">NNFSCore::Linear</text>
 </a>
@@ -65,7 +65,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="class_n_n_f_s_core_1_1_softmax.html" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="class_n_n_f_s_core_1_1_softmax.html" target="_top" xlink:title="Softmax activation function.">
 <polygon fill="white" stroke="#666666" points="455.5,-19 350.5,-19 350.5,0 455.5,0 455.5,-19"/>
 <text text-anchor="middle" x="403" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">NNFSCore::Softmax</text>
 </a>

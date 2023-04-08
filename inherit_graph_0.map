@@ -1,8 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="node1" href="$class_n_n_f_s_core_1_1_differentiable.html" title="Abstract base class for functions with gradients." alt="" coords="5,80,172,105"/>
-<area shape="rect" id="node2" href="$class_n_n_f_s_core_1_1_activation.html" title="Rectified Linear Unit (ReLU) activation function." alt="" coords="220,80,371,105"/>
-<area shape="rect" id="node3" href="$class_n_n_f_s_core_1_1_linear.html" title="Rectified Linear Unit (ReLU) activation function." alt="" coords="425,5,553,31"/>
+<area shape="rect" id="node2" href="$class_n_n_f_s_core_1_1_activation.html" title="Abstract base class for activation functions." alt="" coords="220,80,371,105"/>
+<area shape="rect" id="node3" href="$class_n_n_f_s_core_1_1_linear.html" title="Linear activation function." alt="" coords="425,5,553,31"/>
 <area shape="rect" id="node4" href="$class_n_n_f_s_core_1_1_re_l_u.html" title="Rectified Linear Unit (ReLU) activation function." alt="" coords="425,55,552,80"/>
 <area shape="rect" id="node5" href="$class_n_n_f_s_core_1_1_sigmoid.html" title="Sigmoid activation function." alt="" coords="419,104,558,129"/>
-<area shape="rect" id="node6" href="$class_n_n_f_s_core_1_1_softmax.html" title=" " alt="" coords="419,153,559,179"/>
+<area shape="rect" id="node6" href="$class_n_n_f_s_core_1_1_softmax.html" title="Softmax activation function." alt="" coords="419,153,559,179"/>
 </map>
