@@ -1,3 +1,6 @@
+#ifndef ACTIVATION_HPP
+#define ACTIVATION_HPP
+
 #pragma once
 
 #include "../Common/Differentiable.hpp"
@@ -20,3 +23,5 @@ namespace NNFSCore
         virtual Eigen::MatrixXd operator()(const Eigen::MatrixXd &input_tensor) const = 0;
     };
 }
+
+#endif // ACTIVATION_HPP

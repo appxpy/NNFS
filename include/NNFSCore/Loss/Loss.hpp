@@ -1,5 +1,5 @@
-#ifndef LOSS_H_
-#define LOSS_H_
+#ifndef LOSS_HPP
+#define LOSS_HPP
 
 #include <Eigen/Core>
 
@@ -33,4 +33,4 @@ namespace NNFSCore
     };
 }
 
-#endif // NN_LOSS_H_
+#endif // LOSS_HPP

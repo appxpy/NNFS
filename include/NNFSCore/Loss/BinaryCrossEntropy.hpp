@@ -1,5 +1,5 @@
-#ifndef BINARY_CROSS_ENTROPY_H_
-#define BINARY_CROSS_ENTROPY_H_
+#ifndef BINARY_CROSS_ENTROPY_HPP
+#define BINARY_CROSS_ENTROPY_HPP
 
 #include "Loss.hpp"
 
@@ -37,4 +37,4 @@ namespace NNFSCore
     };
 }
 
-#endif // BINARY_CROSS_ENTROPY_H_
+#endif // BINARY_CROSS_ENTROPY_HPP

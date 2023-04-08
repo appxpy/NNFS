@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SIGMOID_HPP
+#define SIGMOID_HPP
 
 #include "Activation.hpp"
 
@@ -31,8 +32,9 @@ namespace NNFSCore
         Eigen::MatrixXd gradient(const Eigen::MatrixXd &input_tensor) const
         {
             Eigen::MatrixXd result = (*this)(input_tensor);
-            result = result.array() * (1.0 - result.array());
-            return result;
+            return result.array() * (1.0 - result.array());
         }
     };
 }
+
+#endif // SIGMOID_HPP

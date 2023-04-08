@@ -3,12 +3,11 @@
 
 project (NNFSDoc)
 
-
 cmake_minimum_required (VERSION 3.5)
 
 find_package(Doxygen)
 
-if (DOXYGEN_FOUND)
+if (DOXYGEN_FOUND AND BUILD_DOCS)
     set(DOXYGEN_IN ${CMAKE_SOURCE_DIR}/Doxyfile)
 
     message("Doxygen build started")
@@ -20,4 +19,4 @@ if (DOXYGEN_FOUND)
         VERBATIM )
 else (DOXYGEN_FOUND)
   message("Doxygen need to be installed to generate the doxygen documentation")
-endif (DOXYGEN_FOUND)
+endif (DOXYGEN_FOUND AND BUILD_DOCS)

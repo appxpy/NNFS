@@ -1,4 +1,5 @@
-#pragma once
+#ifndef DIFFERENTIABLE_HPP
+#define DIFFERENTIABLE_HPP
 
 #include <Eigen/Core>
 
@@ -21,3 +22,5 @@ namespace NNFSCore
         virtual Eigen::MatrixXd gradient(const Eigen::MatrixXd &input_tensor) const = 0;
     };
 }
+
+#endif // DIFFERENTIABLE_HPP

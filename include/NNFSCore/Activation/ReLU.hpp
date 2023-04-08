@@ -1,4 +1,5 @@
-#pragma once
+#ifndef RELU_HPP
+#define RELU_HPP
 
 #include "Activation.hpp"
 
@@ -36,3 +37,5 @@ namespace NNFSCore
         }
     };
 }
+
+#endif // RELU_HPP

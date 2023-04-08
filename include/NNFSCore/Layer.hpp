@@ -1,4 +1,5 @@
-#pragma once
+#ifndef LAYER_HPP
+#define LAYER_HPP
 
 #include <Eigen/Core>
 
@@ -71,3 +72,5 @@ namespace NNFSCore
         MatrixXd _db;
     };
 }
+
+#endif // LAYER_HPP

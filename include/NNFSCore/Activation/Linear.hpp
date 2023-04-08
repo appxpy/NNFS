@@ -1,4 +1,5 @@
-#pragma once
+#ifndef LINEAR_HPP
+#define LINEAR_HPP
 
 #include "Activation.hpp"
 
@@ -34,3 +35,5 @@ namespace NNFSCore
         }
     };
 }
+
+#endif // LINEAR_HPP
