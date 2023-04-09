@@ -1,17 +1,17 @@
-add_executable(nnfs_tests test_activation.cpp test_callback.cpp)
-target_link_libraries(nnfs_tests PRIVATE NNFS::NNFSCore GTest::gtest_main --coverage)
-target_compile_options(nnfs_tests PRIVATE --coverage)
+add_executable(nnfs_tests test_activation.cpp test_callback.cpp test_loss.cpp)
+target_link_libraries(nnfs_tests PRIVATE NNFS::NNFSCore GTest::gtest_main)
+target_compile_options(nnfs_tests PRIVATE)
 
 include(GoogleTest)
 gtest_discover_tests(nnfs_tests)
 
-if (GENERATE_COV)
+
+if (CODE_COVERAGE)
 	INCLUDE(CodeCoverage)
-	SETUP_TARGET_FOR_COVERAGE(
-					coverage  # Name for custom target.
-					ctest     # Name of the test driver executable that runs the tests.
-										# NOTE! This should always have a ZERO as exit code
-										# otherwise the coverage generation will not complete.
-					coverage            # Name of output directory.
-					)
-endif (GENERATE_COV)
+
+	target_code_coverage(
+		nnfs_tests  # Name for custom target.
+		EXCLUDE ${CMAKE_SOURCE_DIR}/external/* ${CMAKE_SOURCE_DIR}/tests/*
+		AUTO
+	)
+endif (CODE_COVERAGE)

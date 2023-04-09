@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Clang 14.0.0",
+        "compilers": {
+            "C": "/opt/homebrew/opt/llvm@14/bin/clang",
+            "CXX": "/opt/homebrew/opt/llvm@14/bin/clang++"
+        }
+    }
+]

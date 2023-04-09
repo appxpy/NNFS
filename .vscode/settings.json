@@ -66,6 +66,14 @@
         "tuple": "cpp",
         "typeinfo": "cpp",
         "utility": "cpp",
-        "filesystem": "cpp"
+        "filesystem": "cpp",
+        "any": "cpp",
+        "codecvt": "cpp",
+        "condition_variable": "cpp",
+        "iomanip": "cpp",
+        "mutex": "cpp",
+        "optional": "cpp",
+        "variant": "cpp",
+        "dense": "cpp"
     }
 }

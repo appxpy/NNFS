@@ -5,32 +5,34 @@
 
 namespace NNFSCore
 {
+
     /**
-     * @brief Abstract base class for loss functions.
+     * @brief This abstract class must be implemented by concrete Loss classes.
      */
     class Loss
     {
     public:
         /**
-         * @brief Computes the loss given predictions and ground truth labels.
+         * @brief A pure virtual function for computing the loss.
          *
-         * @param predictions predicted values (Nx1 Eigen::VectorXd).
-         * @param labels ground truth labels (Nx1 Eigen::VectorXd).
-         * @return loss value (scalar Eigen::MatrixXd).
+         * @param predictions The input tensor of predictions.
+         * @param labels The input tensor of labels.
+         * @return Eigen::MatrixXd The computed loss.
          */
-        virtual Eigen::MatrixXd operator()(const Eigen::VectorXd &predictions,
-                                           const Eigen::VectorXd &labels) const = 0;
+        virtual Eigen::MatrixXd operator()(const Eigen::MatrixXd &predictions,
+                                           const Eigen::MatrixXd &labels) const = 0;
 
         /**
-         * @brief Computes the gradient of the loss function w.r.t predictions.
+         * @brief A pure virtual function for computing the gradient of the loss.
          *
-         * @param predictions predicted values (Nx1 Eigen::VectorXd).
-         * @param labels ground truth labels (Nx1 Eigen::VectorXd).
-         * @return gradient w.r.t predictions (Nx1 Eigen::VectorXd).
+         * @param predictions The input tensor of predictions.
+         * @param labels The input tensor of labels.
+         * @return Eigen::MatrixXd The gradient tensor.
          */
-        virtual Eigen::VectorXd gradient(const Eigen::VectorXd &predictions,
-                                         const Eigen::VectorXd &labels) const = 0;
+        virtual Eigen::MatrixXd gradient(const Eigen::MatrixXd &predictions,
+                                         const Eigen::MatrixXd &labels) const = 0;
     };
+
 }
 
 #endif // LOSS_HPP

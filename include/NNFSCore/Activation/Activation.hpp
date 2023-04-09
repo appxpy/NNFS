@@ -1,8 +1,6 @@
 #ifndef ACTIVATION_HPP
 #define ACTIVATION_HPP
 
-#pragma once
-
 #include "../Common/Differentiable.hpp"
 
 namespace NNFSCore

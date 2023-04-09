@@ -5,36 +5,44 @@
 
 namespace NNFSCore
 {
+
     /**
-     * @brief Binary cross entropy loss implementation.
-     *
+     * @brief Class for binary cross-entropy loss.
      */
     class BinaryCrossEntropy : public Loss
     {
     public:
         /**
-         * Compute the loss.
+         * @brief Compute the binary cross-entropy loss.
          *
-         * @param predictions Predictions from the model.
-         * @param labels True labels for the inputs.
-         * @return Binary Cross-Entropy loss.
+         * @param predictions The input tensor of predictions.
+         * @param labels The input tensor of labels.
+         * @return Eigen::MatrixXd The computed loss.
          */
-        Eigen::MatrixXd operator()(const Eigen::MatrixXd &predictions, const Eigen::MatrixXd &labels) const
+        Eigen::MatrixXd operator()(const Eigen::MatrixXd &predictions,
+                                   const Eigen::MatrixXd &labels) const
         {
-            return -1 * ((labels.array() * predictions.array().log().array()) + (1 - labels.array() * (1 - predictions.array())).array().log().array()).colwise().mean();
+            Eigen::MatrixXd loss = labels.array() * predictions.array().log() +
+                                   (1.0 - labels.array()) * (1.0 - predictions.array()).log();
+            return -1.0 * loss;
         }
+
         /**
-         * Compute the gradient of the loss with respect to the predictions.
+         * @brief Compute the gradient of the binary cross-entropy loss.
          *
-         * @param predictions Predictions from the model.
-         * @param labels True labels for the inputs.
-         * @return Gradient of the Binary Cross-Entropy loss.
+         * @param predictions The input tensor of predictions.
+         * @param labels The input tensor of labels.
+         * @return Eigen::MatrixXd The gradient tensor.
          */
-        Eigen::MatrixXd gradient(const Eigen::MatrixXd &predictions, const Eigen::MatrixXd &labels) const
+        Eigen::MatrixXd gradient(const Eigen::MatrixXd &predictions,
+                                 const Eigen::MatrixXd &labels) const
         {
-            return -1 * ((labels.array() / predictions.array()) - ((1 - labels.array()) / (1 - predictions.array())));
+            constexpr double epsilon = 1e-7;
+            Eigen::ArrayXXd clipped_predictions = predictions.array().min(1.0 - epsilon).max(epsilon);
+            return -1.0 * (labels.array() / clipped_predictions - (1.0 - labels.array()) / (1.0 - clipped_predictions));
         }
     };
+
 }
 
 #endif // BINARY_CROSS_ENTROPY_HPP

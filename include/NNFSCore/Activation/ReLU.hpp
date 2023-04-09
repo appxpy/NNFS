@@ -6,7 +6,7 @@
 namespace NNFSCore
 {
     /**
-     * @brief Rectified Linear Unit (ReLU) activation function.
+     * @brief Rectified Linear-Unit activation function.
      *
      */
     class ReLU : public Activation

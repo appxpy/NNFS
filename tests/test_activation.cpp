@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <Eigen/Dense>
-#include <NNFSCore/Activation/Relu.hpp>
+#include <NNFSCore/Activation/ReLU.hpp>
 #include <NNFSCore/Activation/Sigmoid.hpp>
 #include <NNFSCore/Activation/Linear.hpp>
 

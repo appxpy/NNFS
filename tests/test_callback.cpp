@@ -53,8 +53,12 @@ TEST_F(CSVLoggerTest, FileAlreadyExists)
     ASSERT_THROW(NNFSCore::CSVLogger(file_name_, false), std::runtime_error);
 }
 
-int main(int argc, char **argv)
+TEST_F(CSVLoggerTest, FileAlreadyExistsButOverwrite)
 {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
+    std::ofstream file(file_name_);
+    file.close();
+
+    ASSERT_TRUE(std::filesystem::exists(file_name_));
+
+    ASSERT_NO_THROW(NNFSCore::CSVLogger(file_name_, true));
 }
