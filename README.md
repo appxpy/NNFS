@@ -87,4 +87,4 @@ This project is licensed under the **MIT License**. Please see the [LICENSE](LIC
 
 ---
 
-made with ❤️ by (appxpy)[https://github.com/appxpy] & (brazenoptimist)[https://github.com/brazenoptimist]
+made with ❤️ by [appxpy](https://github.com/appxpy) & [brazenoptimist](https://github.com/brazenoptimist)

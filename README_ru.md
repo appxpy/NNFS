@@ -89,8 +89,8 @@ cd tests
 
 ## Лицензия
 
-Этот проект распространяется под лицензией **MIT**. Пожалуйста, см. файл (LICENSE)[LICENSE] для получения дополнительной информации.
+Этот проект распространяется под лицензией **MIT**. Пожалуйста, см. файл [LICENSE](LICENSE) для получения дополнительной информации.
 
 ---
 
-made with ❤️ by (appxpy)[https://github.com/appxpy] & (brazenoptimist)[https://github.com/brazenoptimist]
+made with ❤️ by [appxpy](https://github.com/appxpy) & [brazenoptimist](https://github.com/brazenoptimist)
