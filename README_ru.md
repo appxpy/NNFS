@@ -47,7 +47,7 @@ make
 
 ## Документация
 
-Полная документация для проекта NNFS находится на сайте [appxpy.github.io/NNFS](appxpy.github.io/NNFS).
+Полная документация для проекта NNFS находится на сайте [appxpy.github.io/NNFS](https://appxpy.github.io/NNFS).
 
 ## Зависимости
 

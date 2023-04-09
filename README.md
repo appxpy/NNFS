@@ -42,7 +42,7 @@ The NNFS project is organized into the following directories:
 - `external`: Contains submodules for the Eigen and Google Test libraries.
 
 ## Documentation
-The complete documentation for the NNFS project can be found at [appxpy.github.io/NNFS](appxpy.github.io/NNFS).
+The complete documentation for the NNFS project can be found at [appxpy.github.io/NNFS](https://appxpy.github.io/NNFS).
 
 ## Dependencies
 
