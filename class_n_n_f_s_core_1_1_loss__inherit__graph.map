@@ -1,4 +1,4 @@
 <map id="NNFSCore::Loss" name="NNFSCore::Loss">
-<area shape="rect" id="node1" title="Abstract base class for loss functions." alt="" coords="47,5,169,31"/>
-<area shape="rect" id="node2" href="$class_n_n_f_s_core_1_1_binary_cross_entropy.html" title="Binary cross entropy loss implementation." alt="" coords="5,79,211,104"/>
+<area shape="rect" id="node1" title="This abstract class must be implemented by concrete Loss classes." alt="" coords="47,5,169,31"/>
+<area shape="rect" id="node2" href="$class_n_n_f_s_core_1_1_binary_cross_entropy.html" title="Class for binary cross&#45;entropy loss." alt="" coords="5,79,211,104"/>
 </map>

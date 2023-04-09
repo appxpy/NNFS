@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "NNFS", "index.html", [
-    [ "NNFS INIT", "index.html", null ],
+    [ "NNFS - Neural Network From Scratch in C++", "index.html", "index" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],

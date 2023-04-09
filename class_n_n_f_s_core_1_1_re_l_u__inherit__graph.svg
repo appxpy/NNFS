@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Rectified Linear Unit (ReLU) activation function.">
+<g id="a_node1"><a xlink:title="Rectified Linear&#45;Unit activation function.">
 <polygon fill="#999999" stroke="#666666" points="110,-19 15,-19 15,0 110,0 110,-19"/>
 <text text-anchor="middle" x="62.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">NNFSCore::ReLU</text>
 </a>

@@ -17,6 +17,7 @@ var hierarchy =
       [ "NNFSCore::BinaryCrossEntropy", "class_n_n_f_s_core_1_1_binary_cross_entropy.html", null ]
     ] ],
     [ "testing::Test", null, [
-      [ "CSVLoggerTest", "class_c_s_v_logger_test.html", null ]
+      [ "CSVLoggerTest", "class_c_s_v_logger_test.html", null ],
+      [ "LossTest", "class_loss_test.html", null ]
     ] ]
 ];

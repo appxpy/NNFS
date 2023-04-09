@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['file_5fname_5f_0',['file_name_',['../class_c_s_v_logger_test.html#a13cdfd66ae55eb28b88048ccc4e9d815',1,'CSVLoggerTest']]]
+  ['csv_5flogger_5f_0',['csv_logger_',['../class_c_s_v_logger_test.html#adf4c1914ebbd7ac05786601d8cfec69b',1,'CSVLoggerTest']]]
 ];

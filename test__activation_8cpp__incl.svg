@@ -53,7 +53,7 @@
 <g id="a_node4"><a xlink:href="_re_l_u_8hpp.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="289,-195 178,-195 178,-165 289,-165 289,-195"/>
 <text text-anchor="start" x="186" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00">NNFSCore/Activation</text>
-<text text-anchor="middle" x="233.5" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">/Relu.hpp</text>
+<text text-anchor="middle" x="233.5" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">/ReLU.hpp</text>
 </a>
 </g>
 </g>

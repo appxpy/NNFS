@@ -13,5 +13,6 @@ var annotated_dup =
       [ "ReLU", "class_n_n_f_s_core_1_1_re_l_u.html", "class_n_n_f_s_core_1_1_re_l_u" ],
       [ "Sigmoid", "class_n_n_f_s_core_1_1_sigmoid.html", "class_n_n_f_s_core_1_1_sigmoid" ]
     ] ],
-    [ "CSVLoggerTest", "class_c_s_v_logger_test.html", "class_c_s_v_logger_test" ]
+    [ "CSVLoggerTest", "class_c_s_v_logger_test.html", "class_c_s_v_logger_test" ],
+    [ "LossTest", "class_loss_test.html", "class_loss_test" ]
 ];

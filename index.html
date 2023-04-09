@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Doxygen Awesome" />
 <meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
 <!-- END twitter metadata -->
-<title>NNFS: NNFS INIT</title>
+<title>NNFS: NNFS - Neural Network From Scratch in C++</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -125,10 +125,79 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">NNFS INIT </div></div>
+  <div class="headertitle"><div class="title">NNFS - Neural Network From Scratch in C++ </div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_README"></a></p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+@ref /github/workspace/README_ru.md "Русская версия"</h1>
+<p>This is a pet project developed by <a href="https://github.com/appxpy">appxpy</a> and <a href="https://github.com/brazenoptimist">brazenoptimist</a> for educational purposes at the Higher School of Economics (HSE) in Moscow. The project aims to build a simple neural network from scratch using C++17.</p>
+<p>NNFS includes the header-only core library "NNFSCore" that allows users to build their custom neural networks for educational purposes. Users can configure layers and activation functions according to their needs.</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Getting Started</h1>
+<p>To get started with NNFS, clone the repository and its submodules:</p>
+<div class="fragment"><div class="line">git clone --recursive https://github.com/appxpy/NNFS.git</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3"></a>
+Prerequisites</h1>
+<ul>
+<li>C++17 compatible compiler (tested with Clang 14 and GCC 12)</li>
+<li>CMake (version 3.14 or higher)</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Building</h1>
+<p>To build the project, navigate to the project directory and create a build folder:</p>
+<div class="fragment"><div class="line">cd NNFS</div>
+<div class="line">mkdir build</div>
+<div class="line">cd build</div>
+</div><!-- fragment --><p>And then build with cmake:</p>
+<div class="fragment"><div class="line">cmake ..</div>
+<div class="line">make</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
+Architecture</h1>
+<p>The NNFS project is organized into the following directories:</p>
+<ul>
+<li><code>include/NNFSCore</code>: Contains the header-only core library, which includes layers, activation functions, and loss functions.</li>
+<li><code>tools</code>: Contains the source code for the built executables for training and interactive paint testing.</li>
+<li><code>tests</code>: Contains test cases for the core library using the Google Test framework.</li>
+<li><code>external</code>: Contains submodules for the Eigen and Google Test libraries.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md6"></a>
+Documentation</h1>
+<p>The complete documentation for the NNFS project can be found at <a href="appxpy.github.io/NNFS">appxpy.github.io/NNFS</a>.</p>
+<h1><a class="anchor" id="autotoc_md7"></a>
+Dependencies</h1>
+<p>The NNFS project relies on the following libraries:</p>
+<ul>
+<li><b>Eigen</b>: A high-level C++ library for linear algebra, which is included as a submodule in the <code>external/eigen</code> directory.</li>
+<li><b>Google Test</b>: A C++ testing framework, which is included as a submodule in the <code>external/googletest</code> directory.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md8"></a>
+Testing</h1>
+<p>The NNFS project was tested using Clang 14 and GCC 12.</p>
+<p>To run the tests, navigate to the <code>build</code> directory and execute the following commands:</p>
+<div class="fragment"><div class="line">cd tests</div>
+<div class="line">./nnfs_tests</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md9"></a>
+Examples</h1>
+<p>An example of using the <a class="el" href="namespace_n_n_f_s_core.html">NNFSCore</a> library to create a custom neural network can be found in the <code>tools</code> directory as <code>nnfs_example.cpp</code>.</p>
+<h1><a class="anchor" id="autotoc_md10"></a>
+Contributing</h1>
+<p>We welcome contributions from anyone interested in improving the NNFS project. If you find a bug or have an idea for a new feature, please open an issue on the GitHub repository.</p>
+<p>If you would like to contribute to the project, please follow these steps:</p>
+<ol type="1">
+<li>Fork the repository and clone it to your local machine.</li>
+<li>Create a new branch for your changes.</li>
+<li>Make your changes and test them thoroughly.</li>
+<li>Commit your changes with a clear and descriptive message.</li>
+<li>Push your changes to your forked repository.</li>
+<li>Open a pull request on the GitHub repository.</li>
+</ol>
+<p>Please note that all contributions are subject to review by the project maintainers.</p>
+<h1><a class="anchor" id="autotoc_md11"></a>
+License</h1>
+<p>This project is licensed under the <b>MIT License</b>. Please see the [LICENSE](LICENSE) file for more information.</p>
+<hr  />
+<p>made with ❤️ by (appxpy)[<a href="https://github.com/appxpy">https://github.com/appxpy</a>] &amp; (brazenoptimist)[<a href="https://github.com/brazenoptimist">https://github.com/brazenoptimist</a>] </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
