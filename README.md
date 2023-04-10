@@ -1,5 +1,4 @@
 # NNFS - Neural Network From Scratch in C++ 
-## [Русская версия](README_ru.md)
 
 This is a pet project developed by [appxpy](https://github.com/appxpy) and [brazenoptimist](https://github.com/brazenoptimist) for educational purposes at the Higher School of Economics (HSE) in Moscow. The project aims to build a simple neural network from scratch using C++17.
 
@@ -83,7 +82,7 @@ Please note that all contributions are subject to review by the project maintain
 
 ## License
 
-This project is licensed under the **MIT License**. Please see the [LICENSE](LICENSE) file for more information.
+This project is licensed under the **MIT License**. Please see the LICENSE file for more information.
 
 ---
 

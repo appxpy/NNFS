@@ -4,7 +4,7 @@ project(NNFS)
 enable_testing()
 
 
-# set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 17)
 
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake/modules/)
 SET(CMAKE_CXX_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage -fno-elide-constructors -fno-default-inline ${CMAKE_CXX_FLAGS}")

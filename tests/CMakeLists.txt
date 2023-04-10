@@ -1,4 +1,4 @@
-add_executable(nnfs_tests test_activation.cpp test_callback.cpp test_loss.cpp)
+add_executable(nnfs_tests test_activation.cpp test_callback.cpp test_loss.cpp test_layer.cpp test_neural_network.cpp)
 target_link_libraries(nnfs_tests PRIVATE NNFS::NNFSCore GTest::gtest_main)
 target_compile_options(nnfs_tests PRIVATE)
 

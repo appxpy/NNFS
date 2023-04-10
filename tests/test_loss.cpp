@@ -16,8 +16,8 @@ TEST_F(LossTest, GradientDescent)
     predictions = predictions / predictions.maxCoeff();
     Eigen::MatrixXd labels = Eigen::MatrixXd::Constant(num_examples, num_features, 0.99);
 
-    Eigen::MatrixXd output_high = bce_.operator()(predictions, labels);
-    Eigen::MatrixXd output_low = bce_.operator()(labels, labels);
+    Eigen::MatrixXd output_high = bce_(predictions, labels);
+    Eigen::MatrixXd output_low = bce_(labels, labels);
 
     EXPECT_GT(output_high.mean(), output_low.mean());
     EXPECT_GT(0.1, output_low.mean());
