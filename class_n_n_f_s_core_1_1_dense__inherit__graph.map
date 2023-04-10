@@ -1,4 +1,4 @@
 <map id="NNFSCore::Dense" name="NNFSCore::Dense">
-<area shape="rect" id="node1" title="A dense (fully connected) layer derived from the Layer base class." alt="" coords="5,79,135,104"/>
-<area shape="rect" id="node2" href="$class_n_n_f_s_core_1_1_layer.html" title="An abstract base class representing a neural network layer." alt="" coords="8,5,132,31"/>
+<area shape="rect" id="node1" title="Fully connected layer." alt="" coords="5,79,135,104"/>
+<area shape="rect" id="node2" href="$class_n_n_f_s_core_1_1_layer.html" title="Abstract base class for layers in a neural network." alt="" coords="8,5,132,31"/>
 </map>

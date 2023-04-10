@@ -16,8 +16,13 @@ var hierarchy =
     [ "NNFSCore::Loss", "class_n_n_f_s_core_1_1_loss.html", [
       [ "NNFSCore::BinaryCrossEntropy", "class_n_n_f_s_core_1_1_binary_cross_entropy.html", null ]
     ] ],
+    [ "NNFSCore::Model", "class_n_n_f_s_core_1_1_model.html", [
+      [ "NNFSCore::NeuralNetwork", "class_n_n_f_s_core_1_1_neural_network.html", null ]
+    ] ],
     [ "testing::Test", null, [
       [ "CSVLoggerTest", "class_c_s_v_logger_test.html", null ],
-      [ "LossTest", "class_loss_test.html", null ]
+      [ "DenseTest", "class_dense_test.html", null ],
+      [ "LossTest", "class_loss_test.html", null ],
+      [ "NeuralNetworkTest", "class_neural_network_test.html", null ]
     ] ]
 ];

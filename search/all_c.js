@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['update_0',['update',['../class_n_n_f_s_core_1_1_layer.html#a839a9479b75dc233dae0e384f5454557',1,'NNFSCore::Layer::update()'],['../class_n_n_f_s_core_1_1_dense.html#aa8285bc57f2aa39fb48c8d826bb657b7',1,'NNFSCore::Dense::update()']]]
+  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['relu_1',['ReLU',['../class_n_n_f_s_core_1_1_re_l_u.html',1,'NNFSCore']]],
+  ['relu_2ehpp_2',['ReLU.hpp',['../_re_l_u_8hpp.html',1,'']]]
 ];

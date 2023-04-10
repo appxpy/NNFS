@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['get_5foutput_0',['get_output',['../class_n_n_f_s_core_1_1_layer.html#ae64985d0be81ee06946d6b18cf01e403',1,'NNFSCore::Layer::get_output()'],['../class_n_n_f_s_core_1_1_dense.html#a2aee4198586eeb839bbd1cc533d281e1',1,'NNFSCore::Dense::get_output()']]],
-  ['gradient_1',['gradient',['../class_n_n_f_s_core_1_1_linear.html#a54101853a90829fd139ebc22cedc5e48',1,'NNFSCore::Linear::gradient()'],['../class_n_n_f_s_core_1_1_re_l_u.html#a5633d4a02b1dca9e4ad389ac276461ca',1,'NNFSCore::ReLU::gradient()'],['../class_n_n_f_s_core_1_1_sigmoid.html#ac6129f5790264d724874bd3ccf74145f',1,'NNFSCore::Sigmoid::gradient()'],['../class_n_n_f_s_core_1_1_differentiable.html#a308575355e286a264881ffb7dcf580a1',1,'NNFSCore::Differentiable::gradient()'],['../class_n_n_f_s_core_1_1_binary_cross_entropy.html#a44f0950f9995aae8197aabcc2b6372f6',1,'NNFSCore::BinaryCrossEntropy::gradient()'],['../class_n_n_f_s_core_1_1_loss.html#ab35c70be5b8f39106329c5febd7bd32b',1,'NNFSCore::Loss::gradient()']]]
+  ['file_5fname_5f_0',['file_name_',['../class_c_s_v_logger_test.html#a13cdfd66ae55eb28b88048ccc4e9d815',1,'CSVLoggerTest']]],
+  ['fit_1',['fit',['../class_n_n_f_s_core_1_1_model.html#a51c41f40874219a36d8b9ba68e9fd6df',1,'NNFSCore::Model::fit()'],['../class_n_n_f_s_core_1_1_neural_network.html#a7646c7948b2326afe0afefc593856862',1,'NNFSCore::NeuralNetwork::fit()']]]
 ];

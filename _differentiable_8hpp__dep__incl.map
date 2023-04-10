@@ -1,8 +1,11 @@
 <map id="include/NNFSCore/Common/Differentiable.hpp" name="include/NNFSCore/Common/Differentiable.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="226,5,413,45"/>
-<area shape="rect" id="node2" href="$_activation_8hpp.html" title=" " alt="" coords="223,93,416,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="443,5,630,45"/>
+<area shape="rect" id="node2" href="$_activation_8hpp.html" title=" " alt="" coords="440,93,633,133"/>
 <area shape="rect" id="node3" href="$_linear_8hpp.html" title=" " alt="" coords="5,181,199,221"/>
 <area shape="rect" id="node5" href="$_re_l_u_8hpp.html" title=" " alt="" coords="223,181,416,221"/>
 <area shape="rect" id="node6" href="$_sigmoid_8hpp.html" title=" " alt="" coords="440,181,633,221"/>
-<area shape="rect" id="node4" href="$test__activation_8cpp.html" title=" " alt="" coords="237,269,401,295"/>
+<area shape="rect" id="node7" href="$_model_8hpp.html" title=" " alt="" coords="658,181,829,221"/>
+<area shape="rect" id="node8" href="$_neural_network_8hpp.html" title=" " alt="" coords="719,269,890,309"/>
+<area shape="rect" id="node4" href="$test__activation_8cpp.html" title=" " alt="" coords="237,277,401,302"/>
+<area shape="rect" id="node9" href="$test__neural__network_8cpp.html" title=" " alt="" coords="707,357,903,383"/>
 </map>
