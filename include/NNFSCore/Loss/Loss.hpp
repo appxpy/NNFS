@@ -19,8 +19,8 @@ namespace NNFSCore
          * @param labels The input tensor of labels.
          * @return Eigen::MatrixXd The computed loss.
          */
-        virtual Eigen::MatrixXd operator()(const Eigen::MatrixXd &predictions,
-                                           const Eigen::MatrixXd &labels) const = 0;
+        virtual double operator()(const Eigen::MatrixXd &predictions,
+                                  const Eigen::MatrixXd &labels) const = 0;
 
         /**
          * @brief A pure virtual function for computing the gradient of the loss.

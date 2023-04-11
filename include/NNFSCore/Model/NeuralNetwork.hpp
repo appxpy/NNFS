@@ -30,7 +30,7 @@ namespace NNFSCore
         NeuralNetwork(
             std::vector<std::tuple<std::shared_ptr<Layer>, std::shared_ptr<Activation>>> &layers,
             std::shared_ptr<Loss> loss, double learning_rate,
-            double regularization_factor)
+            double regularization_factor = 0)
             : _layers(layers),
               _loss(loss),
               _learning_rate(learning_rate),
@@ -71,16 +71,6 @@ namespace NNFSCore
         }
 
         /**
-         * @brief Set the number of layers in the network.
-         *
-         * @param num_layers The number of layers.
-         */
-        void set_num_layers(int num_layers) override
-        {
-            _num_layers = num_layers;
-        }
-
-        /**
          * @brief Get the number of examples used for training the model.
          *
          * @return int The number of examples.
@@ -88,16 +78,6 @@ namespace NNFSCore
         int get_num_examples() const override
         {
             return _num_examples;
-        }
-
-        /**
-         * @brief Set the number of examples used for training the model.
-         *
-         * @param num_examples The number of examples.
-         */
-        void set_num_examples(int num_examples) override
-        {
-            _num_examples = num_examples;
         }
 
         /**
@@ -147,26 +127,24 @@ namespace NNFSCore
          * @param callbacks A vector of pointers to Callback objects.
          */
         void fit(const Eigen::MatrixXd &examples, const Eigen::MatrixXd &labels, int epochs,
-                 bool verbose = false, const std::vector<std::shared_ptr<Callback>> &callbacks = {}) override
+                 bool verbose = false) override
         {
-            _callbacks = callbacks;
-
             for (int epoch = 1; epoch <= epochs; ++epoch)
             {
                 (*this)(examples);
-                Eigen::MatrixXd loss = _loss->operator()(_output, labels);
+                double loss = _loss->operator()(_output, labels);
 
                 backward_pass(labels);
                 update();
 
                 for (auto &callback : _callbacks)
                 {
-                    callback->on_epoch_end(epoch, loss(0));
+                    callback->on_epoch_end(epoch, loss);
                 }
 
                 if (verbose)
                 {
-                    std::cout << "Epoch: " << epoch << ", Loss: " << loss(0) << std::endl;
+                    std::cout << "Epoch: " << epoch << ", Loss: " << loss << std::endl;
                 }
             }
         }
@@ -189,8 +167,8 @@ namespace NNFSCore
          * @param labels Input labels
          * @return Evaluation result
          */
-        Eigen::MatrixXd evaluate(const Eigen::MatrixXd &examples,
-                                 const Eigen::MatrixXd &labels) override
+        double evaluate(const Eigen::MatrixXd &examples,
+                        const Eigen::MatrixXd &labels) override
         {
             (*this)(examples);
             return _loss->operator()(_output, labels);
@@ -310,8 +288,7 @@ namespace NNFSCore
                 layer->grad_weights(dz * prev_layer_output.transpose() / _num_examples);
                 layer->grad_weights(layer->grad_weights() +
                                     (_regularization_factor / _num_examples) * layer->weights());
-                layer->grad_weights(dz.rowwise().mean());
-
+                layer->grad_bias(dz.rowwise().mean());
                 da = layer->weights().transpose() * dz;
             }
         }

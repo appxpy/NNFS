@@ -11,7 +11,7 @@ SET(CMAKE_CXX_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage -fno-elide-constructo
 SET(CMAKE_C_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage ${CMAKE_C_FLAGS}")
 
 
-option(GENERATE_DOCS "Create target for doxygen auto-docs report" ON)
+option(GENERATE_DOCS "Create target for doxygen auto-docs report" OFF)
 option(CODE_COVERAGE "Create targets for test coverage report" ON)
 
 

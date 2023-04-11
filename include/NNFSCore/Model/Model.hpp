@@ -46,7 +46,7 @@ namespace NNFSCore
          * @param callbacks A vector of pointers to Callback objects.
          */
         virtual void fit(const Eigen::MatrixXd &examples, const Eigen::MatrixXd &labels, int epochs,
-                         bool verbose = false, const std::vector<std::shared_ptr<Callback>> &callbacks = {}) = 0;
+                         bool verbose = false) = 0;
 
         /**
          * @brief Predict the output for given examples
@@ -59,10 +59,10 @@ namespace NNFSCore
          * @brief Evaluate the model for given examples and labels
          * @param examples Input examples
          * @param labels Input labels
-         * @return Evaluation result
+         * @return double Evaluation result
          */
-        virtual Eigen::MatrixXd evaluate(const Eigen::MatrixXd &examples,
-                                         const Eigen::MatrixXd &labels) = 0;
+        virtual double evaluate(const Eigen::MatrixXd &examples,
+                                const Eigen::MatrixXd &labels) = 0;
 
         /**
          * @brief Perform a backward step for the model
@@ -99,25 +99,11 @@ namespace NNFSCore
         virtual int get_num_layers() const = 0;
 
         /**
-         * @brief Set the number of layers in the network.
-         *
-         * @param num_layers The number of layers.
-         */
-        virtual void set_num_layers(int num_layers) = 0;
-
-        /**
          * @brief Get the number of examples used for training the model.
          *
          * @return int The number of examples.
          */
         virtual int get_num_examples() const = 0;
-
-        /**
-         * @brief Set the number of examples used for training the model.
-         *
-         * @param num_examples The number of examples.
-         */
-        virtual void set_num_examples(int num_examples) = 0;
 
         /**
          * @brief Update the model's parameters

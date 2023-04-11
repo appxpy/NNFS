@@ -19,12 +19,14 @@ namespace NNFSCore
          * @param labels The input tensor of labels.
          * @return Eigen::MatrixXd The computed loss.
          */
-        Eigen::MatrixXd operator()(const Eigen::MatrixXd &predictions,
-                                   const Eigen::MatrixXd &labels) const
+        double operator()(const Eigen::MatrixXd &predictions,
+                          const Eigen::MatrixXd &labels) const
         {
-            Eigen::MatrixXd loss = labels.array() * predictions.array().log() +
-                                   (1.0 - labels.array()) * (1.0 - predictions.array()).log();
-            return -1.0 * loss;
+            double loss = (labels.array() * predictions.array().log() +
+                           (1.0 - labels.array()) * (1.0 - predictions.array()).log())
+                              .mean();
+            return -1.0 *
+                   loss;
         }
 
         /**
