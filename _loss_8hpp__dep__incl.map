@@ -1,8 +1,8 @@
 <map id="include/NNFSCore/Loss/Loss.hpp" name="include/NNFSCore/Loss/Loss.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="197,5,361,45"/>
-<area shape="rect" id="node2" href="$_binary_cross_entropy_8hpp.html" title=" " alt="" coords="5,93,169,133"/>
-<area shape="rect" id="node4" href="$_model_8hpp.html" title=" " alt="" coords="194,93,365,133"/>
-<area shape="rect" id="node5" href="$_neural_network_8hpp.html" title=" " alt="" coords="255,181,426,221"/>
-<area shape="rect" id="node3" href="$test__loss_8cpp.html" title=" " alt="" coords="21,189,153,214"/>
-<area shape="rect" id="node6" href="$test__neural__network_8cpp.html" title=" " alt="" coords="243,269,439,295"/>
+<area shape="rect" id="node1" title=" " alt="" coords="199,5,363,45"/>
+<area shape="rect" id="node2" href="$_binary_cross_entropy_8hpp.html" title=" " alt="" coords="7,93,171,133"/>
+<area shape="rect" id="node5" href="$_model_8hpp.html" title=" " alt="" coords="195,93,366,133"/>
+<area shape="rect" id="node6" href="$_neural_network_8hpp.html" title=" " alt="" coords="213,181,383,221"/>
+<area shape="rect" id="node3" href="$test__loss_8cpp.html" title=" " alt="" coords="5,189,137,214"/>
+<area shape="rect" id="node4" href="$test__neural__network_8cpp.html" title=" " alt="" coords="139,269,335,295"/>
 </map>

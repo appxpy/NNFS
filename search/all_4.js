@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['evaluate_0',['evaluate',['../class_n_n_f_s_core_1_1_model.html#a37d9c74463a06837b3ca8af31e9d7053',1,'NNFSCore::Model::evaluate()'],['../class_n_n_f_s_core_1_1_neural_network.html#a3056c9647b1fe494dad5293eafd72521',1,'NNFSCore::NeuralNetwork::evaluate()']]]
+  ['dense_0',['Dense',['../class_n_n_f_s_core_1_1_dense.html#a1f6a45fd924fa44c590e5e4e86e5d2a3',1,'NNFSCore::Dense::Dense()'],['../class_n_n_f_s_core_1_1_dense.html',1,'NNFSCore::Dense']]],
+  ['dense_2ehpp_1',['Dense.hpp',['../_dense_8hpp.html',1,'']]],
+  ['densetest_2',['DenseTest',['../class_dense_test.html',1,'']]],
+  ['differentiable_3',['Differentiable',['../class_n_n_f_s_core_1_1_differentiable.html',1,'NNFSCore']]],
+  ['differentiable_2ehpp_4',['Differentiable.hpp',['../_differentiable_8hpp.html',1,'']]]
 ];

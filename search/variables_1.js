@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['csv_5flogger_5f_0',['csv_logger_',['../class_c_s_v_logger_test.html#adf4c1914ebbd7ac05786601d8cfec69b',1,'CSVLoggerTest']]]
+  ['bce_5f_0',['bce_',['../class_loss_test.html#af2186de46693e45741a252aa67523223',1,'LossTest']]]
 ];

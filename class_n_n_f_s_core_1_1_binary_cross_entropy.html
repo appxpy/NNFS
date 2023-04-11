@@ -145,15 +145,15 @@ Inheritance diagram for NNFSCore::BinaryCrossEntropy:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a98d9584d841a8a704953bd47f68df8bd"><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_binary_cross_entropy.html#a98d9584d841a8a704953bd47f68df8bd">operator()</a> (const Eigen::MatrixXd &amp;predictions, const Eigen::MatrixXd &amp;labels) const</td></tr>
-<tr class="memdesc:a98d9584d841a8a704953bd47f68df8bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the binary cross-entropy loss.  <br /></td></tr>
-<tr class="separator:a98d9584d841a8a704953bd47f68df8bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d35fe8107a626e2139ee549a98ee95c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_binary_cross_entropy.html#a6d35fe8107a626e2139ee549a98ee95c">operator()</a> (const Eigen::MatrixXd &amp;predictions, const Eigen::MatrixXd &amp;labels) const</td></tr>
+<tr class="memdesc:a6d35fe8107a626e2139ee549a98ee95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the binary cross-entropy loss.  <br /></td></tr>
+<tr class="separator:a6d35fe8107a626e2139ee549a98ee95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44f0950f9995aae8197aabcc2b6372f6"><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_binary_cross_entropy.html#a44f0950f9995aae8197aabcc2b6372f6">gradient</a> (const Eigen::MatrixXd &amp;predictions, const Eigen::MatrixXd &amp;labels) const</td></tr>
 <tr class="memdesc:a44f0950f9995aae8197aabcc2b6372f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the gradient of the binary cross-entropy loss.  <br /></td></tr>
 <tr class="separator:a44f0950f9995aae8197aabcc2b6372f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86f4474188c9a518cd650aa0a2e534cb"><td class="memItemLeft" align="right" valign="top">virtual Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_loss.html#a86f4474188c9a518cd650aa0a2e534cb">operator()</a> (const Eigen::MatrixXd &amp;predictions, const Eigen::MatrixXd &amp;labels) const =0</td></tr>
-<tr class="memdesc:a86f4474188c9a518cd650aa0a2e534cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pure virtual function for computing the loss.  <br /></td></tr>
-<tr class="separator:a86f4474188c9a518cd650aa0a2e534cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a1968e540bd7392253f079500a5d289"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_loss.html#a9a1968e540bd7392253f079500a5d289">operator()</a> (const Eigen::MatrixXd &amp;predictions, const Eigen::MatrixXd &amp;labels) const =0</td></tr>
+<tr class="memdesc:a9a1968e540bd7392253f079500a5d289"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pure virtual function for computing the loss.  <br /></td></tr>
+<tr class="separator:a9a1968e540bd7392253f079500a5d289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab35c70be5b8f39106329c5febd7bd32b"><td class="memItemLeft" align="right" valign="top">virtual Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_loss.html#ab35c70be5b8f39106329c5febd7bd32b">gradient</a> (const Eigen::MatrixXd &amp;predictions, const Eigen::MatrixXd &amp;labels) const =0</td></tr>
 <tr class="memdesc:ab35c70be5b8f39106329c5febd7bd32b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pure virtual function for computing the gradient of the loss.  <br /></td></tr>
 <tr class="separator:ab35c70be5b8f39106329c5febd7bd32b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,8 +209,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a98d9584d841a8a704953bd47f68df8bd" name="a98d9584d841a8a704953bd47f68df8bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98d9584d841a8a704953bd47f68df8bd">&#9670;&#160;</a></span>operator()()</h2>
+<a id="a6d35fe8107a626e2139ee549a98ee95c" name="a6d35fe8107a626e2139ee549a98ee95c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d35fe8107a626e2139ee549a98ee95c">&#9670;&#160;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -219,7 +219,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::MatrixXd NNFSCore::BinaryCrossEntropy::operator() </td>
+          <td class="memname">double NNFSCore::BinaryCrossEntropy::operator() </td>
           <td>(</td>
           <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
           <td class="paramname"><em>predictions</em>, </td>
@@ -253,7 +253,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Eigen::MatrixXd The computed loss. </dd></dl>
 
-<p>Implements <a class="el" href="class_n_n_f_s_core_1_1_loss.html#a86f4474188c9a518cd650aa0a2e534cb">NNFSCore::Loss</a>.</p>
+<p>Implements <a class="el" href="class_n_n_f_s_core_1_1_loss.html#a9a1968e540bd7392253f079500a5d289">NNFSCore::Loss</a>.</p>
 
 </div>
 </div>

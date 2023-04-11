@@ -19,6 +19,9 @@ var hierarchy =
     [ "NNFSCore::Model", "class_n_n_f_s_core_1_1_model.html", [
       [ "NNFSCore::NeuralNetwork", "class_n_n_f_s_core_1_1_neural_network.html", null ]
     ] ],
+    [ "std::streambuf", null, [
+      [ "CaptureCout", "class_capture_cout.html", null ]
+    ] ],
     [ "testing::Test", null, [
       [ "CSVLoggerTest", "class_c_s_v_logger_test.html", null ],
       [ "DenseTest", "class_dense_test.html", null ],

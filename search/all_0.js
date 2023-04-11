@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['activation_0',['Activation',['../class_n_n_f_s_core_1_1_activation.html',1,'NNFSCore']]],
-  ['activation_2ehpp_1',['Activation.hpp',['../_activation_8hpp.html',1,'']]]
+  ['_5fneuralnetwork_0',['_NeuralNetwork',['../class_neural_network_test.html#a5ab6a2d7f6256406982e9cc5a75d32d0',1,'NeuralNetworkTest']]]
 ];
