@@ -17,7 +17,7 @@ namespace NNFSCore
          *
          * @param predictions The input tensor of predictions.
          * @param labels The input tensor of labels.
-         * @return Eigen::MatrixXd The computed loss.
+         * @return double The computed loss.
          */
         virtual double operator()(const Eigen::MatrixXd &predictions,
                                   const Eigen::MatrixXd &labels) const = 0;

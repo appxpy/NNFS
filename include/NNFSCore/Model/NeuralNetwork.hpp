@@ -10,6 +10,8 @@
 #include "../Activation/Activation.hpp"
 #include "../Loss/Loss.hpp"
 
+#include "../Utils/ProgressBar.hpp"
+
 namespace NNFSCore
 {
 
@@ -123,28 +125,50 @@ namespace NNFSCore
          * @param examples The examples tensor.
          * @param labels The labels tensor.
          * @param epochs The number of epochs to train for.
+         * @param batch_size The number of examples to include in each batch.
          * @param verbose Whether to print progress during training.
-         * @param callbacks A vector of pointers to Callback objects.
          */
         void fit(const Eigen::MatrixXd &examples, const Eigen::MatrixXd &labels, int epochs,
-                 bool verbose = false) override
+                 int batch_size, bool verbose = false) override
         {
+            int num_examples = examples.cols();
+            int num_batches = (num_examples + batch_size - 1) / batch_size;
+
             for (int epoch = 1; epoch <= epochs; ++epoch)
             {
-                (*this)(examples);
-                double loss = _loss->operator()(_output, labels);
+                double total_loss = 0;
+                progressbar bar(num_batches);
 
-                backward_pass(labels);
-                update();
+                for (int i = 0; i < num_batches; ++i)
+                {
+                    int start = i * batch_size;
+                    int end = std::min(start + batch_size, num_examples);
+
+                    Eigen::MatrixXd batch_examples = examples.middleCols(start, end - start);
+                    Eigen::MatrixXd batch_labels = labels.middleCols(start, end - start);
+
+                    (*this)(batch_examples);
+                    double loss = _loss->operator()(_output, batch_labels);
+                    total_loss += loss;
+
+                    backward_pass(batch_labels);
+                    update();
+
+                    if (verbose)
+                    {
+                        std::cout << "Epoch: " << epoch << ", Batch number " << i << ", Loss: " << loss << std::endl;
+                    }
+                    bar.update();
+                }
 
                 for (auto &callback : _callbacks)
                 {
-                    callback->on_epoch_end(epoch, loss);
+                    callback->on_epoch_end(epoch, total_loss / num_examples);
                 }
 
                 if (verbose)
                 {
-                    std::cout << "Epoch: " << epoch << ", Loss: " << loss << std::endl;
+                    std::cout << "Epoch: " << epoch << ", Loss: " << total_loss / num_examples << std::endl;
                 }
             }
         }

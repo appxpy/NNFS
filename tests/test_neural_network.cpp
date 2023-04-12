@@ -91,7 +91,7 @@ TEST_F(NeuralNetworkTest, CSVLogger)
     _NeuralNetwork->set_callbacks({csv_logger});
     Eigen::MatrixXd examples = Eigen::MatrixXd::Zero(784, 16);
     Eigen::MatrixXd labels = Eigen::MatrixXd::Zero(10, 16);
-    _NeuralNetwork->fit(examples, labels, 1, false);
+    _NeuralNetwork->fit(examples, labels, 1, 16, false);
 
     std::ifstream log_file(log_path);
     ASSERT_TRUE(log_file.is_open());
@@ -111,7 +111,7 @@ TEST_F(NeuralNetworkTest, Layers)
 {
     Eigen::MatrixXd examples = Eigen::MatrixXd::Zero(784, 16);
     Eigen::MatrixXd labels = Eigen::MatrixXd::Zero(10, 16);
-    _NeuralNetwork->fit(examples, labels, 1, false);
+    _NeuralNetwork->fit(examples, labels, 10, 16, false);
 
     auto layers = _NeuralNetwork->get_layers();
     EXPECT_EQ(layers.size(), 3);
@@ -246,7 +246,7 @@ TEST_F(NeuralNetworkTest, FitVerboseOutput)
 
     // Perform the fit function with verbose = true
     size_t epochs = 3;
-    _NeuralNetwork->fit(input, labels, epochs, true);
+    _NeuralNetwork->fit(input, labels, epochs, 16, true);
 
     // Get the captured output
     std::string output = captureCout.getOutput();

@@ -43,9 +43,11 @@ namespace NNFSCore
          * @param examples Input examples
          * @param labels Input labels
          * @param epochs Number of epochs
-         * @param callbacks A vector of pointers to Callback objects.
+         * @param batch_size The number of examples to include in each batch.
+         * @param verbose Whether to print progress during training.
          */
         virtual void fit(const Eigen::MatrixXd &examples, const Eigen::MatrixXd &labels, int epochs,
+                         int batch_size,
                          bool verbose = false) = 0;
 
         /**
