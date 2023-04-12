@@ -19,5 +19,6 @@ var annotated_dup =
     [ "CSVLoggerTest", "class_c_s_v_logger_test.html", "class_c_s_v_logger_test" ],
     [ "DenseTest", "class_dense_test.html", "class_dense_test" ],
     [ "LossTest", "class_loss_test.html", "class_loss_test" ],
-    [ "NeuralNetworkTest", "class_neural_network_test.html", "class_neural_network_test" ]
+    [ "NeuralNetworkTest", "class_neural_network_test.html", "class_neural_network_test" ],
+    [ "progressbar", "classprogressbar.html", "classprogressbar" ]
 ];

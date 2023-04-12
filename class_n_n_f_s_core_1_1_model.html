@@ -156,9 +156,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ec42bcdf94080a6ae0847e386559fd3"><td class="memItemLeft" align="right" valign="top">virtual Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a4ec42bcdf94080a6ae0847e386559fd3">operator()</a> (const Eigen::MatrixXd &amp;input_tensor)=0</td></tr>
 <tr class="memdesc:a4ec42bcdf94080a6ae0847e386559fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the output of the model given an input tensor.  <br /></td></tr>
 <tr class="separator:a4ec42bcdf94080a6ae0847e386559fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99f359ce494751f1018cb6c215554322"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a99f359ce494751f1018cb6c215554322">fit</a> (const Eigen::MatrixXd &amp;examples, const Eigen::MatrixXd &amp;labels, int epochs, bool verbose=false)=0</td></tr>
-<tr class="memdesc:a99f359ce494751f1018cb6c215554322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fit the model to the given data.  <br /></td></tr>
-<tr class="separator:a99f359ce494751f1018cb6c215554322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5b0fac671c0708a427d4eb1abf6c2a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a4a5b0fac671c0708a427d4eb1abf6c2a">fit</a> (const Eigen::MatrixXd &amp;examples, const Eigen::MatrixXd &amp;labels, int epochs, int batch_size, bool verbose=false)=0</td></tr>
+<tr class="memdesc:a4a5b0fac671c0708a427d4eb1abf6c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fit the model to the given data.  <br /></td></tr>
+<tr class="separator:a4a5b0fac671c0708a427d4eb1abf6c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bc280064f210258027564af95728e26"><td class="memItemLeft" align="right" valign="top">virtual Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a0bc280064f210258027564af95728e26">predict</a> (const Eigen::MatrixXd &amp;examples)=0</td></tr>
 <tr class="memdesc:a0bc280064f210258027564af95728e26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predict the output for given examples.  <br /></td></tr>
 <tr class="separator:a0bc280064f210258027564af95728e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -300,8 +300,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a99f359ce494751f1018cb6c215554322" name="a99f359ce494751f1018cb6c215554322"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99f359ce494751f1018cb6c215554322">&#9670;&#160;</a></span>fit()</h2>
+<a id="a4a5b0fac671c0708a427d4eb1abf6c2a" name="a4a5b0fac671c0708a427d4eb1abf6c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a5b0fac671c0708a427d4eb1abf6c2a">&#9670;&#160;</a></span>fit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -330,6 +330,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>batch_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>verbose</em> = <code>false</code>&#160;</td>
         </tr>
@@ -352,12 +358,13 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">examples</td><td>Input examples </td></tr>
     <tr><td class="paramname">labels</td><td>Input labels </td></tr>
     <tr><td class="paramname">epochs</td><td>Number of epochs </td></tr>
-    <tr><td class="paramname">callbacks</td><td>A vector of pointers to <a class="el" href="class_n_n_f_s_core_1_1_callback.html" title="Abstract base class for callback functions.">Callback</a> objects. </td></tr>
+    <tr><td class="paramname">batch_size</td><td>The number of examples to include in each batch. </td></tr>
+    <tr><td class="paramname">verbose</td><td>Whether to print progress during training. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#adeb7df93e42487b24f635aa1257e943f">NNFSCore::NeuralNetwork</a>.</p>
+<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#a3f9ec87c43a11ab993b74d70c576da32">NNFSCore::NeuralNetwork</a>.</p>
 
 </div>
 </div>

@@ -19,6 +19,7 @@ var hierarchy =
     [ "NNFSCore::Model", "class_n_n_f_s_core_1_1_model.html", [
       [ "NNFSCore::NeuralNetwork", "class_n_n_f_s_core_1_1_neural_network.html", null ]
     ] ],
+    [ "progressbar", "classprogressbar.html", null ],
     [ "std::streambuf", null, [
       [ "CaptureCout", "class_capture_cout.html", null ]
     ] ],

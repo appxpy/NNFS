@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['sigmoid_2ehpp_0',['Sigmoid.hpp',['../_sigmoid_8hpp.html',1,'']]]
+  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['relu_2ehpp_1',['ReLU.hpp',['../_re_l_u_8hpp.html',1,'']]]
 ];

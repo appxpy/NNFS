@@ -3,7 +3,7 @@ var class_n_n_f_s_core_1_1_neural_network =
     [ "NeuralNetwork", "class_n_n_f_s_core_1_1_neural_network.html#ae6ab394a12c8dca2b3f673bfcdd1e656", null ],
     [ "backward_step", "class_n_n_f_s_core_1_1_neural_network.html#a368f91960d756fc5db0401329c4784d7", null ],
     [ "evaluate", "class_n_n_f_s_core_1_1_neural_network.html#af810182b4020c6bf61973a39db44d68d", null ],
-    [ "fit", "class_n_n_f_s_core_1_1_neural_network.html#adeb7df93e42487b24f635aa1257e943f", null ],
+    [ "fit", "class_n_n_f_s_core_1_1_neural_network.html#a3f9ec87c43a11ab993b74d70c576da32", null ],
     [ "get_callbacks", "class_n_n_f_s_core_1_1_neural_network.html#aa60a2cc48498f27b7a1ff2cd5abd4fc3", null ],
     [ "get_layers", "class_n_n_f_s_core_1_1_neural_network.html#a6fe71166cdbf0684c5580b4cb6e1c595", null ],
     [ "get_learning_rate", "class_n_n_f_s_core_1_1_neural_network.html#a39756fbd41c457fc9ba86624f208e839", null ],

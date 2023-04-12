@@ -3,7 +3,7 @@ var class_n_n_f_s_core_1_1_model =
     [ "~Model", "class_n_n_f_s_core_1_1_model.html#a59aa52dc645fcfd35c220849184b15ca", null ],
     [ "backward_step", "class_n_n_f_s_core_1_1_model.html#a8ef91b40fc0b8274b8a93d30902f0cc9", null ],
     [ "evaluate", "class_n_n_f_s_core_1_1_model.html#ae9a897d9fafc1c28f67a86efb8682976", null ],
-    [ "fit", "class_n_n_f_s_core_1_1_model.html#a99f359ce494751f1018cb6c215554322", null ],
+    [ "fit", "class_n_n_f_s_core_1_1_model.html#a4a5b0fac671c0708a427d4eb1abf6c2a", null ],
     [ "get_callbacks", "class_n_n_f_s_core_1_1_model.html#a4b5f77a1ced78d2081284fe7c7573a1b", null ],
     [ "get_layers", "class_n_n_f_s_core_1_1_model.html#a296a05b887985ca0c6618cec9db1973d", null ],
     [ "get_learning_rate", "class_n_n_f_s_core_1_1_model.html#a23fb91873a238a511d8ed5d3a5e237ad", null ],
