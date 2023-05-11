@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('class_n_n_f_s_core_1_1_model.html','')
 <div class="dynheader">
 Inheritance diagram for NNFSCore::Model:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_n_n_f_s_core_1_1_model__inherit__graph.svg" width="190" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_n_n_f_s_core_1_1_model__inherit__graph.svg" width="190" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -147,45 +147,12 @@ Inheritance diagram for NNFSCore::Model:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a59aa52dc645fcfd35c220849184b15ca"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a59aa52dc645fcfd35c220849184b15ca">~Model</a> ()=default</td></tr>
 <tr class="separator:a59aa52dc645fcfd35c220849184b15ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23fb91873a238a511d8ed5d3a5e237ad"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a23fb91873a238a511d8ed5d3a5e237ad">get_learning_rate</a> () const =0</td></tr>
-<tr class="memdesc:a23fb91873a238a511d8ed5d3a5e237ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the learning rate.  <br /></td></tr>
-<tr class="separator:a23fb91873a238a511d8ed5d3a5e237ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7043d22da72b0bdccb8de70f8f3c71d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#ab7043d22da72b0bdccb8de70f8f3c71d">set_learning_rate</a> (double value)=0</td></tr>
-<tr class="memdesc:ab7043d22da72b0bdccb8de70f8f3c71d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the learning rate.  <br /></td></tr>
-<tr class="separator:ab7043d22da72b0bdccb8de70f8f3c71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ec42bcdf94080a6ae0847e386559fd3"><td class="memItemLeft" align="right" valign="top">virtual Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a4ec42bcdf94080a6ae0847e386559fd3">operator()</a> (const Eigen::MatrixXd &amp;input_tensor)=0</td></tr>
-<tr class="memdesc:a4ec42bcdf94080a6ae0847e386559fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the output of the model given an input tensor.  <br /></td></tr>
-<tr class="separator:a4ec42bcdf94080a6ae0847e386559fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a5b0fac671c0708a427d4eb1abf6c2a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a4a5b0fac671c0708a427d4eb1abf6c2a">fit</a> (const Eigen::MatrixXd &amp;examples, const Eigen::MatrixXd &amp;labels, int epochs, int batch_size, bool verbose=false)=0</td></tr>
-<tr class="memdesc:a4a5b0fac671c0708a427d4eb1abf6c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fit the model to the given data.  <br /></td></tr>
-<tr class="separator:a4a5b0fac671c0708a427d4eb1abf6c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bc280064f210258027564af95728e26"><td class="memItemLeft" align="right" valign="top">virtual Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a0bc280064f210258027564af95728e26">predict</a> (const Eigen::MatrixXd &amp;examples)=0</td></tr>
-<tr class="memdesc:a0bc280064f210258027564af95728e26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predict the output for given examples.  <br /></td></tr>
-<tr class="separator:a0bc280064f210258027564af95728e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9a897d9fafc1c28f67a86efb8682976"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#ae9a897d9fafc1c28f67a86efb8682976">evaluate</a> (const Eigen::MatrixXd &amp;examples, const Eigen::MatrixXd &amp;labels)=0</td></tr>
-<tr class="memdesc:ae9a897d9fafc1c28f67a86efb8682976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the model for given examples and labels.  <br /></td></tr>
-<tr class="separator:ae9a897d9fafc1c28f67a86efb8682976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ef91b40fc0b8274b8a93d30902f0cc9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a8ef91b40fc0b8274b8a93d30902f0cc9">backward_step</a> (const Eigen::MatrixXd &amp;labels)=0</td></tr>
-<tr class="memdesc:a8ef91b40fc0b8274b8a93d30902f0cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a backward step for the model.  <br /></td></tr>
-<tr class="separator:a8ef91b40fc0b8274b8a93d30902f0cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a296a05b887985ca0c6618cec9db1973d"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::tuple&lt; std::shared_ptr&lt; <a class="el" href="class_n_n_f_s_core_1_1_layer.html">Layer</a> &gt;, std::shared_ptr&lt; <a class="el" href="class_n_n_f_s_core_1_1_activation.html">Activation</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a296a05b887985ca0c6618cec9db1973d">get_layers</a> () const =0</td></tr>
-<tr class="memdesc:a296a05b887985ca0c6618cec9db1973d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the layers of the network.  <br /></td></tr>
-<tr class="separator:a296a05b887985ca0c6618cec9db1973d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24a3c1dc5be9de4ba428839a4ef68f59"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a24a3c1dc5be9de4ba428839a4ef68f59">set_callbacks</a> (const std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_n_n_f_s_core_1_1_callback.html">Callback</a> &gt; &gt; &amp;callbacks)=0</td></tr>
-<tr class="memdesc:a24a3c1dc5be9de4ba428839a4ef68f59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callbacks for the model.  <br /></td></tr>
-<tr class="separator:a24a3c1dc5be9de4ba428839a4ef68f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b5f77a1ced78d2081284fe7c7573a1b"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_n_n_f_s_core_1_1_callback.html">Callback</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a4b5f77a1ced78d2081284fe7c7573a1b">get_callbacks</a> () const =0</td></tr>
-<tr class="memdesc:a4b5f77a1ced78d2081284fe7c7573a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the callbacks for the model.  <br /></td></tr>
-<tr class="separator:a4b5f77a1ced78d2081284fe7c7573a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c721da6918713568508952caa4e05c9"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a6c721da6918713568508952caa4e05c9">get_num_layers</a> () const =0</td></tr>
-<tr class="memdesc:a6c721da6918713568508952caa4e05c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of layers in the network.  <br /></td></tr>
-<tr class="separator:a6c721da6918713568508952caa4e05c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6533ab7dfa4ce8cfcdedc65864ef4ac"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#ae6533ab7dfa4ce8cfcdedc65864ef4ac">get_num_examples</a> () const =0</td></tr>
-<tr class="memdesc:ae6533ab7dfa4ce8cfcdedc65864ef4ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of examples used for training the model.  <br /></td></tr>
-<tr class="separator:ae6533ab7dfa4ce8cfcdedc65864ef4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaeac7b7fad8d746ad0ef8888a884135"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#aaaeac7b7fad8d746ad0ef8888a884135">update</a> ()=0</td></tr>
-<tr class="memdesc:aaaeac7b7fad8d746ad0ef8888a884135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the model's parameters.  <br /></td></tr>
-<tr class="separator:aaaeac7b7fad8d746ad0ef8888a884135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a873cdf8dd9ae4976e90a2d483dd8ae8f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a873cdf8dd9ae4976e90a2d483dd8ae8f">backward</a> (Eigen::MatrixXd &amp;predicted, const Eigen::MatrixXd &amp;labels)=0</td></tr>
+<tr class="separator:a873cdf8dd9ae4976e90a2d483dd8ae8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a520215952188f22deb9c8758711f5099"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a520215952188f22deb9c8758711f5099">forward</a> (Eigen::MatrixXd &amp;x)=0</td></tr>
+<tr class="separator:a520215952188f22deb9c8758711f5099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d7d2d9d7b6ce94622f9514dcce728af"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a1d7d2d9d7b6ce94622f9514dcce728af">fit</a> (const Eigen::MatrixXd &amp;examples, const Eigen::MatrixXd &amp;labels, const Eigen::MatrixXd &amp;test_examples, const Eigen::MatrixXd &amp;test_labels, int epochs, int batch_size, bool verbose=false)=0</td></tr>
+<tr class="separator:a1d7d2d9d7b6ce94622f9514dcce728af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract base class for the model in a neural network. </p>
@@ -216,8 +183,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8ef91b40fc0b8274b8a93d30902f0cc9" name="a8ef91b40fc0b8274b8a93d30902f0cc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ef91b40fc0b8274b8a93d30902f0cc9">&#9670;&#160;</a></span>backward_step()</h2>
+<a id="a873cdf8dd9ae4976e90a2d483dd8ae8f" name="a873cdf8dd9ae4976e90a2d483dd8ae8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a873cdf8dd9ae4976e90a2d483dd8ae8f">&#9670;&#160;</a></span>backward()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,46 +193,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void NNFSCore::Model::backward_step </td>
+          <td class="memname">virtual void NNFSCore::Model::backward </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
-          <td class="paramname"><em>labels</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Perform a backward step for the model. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">labels</td><td>Input labels </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#a368f91960d756fc5db0401329c4784d7">NNFSCore::NeuralNetwork</a>.</p>
-
-</div>
-</div>
-<a id="ae9a897d9fafc1c28f67a86efb8682976" name="ae9a897d9fafc1c28f67a86efb8682976"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9a897d9fafc1c28f67a86efb8682976">&#9670;&#160;</a></span>evaluate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual double NNFSCore::Model::evaluate </td>
-          <td>(</td>
-          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
-          <td class="paramname"><em>examples</em>, </td>
+          <td class="paramtype">Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>predicted</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -286,22 +217,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Evaluate the model for given examples and labels. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">examples</td><td>Input examples </td></tr>
-    <tr><td class="paramname">labels</td><td>Input labels </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>double Evaluation result </dd></dl>
-
-<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#af810182b4020c6bf61973a39db44d68d">NNFSCore::NeuralNetwork</a>.</p>
+<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#a26973bde58f5c182053689701b2bd818">NNFSCore::NeuralNetwork</a>.</p>
 
 </div>
 </div>
-<a id="a4a5b0fac671c0708a427d4eb1abf6c2a" name="a4a5b0fac671c0708a427d4eb1abf6c2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a5b0fac671c0708a427d4eb1abf6c2a">&#9670;&#160;</a></span>fit()</h2>
+<a id="a1d7d2d9d7b6ce94622f9514dcce728af" name="a1d7d2d9d7b6ce94622f9514dcce728af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d7d2d9d7b6ce94622f9514dcce728af">&#9670;&#160;</a></span>fit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -320,6 +241,18 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
           <td class="paramname"><em>labels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>test_examples</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>test_labels</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -352,24 +285,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Fit the model to the given data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">examples</td><td>Input examples </td></tr>
-    <tr><td class="paramname">labels</td><td>Input labels </td></tr>
-    <tr><td class="paramname">epochs</td><td>Number of epochs </td></tr>
-    <tr><td class="paramname">batch_size</td><td>The number of examples to include in each batch. </td></tr>
-    <tr><td class="paramname">verbose</td><td>Whether to print progress during training. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#a3f9ec87c43a11ab993b74d70c576da32">NNFSCore::NeuralNetwork</a>.</p>
+<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#a86f7ff58dac4d05312a8ccc53229da7b">NNFSCore::NeuralNetwork</a>.</p>
 
 </div>
 </div>
-<a id="a4b5f77a1ced78d2081284fe7c7573a1b" name="a4b5f77a1ced78d2081284fe7c7573a1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b5f77a1ced78d2081284fe7c7573a1b">&#9670;&#160;</a></span>get_callbacks()</h2>
+<a id="a520215952188f22deb9c8758711f5099" name="a520215952188f22deb9c8758711f5099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a520215952188f22deb9c8758711f5099">&#9670;&#160;</a></span>forward()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -378,160 +299,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_n_n_f_s_core_1_1_callback.html">Callback</a> &gt; &gt; NNFSCore::Model::get_callbacks </td>
+          <td class="memname">virtual void NNFSCore::Model::forward </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the callbacks for the model. </p>
-<dl class="section return"><dt>Returns</dt><dd>std::vector&lt;std::shared_ptr&lt;Callback&gt;&gt; The callbacks. </dd></dl>
-
-<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#aa60a2cc48498f27b7a1ff2cd5abd4fc3">NNFSCore::NeuralNetwork</a>.</p>
-
-</div>
-</div>
-<a id="a296a05b887985ca0c6618cec9db1973d" name="a296a05b887985ca0c6618cec9db1973d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a296a05b887985ca0c6618cec9db1973d">&#9670;&#160;</a></span>get_layers()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual std::vector&lt; std::tuple&lt; std::shared_ptr&lt; <a class="el" href="class_n_n_f_s_core_1_1_layer.html">Layer</a> &gt;, std::shared_ptr&lt; <a class="el" href="class_n_n_f_s_core_1_1_activation.html">Activation</a> &gt; &gt; &gt; NNFSCore::Model::get_layers </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the layers of the network. </p>
-<dl class="section return"><dt>Returns</dt><dd>std::vector&lt;std::tuple&lt;std::shared_ptr&lt;Layer&gt;, std::shared_ptr&lt;Activation&gt;&gt;&gt; The layers. </dd></dl>
-
-<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#a6fe71166cdbf0684c5580b4cb6e1c595">NNFSCore::NeuralNetwork</a>.</p>
-
-</div>
-</div>
-<a id="a23fb91873a238a511d8ed5d3a5e237ad" name="a23fb91873a238a511d8ed5d3a5e237ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23fb91873a238a511d8ed5d3a5e237ad">&#9670;&#160;</a></span>get_learning_rate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual double NNFSCore::Model::get_learning_rate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the learning rate. </p>
-<dl class="section return"><dt>Returns</dt><dd>The learning rate </dd></dl>
-
-<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#a39756fbd41c457fc9ba86624f208e839">NNFSCore::NeuralNetwork</a>.</p>
-
-</div>
-</div>
-<a id="ae6533ab7dfa4ce8cfcdedc65864ef4ac" name="ae6533ab7dfa4ce8cfcdedc65864ef4ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6533ab7dfa4ce8cfcdedc65864ef4ac">&#9670;&#160;</a></span>get_num_examples()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual int NNFSCore::Model::get_num_examples </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the number of examples used for training the model. </p>
-<dl class="section return"><dt>Returns</dt><dd>int The number of examples. </dd></dl>
-
-<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#a044a5ea8f1752a0248ce5cd450a0e404">NNFSCore::NeuralNetwork</a>.</p>
-
-</div>
-</div>
-<a id="a6c721da6918713568508952caa4e05c9" name="a6c721da6918713568508952caa4e05c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c721da6918713568508952caa4e05c9">&#9670;&#160;</a></span>get_num_layers()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual int NNFSCore::Model::get_num_layers </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the number of layers in the network. </p>
-<dl class="section return"><dt>Returns</dt><dd>int The number of layers. </dd></dl>
-
-<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#a95c89330f0e571d4c06d6949d5de515d">NNFSCore::NeuralNetwork</a>.</p>
-
-</div>
-</div>
-<a id="a4ec42bcdf94080a6ae0847e386559fd3" name="a4ec42bcdf94080a6ae0847e386559fd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ec42bcdf94080a6ae0847e386559fd3">&#9670;&#160;</a></span>operator()()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual Eigen::MatrixXd NNFSCore::Model::operator() </td>
-          <td>(</td>
-          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
-          <td class="paramname"><em>input_tensor</em></td><td>)</td>
+          <td class="paramtype">Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -542,154 +313,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Compute the output of the model given an input tensor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">input_tensor</td><td>Input tensor </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The output tensor </dd></dl>
-
-<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#a1334fb9f75ed0a895d2c887f7ae508e4">NNFSCore::NeuralNetwork</a>.</p>
-
-</div>
-</div>
-<a id="a0bc280064f210258027564af95728e26" name="a0bc280064f210258027564af95728e26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bc280064f210258027564af95728e26">&#9670;&#160;</a></span>predict()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual Eigen::MatrixXd NNFSCore::Model::predict </td>
-          <td>(</td>
-          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
-          <td class="paramname"><em>examples</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Predict the output for given examples. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">examples</td><td>Input examples </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Predicted output </dd></dl>
-
-<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#a477770320ef5b402bbb75982ca9efc3b">NNFSCore::NeuralNetwork</a>.</p>
-
-</div>
-</div>
-<a id="a24a3c1dc5be9de4ba428839a4ef68f59" name="a24a3c1dc5be9de4ba428839a4ef68f59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24a3c1dc5be9de4ba428839a4ef68f59">&#9670;&#160;</a></span>set_callbacks()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void NNFSCore::Model::set_callbacks </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_n_n_f_s_core_1_1_callback.html">Callback</a> &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>callbacks</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set the callbacks for the model. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">callbacks</td><td>A vector of pointers to <a class="el" href="class_n_n_f_s_core_1_1_callback.html" title="Abstract base class for callback functions.">Callback</a> objects. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#aa0246a4bc57fdfce835a3fd62ad9629c">NNFSCore::NeuralNetwork</a>.</p>
-
-</div>
-</div>
-<a id="ab7043d22da72b0bdccb8de70f8f3c71d" name="ab7043d22da72b0bdccb8de70f8f3c71d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7043d22da72b0bdccb8de70f8f3c71d">&#9670;&#160;</a></span>set_learning_rate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void NNFSCore::Model::set_learning_rate </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set the learning rate. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td>The new learning rate </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#a0aa61bcfaceceda753d0a745a16b70f1">NNFSCore::NeuralNetwork</a>.</p>
-
-</div>
-</div>
-<a id="aaaeac7b7fad8d746ad0ef8888a884135" name="aaaeac7b7fad8d746ad0ef8888a884135"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaaeac7b7fad8d746ad0ef8888a884135">&#9670;&#160;</a></span>update()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void NNFSCore::Model::update </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Update the model's parameters. </p>
-
-<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#aac3cfb86846d8f2ff1bacecc59b6f75e">NNFSCore::NeuralNetwork</a>.</p>
+<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#a4f6226ef44c7dfb4f954b28229b909bd">NNFSCore::NeuralNetwork</a>.</p>
 
 </div>
 </div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['reset_0',['reset',['../classprogressbar.html#a68f3418034492984af30686c90a8f77a',1,'progressbar']]]
+  ['optimizer_0',['Optimizer',['../class_n_n_f_s_core_1_1_optimizer.html#a4ac1d646fad86a4afd2ae984bb8f241e',1,'NNFSCore::Optimizer']]]
 ];

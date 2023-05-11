@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['evaluate_0',['evaluate',['../class_n_n_f_s_core_1_1_model.html#ae9a897d9fafc1c28f67a86efb8682976',1,'NNFSCore::Model::evaluate()'],['../class_n_n_f_s_core_1_1_neural_network.html#af810182b4020c6bf61973a39db44d68d',1,'NNFSCore::NeuralNetwork::evaluate()']]]
+  ['dbiases_0',['dbiases',['../class_n_n_f_s_core_1_1_dense.html#ad9ae8ca14958327cadc7f8d6c7c47ba6',1,'NNFSCore::Dense']]],
+  ['dense_1',['Dense',['../class_n_n_f_s_core_1_1_dense.html#a99145937438e374c4159796a6aa2d66b',1,'NNFSCore::Dense']]],
+  ['dweights_2',['dweights',['../class_n_n_f_s_core_1_1_dense.html#a397ee7c1d5fd752691b74e98323691c3',1,'NNFSCore::Dense']]]
 ];

@@ -1,4 +1,9 @@
 <map id="NNFSCore::Layer" name="NNFSCore::Layer">
-<area shape="rect" id="node1" title="Abstract base class for layers in a neural network." alt="" coords="8,5,132,31"/>
-<area shape="rect" id="node2" href="$class_n_n_f_s_core_1_1_dense.html" title="Fully connected layer." alt="" coords="5,79,135,104"/>
+<area shape="rect" id="node1" title="Abstract base class for layers in a neural network." alt="" coords="325,5,448,31"/>
+<area shape="rect" id="node2" href="$class_n_n_f_s_core_1_1_activation.html" title="Abstract base class for activation functions." alt="" coords="231,79,380,105"/>
+<area shape="rect" id="node7" href="$class_n_n_f_s_core_1_1_dense.html" title=" " alt="" coords="404,79,532,105"/>
+<area shape="rect" id="node3" href="$class_n_n_f_s_core_1_1_re_l_u.html" title=" " alt="" coords="5,153,131,178"/>
+<area shape="rect" id="node4" href="$class_n_n_f_s_core_1_1_sigmoid.html" title=" " alt="" coords="155,153,293,178"/>
+<area shape="rect" id="node5" href="$class_n_n_f_s_core_1_1_softmax.html" title=" " alt="" coords="317,153,456,178"/>
+<area shape="rect" id="node6" href="$class_n_n_f_s_core_1_1_tanh.html" title=" " alt="" coords="480,153,600,178"/>
 </map>

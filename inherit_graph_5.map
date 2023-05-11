@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classprogressbar.html" title=" " alt="" coords="5,5,96,31"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,129,98,155"/>
+<area shape="rect" id="node2" href="$class_c_c_e_softmax_test.html" title=" " alt="" coords="146,5,267,31"/>
+<area shape="rect" id="node3" href="$class_c_c_e_test.html" title=" " alt="" coords="170,55,243,80"/>
+<area shape="rect" id="node4" href="$class_dense_test.html" title=" " alt="" coords="164,104,249,130"/>
+<area shape="rect" id="node5" href="$class_metrics_test.html" title=" " alt="" coords="161,153,252,179"/>
+<area shape="rect" id="node6" href="$class_re_l_u_test.html" title=" " alt="" coords="166,203,247,228"/>
+<area shape="rect" id="node7" href="$class_softmax_test.html" title=" " alt="" coords="159,252,254,278"/>
 </map>

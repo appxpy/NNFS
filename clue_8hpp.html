@@ -1,0 +1,1344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>NNFS: include/NNFSCore/Utilities/clue.hpp File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/appxpy/NNFS" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo_svg.svg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">NNFS
+   </div>
+   <div id="projectbrief">Neural network library from scratch</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('clue_8hpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">clue.hpp File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iomanip&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;ctime&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for clue.hpp:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="clue_8hpp__incl.svg" width="432" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="clue_8hpp__dep__incl.svg" width="2486" height="584"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div>
+<p><a href="clue_8hpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespaceclue"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceclue.html">clue</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a9cacd847b57f0f3cd4d49193d49cd0ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a9cacd847b57f0f3cd4d49193d49cd0ff">clue_MAJOR</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a9cacd847b57f0f3cd4d49193d49cd0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d8ce6e4759574bffb3d04e7ad631cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a87d8ce6e4759574bffb3d04e7ad631cf">clue_MINOR</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a87d8ce6e4759574bffb3d04e7ad631cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b0f53dd1cd66c8550bbf560652593e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a37b0f53dd1cd66c8550bbf560652593e">clue_PATCH</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a37b0f53dd1cd66c8550bbf560652593e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17030cde49c230bc0f1bb90d80771d0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a17030cde49c230bc0f1bb90d80771d0e">clue_VERSION</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a695277ec56f978fc1c15b4117169dfe5">clue_STRINGIFY</a>(<a class="el" href="clue_8hpp.html#a9cacd847b57f0f3cd4d49193d49cd0ff">clue_MAJOR</a>) &quot;.&quot; <a class="el" href="clue_8hpp.html#a695277ec56f978fc1c15b4117169dfe5">clue_STRINGIFY</a>(<a class="el" href="clue_8hpp.html#a87d8ce6e4759574bffb3d04e7ad631cf">clue_MINOR</a>) &quot;.&quot; <a class="el" href="clue_8hpp.html#a695277ec56f978fc1c15b4117169dfe5">clue_STRINGIFY</a>(<a class="el" href="clue_8hpp.html#a37b0f53dd1cd66c8550bbf560652593e">clue_PATCH</a>)</td></tr>
+<tr class="separator:a17030cde49c230bc0f1bb90d80771d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a695277ec56f978fc1c15b4117169dfe5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a695277ec56f978fc1c15b4117169dfe5">clue_STRINGIFY</a>(x)&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a1dc7a0004f452f894d3cd380da04f829">clue_STRINGIFY_</a>(x)</td></tr>
+<tr class="separator:a695277ec56f978fc1c15b4117169dfe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc7a0004f452f894d3cd380da04f829"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a1dc7a0004f452f894d3cd380da04f829">clue_STRINGIFY_</a>(x)&#160;&#160;&#160;#x</td></tr>
+<tr class="separator:a1dc7a0004f452f894d3cd380da04f829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa41fd87a5765b1ed071f3146d871e7f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#aa41fd87a5765b1ed071f3146d871e7f0">clue_OMIT_UNUSED_LOG_EXPRESSION</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aa41fd87a5765b1ed071f3146d871e7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa037d2cbc26c7039235f64f97db6e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a9fa037d2cbc26c7039235f64f97db6e8">clue_LOG_TO_CONSOLE</a></td></tr>
+<tr class="separator:a9fa037d2cbc26c7039235f64f97db6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace844b8da68a888321700252da4061a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#ace844b8da68a888321700252da4061a9">LOG_SEV_NONE</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a042f5d579cef9bd63712b6237527f418">clue_LOG_SEV_NONE</a></td></tr>
+<tr class="separator:ace844b8da68a888321700252da4061a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92e0ef32719d266ea22a9780daf7fad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#ae92e0ef32719d266ea22a9780daf7fad">LOG_SEV_EMERGENCY</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a8f88ebfbb2101333dc8d8763cb27bdaa">clue_LOG_SEV_EMERGENCY</a></td></tr>
+<tr class="separator:ae92e0ef32719d266ea22a9780daf7fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae58ddcadb453ba677c57bbb482fd1af0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#ae58ddcadb453ba677c57bbb482fd1af0">LOG_SEV_ALERT</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#ad7a3810df042e9f15145bd52bad75fde">clue_LOG_SEV_ALERT</a></td></tr>
+<tr class="separator:ae58ddcadb453ba677c57bbb482fd1af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecfbdb338a4459a97abd6b205ca558b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#aecfbdb338a4459a97abd6b205ca558b3">LOG_SEV_CRITICAL</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a3a45fb2e500a3f80ed877bb57619e129">clue_LOG_SEV_CRITICAL</a></td></tr>
+<tr class="separator:aecfbdb338a4459a97abd6b205ca558b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae86603b8630f4a68e149a5d232e29810"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#ae86603b8630f4a68e149a5d232e29810">LOG_SEV_ERROR</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#aaa578bce3ed18fdca9d03454de666a17">clue_LOG_SEV_ERROR</a></td></tr>
+<tr class="separator:ae86603b8630f4a68e149a5d232e29810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c568275def06c07b6538513981372a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a90c568275def06c07b6538513981372a">LOG_SEV_WARNING</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#ac2d3ff52deb85892b37b24da70b464a0">clue_LOG_SEV_WARNING</a></td></tr>
+<tr class="separator:a90c568275def06c07b6538513981372a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc2fe56b3b5827255bbd8a3aebe60d83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#abc2fe56b3b5827255bbd8a3aebe60d83">LOG_SEV_NOTICE</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a12595f1fa0e68cc9853d87ba1de67d7a">clue_LOG_SEV_NOTICE</a></td></tr>
+<tr class="separator:abc2fe56b3b5827255bbd8a3aebe60d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b45504aac799365d77927ab0c13b5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a12b45504aac799365d77927ab0c13b5a">LOG_SEV_INFO</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#ac957158ba56936bc95af95aaecfc6dbb">clue_LOG_SEV_INFO</a></td></tr>
+<tr class="separator:a12b45504aac799365d77927ab0c13b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbbad229cb897bb8655d5088eb27482b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#acbbad229cb897bb8655d5088eb27482b">LOG_SEV_DEBUG</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a4d92ab32aa81d881df5d1717b8ff0eca">clue_LOG_SEV_DEBUG</a></td></tr>
+<tr class="separator:acbbad229cb897bb8655d5088eb27482b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02753952c930cfe3799da0e4afd14571"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a02753952c930cfe3799da0e4afd14571">LOG_SEV_MAX</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a83113b9b98c7ba04bc1f16f0c6df0afa">clue_LOG_SEV_MAX</a></td></tr>
+<tr class="separator:a02753952c930cfe3799da0e4afd14571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68f973e768833ed4d19b45381dc972ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a68f973e768833ed4d19b45381dc972ee">LOG_EMERGENCY</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#abfa99c328ac044e78fb7b79134f43d79">clue_LOG_EMERGENCY</a></td></tr>
+<tr class="separator:a68f973e768833ed4d19b45381dc972ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b2a3bb9e3adfeb35b4e5514e7d9043"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a12b2a3bb9e3adfeb35b4e5514e7d9043">LOG_ALERT</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#af5192eb5a914d89d5769bf88347a1a86">clue_LOG_ALERT</a></td></tr>
+<tr class="separator:a12b2a3bb9e3adfeb35b4e5514e7d9043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab62af997ebb13f48b08850fd761d67aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#ab62af997ebb13f48b08850fd761d67aa">LOG_CRITICAL</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#abdf42b1249d9758fd1516bfb5306fd67">clue_LOG_CRITICAL</a></td></tr>
+<tr class="separator:ab62af997ebb13f48b08850fd761d67aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced66975c154ea0e2a8ec3bc818b4e08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#aced66975c154ea0e2a8ec3bc818b4e08">LOG_ERROR</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#ad0740e62032c71bf654a5234f26f6135">clue_LOG_ERROR</a></td></tr>
+<tr class="separator:aced66975c154ea0e2a8ec3bc818b4e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf4476a6a4ea6c74231c826e899d7189"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#adf4476a6a4ea6c74231c826e899d7189">LOG_WARNING</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a382dae08a3fb1ec7dc43b3cb85376b5f">clue_LOG_WARNING</a></td></tr>
+<tr class="separator:adf4476a6a4ea6c74231c826e899d7189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad89ee324d180cdcd7defcc709ff9ca42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#ad89ee324d180cdcd7defcc709ff9ca42">LOG_NOTICE</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a58b751be735528eab2b8ad351df31144">clue_LOG_NOTICE</a></td></tr>
+<tr class="separator:ad89ee324d180cdcd7defcc709ff9ca42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb4f36db01bd128c7afeac5889dac311"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#aeb4f36db01bd128c7afeac5889dac311">LOG_INFO</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#ace9617d68d56f374a935b6295398a049">clue_LOG_INFO</a></td></tr>
+<tr class="separator:aeb4f36db01bd128c7afeac5889dac311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ff63e8955665c4a58b1598f2b07c51a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a6ff63e8955665c4a58b1598f2b07c51a">LOG_DEBUG</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a5e41214c268c4b382e291e9d019aa329">clue_LOG_DEBUG</a></td></tr>
+<tr class="separator:a6ff63e8955665c4a58b1598f2b07c51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d08f9565fe1f0d6cb12389be387111"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a51d08f9565fe1f0d6cb12389be387111">LOG_LOGGED_SEVERITIES</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#aaee75e539bd98e173849d41a8312352a">clue_LOG_LOGGED_SEVERITIES</a></td></tr>
+<tr class="separator:a51d08f9565fe1f0d6cb12389be387111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb94611fe85d1ceb7a2c75c059f166a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#abb94611fe85d1ceb7a2c75c059f166a2">LOG_EXPRESSION</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a></td></tr>
+<tr class="separator:abb94611fe85d1ceb7a2c75c059f166a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a042f5d579cef9bd63712b6237527f418"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a042f5d579cef9bd63712b6237527f418">clue_LOG_SEV_NONE</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="separator:a042f5d579cef9bd63712b6237527f418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f88ebfbb2101333dc8d8763cb27bdaa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a8f88ebfbb2101333dc8d8763cb27bdaa">clue_LOG_SEV_EMERGENCY</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a8f88ebfbb2101333dc8d8763cb27bdaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a3810df042e9f15145bd52bad75fde"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#ad7a3810df042e9f15145bd52bad75fde">clue_LOG_SEV_ALERT</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ad7a3810df042e9f15145bd52bad75fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a45fb2e500a3f80ed877bb57619e129"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a3a45fb2e500a3f80ed877bb57619e129">clue_LOG_SEV_CRITICAL</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a3a45fb2e500a3f80ed877bb57619e129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa578bce3ed18fdca9d03454de666a17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#aaa578bce3ed18fdca9d03454de666a17">clue_LOG_SEV_ERROR</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:aaa578bce3ed18fdca9d03454de666a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2d3ff52deb85892b37b24da70b464a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#ac2d3ff52deb85892b37b24da70b464a0">clue_LOG_SEV_WARNING</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:ac2d3ff52deb85892b37b24da70b464a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12595f1fa0e68cc9853d87ba1de67d7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a12595f1fa0e68cc9853d87ba1de67d7a">clue_LOG_SEV_NOTICE</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a12595f1fa0e68cc9853d87ba1de67d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac957158ba56936bc95af95aaecfc6dbb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#ac957158ba56936bc95af95aaecfc6dbb">clue_LOG_SEV_INFO</a>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:ac957158ba56936bc95af95aaecfc6dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d92ab32aa81d881df5d1717b8ff0eca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a4d92ab32aa81d881df5d1717b8ff0eca">clue_LOG_SEV_DEBUG</a>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:a4d92ab32aa81d881df5d1717b8ff0eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83113b9b98c7ba04bc1f16f0c6df0afa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a83113b9b98c7ba04bc1f16f0c6df0afa">clue_LOG_SEV_MAX</a>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:a83113b9b98c7ba04bc1f16f0c6df0afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af30f7c93544917d9a1014fddb6d4b286"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#af30f7c93544917d9a1014fddb6d4b286">clue_LOG_LEVEL</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a4d92ab32aa81d881df5d1717b8ff0eca">clue_LOG_SEV_DEBUG</a></td></tr>
+<tr class="separator:af30f7c93544917d9a1014fddb6d4b286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06d4ef39121ffc59b6d8f3d204956d2f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a06d4ef39121ffc59b6d8f3d204956d2f">clue_LOG_LEVEL_BUILD</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a4d92ab32aa81d881df5d1717b8ff0eca">clue_LOG_SEV_DEBUG</a></td></tr>
+<tr class="separator:a06d4ef39121ffc59b6d8f3d204956d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa696771b12b03b0c2118d361cc2cc28a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#aa696771b12b03b0c2118d361cc2cc28a">clue_LOG_SEV_NONE_TEXT</a>&#160;&#160;&#160;&quot;[clue]&quot;</td></tr>
+<tr class="separator:aa696771b12b03b0c2118d361cc2cc28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7e4dc3e46499adca35eee083120601"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#afc7e4dc3e46499adca35eee083120601">clue_LOG_SEV_EMERGENCY_TEXT</a>&#160;&#160;&#160;&quot;Emergency&quot;</td></tr>
+<tr class="separator:afc7e4dc3e46499adca35eee083120601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69fd445ef7d4478b49808286a1e066e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a69fd445ef7d4478b49808286a1e066e3">clue_LOG_SEV_ALERT_TEXT</a>&#160;&#160;&#160;&quot;Alert&quot;</td></tr>
+<tr class="separator:a69fd445ef7d4478b49808286a1e066e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7877d195f115759d5d0a876f6c6054b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#ad7877d195f115759d5d0a876f6c6054b">clue_LOG_SEV_CRITICAL_TEXT</a>&#160;&#160;&#160;&quot;Critical&quot;</td></tr>
+<tr class="separator:ad7877d195f115759d5d0a876f6c6054b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa413dda3222c9423deeaef7de9091f81"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#aa413dda3222c9423deeaef7de9091f81">clue_LOG_SEV_ERROR_TEXT</a>&#160;&#160;&#160;&quot;Error&quot;</td></tr>
+<tr class="separator:aa413dda3222c9423deeaef7de9091f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c7be2410bd1d81afdd4ca67da70a281"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a7c7be2410bd1d81afdd4ca67da70a281">clue_LOG_SEV_WARNING_TEXT</a>&#160;&#160;&#160;&quot;Warning&quot;</td></tr>
+<tr class="separator:a7c7be2410bd1d81afdd4ca67da70a281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f671b1ecea760c0d2df7f3e0b37e13a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a1f671b1ecea760c0d2df7f3e0b37e13a">clue_LOG_SEV_NOTICE_TEXT</a>&#160;&#160;&#160;&quot;Notice&quot;</td></tr>
+<tr class="separator:a1f671b1ecea760c0d2df7f3e0b37e13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6605bdb0797ee633c76839bc0b02accc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a6605bdb0797ee633c76839bc0b02accc">clue_LOG_SEV_INFO_TEXT</a>&#160;&#160;&#160;&quot;Info&quot;</td></tr>
+<tr class="separator:a6605bdb0797ee633c76839bc0b02accc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03d3d5af8d470651a49a2c56ce2d4ce0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a03d3d5af8d470651a49a2c56ce2d4ce0">clue_LOG_SEV_DEBUG_TEXT</a>&#160;&#160;&#160;&quot;Debug&quot;</td></tr>
+<tr class="separator:a03d3d5af8d470651a49a2c56ce2d4ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc52cffae6fe170d1602c7dad33bb9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a6fc52cffae6fe170d1602c7dad33bb9c">clue_LOG_MODULE_NAME</a>&#160;&#160;&#160;&quot;&quot;</td></tr>
+<tr class="separator:a6fc52cffae6fe170d1602c7dad33bb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a030a1082e577094651358e18667d14a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a030a1082e577094651358e18667d14a4">clue_LOG_PREFIX_WIDTH</a>&#160;&#160;&#160;sizeof(<a class="el" href="clue_8hpp.html#afc7e4dc3e46499adca35eee083120601">clue_LOG_SEV_EMERGENCY_TEXT</a>)</td></tr>
+<tr class="separator:a030a1082e577094651358e18667d14a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4e49a94ae488d92d32ab8044418b3ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#aa4e49a94ae488d92d32ab8044418b3ff">clue_is_active</a>(severity)&#160;&#160;&#160;    <a class="el" href="namespaceclue.html#a340bef579c2b0418d054614cd0e4f03a">clue::is_true</a>(severity &lt;= <a class="el" href="clue_8hpp.html#af30f7c93544917d9a1014fddb6d4b286">clue_LOG_LEVEL</a>)</td></tr>
+<tr class="separator:aa4e49a94ae488d92d32ab8044418b3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f8b30eccb1e197b69366fbe006ae65e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a4f8b30eccb1e197b69366fbe006ae65e">clue_is_active_build</a>(severity)&#160;&#160;&#160;    <a class="el" href="namespaceclue.html#a340bef579c2b0418d054614cd0e4f03a">clue::is_true</a>(<a class="el" href="clue_8hpp.html#afe05fa3bb4903f87372ed5827a95d228">clue_IS_ACTIVE_BUILD</a>(severity))</td></tr>
+<tr class="separator:a4f8b30eccb1e197b69366fbe006ae65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe05fa3bb4903f87372ed5827a95d228"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#afe05fa3bb4903f87372ed5827a95d228">clue_IS_ACTIVE_BUILD</a>(severity)&#160;&#160;&#160;    (severity &lt;= <a class="el" href="clue_8hpp.html#a06d4ef39121ffc59b6d8f3d204956d2f">clue_LOG_LEVEL_BUILD</a>)</td></tr>
+<tr class="separator:afe05fa3bb4903f87372ed5827a95d228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaee75e539bd98e173849d41a8312352a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#aaee75e539bd98e173849d41a8312352a">clue_LOG_LOGGED_SEVERITIES</a>()&#160;&#160;&#160;    <a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a>(<a class="el" href="clue_8hpp.html#a042f5d579cef9bd63712b6237527f418">clue_LOG_SEV_NONE</a>, <a class="el" href="namespaceclue.html#a45e26564cd175f91df901508c8df56f3">clue::to_severities_text</a>(<a class="el" href="clue_8hpp.html#a06d4ef39121ffc59b6d8f3d204956d2f">clue_LOG_LEVEL_BUILD</a>))</td></tr>
+<tr class="separator:aaee75e539bd98e173849d41a8312352a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a098098cc81137c8b5f15163218f7e671"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a098098cc81137c8b5f15163218f7e671">clue_LOG_NO_EXPRESSION</a>()</td></tr>
+<tr class="separator:a098098cc81137c8b5f15163218f7e671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38003c726922b0875c2dca28fd71e09a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a38003c726922b0875c2dca28fd71e09a">clue_IS_ACTIVE</a>(severity)&#160;&#160;&#160;    (<a class="el" href="clue_8hpp.html#afe05fa3bb4903f87372ed5827a95d228">clue_IS_ACTIVE_BUILD</a>(severity) || !<a class="el" href="clue_8hpp.html#aa41fd87a5765b1ed071f3146d871e7f0">clue_OMIT_UNUSED_LOG_EXPRESSION</a>)</td></tr>
+<tr class="separator:a38003c726922b0875c2dca28fd71e09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa99c328ac044e78fb7b79134f43d79"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#abfa99c328ac044e78fb7b79134f43d79">clue_LOG_EMERGENCY</a>(expr)&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a>(<a class="el" href="clue_8hpp.html#a8f88ebfbb2101333dc8d8763cb27bdaa">clue_LOG_SEV_EMERGENCY</a>, expr)</td></tr>
+<tr class="separator:abfa99c328ac044e78fb7b79134f43d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5192eb5a914d89d5769bf88347a1a86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#af5192eb5a914d89d5769bf88347a1a86">clue_LOG_ALERT</a>(expr)&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a>(<a class="el" href="clue_8hpp.html#ad7a3810df042e9f15145bd52bad75fde">clue_LOG_SEV_ALERT</a>, expr)</td></tr>
+<tr class="separator:af5192eb5a914d89d5769bf88347a1a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf42b1249d9758fd1516bfb5306fd67"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#abdf42b1249d9758fd1516bfb5306fd67">clue_LOG_CRITICAL</a>(expr)&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a>(<a class="el" href="clue_8hpp.html#a3a45fb2e500a3f80ed877bb57619e129">clue_LOG_SEV_CRITICAL</a>, expr)</td></tr>
+<tr class="separator:abdf42b1249d9758fd1516bfb5306fd67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0740e62032c71bf654a5234f26f6135"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#ad0740e62032c71bf654a5234f26f6135">clue_LOG_ERROR</a>(expr)&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a>(<a class="el" href="clue_8hpp.html#aaa578bce3ed18fdca9d03454de666a17">clue_LOG_SEV_ERROR</a>, expr)</td></tr>
+<tr class="separator:ad0740e62032c71bf654a5234f26f6135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382dae08a3fb1ec7dc43b3cb85376b5f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a382dae08a3fb1ec7dc43b3cb85376b5f">clue_LOG_WARNING</a>(expr)&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a>(<a class="el" href="clue_8hpp.html#ac2d3ff52deb85892b37b24da70b464a0">clue_LOG_SEV_WARNING</a>, expr)</td></tr>
+<tr class="separator:a382dae08a3fb1ec7dc43b3cb85376b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b751be735528eab2b8ad351df31144"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a58b751be735528eab2b8ad351df31144">clue_LOG_NOTICE</a>(expr)&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a>(<a class="el" href="clue_8hpp.html#a12595f1fa0e68cc9853d87ba1de67d7a">clue_LOG_SEV_NOTICE</a>, expr)</td></tr>
+<tr class="separator:a58b751be735528eab2b8ad351df31144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace9617d68d56f374a935b6295398a049"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#ace9617d68d56f374a935b6295398a049">clue_LOG_INFO</a>(expr)&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a>(<a class="el" href="clue_8hpp.html#ac957158ba56936bc95af95aaecfc6dbb">clue_LOG_SEV_INFO</a>, expr)</td></tr>
+<tr class="separator:ace9617d68d56f374a935b6295398a049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e41214c268c4b382e291e9d019aa329"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a5e41214c268c4b382e291e9d019aa329">clue_LOG_DEBUG</a>(expr)&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a>(<a class="el" href="clue_8hpp.html#a4d92ab32aa81d881df5d1717b8ff0eca">clue_LOG_SEV_DEBUG</a>, expr)</td></tr>
+<tr class="separator:a5e41214c268c4b382e291e9d019aa329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925edf5486176808cd4615fed942472c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a>(severity,  expr)</td></tr>
+<tr class="separator:a925edf5486176808cd4615fed942472c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a340bef579c2b0418d054614cd0e4f03a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceclue.html#a340bef579c2b0418d054614cd0e4f03a">clue::is_true</a> (bool const on)</td></tr>
+<tr class="separator:a340bef579c2b0418d054614cd0e4f03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ed3d413bbe149bead85b83f73b1735"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceclue.html#ac5ed3d413bbe149bead85b83f73b1735">clue::text_or</a> (std::string const &amp;text, std::string const &amp;or_text)</td></tr>
+<tr class="separator:ac5ed3d413bbe149bead85b83f73b1735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ead228d423e63303bd306a5da7dea1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceclue.html#a04ead228d423e63303bd306a5da7dea1">clue::text_with_or</a> (std::string const &amp;prefix, std::string const &amp;text, std::string const &amp;postfix, std::string const &amp;or_text)</td></tr>
+<tr class="separator:a04ead228d423e63303bd306a5da7dea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f70b8a46c4c98aa6df1f1fd524fa5f7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceclue.html#a8f70b8a46c4c98aa6df1f1fd524fa5f7">clue::to_module_text</a> (std::string const &amp;module)</td></tr>
+<tr class="separator:a8f70b8a46c4c98aa6df1f1fd524fa5f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479200e719fa7a129c318cac32d946e8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceclue.html#a479200e719fa7a129c318cac32d946e8">clue::to_severity_text</a> (int const severity)</td></tr>
+<tr class="separator:a479200e719fa7a129c318cac32d946e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e26564cd175f91df901508c8df56f3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceclue.html#a45e26564cd175f91df901508c8df56f3">clue::to_severities_text</a> (int const level, std::string const &amp;postfix=&quot;.&quot;, std::string const &amp;result=&quot;&quot;)</td></tr>
+<tr class="separator:a45e26564cd175f91df901508c8df56f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44cd15515138d401266b15593ab9ae49"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceclue.html#a44cd15515138d401266b15593ab9ae49">clue::now_text</a> ()</td></tr>
+<tr class="separator:a44cd15515138d401266b15593ab9ae49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aa4e49a94ae488d92d32ab8044418b3ff" name="aa4e49a94ae488d92d32ab8044418b3ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4e49a94ae488d92d32ab8044418b3ff">&#9670;&#160;</a></span>clue_is_active</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_is_active</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">severity</td><td>)</td>
+          <td>&#160;&#160;&#160;    <a class="el" href="namespaceclue.html#a340bef579c2b0418d054614cd0e4f03a">clue::is_true</a>(severity &lt;= <a class="el" href="clue_8hpp.html#af30f7c93544917d9a1014fddb6d4b286">clue_LOG_LEVEL</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38003c726922b0875c2dca28fd71e09a" name="a38003c726922b0875c2dca28fd71e09a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38003c726922b0875c2dca28fd71e09a">&#9670;&#160;</a></span>clue_IS_ACTIVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_IS_ACTIVE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">severity</td><td>)</td>
+          <td>&#160;&#160;&#160;    (<a class="el" href="clue_8hpp.html#afe05fa3bb4903f87372ed5827a95d228">clue_IS_ACTIVE_BUILD</a>(severity) || !<a class="el" href="clue_8hpp.html#aa41fd87a5765b1ed071f3146d871e7f0">clue_OMIT_UNUSED_LOG_EXPRESSION</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f8b30eccb1e197b69366fbe006ae65e" name="a4f8b30eccb1e197b69366fbe006ae65e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f8b30eccb1e197b69366fbe006ae65e">&#9670;&#160;</a></span>clue_is_active_build</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_is_active_build</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">severity</td><td>)</td>
+          <td>&#160;&#160;&#160;    <a class="el" href="namespaceclue.html#a340bef579c2b0418d054614cd0e4f03a">clue::is_true</a>(<a class="el" href="clue_8hpp.html#afe05fa3bb4903f87372ed5827a95d228">clue_IS_ACTIVE_BUILD</a>(severity))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe05fa3bb4903f87372ed5827a95d228" name="afe05fa3bb4903f87372ed5827a95d228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe05fa3bb4903f87372ed5827a95d228">&#9670;&#160;</a></span>clue_IS_ACTIVE_BUILD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_IS_ACTIVE_BUILD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">severity</td><td>)</td>
+          <td>&#160;&#160;&#160;    (severity &lt;= <a class="el" href="clue_8hpp.html#a06d4ef39121ffc59b6d8f3d204956d2f">clue_LOG_LEVEL_BUILD</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5192eb5a914d89d5769bf88347a1a86" name="af5192eb5a914d89d5769bf88347a1a86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5192eb5a914d89d5769bf88347a1a86">&#9670;&#160;</a></span>clue_LOG_ALERT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_ALERT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expr</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a>(<a class="el" href="clue_8hpp.html#ad7a3810df042e9f15145bd52bad75fde">clue_LOG_SEV_ALERT</a>, expr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abdf42b1249d9758fd1516bfb5306fd67" name="abdf42b1249d9758fd1516bfb5306fd67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdf42b1249d9758fd1516bfb5306fd67">&#9670;&#160;</a></span>clue_LOG_CRITICAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_CRITICAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expr</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a>(<a class="el" href="clue_8hpp.html#a3a45fb2e500a3f80ed877bb57619e129">clue_LOG_SEV_CRITICAL</a>, expr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e41214c268c4b382e291e9d019aa329" name="a5e41214c268c4b382e291e9d019aa329"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e41214c268c4b382e291e9d019aa329">&#9670;&#160;</a></span>clue_LOG_DEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_DEBUG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expr</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a>(<a class="el" href="clue_8hpp.html#a4d92ab32aa81d881df5d1717b8ff0eca">clue_LOG_SEV_DEBUG</a>, expr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abfa99c328ac044e78fb7b79134f43d79" name="abfa99c328ac044e78fb7b79134f43d79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfa99c328ac044e78fb7b79134f43d79">&#9670;&#160;</a></span>clue_LOG_EMERGENCY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_EMERGENCY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expr</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a>(<a class="el" href="clue_8hpp.html#a8f88ebfbb2101333dc8d8763cb27bdaa">clue_LOG_SEV_EMERGENCY</a>, expr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0740e62032c71bf654a5234f26f6135" name="ad0740e62032c71bf654a5234f26f6135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0740e62032c71bf654a5234f26f6135">&#9670;&#160;</a></span>clue_LOG_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_ERROR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expr</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a>(<a class="el" href="clue_8hpp.html#aaa578bce3ed18fdca9d03454de666a17">clue_LOG_SEV_ERROR</a>, expr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a925edf5486176808cd4615fed942472c" name="a925edf5486176808cd4615fed942472c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a925edf5486176808cd4615fed942472c">&#9670;&#160;</a></span>clue_LOG_EXPRESSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_EXPRESSION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">severity, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expr&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span>                                                                                                                                                                                       \</div>
+<div class="line">    {                                                                                                                                                                                        \</div>
+<div class="line">        if (<a class="code hl_define" href="clue_8hpp.html#a4f8b30eccb1e197b69366fbe006ae65e">clue_is_active_build</a>(severity))                                                                                                                                                  \</div>
+<div class="line">        {                                                                                                                                                                                    \</div>
+<div class="line">            if (<a class="code hl_define" href="clue_8hpp.html#aa4e49a94ae488d92d32ab8044418b3ff">clue_is_active</a>(severity))                                                                                                                                                    \</div>
+<div class="line">            {                                                                                                                                                                                \</div>
+<div class="line">                std::clog &lt;&lt; <a class="code hl_function" href="namespaceclue.html#a44cd15515138d401266b15593ab9ae49">clue::now_text</a>() &lt;&lt; std::setw(<a class="code hl_define" href="clue_8hpp.html#a030a1082e577094651358e18667d14a4">clue_LOG_PREFIX_WIDTH</a>) &lt;&lt; <a class="code hl_function" href="namespaceclue.html#a479200e719fa7a129c318cac32d946e8">clue::to_severity_text</a>(severity) &lt;&lt; <a class="code hl_function" href="namespaceclue.html#a8f70b8a46c4c98aa6df1f1fd524fa5f7">clue::to_module_text</a>(<a class="code hl_define" href="clue_8hpp.html#a6fc52cffae6fe170d1602c7dad33bb9c">clue_LOG_MODULE_NAME</a>) &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; expr &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>; \</div>
+<div class="line">            }                                                                                                                                                                                \</div>
+<div class="line">        }                                                                                                                                                                                    \</div>
+<div class="line">    } <span class="keywordflow">while</span> (<a class="code hl_function" href="namespaceclue.html#a340bef579c2b0418d054614cd0e4f03a">clue::is_true</a>(<span class="keyword">false</span>))</div>
+<div class="ttc" id="aclue_8hpp_html_a030a1082e577094651358e18667d14a4"><div class="ttname"><a href="clue_8hpp.html#a030a1082e577094651358e18667d14a4">clue_LOG_PREFIX_WIDTH</a></div><div class="ttdeci">#define clue_LOG_PREFIX_WIDTH</div><div class="ttdef"><b>Definition:</b> clue.hpp:208</div></div>
+<div class="ttc" id="aclue_8hpp_html_a4f8b30eccb1e197b69366fbe006ae65e"><div class="ttname"><a href="clue_8hpp.html#a4f8b30eccb1e197b69366fbe006ae65e">clue_is_active_build</a></div><div class="ttdeci">#define clue_is_active_build(severity)</div><div class="ttdef"><b>Definition:</b> clue.hpp:214</div></div>
+<div class="ttc" id="aclue_8hpp_html_a6fc52cffae6fe170d1602c7dad33bb9c"><div class="ttname"><a href="clue_8hpp.html#a6fc52cffae6fe170d1602c7dad33bb9c">clue_LOG_MODULE_NAME</a></div><div class="ttdeci">#define clue_LOG_MODULE_NAME</div><div class="ttdef"><b>Definition:</b> clue.hpp:204</div></div>
+<div class="ttc" id="aclue_8hpp_html_aa4e49a94ae488d92d32ab8044418b3ff"><div class="ttname"><a href="clue_8hpp.html#aa4e49a94ae488d92d32ab8044418b3ff">clue_is_active</a></div><div class="ttdeci">#define clue_is_active(severity)</div><div class="ttdef"><b>Definition:</b> clue.hpp:211</div></div>
+<div class="ttc" id="anamespaceclue_html_a340bef579c2b0418d054614cd0e4f03a"><div class="ttname"><a href="namespaceclue.html#a340bef579c2b0418d054614cd0e4f03a">clue::is_true</a></div><div class="ttdeci">bool is_true(bool const on)</div><div class="ttdef"><b>Definition:</b> clue.hpp:372</div></div>
+<div class="ttc" id="anamespaceclue_html_a44cd15515138d401266b15593ab9ae49"><div class="ttname"><a href="namespaceclue.html#a44cd15515138d401266b15593ab9ae49">clue::now_text</a></div><div class="ttdeci">std::string now_text()</div><div class="ttdef"><b>Definition:</b> clue.hpp:446</div></div>
+<div class="ttc" id="anamespaceclue_html_a479200e719fa7a129c318cac32d946e8"><div class="ttname"><a href="namespaceclue.html#a479200e719fa7a129c318cac32d946e8">clue::to_severity_text</a></div><div class="ttdeci">std::string to_severity_text(int const severity)</div><div class="ttdef"><b>Definition:</b> clue.hpp:389</div></div>
+<div class="ttc" id="anamespaceclue_html_a8f70b8a46c4c98aa6df1f1fd524fa5f7"><div class="ttname"><a href="namespaceclue.html#a8f70b8a46c4c98aa6df1f1fd524fa5f7">clue::to_module_text</a></div><div class="ttdeci">std::string to_module_text(std::string const &amp;module)</div><div class="ttdef"><b>Definition:</b> clue.hpp:384</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ace9617d68d56f374a935b6295398a049" name="ace9617d68d56f374a935b6295398a049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace9617d68d56f374a935b6295398a049">&#9670;&#160;</a></span>clue_LOG_INFO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_INFO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expr</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a>(<a class="el" href="clue_8hpp.html#ac957158ba56936bc95af95aaecfc6dbb">clue_LOG_SEV_INFO</a>, expr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af30f7c93544917d9a1014fddb6d4b286" name="af30f7c93544917d9a1014fddb6d4b286"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af30f7c93544917d9a1014fddb6d4b286">&#9670;&#160;</a></span>clue_LOG_LEVEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_LEVEL&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a4d92ab32aa81d881df5d1717b8ff0eca">clue_LOG_SEV_DEBUG</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06d4ef39121ffc59b6d8f3d204956d2f" name="a06d4ef39121ffc59b6d8f3d204956d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06d4ef39121ffc59b6d8f3d204956d2f">&#9670;&#160;</a></span>clue_LOG_LEVEL_BUILD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_LEVEL_BUILD&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a4d92ab32aa81d881df5d1717b8ff0eca">clue_LOG_SEV_DEBUG</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaee75e539bd98e173849d41a8312352a" name="aaee75e539bd98e173849d41a8312352a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaee75e539bd98e173849d41a8312352a">&#9670;&#160;</a></span>clue_LOG_LOGGED_SEVERITIES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_LOGGED_SEVERITIES</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;    <a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a>(<a class="el" href="clue_8hpp.html#a042f5d579cef9bd63712b6237527f418">clue_LOG_SEV_NONE</a>, <a class="el" href="namespaceclue.html#a45e26564cd175f91df901508c8df56f3">clue::to_severities_text</a>(<a class="el" href="clue_8hpp.html#a06d4ef39121ffc59b6d8f3d204956d2f">clue_LOG_LEVEL_BUILD</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6fc52cffae6fe170d1602c7dad33bb9c" name="a6fc52cffae6fe170d1602c7dad33bb9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fc52cffae6fe170d1602c7dad33bb9c">&#9670;&#160;</a></span>clue_LOG_MODULE_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_MODULE_NAME&#160;&#160;&#160;&quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a098098cc81137c8b5f15163218f7e671" name="a098098cc81137c8b5f15163218f7e671"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a098098cc81137c8b5f15163218f7e671">&#9670;&#160;</a></span>clue_LOG_NO_EXPRESSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_NO_EXPRESSION</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span>                           \</div>
+<div class="line">    {                            \</div>
+<div class="line">    } <span class="keywordflow">while</span> (<a class="code hl_function" href="namespaceclue.html#a340bef579c2b0418d054614cd0e4f03a">clue::is_true</a>(<span class="keyword">false</span>))</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a58b751be735528eab2b8ad351df31144" name="a58b751be735528eab2b8ad351df31144"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58b751be735528eab2b8ad351df31144">&#9670;&#160;</a></span>clue_LOG_NOTICE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_NOTICE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expr</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a>(<a class="el" href="clue_8hpp.html#a12595f1fa0e68cc9853d87ba1de67d7a">clue_LOG_SEV_NOTICE</a>, expr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a030a1082e577094651358e18667d14a4" name="a030a1082e577094651358e18667d14a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a030a1082e577094651358e18667d14a4">&#9670;&#160;</a></span>clue_LOG_PREFIX_WIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_PREFIX_WIDTH&#160;&#160;&#160;sizeof(<a class="el" href="clue_8hpp.html#afc7e4dc3e46499adca35eee083120601">clue_LOG_SEV_EMERGENCY_TEXT</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7a3810df042e9f15145bd52bad75fde" name="ad7a3810df042e9f15145bd52bad75fde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7a3810df042e9f15145bd52bad75fde">&#9670;&#160;</a></span>clue_LOG_SEV_ALERT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_SEV_ALERT&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69fd445ef7d4478b49808286a1e066e3" name="a69fd445ef7d4478b49808286a1e066e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69fd445ef7d4478b49808286a1e066e3">&#9670;&#160;</a></span>clue_LOG_SEV_ALERT_TEXT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_SEV_ALERT_TEXT&#160;&#160;&#160;&quot;Alert&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a45fb2e500a3f80ed877bb57619e129" name="a3a45fb2e500a3f80ed877bb57619e129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a45fb2e500a3f80ed877bb57619e129">&#9670;&#160;</a></span>clue_LOG_SEV_CRITICAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_SEV_CRITICAL&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7877d195f115759d5d0a876f6c6054b" name="ad7877d195f115759d5d0a876f6c6054b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7877d195f115759d5d0a876f6c6054b">&#9670;&#160;</a></span>clue_LOG_SEV_CRITICAL_TEXT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_SEV_CRITICAL_TEXT&#160;&#160;&#160;&quot;Critical&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d92ab32aa81d881df5d1717b8ff0eca" name="a4d92ab32aa81d881df5d1717b8ff0eca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d92ab32aa81d881df5d1717b8ff0eca">&#9670;&#160;</a></span>clue_LOG_SEV_DEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_SEV_DEBUG&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03d3d5af8d470651a49a2c56ce2d4ce0" name="a03d3d5af8d470651a49a2c56ce2d4ce0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03d3d5af8d470651a49a2c56ce2d4ce0">&#9670;&#160;</a></span>clue_LOG_SEV_DEBUG_TEXT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_SEV_DEBUG_TEXT&#160;&#160;&#160;&quot;Debug&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f88ebfbb2101333dc8d8763cb27bdaa" name="a8f88ebfbb2101333dc8d8763cb27bdaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f88ebfbb2101333dc8d8763cb27bdaa">&#9670;&#160;</a></span>clue_LOG_SEV_EMERGENCY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_SEV_EMERGENCY&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc7e4dc3e46499adca35eee083120601" name="afc7e4dc3e46499adca35eee083120601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc7e4dc3e46499adca35eee083120601">&#9670;&#160;</a></span>clue_LOG_SEV_EMERGENCY_TEXT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_SEV_EMERGENCY_TEXT&#160;&#160;&#160;&quot;Emergency&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa578bce3ed18fdca9d03454de666a17" name="aaa578bce3ed18fdca9d03454de666a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa578bce3ed18fdca9d03454de666a17">&#9670;&#160;</a></span>clue_LOG_SEV_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_SEV_ERROR&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa413dda3222c9423deeaef7de9091f81" name="aa413dda3222c9423deeaef7de9091f81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa413dda3222c9423deeaef7de9091f81">&#9670;&#160;</a></span>clue_LOG_SEV_ERROR_TEXT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_SEV_ERROR_TEXT&#160;&#160;&#160;&quot;Error&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac957158ba56936bc95af95aaecfc6dbb" name="ac957158ba56936bc95af95aaecfc6dbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac957158ba56936bc95af95aaecfc6dbb">&#9670;&#160;</a></span>clue_LOG_SEV_INFO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_SEV_INFO&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6605bdb0797ee633c76839bc0b02accc" name="a6605bdb0797ee633c76839bc0b02accc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6605bdb0797ee633c76839bc0b02accc">&#9670;&#160;</a></span>clue_LOG_SEV_INFO_TEXT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_SEV_INFO_TEXT&#160;&#160;&#160;&quot;Info&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83113b9b98c7ba04bc1f16f0c6df0afa" name="a83113b9b98c7ba04bc1f16f0c6df0afa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83113b9b98c7ba04bc1f16f0c6df0afa">&#9670;&#160;</a></span>clue_LOG_SEV_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_SEV_MAX&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a042f5d579cef9bd63712b6237527f418" name="a042f5d579cef9bd63712b6237527f418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a042f5d579cef9bd63712b6237527f418">&#9670;&#160;</a></span>clue_LOG_SEV_NONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_SEV_NONE&#160;&#160;&#160;-1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa696771b12b03b0c2118d361cc2cc28a" name="aa696771b12b03b0c2118d361cc2cc28a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa696771b12b03b0c2118d361cc2cc28a">&#9670;&#160;</a></span>clue_LOG_SEV_NONE_TEXT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_SEV_NONE_TEXT&#160;&#160;&#160;&quot;[clue]&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12595f1fa0e68cc9853d87ba1de67d7a" name="a12595f1fa0e68cc9853d87ba1de67d7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12595f1fa0e68cc9853d87ba1de67d7a">&#9670;&#160;</a></span>clue_LOG_SEV_NOTICE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_SEV_NOTICE&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f671b1ecea760c0d2df7f3e0b37e13a" name="a1f671b1ecea760c0d2df7f3e0b37e13a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f671b1ecea760c0d2df7f3e0b37e13a">&#9670;&#160;</a></span>clue_LOG_SEV_NOTICE_TEXT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_SEV_NOTICE_TEXT&#160;&#160;&#160;&quot;Notice&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2d3ff52deb85892b37b24da70b464a0" name="ac2d3ff52deb85892b37b24da70b464a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2d3ff52deb85892b37b24da70b464a0">&#9670;&#160;</a></span>clue_LOG_SEV_WARNING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_SEV_WARNING&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c7be2410bd1d81afdd4ca67da70a281" name="a7c7be2410bd1d81afdd4ca67da70a281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c7be2410bd1d81afdd4ca67da70a281">&#9670;&#160;</a></span>clue_LOG_SEV_WARNING_TEXT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_SEV_WARNING_TEXT&#160;&#160;&#160;&quot;Warning&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9fa037d2cbc26c7039235f64f97db6e8" name="a9fa037d2cbc26c7039235f64f97db6e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fa037d2cbc26c7039235f64f97db6e8">&#9670;&#160;</a></span>clue_LOG_TO_CONSOLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_TO_CONSOLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a382dae08a3fb1ec7dc43b3cb85376b5f" name="a382dae08a3fb1ec7dc43b3cb85376b5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a382dae08a3fb1ec7dc43b3cb85376b5f">&#9670;&#160;</a></span>clue_LOG_WARNING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_LOG_WARNING</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expr</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a>(<a class="el" href="clue_8hpp.html#ac2d3ff52deb85892b37b24da70b464a0">clue_LOG_SEV_WARNING</a>, expr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9cacd847b57f0f3cd4d49193d49cd0ff" name="a9cacd847b57f0f3cd4d49193d49cd0ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cacd847b57f0f3cd4d49193d49cd0ff">&#9670;&#160;</a></span>clue_MAJOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_MAJOR&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87d8ce6e4759574bffb3d04e7ad631cf" name="a87d8ce6e4759574bffb3d04e7ad631cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d8ce6e4759574bffb3d04e7ad631cf">&#9670;&#160;</a></span>clue_MINOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_MINOR&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa41fd87a5765b1ed071f3146d871e7f0" name="aa41fd87a5765b1ed071f3146d871e7f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa41fd87a5765b1ed071f3146d871e7f0">&#9670;&#160;</a></span>clue_OMIT_UNUSED_LOG_EXPRESSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_OMIT_UNUSED_LOG_EXPRESSION&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37b0f53dd1cd66c8550bbf560652593e" name="a37b0f53dd1cd66c8550bbf560652593e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37b0f53dd1cd66c8550bbf560652593e">&#9670;&#160;</a></span>clue_PATCH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_PATCH&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a695277ec56f978fc1c15b4117169dfe5" name="a695277ec56f978fc1c15b4117169dfe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a695277ec56f978fc1c15b4117169dfe5">&#9670;&#160;</a></span>clue_STRINGIFY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_STRINGIFY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a1dc7a0004f452f894d3cd380da04f829">clue_STRINGIFY_</a>(x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1dc7a0004f452f894d3cd380da04f829" name="a1dc7a0004f452f894d3cd380da04f829"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dc7a0004f452f894d3cd380da04f829">&#9670;&#160;</a></span>clue_STRINGIFY_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_STRINGIFY_</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;#x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17030cde49c230bc0f1bb90d80771d0e" name="a17030cde49c230bc0f1bb90d80771d0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17030cde49c230bc0f1bb90d80771d0e">&#9670;&#160;</a></span>clue_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define clue_VERSION&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a695277ec56f978fc1c15b4117169dfe5">clue_STRINGIFY</a>(<a class="el" href="clue_8hpp.html#a9cacd847b57f0f3cd4d49193d49cd0ff">clue_MAJOR</a>) &quot;.&quot; <a class="el" href="clue_8hpp.html#a695277ec56f978fc1c15b4117169dfe5">clue_STRINGIFY</a>(<a class="el" href="clue_8hpp.html#a87d8ce6e4759574bffb3d04e7ad631cf">clue_MINOR</a>) &quot;.&quot; <a class="el" href="clue_8hpp.html#a695277ec56f978fc1c15b4117169dfe5">clue_STRINGIFY</a>(<a class="el" href="clue_8hpp.html#a37b0f53dd1cd66c8550bbf560652593e">clue_PATCH</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12b2a3bb9e3adfeb35b4e5514e7d9043" name="a12b2a3bb9e3adfeb35b4e5514e7d9043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12b2a3bb9e3adfeb35b4e5514e7d9043">&#9670;&#160;</a></span>LOG_ALERT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_ALERT&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#af5192eb5a914d89d5769bf88347a1a86">clue_LOG_ALERT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab62af997ebb13f48b08850fd761d67aa" name="ab62af997ebb13f48b08850fd761d67aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab62af997ebb13f48b08850fd761d67aa">&#9670;&#160;</a></span>LOG_CRITICAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_CRITICAL&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#abdf42b1249d9758fd1516bfb5306fd67">clue_LOG_CRITICAL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ff63e8955665c4a58b1598f2b07c51a" name="a6ff63e8955665c4a58b1598f2b07c51a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ff63e8955665c4a58b1598f2b07c51a">&#9670;&#160;</a></span>LOG_DEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_DEBUG&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a5e41214c268c4b382e291e9d019aa329">clue_LOG_DEBUG</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68f973e768833ed4d19b45381dc972ee" name="a68f973e768833ed4d19b45381dc972ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68f973e768833ed4d19b45381dc972ee">&#9670;&#160;</a></span>LOG_EMERGENCY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_EMERGENCY&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#abfa99c328ac044e78fb7b79134f43d79">clue_LOG_EMERGENCY</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aced66975c154ea0e2a8ec3bc818b4e08" name="aced66975c154ea0e2a8ec3bc818b4e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced66975c154ea0e2a8ec3bc818b4e08">&#9670;&#160;</a></span>LOG_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_ERROR&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#ad0740e62032c71bf654a5234f26f6135">clue_LOG_ERROR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb94611fe85d1ceb7a2c75c059f166a2" name="abb94611fe85d1ceb7a2c75c059f166a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb94611fe85d1ceb7a2c75c059f166a2">&#9670;&#160;</a></span>LOG_EXPRESSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_EXPRESSION&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a925edf5486176808cd4615fed942472c">clue_LOG_EXPRESSION</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb4f36db01bd128c7afeac5889dac311" name="aeb4f36db01bd128c7afeac5889dac311"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb4f36db01bd128c7afeac5889dac311">&#9670;&#160;</a></span>LOG_INFO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_INFO&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#ace9617d68d56f374a935b6295398a049">clue_LOG_INFO</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51d08f9565fe1f0d6cb12389be387111" name="a51d08f9565fe1f0d6cb12389be387111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51d08f9565fe1f0d6cb12389be387111">&#9670;&#160;</a></span>LOG_LOGGED_SEVERITIES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_LOGGED_SEVERITIES&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#aaee75e539bd98e173849d41a8312352a">clue_LOG_LOGGED_SEVERITIES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad89ee324d180cdcd7defcc709ff9ca42" name="ad89ee324d180cdcd7defcc709ff9ca42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad89ee324d180cdcd7defcc709ff9ca42">&#9670;&#160;</a></span>LOG_NOTICE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_NOTICE&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a58b751be735528eab2b8ad351df31144">clue_LOG_NOTICE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae58ddcadb453ba677c57bbb482fd1af0" name="ae58ddcadb453ba677c57bbb482fd1af0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae58ddcadb453ba677c57bbb482fd1af0">&#9670;&#160;</a></span>LOG_SEV_ALERT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_SEV_ALERT&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#ad7a3810df042e9f15145bd52bad75fde">clue_LOG_SEV_ALERT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aecfbdb338a4459a97abd6b205ca558b3" name="aecfbdb338a4459a97abd6b205ca558b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecfbdb338a4459a97abd6b205ca558b3">&#9670;&#160;</a></span>LOG_SEV_CRITICAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_SEV_CRITICAL&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a3a45fb2e500a3f80ed877bb57619e129">clue_LOG_SEV_CRITICAL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbbad229cb897bb8655d5088eb27482b" name="acbbad229cb897bb8655d5088eb27482b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbbad229cb897bb8655d5088eb27482b">&#9670;&#160;</a></span>LOG_SEV_DEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_SEV_DEBUG&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a4d92ab32aa81d881df5d1717b8ff0eca">clue_LOG_SEV_DEBUG</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae92e0ef32719d266ea22a9780daf7fad" name="ae92e0ef32719d266ea22a9780daf7fad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae92e0ef32719d266ea22a9780daf7fad">&#9670;&#160;</a></span>LOG_SEV_EMERGENCY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_SEV_EMERGENCY&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a8f88ebfbb2101333dc8d8763cb27bdaa">clue_LOG_SEV_EMERGENCY</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae86603b8630f4a68e149a5d232e29810" name="ae86603b8630f4a68e149a5d232e29810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae86603b8630f4a68e149a5d232e29810">&#9670;&#160;</a></span>LOG_SEV_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_SEV_ERROR&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#aaa578bce3ed18fdca9d03454de666a17">clue_LOG_SEV_ERROR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12b45504aac799365d77927ab0c13b5a" name="a12b45504aac799365d77927ab0c13b5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12b45504aac799365d77927ab0c13b5a">&#9670;&#160;</a></span>LOG_SEV_INFO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_SEV_INFO&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#ac957158ba56936bc95af95aaecfc6dbb">clue_LOG_SEV_INFO</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02753952c930cfe3799da0e4afd14571" name="a02753952c930cfe3799da0e4afd14571"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02753952c930cfe3799da0e4afd14571">&#9670;&#160;</a></span>LOG_SEV_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_SEV_MAX&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a83113b9b98c7ba04bc1f16f0c6df0afa">clue_LOG_SEV_MAX</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace844b8da68a888321700252da4061a9" name="ace844b8da68a888321700252da4061a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace844b8da68a888321700252da4061a9">&#9670;&#160;</a></span>LOG_SEV_NONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_SEV_NONE&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a042f5d579cef9bd63712b6237527f418">clue_LOG_SEV_NONE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc2fe56b3b5827255bbd8a3aebe60d83" name="abc2fe56b3b5827255bbd8a3aebe60d83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc2fe56b3b5827255bbd8a3aebe60d83">&#9670;&#160;</a></span>LOG_SEV_NOTICE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_SEV_NOTICE&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a12595f1fa0e68cc9853d87ba1de67d7a">clue_LOG_SEV_NOTICE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90c568275def06c07b6538513981372a" name="a90c568275def06c07b6538513981372a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90c568275def06c07b6538513981372a">&#9670;&#160;</a></span>LOG_SEV_WARNING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_SEV_WARNING&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#ac2d3ff52deb85892b37b24da70b464a0">clue_LOG_SEV_WARNING</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf4476a6a4ea6c74231c826e899d7189" name="adf4476a6a4ea6c74231c826e899d7189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf4476a6a4ea6c74231c826e899d7189">&#9670;&#160;</a></span>LOG_WARNING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_WARNING&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#a382dae08a3fb1ec7dc43b3cb85376b5f">clue_LOG_WARNING</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_b83ee6e98edabda9ce26bff501159cde.html">NNFSCore</a></li><li class="navelem"><a class="el" href="dir_dbbfbd8415df2214283a5126bd14a37e.html">Utilities</a></li><li class="navelem"><a class="el" href="clue_8hpp.html">clue.hpp</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

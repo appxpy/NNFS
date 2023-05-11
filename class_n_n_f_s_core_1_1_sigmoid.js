@@ -1,5 +1,5 @@
 var class_n_n_f_s_core_1_1_sigmoid =
 [
-    [ "gradient", "class_n_n_f_s_core_1_1_sigmoid.html#ac6129f5790264d724874bd3ccf74145f", null ],
-    [ "operator()", "class_n_n_f_s_core_1_1_sigmoid.html#a4c74c64e007cd6b57e16f50edd847246", null ]
+    [ "backward", "class_n_n_f_s_core_1_1_sigmoid.html#af5a266058e48ee1796f9a618b3d077dd", null ],
+    [ "forward", "class_n_n_f_s_core_1_1_sigmoid.html#a97a962be69fff125f0ee4e949d1b4eac", null ]
 ];

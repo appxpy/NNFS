@@ -126,48 +126,52 @@ $(document).ready(function(){initNavTree('test__activation_8cpp.html',''); initR
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">test_activation.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
-<code>#include &lt;Eigen/Dense&gt;</code><br />
+<div class="textblock"><code>#include &quot;gtest/gtest.h&quot;</code><br />
 <code>#include &lt;<a class="el" href="_re_l_u_8hpp_source.html">NNFSCore/Activation/ReLU.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_sigmoid_8hpp_source.html">NNFSCore/Activation/Sigmoid.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_linear_8hpp_source.html">NNFSCore/Activation/Linear.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_softmax_8hpp_source.html">NNFSCore/Activation/Softmax.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for test_activation.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="test__activation_8cpp__incl.svg" width="740" height="344"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="test__activation_8cpp__incl.svg" width="558" height="420"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_re_l_u_test.html">ReLUTest</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_softmax_test.html">SoftmaxTest</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a74798feb3b5fc8a6a9fa7a0e64bec177"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__activation_8cpp.html#a74798feb3b5fc8a6a9fa7a0e64bec177">TEST</a> (ActivationTest, TestReLU)</td></tr>
-<tr class="separator:a74798feb3b5fc8a6a9fa7a0e64bec177"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a753993cc6931368445ae75da2f56fb0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__activation_8cpp.html#a753993cc6931368445ae75da2f56fb0a">TEST</a> (ActivationTest, TestSigmoid)</td></tr>
-<tr class="separator:a753993cc6931368445ae75da2f56fb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a499540c4270acc0478c5ceebc1561d67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__activation_8cpp.html#a499540c4270acc0478c5ceebc1561d67">TEST</a> (ActivationTest, TestLinear)</td></tr>
-<tr class="separator:a499540c4270acc0478c5ceebc1561d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f9160fe7420afda4dac96a561d54ce5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__activation_8cpp.html#a8f9160fe7420afda4dac96a561d54ce5">TEST_F</a> (<a class="el" href="class_re_l_u_test.html">ReLUTest</a>, GeneralTest)</td></tr>
+<tr class="separator:a8f9160fe7420afda4dac96a561d54ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7708aeedefe61b0fb3b73b1366d47179"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__activation_8cpp.html#a7708aeedefe61b0fb3b73b1366d47179">TEST_F</a> (<a class="el" href="class_softmax_test.html">SoftmaxTest</a>, GeneralTest)</td></tr>
+<tr class="separator:a7708aeedefe61b0fb3b73b1366d47179"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a499540c4270acc0478c5ceebc1561d67" name="a499540c4270acc0478c5ceebc1561d67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a499540c4270acc0478c5ceebc1561d67">&#9670;&#160;</a></span>TEST() <span class="overload">[1/3]</span></h2>
+<a id="a8f9160fe7420afda4dac96a561d54ce5" name="a8f9160fe7420afda4dac96a561d54ce5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f9160fe7420afda4dac96a561d54ce5">&#9670;&#160;</a></span>TEST_F() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">TEST </td>
+          <td class="memname">TEST_F </td>
           <td>(</td>
-          <td class="paramtype">ActivationTest&#160;</td>
+          <td class="paramtype"><a class="el" href="class_re_l_u_test.html">ReLUTest</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TestLinear&#160;</td>
+          <td class="paramtype">GeneralTest&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -180,50 +184,22 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a74798feb3b5fc8a6a9fa7a0e64bec177" name="a74798feb3b5fc8a6a9fa7a0e64bec177"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74798feb3b5fc8a6a9fa7a0e64bec177">&#9670;&#160;</a></span>TEST() <span class="overload">[2/3]</span></h2>
+<a id="a7708aeedefe61b0fb3b73b1366d47179" name="a7708aeedefe61b0fb3b73b1366d47179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7708aeedefe61b0fb3b73b1366d47179">&#9670;&#160;</a></span>TEST_F() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">TEST </td>
+          <td class="memname">TEST_F </td>
           <td>(</td>
-          <td class="paramtype">ActivationTest&#160;</td>
+          <td class="paramtype"><a class="el" href="class_softmax_test.html">SoftmaxTest</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TestReLU&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a753993cc6931368445ae75da2f56fb0a" name="a753993cc6931368445ae75da2f56fb0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a753993cc6931368445ae75da2f56fb0a">&#9670;&#160;</a></span>TEST() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST </td>
-          <td>(</td>
-          <td class="paramtype">ActivationTest&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TestSigmoid&#160;</td>
+          <td class="paramtype">GeneralTest&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>

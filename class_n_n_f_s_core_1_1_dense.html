@@ -132,92 +132,79 @@ $(document).ready(function(){initNavTree('class_n_n_f_s_core_1_1_dense.html','')
 </div><!--header-->
 <div class="contents">
 
-<p>Fully connected layer.  
- <a href="class_n_n_f_s_core_1_1_dense.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="_dense_8hpp_source.html">Dense.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for NNFSCore::Dense:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_n_n_f_s_core_1_1_dense__inherit__graph.svg" width="140" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_n_n_f_s_core_1_1_dense__inherit__graph.svg" width="139" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1f6a45fd924fa44c590e5e4e86e5d2a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a1f6a45fd924fa44c590e5e4e86e5d2a3">Dense</a> (int units)</td></tr>
-<tr class="memdesc:a1f6a45fd924fa44c590e5e4e86e5d2a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="class_n_n_f_s_core_1_1_dense.html" title="Fully connected layer.">Dense</a> layer.  <br /></td></tr>
-<tr class="separator:a1f6a45fd924fa44c590e5e4e86e5d2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ca8ccf3ccd096a3d55b60b2bb0f978e"><td class="memItemLeft" align="right" valign="top">const Eigen::MatrixXd &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a9ca8ccf3ccd096a3d55b60b2bb0f978e">output</a> () const override</td></tr>
-<tr class="memdesc:a9ca8ccf3ccd096a3d55b60b2bb0f978e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the output tensor.  <br /></td></tr>
-<tr class="separator:a9ca8ccf3ccd096a3d55b60b2bb0f978e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13ed70896ec0e366cc1666a9e8c316b4"><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a13ed70896ec0e366cc1666a9e8c316b4">operator()</a> (const Eigen::MatrixXd &amp;input_tensor) override</td></tr>
-<tr class="memdesc:a13ed70896ec0e366cc1666a9e8c316b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the output of the layer given an input tensor.  <br /></td></tr>
-<tr class="separator:a13ed70896ec0e366cc1666a9e8c316b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73abd41eb6e3f05e04902fe6b8d171c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a73abd41eb6e3f05e04902fe6b8d171c2">build</a> (const Eigen::MatrixXd &amp;input_tensor) override</td></tr>
-<tr class="memdesc:a73abd41eb6e3f05e04902fe6b8d171c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the layer using the input tensor's shape.  <br /></td></tr>
-<tr class="separator:a73abd41eb6e3f05e04902fe6b8d171c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8285bc57f2aa39fb48c8d826bb657b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#aa8285bc57f2aa39fb48c8d826bb657b7">update</a> (double lr) override</td></tr>
-<tr class="memdesc:aa8285bc57f2aa39fb48c8d826bb657b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the layer's parameters using the learning rate.  <br /></td></tr>
-<tr class="separator:aa8285bc57f2aa39fb48c8d826bb657b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac37a75ca121cb79d68f91a8e386fc355"><td class="memItemLeft" align="right" valign="top">const Eigen::MatrixXd &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#ac37a75ca121cb79d68f91a8e386fc355">grad_weights</a> () const override</td></tr>
-<tr class="memdesc:ac37a75ca121cb79d68f91a8e386fc355"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the gradient of the weights.  <br /></td></tr>
-<tr class="separator:ac37a75ca121cb79d68f91a8e386fc355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0310af121af53eefcf9fea66f1764697"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a0310af121af53eefcf9fea66f1764697">grad_weights</a> (const Eigen::MatrixXd &amp;gradients) override</td></tr>
-<tr class="memdesc:a0310af121af53eefcf9fea66f1764697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the gradient of the weights.  <br /></td></tr>
-<tr class="separator:a0310af121af53eefcf9fea66f1764697"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08939b03c6e378f430f64a7d4bc09aa9"><td class="memItemLeft" align="right" valign="top">const Eigen::MatrixXd &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a08939b03c6e378f430f64a7d4bc09aa9">grad_bias</a> () const override</td></tr>
-<tr class="memdesc:a08939b03c6e378f430f64a7d4bc09aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the gradient of the bias.  <br /></td></tr>
-<tr class="separator:a08939b03c6e378f430f64a7d4bc09aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6394d484994f62258bcbb58a77e0d9b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a6394d484994f62258bcbb58a77e0d9b8">grad_bias</a> (const Eigen::MatrixXd &amp;gradients) override</td></tr>
-<tr class="memdesc:a6394d484994f62258bcbb58a77e0d9b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the gradient of the bias.  <br /></td></tr>
-<tr class="separator:a6394d484994f62258bcbb58a77e0d9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f9d377c745f373b4179aa045dd16c65"><td class="memItemLeft" align="right" valign="top">const Eigen::MatrixXd &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a6f9d377c745f373b4179aa045dd16c65">weights</a> () const override</td></tr>
-<tr class="memdesc:a6f9d377c745f373b4179aa045dd16c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the weights tensor.  <br /></td></tr>
-<tr class="separator:a6f9d377c745f373b4179aa045dd16c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb9353594cfe91a075c247a040273e3d"><td class="memItemLeft" align="right" valign="top">const Eigen::MatrixXd &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#abb9353594cfe91a075c247a040273e3d">bias</a> () const override</td></tr>
-<tr class="memdesc:abb9353594cfe91a075c247a040273e3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bias tensor.  <br /></td></tr>
-<tr class="separator:abb9353594cfe91a075c247a040273e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99145937438e374c4159796a6aa2d66b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a99145937438e374c4159796a6aa2d66b">Dense</a> (int n_input, int n_output, double <a class="el" href="class_n_n_f_s_core_1_1_dense.html#a26e80cb0f2ae5e696d2a0af287f9560c">l1_weights_regularizer</a>=.0, double <a class="el" href="class_n_n_f_s_core_1_1_dense.html#ac818f252a1724a7876810a057871ac72">l1_biases_regularizer</a>=.0, double <a class="el" href="class_n_n_f_s_core_1_1_dense.html#a1f8a32646d2ea531080e6e5bf35882c6">l2_weights_regularizer</a>=.0, double <a class="el" href="class_n_n_f_s_core_1_1_dense.html#a52d4c1cb2050366bdd5662d063380ccf">l2_biases_regularizer</a>=.0)</td></tr>
+<tr class="separator:a99145937438e374c4159796a6aa2d66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75efb3d18816a8a64ae12c5c908f553f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a75efb3d18816a8a64ae12c5c908f553f">forward</a> (Eigen::MatrixXd &amp;out, const Eigen::MatrixXd &amp;x)</td></tr>
+<tr class="separator:a75efb3d18816a8a64ae12c5c908f553f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a397ee7c1d5fd752691b74e98323691c3"><td class="memItemLeft" align="right" valign="top">const Eigen::MatrixXd &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a397ee7c1d5fd752691b74e98323691c3">dweights</a> () const</td></tr>
+<tr class="separator:a397ee7c1d5fd752691b74e98323691c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9ae8ca14958327cadc7f8d6c7c47ba6"><td class="memItemLeft" align="right" valign="top">const Eigen::MatrixXd &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#ad9ae8ca14958327cadc7f8d6c7c47ba6">dbiases</a> () const</td></tr>
+<tr class="separator:ad9ae8ca14958327cadc7f8d6c7c47ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a378081eacbb220c0867cc8d873e8ddde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a378081eacbb220c0867cc8d873e8ddde">backward</a> (Eigen::MatrixXd &amp;out, const Eigen::MatrixXd &amp;dx)</td></tr>
+<tr class="separator:a378081eacbb220c0867cc8d873e8ddde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5070670671f1636edf90a35ba8d928b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#ad5070670671f1636edf90a35ba8d928b">weights</a> (Eigen::MatrixXd &amp;weights)</td></tr>
+<tr class="separator:ad5070670671f1636edf90a35ba8d928b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4286cd394677ff119054d317002bf06"><td class="memItemLeft" align="right" valign="top">const Eigen::MatrixXd &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#ac4286cd394677ff119054d317002bf06">weights</a> () const</td></tr>
+<tr class="separator:ac4286cd394677ff119054d317002bf06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d59ac75066b4c5b7634c951c2f43196"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a2d59ac75066b4c5b7634c951c2f43196">weights_optimizer</a> (Eigen::MatrixXd woptimizer)</td></tr>
+<tr class="separator:a2d59ac75066b4c5b7634c951c2f43196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acece7174a7ad8b20e18c1bc2a38a6f43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#acece7174a7ad8b20e18c1bc2a38a6f43">biases_optimizer</a> (Eigen::MatrixXd boptimizer)</td></tr>
+<tr class="separator:acece7174a7ad8b20e18c1bc2a38a6f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54cbb9e62cabaf1efeb85c8a98bee0f4"><td class="memItemLeft" align="right" valign="top">const Eigen::MatrixXd &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a54cbb9e62cabaf1efeb85c8a98bee0f4">weights_optimizer</a> () const</td></tr>
+<tr class="separator:a54cbb9e62cabaf1efeb85c8a98bee0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84c73c22f2c461a343fd2d7c021482b9"><td class="memItemLeft" align="right" valign="top">const Eigen::MatrixXd &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a84c73c22f2c461a343fd2d7c021482b9">biases_optimizer</a> () const</td></tr>
+<tr class="separator:a84c73c22f2c461a343fd2d7c021482b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae49d6e204acf193c8d95a9a3133d95cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#ae49d6e204acf193c8d95a9a3133d95cd">weights_optimizer_additional</a> (Eigen::MatrixXd woptimizer)</td></tr>
+<tr class="separator:ae49d6e204acf193c8d95a9a3133d95cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3ee2117058baf8e0b1184730746a00e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#ab3ee2117058baf8e0b1184730746a00e">biases_optimizer_additional</a> (Eigen::MatrixXd boptimizer)</td></tr>
+<tr class="separator:ab3ee2117058baf8e0b1184730746a00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a682b36b9acc51417a09323802f74c683"><td class="memItemLeft" align="right" valign="top">const Eigen::MatrixXd &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a682b36b9acc51417a09323802f74c683">weights_optimizer_additional</a> () const</td></tr>
+<tr class="separator:a682b36b9acc51417a09323802f74c683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb6c082eec5dfbd2e04d405a4c3d53b6"><td class="memItemLeft" align="right" valign="top">const Eigen::MatrixXd &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#aeb6c082eec5dfbd2e04d405a4c3d53b6">biases_optimizer_additional</a> () const</td></tr>
+<tr class="separator:aeb6c082eec5dfbd2e04d405a4c3d53b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26e80cb0f2ae5e696d2a0af287f9560c"><td class="memItemLeft" align="right" valign="top">const double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a26e80cb0f2ae5e696d2a0af287f9560c">l1_weights_regularizer</a> () const</td></tr>
+<tr class="separator:a26e80cb0f2ae5e696d2a0af287f9560c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f8a32646d2ea531080e6e5bf35882c6"><td class="memItemLeft" align="right" valign="top">const double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a1f8a32646d2ea531080e6e5bf35882c6">l2_weights_regularizer</a> () const</td></tr>
+<tr class="separator:a1f8a32646d2ea531080e6e5bf35882c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac818f252a1724a7876810a057871ac72"><td class="memItemLeft" align="right" valign="top">const double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#ac818f252a1724a7876810a057871ac72">l1_biases_regularizer</a> () const</td></tr>
+<tr class="separator:ac818f252a1724a7876810a057871ac72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52d4c1cb2050366bdd5662d063380ccf"><td class="memItemLeft" align="right" valign="top">const double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a52d4c1cb2050366bdd5662d063380ccf">l2_biases_regularizer</a> () const</td></tr>
+<tr class="separator:a52d4c1cb2050366bdd5662d063380ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9453dcb208c77a7a4bcd4fb0e6d6847"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#ad9453dcb208c77a7a4bcd4fb0e6d6847">biases</a> (Eigen::MatrixXd &amp;biases)</td></tr>
+<tr class="separator:ad9453dcb208c77a7a4bcd4fb0e6d6847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28994b75e8aee232d9f0a9f7481022bf"><td class="memItemLeft" align="right" valign="top">const Eigen::MatrixXd &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a28994b75e8aee232d9f0a9f7481022bf">biases</a> () const</td></tr>
+<tr class="separator:a28994b75e8aee232d9f0a9f7481022bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483a47b93f09b33b897fdd5ce42e5c5e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_dense.html#a483a47b93f09b33b897fdd5ce42e5c5e">parameters</a> () const</td></tr>
+<tr class="separator:a483a47b93f09b33b897fdd5ce42e5c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_n_n_f_s_core_1_1_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_n_n_f_s_core_1_1_layer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_n_n_f_s_core_1_1_layer.html">NNFSCore::Layer</a></td></tr>
+<tr class="memitem:adaea9acd0706b8d62e17253c92f836ee inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#adaea9acd0706b8d62e17253c92f836ee">Layer</a> (<a class="el" href="namespace_n_n_f_s_core.html#a53e8f4b03b2d69b6dab09506bcf6e9b2">LayerType</a> <a class="el" href="class_n_n_f_s_core_1_1_layer.html#ab48aa4bd54a42fac443decb97c283b04">type</a>)</td></tr>
+<tr class="separator:adaea9acd0706b8d62e17253c92f836ee inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a1e7163ae37c6856b8f206e27eb1507 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#a9a1e7163ae37c6856b8f206e27eb1507">~Layer</a> ()=default</td></tr>
 <tr class="separator:a9a1e7163ae37c6856b8f206e27eb1507 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa6ed0f06e3e6ea4a23cfcee328a7844 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual const Eigen::MatrixXd &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#aaa6ed0f06e3e6ea4a23cfcee328a7844">output</a> () const =0</td></tr>
-<tr class="memdesc:aaa6ed0f06e3e6ea4a23cfcee328a7844 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the output tensor.  <br /></td></tr>
-<tr class="separator:aaa6ed0f06e3e6ea4a23cfcee328a7844 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60d9bb7b2239bd11d15bf8bbd5c9b306 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#a60d9bb7b2239bd11d15bf8bbd5c9b306">operator()</a> (const Eigen::MatrixXd &amp;input_tensor)=0</td></tr>
-<tr class="memdesc:a60d9bb7b2239bd11d15bf8bbd5c9b306 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the output of the layer given an input tensor.  <br /></td></tr>
-<tr class="separator:a60d9bb7b2239bd11d15bf8bbd5c9b306 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac00808f59f701221b189299895d3530 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#aac00808f59f701221b189299895d3530">build</a> (const Eigen::MatrixXd &amp;input_tensor)=0</td></tr>
-<tr class="memdesc:aac00808f59f701221b189299895d3530 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the layer using the input tensor's shape.  <br /></td></tr>
-<tr class="separator:aac00808f59f701221b189299895d3530 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a839a9479b75dc233dae0e384f5454557 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#a839a9479b75dc233dae0e384f5454557">update</a> (double lr)=0</td></tr>
-<tr class="memdesc:a839a9479b75dc233dae0e384f5454557 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the layer's parameters using the learning rate.  <br /></td></tr>
-<tr class="separator:a839a9479b75dc233dae0e384f5454557 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec129c80311bab7313d095b74b390f04 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual const Eigen::MatrixXd &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#aec129c80311bab7313d095b74b390f04">grad_weights</a> () const =0</td></tr>
-<tr class="memdesc:aec129c80311bab7313d095b74b390f04 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the gradient of the weights.  <br /></td></tr>
-<tr class="separator:aec129c80311bab7313d095b74b390f04 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d279d2c83c0f633d36015c2991ad407 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#a5d279d2c83c0f633d36015c2991ad407">grad_weights</a> (const Eigen::MatrixXd &amp;gradients)=0</td></tr>
-<tr class="memdesc:a5d279d2c83c0f633d36015c2991ad407 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the gradient of the weights.  <br /></td></tr>
-<tr class="separator:a5d279d2c83c0f633d36015c2991ad407 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f31c7c23fa18f2b7cc7ab1b97d48036 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual const Eigen::MatrixXd &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#a7f31c7c23fa18f2b7cc7ab1b97d48036">grad_bias</a> () const =0</td></tr>
-<tr class="memdesc:a7f31c7c23fa18f2b7cc7ab1b97d48036 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the gradient of the bias.  <br /></td></tr>
-<tr class="separator:a7f31c7c23fa18f2b7cc7ab1b97d48036 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06f720c42428e77295e77b76fc8846a9 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#a06f720c42428e77295e77b76fc8846a9">grad_bias</a> (const Eigen::MatrixXd &amp;gradients)=0</td></tr>
-<tr class="memdesc:a06f720c42428e77295e77b76fc8846a9 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the gradient of the bias.  <br /></td></tr>
-<tr class="separator:a06f720c42428e77295e77b76fc8846a9 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42c56b550ef53cb2eba0de800232f377 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual const Eigen::MatrixXd &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#a42c56b550ef53cb2eba0de800232f377">weights</a> () const =0</td></tr>
-<tr class="memdesc:a42c56b550ef53cb2eba0de800232f377 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the weights tensor.  <br /></td></tr>
-<tr class="separator:a42c56b550ef53cb2eba0de800232f377 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46d1e03d2764d54741ccac18eded2459 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual const Eigen::MatrixXd &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#a46d1e03d2764d54741ccac18eded2459">bias</a> () const =0</td></tr>
-<tr class="memdesc:a46d1e03d2764d54741ccac18eded2459 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bias tensor.  <br /></td></tr>
-<tr class="separator:a46d1e03d2764d54741ccac18eded2459 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ba36fda22126afb555baea664f892a8 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#a7ba36fda22126afb555baea664f892a8">forward</a> (Eigen::MatrixXd &amp;out, const Eigen::MatrixXd &amp;input_tensor)=0</td></tr>
+<tr class="separator:a7ba36fda22126afb555baea664f892a8 inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf58a437c8013875e52a64e7c5b0b27f inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#abf58a437c8013875e52a64e7c5b0b27f">backward</a> (Eigen::MatrixXd &amp;out, const Eigen::MatrixXd &amp;grad_output)=0</td></tr>
+<tr class="separator:abf58a437c8013875e52a64e7c5b0b27f inherit pub_methods_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_class_n_n_f_s_core_1_1_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_n_n_f_s_core_1_1_layer')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_n_n_f_s_core_1_1_layer.html">NNFSCore::Layer</a></td></tr>
+<tr class="memitem:ab48aa4bd54a42fac443decb97c283b04 inherit pub_attribs_class_n_n_f_s_core_1_1_layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_n_n_f_s_core.html#a53e8f4b03b2d69b6dab09506bcf6e9b2">LayerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_layer.html#ab48aa4bd54a42fac443decb97c283b04">type</a></td></tr>
+<tr class="separator:ab48aa4bd54a42fac443decb97c283b04 inherit pub_attribs_class_n_n_f_s_core_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Fully connected layer. </p>
-<p>Inherits from the <a class="el" href="class_n_n_f_s_core_1_1_layer.html" title="Abstract base class for layers in a neural network.">Layer</a> base class </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1f6a45fd924fa44c590e5e4e86e5d2a3" name="a1f6a45fd924fa44c590e5e4e86e5d2a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f6a45fd924fa44c590e5e4e86e5d2a3">&#9670;&#160;</a></span>Dense()</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a99145937438e374c4159796a6aa2d66b" name="a99145937438e374c4159796a6aa2d66b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99145937438e374c4159796a6aa2d66b">&#9670;&#160;</a></span>Dense()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -229,30 +216,56 @@ Public Member Functions</h2></td></tr>
           <td class="memname">NNFSCore::Dense::Dense </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>units</em></td><td>)</td>
+          <td class="paramname"><em>n_input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n_output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>l1_weights_regularizer</em> = <code>.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>l1_biases_regularizer</em> = <code>.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>l2_weights_regularizer</em> = <code>.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>l2_biases_regularizer</em> = <code>.0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Constructor for <a class="el" href="class_n_n_f_s_core_1_1_dense.html" title="Fully connected layer.">Dense</a> layer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">units</td><td>Number of units in the layer </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abb9353594cfe91a075c247a040273e3d" name="abb9353594cfe91a075c247a040273e3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb9353594cfe91a075c247a040273e3d">&#9670;&#160;</a></span>bias()</h2>
+<a id="a378081eacbb220c0867cc8d873e8ddde" name="a378081eacbb220c0867cc8d873e8ddde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a378081eacbb220c0867cc8d873e8ddde">&#9670;&#160;</a></span>backward()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,7 +274,45 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const Eigen::MatrixXd &amp; NNFSCore::Dense::bias </td>
+          <td class="memname">void NNFSCore::Dense::backward </td>
+          <td>(</td>
+          <td class="paramtype">Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>dx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_n_n_f_s_core_1_1_layer.html#abf58a437c8013875e52a64e7c5b0b27f">NNFSCore::Layer</a>.</p>
+
+</div>
+</div>
+<a id="a28994b75e8aee232d9f0a9f7481022bf" name="a28994b75e8aee232d9f0a9f7481022bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28994b75e8aee232d9f0a9f7481022bf">&#9670;&#160;</a></span>biases() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Eigen::MatrixXd &amp; NNFSCore::Dense::biases </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -269,20 +320,15 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the bias tensor. </p>
-<dl class="section return"><dt>Returns</dt><dd>Bias tensor </dd></dl>
-
-<p>Implements <a class="el" href="class_n_n_f_s_core_1_1_layer.html#a46d1e03d2764d54741ccac18eded2459">NNFSCore::Layer</a>.</p>
-
 </div>
 </div>
-<a id="a73abd41eb6e3f05e04902fe6b8d171c2" name="a73abd41eb6e3f05e04902fe6b8d171c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73abd41eb6e3f05e04902fe6b8d171c2">&#9670;&#160;</a></span>build()</h2>
+<a id="ad9453dcb208c77a7a4bcd4fb0e6d6847" name="ad9453dcb208c77a7a4bcd4fb0e6d6847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9453dcb208c77a7a4bcd4fb0e6d6847">&#9670;&#160;</a></span>biases() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,34 +337,24 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void NNFSCore::Dense::build </td>
+          <td class="memname">void NNFSCore::Dense::biases </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
-          <td class="paramname"><em>input_tensor</em></td><td>)</td>
+          <td class="paramtype">Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>biases</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Build the layer using the input tensor's shape. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">input_tensor</td><td>Input tensor </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="class_n_n_f_s_core_1_1_layer.html#aac00808f59f701221b189299895d3530">NNFSCore::Layer</a>.</p>
-
 </div>
 </div>
-<a id="a08939b03c6e378f430f64a7d4bc09aa9" name="a08939b03c6e378f430f64a7d4bc09aa9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08939b03c6e378f430f64a7d4bc09aa9">&#9670;&#160;</a></span>grad_bias() <span class="overload">[1/2]</span></h2>
+<a id="a84c73c22f2c461a343fd2d7c021482b9" name="a84c73c22f2c461a343fd2d7c021482b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84c73c22f2c461a343fd2d7c021482b9">&#9670;&#160;</a></span>biases_optimizer() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -327,7 +363,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const Eigen::MatrixXd &amp; NNFSCore::Dense::grad_bias </td>
+          <td class="memname">const Eigen::MatrixXd &amp; NNFSCore::Dense::biases_optimizer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -335,20 +371,15 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the gradient of the bias. </p>
-<dl class="section return"><dt>Returns</dt><dd>Gradient of the bias </dd></dl>
-
-<p>Implements <a class="el" href="class_n_n_f_s_core_1_1_layer.html#a7f31c7c23fa18f2b7cc7ab1b97d48036">NNFSCore::Layer</a>.</p>
-
 </div>
 </div>
-<a id="a6394d484994f62258bcbb58a77e0d9b8" name="a6394d484994f62258bcbb58a77e0d9b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6394d484994f62258bcbb58a77e0d9b8">&#9670;&#160;</a></span>grad_bias() <span class="overload">[2/2]</span></h2>
+<a id="acece7174a7ad8b20e18c1bc2a38a6f43" name="acece7174a7ad8b20e18c1bc2a38a6f43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acece7174a7ad8b20e18c1bc2a38a6f43">&#9670;&#160;</a></span>biases_optimizer() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -357,34 +388,24 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void NNFSCore::Dense::grad_bias </td>
+          <td class="memname">void NNFSCore::Dense::biases_optimizer </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
-          <td class="paramname"><em>gradients</em></td><td>)</td>
+          <td class="paramtype">Eigen::MatrixXd&#160;</td>
+          <td class="paramname"><em>boptimizer</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set the gradient of the bias. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">gradients</td><td>Gradient of the bias </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="class_n_n_f_s_core_1_1_layer.html#a06f720c42428e77295e77b76fc8846a9">NNFSCore::Layer</a>.</p>
-
 </div>
 </div>
-<a id="ac37a75ca121cb79d68f91a8e386fc355" name="ac37a75ca121cb79d68f91a8e386fc355"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac37a75ca121cb79d68f91a8e386fc355">&#9670;&#160;</a></span>grad_weights() <span class="overload">[1/2]</span></h2>
+<a id="aeb6c082eec5dfbd2e04d405a4c3d53b6" name="aeb6c082eec5dfbd2e04d405a4c3d53b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb6c082eec5dfbd2e04d405a4c3d53b6">&#9670;&#160;</a></span>biases_optimizer_additional() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -393,7 +414,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const Eigen::MatrixXd &amp; NNFSCore::Dense::grad_weights </td>
+          <td class="memname">const Eigen::MatrixXd &amp; NNFSCore::Dense::biases_optimizer_additional </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -401,20 +422,15 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the gradient of the weights. </p>
-<dl class="section return"><dt>Returns</dt><dd>Gradient of the weights </dd></dl>
-
-<p>Implements <a class="el" href="class_n_n_f_s_core_1_1_layer.html#aec129c80311bab7313d095b74b390f04">NNFSCore::Layer</a>.</p>
-
 </div>
 </div>
-<a id="a0310af121af53eefcf9fea66f1764697" name="a0310af121af53eefcf9fea66f1764697"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0310af121af53eefcf9fea66f1764697">&#9670;&#160;</a></span>grad_weights() <span class="overload">[2/2]</span></h2>
+<a id="ab3ee2117058baf8e0b1184730746a00e" name="ab3ee2117058baf8e0b1184730746a00e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3ee2117058baf8e0b1184730746a00e">&#9670;&#160;</a></span>biases_optimizer_additional() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -423,34 +439,24 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void NNFSCore::Dense::grad_weights </td>
+          <td class="memname">void NNFSCore::Dense::biases_optimizer_additional </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
-          <td class="paramname"><em>gradients</em></td><td>)</td>
+          <td class="paramtype">Eigen::MatrixXd&#160;</td>
+          <td class="paramname"><em>boptimizer</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set the gradient of the weights. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">gradients</td><td>Gradient of the weights </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="class_n_n_f_s_core_1_1_layer.html#a5d279d2c83c0f633d36015c2991ad407">NNFSCore::Layer</a>.</p>
-
 </div>
 </div>
-<a id="a13ed70896ec0e366cc1666a9e8c316b4" name="a13ed70896ec0e366cc1666a9e8c316b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13ed70896ec0e366cc1666a9e8c316b4">&#9670;&#160;</a></span>operator()()</h2>
+<a id="ad9ae8ca14958327cadc7f8d6c7c47ba6" name="ad9ae8ca14958327cadc7f8d6c7c47ba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9ae8ca14958327cadc7f8d6c7c47ba6">&#9670;&#160;</a></span>dbiases()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -459,44 +465,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::MatrixXd NNFSCore::Dense::operator() </td>
-          <td>(</td>
-          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
-          <td class="paramname"><em>input_tensor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compute the output of the layer given an input tensor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">input_tensor</td><td>Input tensor </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The output tensor </dd></dl>
-
-<p>Implements <a class="el" href="class_n_n_f_s_core_1_1_layer.html#a60d9bb7b2239bd11d15bf8bbd5c9b306">NNFSCore::Layer</a>.</p>
-
-</div>
-</div>
-<a id="a9ca8ccf3ccd096a3d55b60b2bb0f978e" name="a9ca8ccf3ccd096a3d55b60b2bb0f978e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ca8ccf3ccd096a3d55b60b2bb0f978e">&#9670;&#160;</a></span>output()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const Eigen::MatrixXd &amp; NNFSCore::Dense::output </td>
+          <td class="memname">const Eigen::MatrixXd &amp; NNFSCore::Dense::dbiases </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -504,20 +473,15 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the output tensor. </p>
-<dl class="section return"><dt>Returns</dt><dd>The output tensor </dd></dl>
-
-<p>Implements <a class="el" href="class_n_n_f_s_core_1_1_layer.html#aaa6ed0f06e3e6ea4a23cfcee328a7844">NNFSCore::Layer</a>.</p>
-
 </div>
 </div>
-<a id="aa8285bc57f2aa39fb48c8d826bb657b7" name="aa8285bc57f2aa39fb48c8d826bb657b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8285bc57f2aa39fb48c8d826bb657b7">&#9670;&#160;</a></span>update()</h2>
+<a id="a397ee7c1d5fd752691b74e98323691c3" name="a397ee7c1d5fd752691b74e98323691c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a397ee7c1d5fd752691b74e98323691c3">&#9670;&#160;</a></span>dweights()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -526,34 +490,186 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void NNFSCore::Dense::update </td>
+          <td class="memname">const Eigen::MatrixXd &amp; NNFSCore::Dense::dweights </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>lr</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Update the layer's parameters using the learning rate. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lr</td><td>Learning rate </td></tr>
-  </table>
-  </dd>
-</dl>
+</div>
+</div>
+<a id="a75efb3d18816a8a64ae12c5c908f553f" name="a75efb3d18816a8a64ae12c5c908f553f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75efb3d18816a8a64ae12c5c908f553f">&#9670;&#160;</a></span>forward()</h2>
 
-<p>Implements <a class="el" href="class_n_n_f_s_core_1_1_layer.html#a839a9479b75dc233dae0e384f5454557">NNFSCore::Layer</a>.</p>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NNFSCore::Dense::forward </td>
+          <td>(</td>
+          <td class="paramtype">Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_n_n_f_s_core_1_1_layer.html#a7ba36fda22126afb555baea664f892a8">NNFSCore::Layer</a>.</p>
 
 </div>
 </div>
-<a id="a6f9d377c745f373b4179aa045dd16c65" name="a6f9d377c745f373b4179aa045dd16c65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f9d377c745f373b4179aa045dd16c65">&#9670;&#160;</a></span>weights()</h2>
+<a id="ac818f252a1724a7876810a057871ac72" name="ac818f252a1724a7876810a057871ac72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac818f252a1724a7876810a057871ac72">&#9670;&#160;</a></span>l1_biases_regularizer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double &amp; NNFSCore::Dense::l1_biases_regularizer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26e80cb0f2ae5e696d2a0af287f9560c" name="a26e80cb0f2ae5e696d2a0af287f9560c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26e80cb0f2ae5e696d2a0af287f9560c">&#9670;&#160;</a></span>l1_weights_regularizer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double &amp; NNFSCore::Dense::l1_weights_regularizer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52d4c1cb2050366bdd5662d063380ccf" name="a52d4c1cb2050366bdd5662d063380ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52d4c1cb2050366bdd5662d063380ccf">&#9670;&#160;</a></span>l2_biases_regularizer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double &amp; NNFSCore::Dense::l2_biases_regularizer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f8a32646d2ea531080e6e5bf35882c6" name="a1f8a32646d2ea531080e6e5bf35882c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f8a32646d2ea531080e6e5bf35882c6">&#9670;&#160;</a></span>l2_weights_regularizer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double &amp; NNFSCore::Dense::l2_weights_regularizer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a483a47b93f09b33b897fdd5ce42e5c5e" name="a483a47b93f09b33b897fdd5ce42e5c5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483a47b93f09b33b897fdd5ce42e5c5e">&#9670;&#160;</a></span>parameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NNFSCore::Dense::parameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4286cd394677ff119054d317002bf06" name="ac4286cd394677ff119054d317002bf06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4286cd394677ff119054d317002bf06">&#9670;&#160;</a></span>weights() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -570,15 +686,138 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the weights tensor. </p>
-<dl class="section return"><dt>Returns</dt><dd>Weights tensor </dd></dl>
+</div>
+</div>
+<a id="ad5070670671f1636edf90a35ba8d928b" name="ad5070670671f1636edf90a35ba8d928b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5070670671f1636edf90a35ba8d928b">&#9670;&#160;</a></span>weights() <span class="overload">[2/2]</span></h2>
 
-<p>Implements <a class="el" href="class_n_n_f_s_core_1_1_layer.html#a42c56b550ef53cb2eba0de800232f377">NNFSCore::Layer</a>.</p>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NNFSCore::Dense::weights </td>
+          <td>(</td>
+          <td class="paramtype">Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>weights</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a54cbb9e62cabaf1efeb85c8a98bee0f4" name="a54cbb9e62cabaf1efeb85c8a98bee0f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54cbb9e62cabaf1efeb85c8a98bee0f4">&#9670;&#160;</a></span>weights_optimizer() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Eigen::MatrixXd &amp; NNFSCore::Dense::weights_optimizer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d59ac75066b4c5b7634c951c2f43196" name="a2d59ac75066b4c5b7634c951c2f43196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d59ac75066b4c5b7634c951c2f43196">&#9670;&#160;</a></span>weights_optimizer() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NNFSCore::Dense::weights_optimizer </td>
+          <td>(</td>
+          <td class="paramtype">Eigen::MatrixXd&#160;</td>
+          <td class="paramname"><em>woptimizer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a682b36b9acc51417a09323802f74c683" name="a682b36b9acc51417a09323802f74c683"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a682b36b9acc51417a09323802f74c683">&#9670;&#160;</a></span>weights_optimizer_additional() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Eigen::MatrixXd &amp; NNFSCore::Dense::weights_optimizer_additional </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae49d6e204acf193c8d95a9a3133d95cd" name="ae49d6e204acf193c8d95a9a3133d95cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae49d6e204acf193c8d95a9a3133d95cd">&#9670;&#160;</a></span>weights_optimizer_additional() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NNFSCore::Dense::weights_optimizer_additional </td>
+          <td>(</td>
+          <td class="paramtype">Eigen::MatrixXd&#160;</td>
+          <td class="paramname"><em>woptimizer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

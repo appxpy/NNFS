@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['csv_5flogger_5f_0',['csv_logger_',['../class_c_s_v_logger_test.html#adf4c1914ebbd7ac05786601d8cfec69b',1,'CSVLoggerTest']]]
+  ['linear_5f_0',['linear_',['../class_dense_test.html#a8043d5d0d821dde6820e323cd106726c',1,'DenseTest']]]
 ];

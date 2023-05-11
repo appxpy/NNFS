@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['neuralnetwork_0',['NeuralNetwork',['../class_n_n_f_s_core_1_1_neural_network.html#ae6ab394a12c8dca2b3f673bfcdd1e656',1,'NNFSCore::NeuralNetwork']]]
+  ['is_5ftrue_0',['is_true',['../namespaceclue.html#a340bef579c2b0418d054614cd0e4f03a',1,'clue']]]
 ];

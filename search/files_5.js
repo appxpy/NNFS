@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['model_2ehpp_0',['Model.hpp',['../_model_8hpp.html',1,'']]]
+  ['neuralnetwork_2ehpp_0',['NeuralNetwork.hpp',['../_neural_network_8hpp.html',1,'']]]
 ];

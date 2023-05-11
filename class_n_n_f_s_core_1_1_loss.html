@@ -127,36 +127,43 @@ $(document).ready(function(){initNavTree('class_n_n_f_s_core_1_1_loss.html','');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_n_n_f_s_core_1_1_loss-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">NNFSCore::Loss Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>This abstract class must be implemented by concrete <a class="el" href="class_n_n_f_s_core_1_1_loss.html" title="This abstract class must be implemented by concrete Loss classes.">Loss</a> classes.  
- <a href="class_n_n_f_s_core_1_1_loss.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="_loss_8hpp_source.html">Loss.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for NNFSCore::Loss:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_n_n_f_s_core_1_1_loss__inherit__graph.svg" width="216" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_n_n_f_s_core_1_1_loss__inherit__graph.svg" width="318" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9a1968e540bd7392253f079500a5d289"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_loss.html#a9a1968e540bd7392253f079500a5d289">operator()</a> (const Eigen::MatrixXd &amp;predictions, const Eigen::MatrixXd &amp;labels) const =0</td></tr>
-<tr class="memdesc:a9a1968e540bd7392253f079500a5d289"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pure virtual function for computing the loss.  <br /></td></tr>
-<tr class="separator:a9a1968e540bd7392253f079500a5d289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab35c70be5b8f39106329c5febd7bd32b"><td class="memItemLeft" align="right" valign="top">virtual Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_loss.html#ab35c70be5b8f39106329c5febd7bd32b">gradient</a> (const Eigen::MatrixXd &amp;predictions, const Eigen::MatrixXd &amp;labels) const =0</td></tr>
-<tr class="memdesc:ab35c70be5b8f39106329c5febd7bd32b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pure virtual function for computing the gradient of the loss.  <br /></td></tr>
-<tr class="separator:ab35c70be5b8f39106329c5febd7bd32b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace45acee6175e36f02ab6e83675c5eab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_loss.html#ace45acee6175e36f02ab6e83675c5eab">Loss</a> (<a class="el" href="namespace_n_n_f_s_core.html#a2efd350abd46f73a809ab9e2482ad958">LossType</a> <a class="el" href="class_n_n_f_s_core_1_1_loss.html#a2d9108d64d008520da718b10ced96eef">type</a>)</td></tr>
+<tr class="separator:ace45acee6175e36f02ab6e83675c5eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7fe82db1109015b1a86e307906dbc54"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_loss.html#aa7fe82db1109015b1a86e307906dbc54">~Loss</a> ()=default</td></tr>
+<tr class="separator:aa7fe82db1109015b1a86e307906dbc54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e0034cace5172df9b60946e72791b78"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_loss.html#a5e0034cace5172df9b60946e72791b78">forward</a> (Eigen::MatrixXd &amp;sample_losses, const Eigen::MatrixXd &amp;predictions, const Eigen::MatrixXd &amp;labels) const =0</td></tr>
+<tr class="separator:a5e0034cace5172df9b60946e72791b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b709132fd3240b6e68b2fe49c9301e3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_loss.html#a6b709132fd3240b6e68b2fe49c9301e3">backward</a> (Eigen::MatrixXd &amp;out, const Eigen::MatrixXd &amp;predictions, const Eigen::MatrixXd &amp;labels) const =0</td></tr>
+<tr class="separator:a6b709132fd3240b6e68b2fe49c9301e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4f12220f0776b71814a51acb5d00b28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_loss.html#ae4f12220f0776b71814a51acb5d00b28">calculate</a> (double &amp;loss, const Eigen::MatrixXd &amp;predictions, const Eigen::MatrixXd &amp;labels)</td></tr>
+<tr class="separator:ae4f12220f0776b71814a51acb5d00b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5480db41595e1bcfe802677f2945653"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_loss.html#ab5480db41595e1bcfe802677f2945653">regularization_loss</a> (const std::shared_ptr&lt; <a class="el" href="class_n_n_f_s_core_1_1_dense.html">Dense</a> &gt; &amp;layer)</td></tr>
+<tr class="separator:ab5480db41595e1bcfe802677f2945653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a2d9108d64d008520da718b10ced96eef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_n_n_f_s_core.html#a2efd350abd46f73a809ab9e2482ad958">LossType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_loss.html#a2d9108d64d008520da718b10ced96eef">type</a></td></tr>
+<tr class="separator:a2d9108d64d008520da718b10ced96eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This abstract class must be implemented by concrete <a class="el" href="class_n_n_f_s_core_1_1_loss.html" title="This abstract class must be implemented by concrete Loss classes.">Loss</a> classes. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab35c70be5b8f39106329c5febd7bd32b" name="ab35c70be5b8f39106329c5febd7bd32b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab35c70be5b8f39106329c5febd7bd32b">&#9670;&#160;</a></span>gradient()</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ace45acee6175e36f02ab6e83675c5eab" name="ace45acee6175e36f02ab6e83675c5eab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace45acee6175e36f02ab6e83675c5eab">&#9670;&#160;</a></span>Loss()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,8 +172,66 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual Eigen::MatrixXd NNFSCore::Loss::gradient </td>
+          <td class="memname">NNFSCore::Loss::Loss </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_n_n_f_s_core.html#a2efd350abd46f73a809ab9e2482ad958">LossType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7fe82db1109015b1a86e307906dbc54" name="aa7fe82db1109015b1a86e307906dbc54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7fe82db1109015b1a86e307906dbc54">&#9670;&#160;</a></span>~Loss()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual NNFSCore::Loss::~Loss </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6b709132fd3240b6e68b2fe49c9301e3" name="a6b709132fd3240b6e68b2fe49c9301e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b709132fd3240b6e68b2fe49c9301e3">&#9670;&#160;</a></span>backward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NNFSCore::Loss::backward </td>
+          <td>(</td>
+          <td class="paramtype">Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
           <td class="paramname"><em>predictions</em>, </td>
         </tr>
@@ -189,22 +254,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A pure virtual function for computing the gradient of the loss. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">predictions</td><td>The input tensor of predictions. </td></tr>
-    <tr><td class="paramname">labels</td><td>The input tensor of labels. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Eigen::MatrixXd The gradient tensor. </dd></dl>
-
-<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_binary_cross_entropy.html#a44f0950f9995aae8197aabcc2b6372f6">NNFSCore::BinaryCrossEntropy</a>.</p>
+<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_c_c_e.html#aa86e2e4ae3110f71ac132e237a722668">NNFSCore::CCE</a>, and <a class="el" href="class_n_n_f_s_core_1_1_c_c_e_softmax.html#afd60d4c72d30cb3fa7e0da603ee66156">NNFSCore::CCESoftmax</a>.</p>
 
 </div>
 </div>
-<a id="a9a1968e540bd7392253f079500a5d289" name="a9a1968e540bd7392253f079500a5d289"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a1968e540bd7392253f079500a5d289">&#9670;&#160;</a></span>operator()()</h2>
+<a id="ae4f12220f0776b71814a51acb5d00b28" name="ae4f12220f0776b71814a51acb5d00b28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4f12220f0776b71814a51acb5d00b28">&#9670;&#160;</a></span>calculate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,8 +268,56 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual double NNFSCore::Loss::operator() </td>
+          <td class="memname">void NNFSCore::Loss::calculate </td>
           <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>loss</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>predictions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>labels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e0034cace5172df9b60946e72791b78" name="a5e0034cace5172df9b60946e72791b78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e0034cace5172df9b60946e72791b78">&#9670;&#160;</a></span>forward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NNFSCore::Loss::forward </td>
+          <td>(</td>
+          <td class="paramtype">Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>sample_losses</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
           <td class="paramname"><em>predictions</em>, </td>
         </tr>
@@ -237,17 +340,48 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A pure virtual function for computing the loss. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">predictions</td><td>The input tensor of predictions. </td></tr>
-    <tr><td class="paramname">labels</td><td>The input tensor of labels. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>double The computed loss. </dd></dl>
+<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_c_c_e.html#a1485b8a7219beaff8058fb2552753298">NNFSCore::CCE</a>, and <a class="el" href="class_n_n_f_s_core_1_1_c_c_e_softmax.html#a3ba8e0e222c4ef0e689f672ec2df2f5d">NNFSCore::CCESoftmax</a>.</p>
 
-<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_binary_cross_entropy.html#a6d35fe8107a626e2139ee549a98ee95c">NNFSCore::BinaryCrossEntropy</a>.</p>
+</div>
+</div>
+<a id="ab5480db41595e1bcfe802677f2945653" name="ab5480db41595e1bcfe802677f2945653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5480db41595e1bcfe802677f2945653">&#9670;&#160;</a></span>regularization_loss()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double NNFSCore::Loss::regularization_loss </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="class_n_n_f_s_core_1_1_dense.html">Dense</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>layer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2d9108d64d008520da718b10ced96eef" name="a2d9108d64d008520da718b10ced96eef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d9108d64d008520da718b10ced96eef">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_n_n_f_s_core.html#a2efd350abd46f73a809ab9e2482ad958">LossType</a> NNFSCore::Loss::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

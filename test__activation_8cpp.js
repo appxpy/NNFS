@@ -1,6 +1,7 @@
 var test__activation_8cpp =
 [
-    [ "TEST", "test__activation_8cpp.html#a499540c4270acc0478c5ceebc1561d67", null ],
-    [ "TEST", "test__activation_8cpp.html#a74798feb3b5fc8a6a9fa7a0e64bec177", null ],
-    [ "TEST", "test__activation_8cpp.html#a753993cc6931368445ae75da2f56fb0a", null ]
+    [ "ReLUTest", "class_re_l_u_test.html", "class_re_l_u_test" ],
+    [ "SoftmaxTest", "class_softmax_test.html", "class_softmax_test" ],
+    [ "TEST_F", "test__activation_8cpp.html#a8f9160fe7420afda4dac96a561d54ce5", null ],
+    [ "TEST_F", "test__activation_8cpp.html#a7708aeedefe61b0fb3b73b1366d47179", null ]
 ];

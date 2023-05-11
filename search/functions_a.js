@@ -1,13 +1,7 @@
 var searchData=
 [
-  ['set_5fcallbacks_0',['set_callbacks',['../class_n_n_f_s_core_1_1_model.html#a24a3c1dc5be9de4ba428839a4ef68f59',1,'NNFSCore::Model::set_callbacks()'],['../class_n_n_f_s_core_1_1_neural_network.html#aa0246a4bc57fdfce835a3fd62ad9629c',1,'NNFSCore::NeuralNetwork::set_callbacks()']]],
-  ['set_5fclosing_5fbracket_5fchar_1',['set_closing_bracket_char',['../classprogressbar.html#a6982d85b3b367ef63e502018d320ca71',1,'progressbar']]],
-  ['set_5fdone_5fchar_2',['set_done_char',['../classprogressbar.html#ac2e4605b212023f9078a4c101642449f',1,'progressbar']]],
-  ['set_5flearning_5frate_3',['set_learning_rate',['../class_n_n_f_s_core_1_1_model.html#ab7043d22da72b0bdccb8de70f8f3c71d',1,'NNFSCore::Model::set_learning_rate()'],['../class_n_n_f_s_core_1_1_neural_network.html#a0aa61bcfaceceda753d0a745a16b70f1',1,'NNFSCore::NeuralNetwork::set_learning_rate()']]],
-  ['set_5fniter_4',['set_niter',['../classprogressbar.html#a008cb73653128b20cd6fffb8c9773e19',1,'progressbar']]],
-  ['set_5fopening_5fbracket_5fchar_5',['set_opening_bracket_char',['../classprogressbar.html#a07a344038d671154c46a9804e9ad42ba',1,'progressbar']]],
-  ['set_5foutput_5fstream_6',['set_output_stream',['../classprogressbar.html#afd60efcdb41c2354b17f61c3bb15827f',1,'progressbar']]],
-  ['set_5ftodo_5fchar_7',['set_todo_char',['../classprogressbar.html#a00658c49ae538300de4e31b1855d1d9a',1,'progressbar']]],
-  ['setup_8',['SetUp',['../class_c_s_v_logger_test.html#a45269a3e56376f745971d97a04630e62',1,'CSVLoggerTest::SetUp()'],['../class_dense_test.html#ad1fd7c4457a48d4039614f02d70dd8f0',1,'DenseTest::SetUp()'],['../class_neural_network_test.html#a51a501377f4ab188689f6586fdbecbf4',1,'NeuralNetworkTest::SetUp()']]],
-  ['show_5fbar_9',['show_bar',['../classprogressbar.html#a5446ce3d99319291f7c4a2cc34be93a9',1,'progressbar']]]
+  ['parameters_0',['parameters',['../class_n_n_f_s_core_1_1_dense.html#a483a47b93f09b33b897fdd5ce42e5c5e',1,'NNFSCore::Dense']]],
+  ['post_5fupdate_5fparams_1',['post_update_params',['../class_n_n_f_s_core_1_1_adagrad.html#ae0004f28a68e432867bda2d968daa2cf',1,'NNFSCore::Adagrad::post_update_params()'],['../class_n_n_f_s_core_1_1_adam.html#a42f7a4af1e5021dee2f223482c025b66',1,'NNFSCore::Adam::post_update_params()'],['../class_n_n_f_s_core_1_1_optimizer.html#ad42103250aa758f87adf1b7cb3af9bcf',1,'NNFSCore::Optimizer::post_update_params()'],['../class_n_n_f_s_core_1_1_r_m_s_prop.html#abca2ca286c22bc10861541f93fda5b4f',1,'NNFSCore::RMSProp::post_update_params()'],['../class_n_n_f_s_core_1_1_s_g_d.html#a3af6a87dce7dc4026c8a68a20c9bebed',1,'NNFSCore::SGD::post_update_params()']]],
+  ['pre_5fupdate_5fparams_2',['pre_update_params',['../class_n_n_f_s_core_1_1_adagrad.html#a48d86854173d54168e86e363ac05c515',1,'NNFSCore::Adagrad::pre_update_params()'],['../class_n_n_f_s_core_1_1_adam.html#a7676458f044a428e560a1ca6f09e48bc',1,'NNFSCore::Adam::pre_update_params()'],['../class_n_n_f_s_core_1_1_optimizer.html#ab9f2f8dd893a370dc092b3bf4360dc70',1,'NNFSCore::Optimizer::pre_update_params()'],['../class_n_n_f_s_core_1_1_r_m_s_prop.html#a8edbf69c93ceddf316c94664f07595ab',1,'NNFSCore::RMSProp::pre_update_params()'],['../class_n_n_f_s_core_1_1_s_g_d.html#a8d83294f37db400b250561b4b4d065da',1,'NNFSCore::SGD::pre_update_params()']]],
+  ['progressbar_3',['progressbar',['../class_n_n_f_s_core_1_1_neural_network.html#ae76b16a51e0175a4269d9a6cc3a5d54e',1,'NNFSCore::NeuralNetwork']]]
 ];

@@ -132,30 +132,40 @@ $(document).ready(function(){initNavTree('test__loss_8cpp.html',''); initResizab
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;gtest/gtest.h&quot;</code><br />
-<code>#include &lt;<a class="el" href="_binary_cross_entropy_8hpp_source.html">NNFSCore/Loss/BinaryCrossEntropy.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_c_c_e_8hpp_source.html">NNFSCore/Loss/CCE.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_c_c_e___softmax_8hpp_source.html">NNFSCore/Loss/CCE_Softmax.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_softmax_8hpp_source.html">NNFSCore/Activation/Softmax.hpp</a>&gt;</code><br />
 <code>#include &lt;Eigen/Dense&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for test_loss.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="test__loss_8cpp__incl.svg" width="442" height="271"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="test__loss_8cpp__incl.svg" width="594" height="552"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_loss_test.html">LossTest</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_c_e_test.html">CCETest</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_c_e_softmax_test.html">CCESoftmaxTest</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a570e106cf5c4d79215a1f545bbef1aed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__loss_8cpp.html#a570e106cf5c4d79215a1f545bbef1aed">TEST_F</a> (<a class="el" href="class_loss_test.html">LossTest</a>, GradientDescent)</td></tr>
-<tr class="separator:a570e106cf5c4d79215a1f545bbef1aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a866539e7e90c796437e6f56b9b4235d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__loss_8cpp.html#a866539e7e90c796437e6f56b9b4235d4">TEST_F</a> (<a class="el" href="class_loss_test.html">LossTest</a>, GradientTest)</td></tr>
-<tr class="separator:a866539e7e90c796437e6f56b9b4235d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8cb806014085632dd478c48bf7ccdd6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__loss_8cpp.html#ab8cb806014085632dd478c48bf7ccdd6">TEST_F</a> (<a class="el" href="class_c_c_e_test.html">CCETest</a>, ForwardPassTest)</td></tr>
+<tr class="separator:ab8cb806014085632dd478c48bf7ccdd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a409178f6363ff907f33a11cbbde6ee4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__loss_8cpp.html#a409178f6363ff907f33a11cbbde6ee4c">TEST_F</a> (<a class="el" href="class_c_c_e_test.html">CCETest</a>, BackwardPassTest)</td></tr>
+<tr class="separator:a409178f6363ff907f33a11cbbde6ee4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8986b624a133ea50b582e33a7c21ca3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__loss_8cpp.html#a8986b624a133ea50b582e33a7c21ca3c">TEST_F</a> (<a class="el" href="class_c_c_e_softmax_test.html">CCESoftmaxTest</a>, ForwardPassTest)</td></tr>
+<tr class="separator:a8986b624a133ea50b582e33a7c21ca3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b167af95c156faf5efcfb667fc8799b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__loss_8cpp.html#a3b167af95c156faf5efcfb667fc8799b">TEST_F</a> (<a class="el" href="class_c_c_e_softmax_test.html">CCESoftmaxTest</a>, BackwardPassTest)</td></tr>
+<tr class="separator:a3b167af95c156faf5efcfb667fc8799b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a943e322609d807e77e59a8e5d1f74e8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__loss_8cpp.html#a943e322609d807e77e59a8e5d1f74e8b">TEST_F</a> (<a class="el" href="class_c_c_e_softmax_test.html">CCESoftmaxTest</a>, IntegrityBackwardPassTest)</td></tr>
+<tr class="separator:a943e322609d807e77e59a8e5d1f74e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a570e106cf5c4d79215a1f545bbef1aed" name="a570e106cf5c4d79215a1f545bbef1aed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a570e106cf5c4d79215a1f545bbef1aed">&#9670;&#160;</a></span>TEST_F() <span class="overload">[1/2]</span></h2>
+<a id="a3b167af95c156faf5efcfb667fc8799b" name="a3b167af95c156faf5efcfb667fc8799b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b167af95c156faf5efcfb667fc8799b">&#9670;&#160;</a></span>TEST_F() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -163,13 +173,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">TEST_F </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_loss_test.html">LossTest</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_c_c_e_softmax_test.html">CCESoftmaxTest</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GradientDescent&#160;</td>
+          <td class="paramtype">BackwardPassTest&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -182,8 +192,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a866539e7e90c796437e6f56b9b4235d4" name="a866539e7e90c796437e6f56b9b4235d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a866539e7e90c796437e6f56b9b4235d4">&#9670;&#160;</a></span>TEST_F() <span class="overload">[2/2]</span></h2>
+<a id="a8986b624a133ea50b582e33a7c21ca3c" name="a8986b624a133ea50b582e33a7c21ca3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8986b624a133ea50b582e33a7c21ca3c">&#9670;&#160;</a></span>TEST_F() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,13 +201,97 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">TEST_F </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_loss_test.html">LossTest</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_c_c_e_softmax_test.html">CCESoftmaxTest</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GradientTest&#160;</td>
+          <td class="paramtype">ForwardPassTest&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a943e322609d807e77e59a8e5d1f74e8b" name="a943e322609d807e77e59a8e5d1f74e8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a943e322609d807e77e59a8e5d1f74e8b">&#9670;&#160;</a></span>TEST_F() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_c_e_softmax_test.html">CCESoftmaxTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IntegrityBackwardPassTest&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a409178f6363ff907f33a11cbbde6ee4c" name="a409178f6363ff907f33a11cbbde6ee4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a409178f6363ff907f33a11cbbde6ee4c">&#9670;&#160;</a></span>TEST_F() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_c_e_test.html">CCETest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BackwardPassTest&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8cb806014085632dd478c48bf7ccdd6" name="ab8cb806014085632dd478c48bf7ccdd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8cb806014085632dd478c48bf7ccdd6">&#9670;&#160;</a></span>TEST_F() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_c_e_test.html">CCETest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ForwardPassTest&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>

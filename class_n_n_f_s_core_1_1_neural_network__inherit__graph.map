@@ -1,4 +1,4 @@
 <map id="NNFSCore::NeuralNetwork" name="NNFSCore::NeuralNetwork">
-<area shape="rect" id="node1" title="A class implementing a neural network model." alt="" coords="5,79,184,104"/>
+<area shape="rect" id="node1" title="A class implementing a neural network model." alt="" coords="5,79,184,105"/>
 <area shape="rect" id="node2" href="$class_n_n_f_s_core_1_1_model.html" title="Abstract base class for the model in a neural network." alt="" coords="31,5,158,31"/>
 </map>

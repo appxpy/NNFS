@@ -27,7 +27,12 @@ var NAVTREE =
   [ "NNFS", "index.html", [
     [ "NNFS - Neural Network From Scratch in C++", "index.html", "index" ],
     [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ]
+      ] ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -43,7 +48,8 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ]
+        [ "Functions", "globals_func.html", null ],
+        [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]
@@ -52,7 +58,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_activation_8hpp.html",
-"index.html#autotoc_md5"
+"class_n_n_f_s_core_1_1_softmax.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

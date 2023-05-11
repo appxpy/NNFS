@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['dense_2ehpp_0',['Dense.hpp',['../_dense_8hpp.html',1,'']]],
-  ['differentiable_2ehpp_1',['Differentiable.hpp',['../_differentiable_8hpp.html',1,'']]]
+  ['layer_2ehpp_0',['Layer.hpp',['../_layer_8hpp.html',1,'']]],
+  ['loss_2ehpp_1',['Loss.hpp',['../_loss_8hpp.html',1,'']]]
 ];

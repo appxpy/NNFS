@@ -1,7 +1,0 @@
-<map id="NNFSCore::Differentiable" name="NNFSCore::Differentiable">
-<area shape="rect" id="node1" title="Abstract base class for functions with gradients." alt="" coords="138,5,305,31"/>
-<area shape="rect" id="node2" href="$class_n_n_f_s_core_1_1_activation.html" title="Abstract base class for activation functions." alt="" coords="146,79,297,104"/>
-<area shape="rect" id="node3" href="$class_n_n_f_s_core_1_1_linear.html" title="Linear activation function." alt="" coords="5,152,133,177"/>
-<area shape="rect" id="node4" href="$class_n_n_f_s_core_1_1_re_l_u.html" title="Rectified Linear&#45;Unit activation function." alt="" coords="158,152,285,177"/>
-<area shape="rect" id="node5" href="$class_n_n_f_s_core_1_1_sigmoid.html" title="Sigmoid activation function." alt="" coords="309,152,448,177"/>
-</map>
