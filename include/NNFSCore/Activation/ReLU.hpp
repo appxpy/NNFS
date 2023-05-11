@@ -1,41 +1,25 @@
-#ifndef RELU_HPP
-#define RELU_HPP
+#ifndef RELU_ACTIVATION_HPP
+#define RELU_ACTIVATION_HPP
 
 #include "Activation.hpp"
 
 namespace NNFSCore
 {
-    /**
-     * @brief Rectified Linear-Unit activation function.
-     *
-     */
     class ReLU : public Activation
     {
     public:
-        /**
-         * @brief Computes the ReLU activation.
-         *
-         * @param input_tensor The input tensor.
-         * @return Eigen::MatrixXd The activation tensor.
-         */
-        Eigen::MatrixXd operator()(const Eigen::MatrixXd &input_tensor) const
+        void forward(Eigen::MatrixXd &out, const Eigen::MatrixXd &x) override
         {
-            return input_tensor.cwiseMax(0);
+            _forward_input = x;
+
+            out = (x.array() < 0.0).select(0.0, x);
         }
 
-        /**
-         * @brief Computes the gradient of the ReLU activation.
-         *
-         * @param input_tensor The input tensor.
-         * @return Eigen::MatrixXd The gradient tensor.
-         */
-        Eigen::MatrixXd gradient(const Eigen::MatrixXd &input_tensor) const
+        void backward(Eigen::MatrixXd &out, const Eigen::MatrixXd &dx) override
         {
-            Eigen::MatrixXd result = input_tensor;
-            result = (input_tensor.array() >= 0).cast<double>();
-            return result;
+            out = dx.array() * (_forward_input.array() > 0).cast<double>();
         }
     };
 }
 
-#endif // RELU_HPP
+#endif

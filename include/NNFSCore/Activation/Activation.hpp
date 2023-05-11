@@ -1,7 +1,7 @@
 #ifndef ACTIVATION_HPP
 #define ACTIVATION_HPP
 
-#include "../Common/Differentiable.hpp"
+#include "../Layer/Layer.hpp"
 
 namespace NNFSCore
 {
@@ -9,17 +9,14 @@ namespace NNFSCore
      * @brief Abstract base class for activation functions.
      *
      */
-    class Activation : public Differentiable
+    class Activation : public Layer
     {
     public:
-        /**
-         * @brief Pure virtual function for computing the activation.
-         *
-         * @param input_tensor The input tensor.
-         * @return Eigen::MatrixXd The activation tensor.
-         */
-        virtual Eigen::MatrixXd operator()(const Eigen::MatrixXd &input_tensor) const = 0;
+        Activation() : Layer(LayerType::ACTIVATION) {}
+
+    protected:
+        Eigen::MatrixXd _forward_input;
     };
-}
+};
 
 #endif // ACTIVATION_HPP

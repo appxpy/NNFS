@@ -1,38 +1,70 @@
-#ifndef LOSS_HPP
-#define LOSS_HPP
+#ifndef LOSS_BASE_HPP
+#define LOSS_BASE_HPP
 
-#include <Eigen/Core>
+#include <Eigen/Dense>
+#include "../Utilities/clue.hpp"
+#include "../Layer/Dense.hpp"
 
 namespace NNFSCore
 {
+    enum class LossType
+    {
+        CCE,
+        CCE_SOFTMAX
+    };
 
-    /**
-     * @brief This abstract class must be implemented by concrete Loss classes.
-     */
     class Loss
     {
     public:
-        /**
-         * @brief A pure virtual function for computing the loss.
-         *
-         * @param predictions The input tensor of predictions.
-         * @param labels The input tensor of labels.
-         * @return double The computed loss.
-         */
-        virtual double operator()(const Eigen::MatrixXd &predictions,
-                                  const Eigen::MatrixXd &labels) const = 0;
+        LossType type;
 
-        /**
-         * @brief A pure virtual function for computing the gradient of the loss.
-         *
-         * @param predictions The input tensor of predictions.
-         * @param labels The input tensor of labels.
-         * @return Eigen::MatrixXd The gradient tensor.
-         */
-        virtual Eigen::MatrixXd gradient(const Eigen::MatrixXd &predictions,
-                                         const Eigen::MatrixXd &labels) const = 0;
+    public:
+        Loss(LossType type) : type(type) {}
+
+        virtual ~Loss() = default;
+
+        virtual void forward(Eigen::MatrixXd &sample_losses, const Eigen::MatrixXd &predictions, const Eigen::MatrixXd &labels) const = 0;
+
+        virtual void backward(Eigen::MatrixXd &out, const Eigen::MatrixXd &predictions, const Eigen::MatrixXd &labels) const = 0;
+
+        void calculate(double &loss, const Eigen::MatrixXd &predictions, const Eigen::MatrixXd &labels)
+        {
+            Eigen::MatrixXd sample_losses;
+            forward(sample_losses, predictions, labels);
+            loss = sample_losses.mean();
+        }
+
+        double regularization_loss(const std::shared_ptr<Dense> &layer)
+        {
+            double regularization_loss = 0;
+            const double weight_regularizer_l1 = layer->l1_weights_regularizer();
+            const double weight_regularizer_l2 = layer->l2_weights_regularizer();
+            const double bias_regularizer_l1 = layer->l1_biases_regularizer();
+            const double bias_regularizer_l2 = layer->l2_biases_regularizer();
+
+            if (weight_regularizer_l1 > 0)
+            {
+                regularization_loss += weight_regularizer_l1 * layer->weights().array().abs().sum();
+            }
+
+            if (weight_regularizer_l2 > 0)
+            {
+                regularization_loss += weight_regularizer_l2 * (layer->weights().array() * layer->weights().array()).sum();
+            }
+
+            if (bias_regularizer_l1 > 0)
+            {
+                regularization_loss += bias_regularizer_l1 * layer->weights().array().abs().sum();
+            }
+
+            if (bias_regularizer_l2 > 0)
+            {
+                regularization_loss += bias_regularizer_l2 * (layer->biases().array() * layer->biases().array()).sum();
+            }
+
+            return regularization_loss;
+        }
     };
-
 }
 
-#endif // LOSS_HPP
+#endif

@@ -1,13 +1,22 @@
-#include "Activation/Activation.hpp"
-#include "Activation/Linear.hpp"
-#include "Activation/ReLU.hpp"
-#include "Activation/Sigmoid.hpp"
-
-#include "Callback/Callback.hpp"
-#include "Callback/CSVLogger.hpp"
-
-#include "Loss/Loss.hpp"
-#include "Loss/BinaryCrossEntropy.hpp"
+#define LOG_LEVEL LOG_SEV_NONE
 
 #include "Layer/Layer.hpp"
 #include "Layer/Dense.hpp"
+
+#include "Activation/ReLU.hpp"
+#include "Activation/Softmax.hpp"
+#include "Activation/Tanh.hpp"
+#include "Activation/Sigmoid.hpp"
+
+#include "Loss/Loss.hpp"
+#include "Loss/CCE.hpp"
+#include "Loss/CCE_Softmax.hpp"
+
+#include "Optimizer/Optimizer.hpp"
+#include "Optimizer/SGD.hpp"
+#include "Optimizer/RMSProp.hpp"
+#include "Optimizer/Adagrad.hpp"
+#include "Optimizer/Adam.hpp"
+
+#include "Model/Model.hpp"
+#include "Model/NeuralNetwork.hpp"

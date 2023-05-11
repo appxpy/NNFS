@@ -4,6 +4,8 @@
 #include <vector>
 #include <string>
 #include <cmath>
+#include <algorithm>
+#include <random>
 #include <filesystem>
 
 #include <stdio.h>
@@ -162,11 +164,10 @@ Eigen::MatrixXd read_mnist_images(const std::string &filename)
         {
             unsigned char pixel = 0;
             file.read((char *)&pixel, sizeof(pixel));
-            images(j, i) = static_cast<double>(pixel) / 255.0;
+            images(j, i) = static_cast<double>(pixel) / 255.;
         }
     }
-
-    return images;
+    return images.transpose();
 }
 
 /**
@@ -208,7 +209,7 @@ Eigen::MatrixXd read_mnist_labels(const std::string &filename)
         int index = static_cast<int>(label);
         labels(index, i) = 1.0;
     }
-    return labels;
+    return labels.transpose();
 }
 
 /**
@@ -267,6 +268,7 @@ fetch_mnist(const std::string &data_dir)
 
     Eigen::MatrixXd x_train = read_mnist_images(train_images_file);
     Eigen::MatrixXd y_train = read_mnist_labels(train_labels_file);
+
     Eigen::MatrixXd x_test = read_mnist_images(test_images_file);
     Eigen::MatrixXd y_test = read_mnist_labels(test_labels_file);
 

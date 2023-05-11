@@ -1,59 +1,77 @@
-#include <gtest/gtest.h>
-#include <Eigen/Dense>
+#include "gtest/gtest.h"
 #include <NNFSCore/Activation/ReLU.hpp>
-#include <NNFSCore/Activation/Sigmoid.hpp>
-#include <NNFSCore/Activation/Linear.hpp>
+#include <NNFSCore/Activation/Softmax.hpp>
 
-TEST(ActivationTest, TestReLU)
+class ReLUTest : public ::testing::Test
 {
-    Eigen::MatrixXd input(1, 2);
-    input << -1, 1;
-    Eigen::MatrixXd output(1, 2);
-    output << 0, 1;
+protected:
+    NNFSCore::ReLU ReLU_;
+};
 
-    NNFSCore::ReLU relu;
+TEST_F(ReLUTest, GeneralTest)
+{
+    Eigen::MatrixXd x{
+        {1, 2, -3, -4},
+        {2, -7, -1, 3},
+        {-1, 2, 5, -1},
+    };
+    Eigen::MatrixXd x_out;
 
-    // Checking shapes
-    ASSERT_EQ(relu(Eigen::MatrixXd::Random(10, 20)).rows(), 10);
-    ASSERT_EQ(relu(Eigen::MatrixXd::Random(10, 20)).cols(), 20);
-    // Checking values
-    ASSERT_TRUE(relu(input).isApprox(output));
-    ASSERT_TRUE(relu.gradient(input).isApprox(output));
+    Eigen::MatrixXd x_expected{
+        {1, 2, 0, 0},
+        {2, 0, 0, 3},
+        {0, 2, 5, 0},
+    };
+    ReLU_.forward(x_out, x);
+
+    ASSERT_TRUE(x_out.isApprox(x_expected, 1e-7));
+
+    Eigen::MatrixXd dx_out;
+
+    Eigen::MatrixXd dx_expected{
+        {1, 1, 0, 0},
+        {1, 0, 0, 1},
+        {0, 1, 1, 0},
+    };
+
+    ReLU_.backward(dx_out, x);
+
+    ASSERT_TRUE(dx_out.isApprox(dx_expected, 1e-7));
 }
 
-TEST(ActivationTest, TestSigmoid)
+class SoftmaxTest : public ::testing::Test
 {
-    Eigen::MatrixXd input(1, 3);
-    input << -100, 0, 100;
+protected:
+    NNFSCore::Softmax Softmax_;
+};
 
-    NNFSCore::Sigmoid sigmoid;
-
-    // Checking shapes
-    ASSERT_EQ(sigmoid(Eigen::MatrixXd::Random(10, 20)).rows(), 10);
-    ASSERT_EQ(sigmoid(Eigen::MatrixXd::Random(10, 20)).cols(), 20);
-    // Checking values
-    ASSERT_NEAR(sigmoid(input)(0, 0), 0.0, 1e-6);
-    ASSERT_NEAR(sigmoid(input)(0, 1), 0.5, 1e-6);
-    ASSERT_NEAR(sigmoid(input)(0, 2), 1.0, 1e-6);
-    ASSERT_NEAR(sigmoid.gradient(input)(0, 0), 0.0, 1e-6);
-    ASSERT_NEAR(sigmoid.gradient(input)(0, 2), 0.0, 1e-6);
-}
-
-TEST(ActivationTest, TestLinear)
+TEST_F(SoftmaxTest, GeneralTest)
 {
-    Eigen::MatrixXd input = Eigen::MatrixXd::Random(3, 3);
+    Eigen::MatrixXd x{
+        {.1, .2, .3},
+    };
+    Eigen::MatrixXd x_out;
 
-    NNFSCore::Linear linear;
+    Eigen::MatrixXd x_expected{
+        {0.30060961, 0.33222499, 0.3671654},
+    };
+    Softmax_.forward(x_out, x);
 
-    // Checking shapes
-    ASSERT_EQ(linear(Eigen::MatrixXd::Random(10, 20)).rows(), 10);
-    ASSERT_EQ(linear(Eigen::MatrixXd::Random(10, 20)).cols(), 20);
+    ASSERT_TRUE(x_out.isApprox(x_expected, 1e-7));
 
-    // Checking values
-    Eigen::MatrixXd output = linear(input);
-    ASSERT_TRUE(output.isApprox(input));
+    Eigen::MatrixXd x_custom_out{
+        {0.7, 0.2, 0.1},
+    };
 
-    // Checking gradient values
-    Eigen::MatrixXd gradient_output = linear.gradient(input);
-    ASSERT_TRUE(gradient_output.isApprox(Eigen::MatrixXd::Ones(input.rows(), input.cols())));
+    Softmax_._forward_output = x_custom_out;
+
+    Eigen::MatrixXd dx_out;
+
+    Eigen::MatrixXd dx_expected{
+        {-0.028, 0.012, 0.016}};
+
+    Softmax_.backward(dx_out, x);
+    std::cout << std::endl
+              << dx_out << std::endl;
+    ASSERT_TRUE(dx_out.isApprox(dx_expected, 1e-7));
 }

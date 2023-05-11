@@ -1,143 +1,226 @@
-#ifndef DENSE_HPP
-#define DENSE_HPP
+#ifndef DENSE_LAYER_HPP
+#define DENSE_LAYER_HPP
 
+#include <iostream>
+#include <random>
 #include "Layer.hpp"
-#include <Eigen/Dense>
 
 namespace NNFSCore
 {
 
     /**
-     * @class Dense
-     * @brief Fully connected layer
-     * @details Inherits from the Layer base class
+     * @class Layer
+     * @brief Abstract base class for layers in a neural network
      */
     class Dense : public Layer
     {
     public:
-        /**
-         * @brief Constructor for Dense layer
-         * @param units Number of units in the layer
-         */
-        explicit Dense(int units) : _units(units), _input_units(0) {}
-
-        /**
-         * @brief Get the output tensor
-         * @return The output tensor
-         */
-        const Eigen::MatrixXd &output() const override { return _output; }
-
-        /**
-         * @brief Compute the output of the layer given an input tensor
-         * @param input_tensor Input tensor
-         * @return The output tensor
-         */
-        Eigen::MatrixXd operator()(const Eigen::MatrixXd &input_tensor) override
+        Dense(int n_input, int n_output,
+              double l1_weights_regularizer = .0,
+              double l1_biases_regularizer = .0,
+              double l2_weights_regularizer = .0,
+              double l2_biases_regularizer = .0) : Layer(LayerType::DENSE), _n_input(n_input), _n_output(n_output),
+                                                   _l1_weights_regularizer(l1_weights_regularizer),
+                                                   _l1_biases_regularizer(l1_biases_regularizer),
+                                                   _l2_weights_regularizer(l2_weights_regularizer),
+                                                   _l2_biases_regularizer(l2_biases_regularizer)
         {
-            if (_weights.rows() == 0)
+            std::random_device rd;
+            std::mt19937 gen(rd());
+            std::uniform_real_distribution<double> dis(-1, 1);
+
+            _weights = Eigen::MatrixXd::Zero(n_input, n_output).unaryExpr([&](double)
+                                                                          { return .1 * dis(gen); });
+            _biases = Eigen::MatrixXd::Zero(1, n_output);
+
+            _weights_optimizer = Eigen::MatrixXd::Zero(n_input, n_output);
+
+            _biases_optimizer = Eigen::MatrixXd::Zero(1, n_output);
+
+            _weights_optimizer_additional = Eigen::MatrixXd::Zero(n_input, n_output);
+
+            _biases_optimizer_additional = Eigen::MatrixXd::Zero(1, n_output);
+
+            LOG_DEBUG("Initial weights are : " << std::endl
+                                               << _weights);
+
+            LOG_DEBUG("Initial biases are : " << std::endl
+                                              << _biases);
+        }
+
+        void
+        forward(Eigen::MatrixXd &out, const Eigen::MatrixXd &x)
+        {
+            _forward_input = x;
+            out = x * _weights;
+            for (int row = 0; row < out.rows(); ++row)
             {
-                build(input_tensor);
+                out.row(row).array() += _biases.array();
+            }
+        }
+
+        const Eigen::MatrixXd &dweights() const
+        {
+            return _dweights;
+        }
+
+        const Eigen::MatrixXd &dbiases() const
+        {
+            return _dbiases;
+        }
+
+        void backward(Eigen::MatrixXd &out, const Eigen::MatrixXd &dx)
+        {
+            _dweights = _forward_input.transpose() * dx;
+            _dbiases = dx.colwise().sum().array();
+
+            // Gradients on regularization
+            // L1 on weights
+            if (_l1_weights_regularizer > 0)
+            {
+                Eigen::MatrixXd dL1 = Eigen::MatrixXd::Ones(_weights.rows(), _weights.cols());
+                // dL1.array()(_weights.array() < 0) = -1;
+                dL1 = (_weights.array() < 0).select(-1, dL1);
+                _dweights += _l1_weights_regularizer * dL1;
+            }
+            // L2 on weights
+            if (_l2_weights_regularizer > 0)
+            {
+                _dweights += 2 * _l2_weights_regularizer * _weights;
+            }
+            // L1 on biases
+            if (_l1_biases_regularizer > 0)
+            {
+                Eigen::MatrixXd dL1 = Eigen::MatrixXd::Ones(_biases.rows(), _biases.cols());
+                dL1 = (_biases.array() < 0).select(-1, dL1);
+                _dbiases += _l1_biases_regularizer * dL1.colwise().sum().transpose();
+            }
+            // L2 on biases
+            if (_l2_biases_regularizer > 0)
+            {
+                _dbiases += 2 * _l2_biases_regularizer * _biases;
             }
 
-            _output = _weights * input_tensor + _bias.replicate(1, input_tensor.cols());
-
-            return _output;
+            out = dx * _weights.transpose();
         }
 
-        /**
-         * @brief Build the layer using the input tensor's shape
-         * @param input_tensor Input tensor
-         */
-        void build(const Eigen::MatrixXd &input_tensor) override
+        void weights(Eigen::MatrixXd &weights)
         {
-            _input_units = input_tensor.rows();
+            if (_weights.rows() != weights.rows() || _weights.cols() != weights.cols())
+            {
+                std::cerr << "Shape of new matrix does not match to initial's matrix shape." << std::endl;
+            }
 
-            // Initialize weights randomly
-            _weights = Eigen::MatrixXd::Random(_units, _input_units);
-            _weights *= std::sqrt(2.0 / _input_units);
-
-            // Initialize biases to zero
-            _bias = Eigen::MatrixXd::Zero(_units, 1);
-
-            // Initialize gradients to zero
-            _dw = Eigen::MatrixXd::Zero(_units, _input_units);
-            _db = Eigen::MatrixXd::Zero(_units, 1);
+            _weights = weights;
         }
 
-        /**
-         * @brief Update the layer's parameters using the learning rate
-         * @param lr Learning rate
-         */
-        void update(double lr) override
-        {
-            _weights -= lr * _dw;
-            _bias -= lr * _db;
-        }
-
-        /**
-         * @brief Get the gradient of the weights
-         * @return Gradient of the weights
-         */
-        const Eigen::MatrixXd &grad_weights() const override
-        {
-            return _dw;
-        }
-
-        /**
-         * @brief Set the gradient of the weights
-         * @param gradients Gradient of the weights
-         */
-        void grad_weights(const Eigen::MatrixXd &gradients) override
-        {
-            _dw = gradients;
-        }
-
-        /**
-         * @brief Get the gradient of the bias
-         * @return Gradient of the bias
-         */
-        const Eigen::MatrixXd &grad_bias() const override
-        {
-            return _db;
-        }
-
-        /**
-         * @brief Set the gradient of the bias
-         * @param gradients Gradient of the bias
-         */
-        void grad_bias(const Eigen::MatrixXd &gradients) override
-        {
-            _db = gradients;
-        }
-
-        /**
-         * @brief Get the weights tensor
-         * @return Weights tensor
-         */
-        const Eigen::MatrixXd &weights() const override
+        const Eigen::MatrixXd &weights() const
         {
             return _weights;
         }
 
-        /**
-         * @brief Get the bias tensor
-         * @return Bias tensor
-         */
-        const Eigen::MatrixXd &bias() const override
+        void weights_optimizer(Eigen::MatrixXd woptimizer)
         {
-            return _bias;
+            _weights_optimizer = woptimizer;
+        }
+
+        void biases_optimizer(Eigen::MatrixXd boptimizer)
+        {
+            _biases_optimizer = boptimizer;
+        }
+
+        const Eigen::MatrixXd &weights_optimizer() const
+        {
+            return _weights_optimizer;
+        }
+
+        const Eigen::MatrixXd &biases_optimizer() const
+        {
+            return _biases_optimizer;
+        }
+
+        void weights_optimizer_additional(Eigen::MatrixXd woptimizer)
+        {
+            _weights_optimizer_additional = woptimizer;
+        }
+
+        void biases_optimizer_additional(Eigen::MatrixXd boptimizer)
+        {
+            _biases_optimizer_additional = boptimizer;
+        }
+
+        const Eigen::MatrixXd &weights_optimizer_additional() const
+        {
+            return _weights_optimizer_additional;
+        }
+
+        const Eigen::MatrixXd &biases_optimizer_additional() const
+        {
+            return _biases_optimizer_additional;
+        }
+
+        const double &l1_weights_regularizer() const
+        {
+            return _l1_weights_regularizer;
+        }
+
+        const double &l2_weights_regularizer() const
+        {
+            return _l2_weights_regularizer;
+        }
+
+        const double &l1_biases_regularizer() const
+        {
+            return _l1_biases_regularizer;
+        }
+
+        const double &l2_biases_regularizer() const
+        {
+            return _l2_biases_regularizer;
+        }
+
+        void biases(Eigen::MatrixXd &biases)
+        {
+            if (_biases.rows() != biases.rows() || _biases.cols() != biases.cols())
+            {
+                std::cerr << "Shape of new matrix does not match to initial's matrix shape." << std::endl;
+            }
+            _biases = biases;
+        }
+
+        const Eigen::MatrixXd &biases() const
+        {
+            return _biases;
+        }
+
+        int parameters() const
+        {
+            return _n_input * _n_output + _n_output;
         }
 
     private:
-        int _units;
-        int _input_units;
+        int _n_input;
+        int _n_output;
+
         Eigen::MatrixXd _weights;
-        Eigen::MatrixXd _bias;
-        Eigen::MatrixXd _output;
-        Eigen::MatrixXd _dw;
-        Eigen::MatrixXd _db;
+        Eigen::MatrixXd _biases;
+
+        Eigen::MatrixXd _dweights;
+        Eigen::MatrixXd _dbiases;
+
+        Eigen::MatrixXd _weights_optimizer;
+        Eigen::MatrixXd _biases_optimizer;
+
+        Eigen::MatrixXd _weights_optimizer_additional;
+        Eigen::MatrixXd _biases_optimizer_additional;
+
+        double _l1_weights_regularizer;
+        double _l1_biases_regularizer;
+        double _l2_weights_regularizer;
+        double _l2_biases_regularizer;
+
+        Eigen::MatrixXd _forward_input;
     };
+}
 
-} // namespace NNFSCore
-
-#endif // DENSE_HPP
+#endif

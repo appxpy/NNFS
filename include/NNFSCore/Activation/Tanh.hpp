@@ -1,25 +1,25 @@
-#ifndef SIGMOID_ACTIVATION_HPP
-#define SIGMOID_ACTIVATION_HPP
+#ifndef TANH_ACTIVATION_HPP
+#define TANH_ACTIVATION_HPP
 
 #include "Activation.hpp"
 
 namespace NNFSCore
 {
-    class Sigmoid : public Activation
+    class Tanh : public Activation
     {
     public:
         void forward(Eigen::MatrixXd &out, const Eigen::MatrixXd &x) override
         {
             _forward_input = x;
 
-            out = 1 / (1 + (-x).array().exp());
+            out = x.array().tanh();
 
             _forward_output = out;
         }
 
         void backward(Eigen::MatrixXd &out, const Eigen::MatrixXd &dx) override
         {
-            out = _forward_output.array() * (1 - _forward_output.array()) * dx.array();
+            out = (1.0 - _forward_output.array().square()) * dx.array();
         }
 
     private:

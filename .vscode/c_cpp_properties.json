@@ -3,17 +3,18 @@
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/external/eigen/Eigen/**"
             ],
             "defines": [],
-            "compilerPath": "/opt/homebrew/bin/gcc-12",
-            "intelliSenseMode": "macos-gcc-arm64",
+            "compilerPath": "/opt/homebrew/opt/llvm@14/bin/clang",
+            "intelliSenseMode": "macos-clang-arm64",
             "forcedInclude": [
-                "${workspaceFolder}/.vscode/eigen_fix.h"
+                "${workspaceFolder}/.vscode/fix.h"
             ],
+            "mergeConfigurations": true,
             "cStandard": "c17",
-            "cppStandard": "c++17",
-            "configurationProvider": "ms-vscode.makefile-tools"
+            "cppStandard": "c++17"
         }
     ],
     "version": 4
