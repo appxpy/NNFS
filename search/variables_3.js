@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['metrics_5f_0',['metrics_',['../class_metrics_test.html#a5b76e312a7cfaf4239bf7f64b4c2d695',1,'MetricsTest']]]
+  ['linear_5f_0',['linear_',['../class_dense_test.html#a8043d5d0d821dde6820e323cd106726c',1,'DenseTest']]]
 ];

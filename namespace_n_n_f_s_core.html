@@ -158,7 +158,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for the model in a neural network.  <a href="class_n_n_f_s_core_1_1_model.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_neural_network.html">NeuralNetwork</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class implementing a neural network model.  <a href="class_n_n_f_s_core_1_1_neural_network.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A neural network model.  <a href="class_n_n_f_s_core_1_1_neural_network.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_optimizer.html">Optimizer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,6 +177,16 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a833ded9c2d34c0b85de4aefd20cf105a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_n_n_f_s_core.html#a833ded9c2d34c0b85de4aefd20cf105a">ActivationType</a> { <br />
+&#160;&#160;<a class="el" href="namespace_n_n_f_s_core.html#a833ded9c2d34c0b85de4aefd20cf105aad346bb4679d29be241279f15d7795c1c">RELU</a>
+, <a class="el" href="namespace_n_n_f_s_core.html#a833ded9c2d34c0b85de4aefd20cf105aab299f45b5de2a8f7c45192590290742b">SIGMOID</a>
+, <a class="el" href="namespace_n_n_f_s_core.html#a833ded9c2d34c0b85de4aefd20cf105aa143c8c6f51b9bb893ce71e38702e3cc1">TANH</a>
+, <a class="el" href="namespace_n_n_f_s_core.html#a833ded9c2d34c0b85de4aefd20cf105aa1d993169621e0855bad00d71c005cf1b">SOFTMAX</a>
+, <br />
+&#160;&#160;<a class="el" href="namespace_n_n_f_s_core.html#a833ded9c2d34c0b85de4aefd20cf105aab50339a10e1de285ac99d4c3990b8693">NONE</a>
+<br />
+ }</td></tr>
+<tr class="separator:a833ded9c2d34c0b85de4aefd20cf105a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53e8f4b03b2d69b6dab09506bcf6e9b2"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_n_n_f_s_core.html#a53e8f4b03b2d69b6dab09506bcf6e9b2">LayerType</a> { <a class="el" href="namespace_n_n_f_s_core.html#a53e8f4b03b2d69b6dab09506bcf6e9b2a0706fbbd929bd8abc4de386c53d439ff">DENSE</a>
 , <a class="el" href="namespace_n_n_f_s_core.html#a53e8f4b03b2d69b6dab09506bcf6e9b2aa62e9496bde05da2a14255d4a533bab9">ACTIVATION</a>
  }</td></tr>
@@ -187,6 +197,35 @@ Enumerations</h2></td></tr>
 <tr class="separator:a2efd350abd46f73a809ab9e2482ad958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a833ded9c2d34c0b85de4aefd20cf105a" name="a833ded9c2d34c0b85de4aefd20cf105a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a833ded9c2d34c0b85de4aefd20cf105a">&#9670;&#160;</a></span>ActivationType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespace_n_n_f_s_core.html#a833ded9c2d34c0b85de4aefd20cf105a">NNFSCore::ActivationType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a833ded9c2d34c0b85de4aefd20cf105aad346bb4679d29be241279f15d7795c1c" name="a833ded9c2d34c0b85de4aefd20cf105aad346bb4679d29be241279f15d7795c1c"></a>RELU&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a833ded9c2d34c0b85de4aefd20cf105aab299f45b5de2a8f7c45192590290742b" name="a833ded9c2d34c0b85de4aefd20cf105aab299f45b5de2a8f7c45192590290742b"></a>SIGMOID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a833ded9c2d34c0b85de4aefd20cf105aa143c8c6f51b9bb893ce71e38702e3cc1" name="a833ded9c2d34c0b85de4aefd20cf105aa143c8c6f51b9bb893ce71e38702e3cc1"></a>TANH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a833ded9c2d34c0b85de4aefd20cf105aa1d993169621e0855bad00d71c005cf1b" name="a833ded9c2d34c0b85de4aefd20cf105aa1d993169621e0855bad00d71c005cf1b"></a>SOFTMAX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a833ded9c2d34c0b85de4aefd20cf105aab50339a10e1de285ac99d4c3990b8693" name="a833ded9c2d34c0b85de4aefd20cf105aab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a53e8f4b03b2d69b6dab09506bcf6e9b2" name="a53e8f4b03b2d69b6dab09506bcf6e9b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a53e8f4b03b2d69b6dab09506bcf6e9b2">&#9670;&#160;</a></span>LayerType</h2>
 

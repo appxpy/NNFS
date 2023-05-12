@@ -138,6 +138,9 @@ $(document).ready(function(){initNavTree('class_n_n_f_s_core_1_1_metrics.html','
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aaa54dd98edc523b0fe80703a0f129852"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_metrics.html#aaa54dd98edc523b0fe80703a0f129852">accuracy</a> (double &amp;accuracy, const Eigen::MatrixXd &amp;predicted, const Eigen::MatrixXd &amp;labels)</td></tr>
 <tr class="separator:aaa54dd98edc523b0fe80703a0f129852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8cc5c85be202683285ab3aaee9aa04"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_metrics.html#a5e8cc5c85be202683285ab3aaee9aa04">onehotdecode</a> (Eigen::VectorXi &amp;decoded, const Eigen::MatrixXd &amp;onehot)</td></tr>
+<tr class="memdesc:a5e8cc5c85be202683285ab3aaee9aa04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes one-hot encoded data.  <br /></td></tr>
+<tr class="separator:a5e8cc5c85be202683285ab3aaee9aa04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aaa54dd98edc523b0fe80703a0f129852" name="aaa54dd98edc523b0fe80703a0f129852"></a>
@@ -179,6 +182,51 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e8cc5c85be202683285ab3aaee9aa04" name="a5e8cc5c85be202683285ab3aaee9aa04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e8cc5c85be202683285ab3aaee9aa04">&#9670;&#160;</a></span>onehotdecode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NNFSCore::Metrics::onehotdecode </td>
+          <td>(</td>
+          <td class="paramtype">Eigen::VectorXi &amp;&#160;</td>
+          <td class="paramname"><em>decoded</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>onehot</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decodes one-hot encoded data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">decoded</td><td>The decoded data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">onehot</td><td>The one-hot encoded data. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

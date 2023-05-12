@@ -18,6 +18,13 @@ var namespace_n_n_f_s_core =
     [ "Sigmoid", "class_n_n_f_s_core_1_1_sigmoid.html", "class_n_n_f_s_core_1_1_sigmoid" ],
     [ "Softmax", "class_n_n_f_s_core_1_1_softmax.html", "class_n_n_f_s_core_1_1_softmax" ],
     [ "Tanh", "class_n_n_f_s_core_1_1_tanh.html", "class_n_n_f_s_core_1_1_tanh" ],
+    [ "ActivationType", "namespace_n_n_f_s_core.html#a833ded9c2d34c0b85de4aefd20cf105a", [
+      [ "RELU", "namespace_n_n_f_s_core.html#a833ded9c2d34c0b85de4aefd20cf105aad346bb4679d29be241279f15d7795c1c", null ],
+      [ "SIGMOID", "namespace_n_n_f_s_core.html#a833ded9c2d34c0b85de4aefd20cf105aab299f45b5de2a8f7c45192590290742b", null ],
+      [ "TANH", "namespace_n_n_f_s_core.html#a833ded9c2d34c0b85de4aefd20cf105aa143c8c6f51b9bb893ce71e38702e3cc1", null ],
+      [ "SOFTMAX", "namespace_n_n_f_s_core.html#a833ded9c2d34c0b85de4aefd20cf105aa1d993169621e0855bad00d71c005cf1b", null ],
+      [ "NONE", "namespace_n_n_f_s_core.html#a833ded9c2d34c0b85de4aefd20cf105aab50339a10e1de285ac99d4c3990b8693", null ]
+    ] ],
     [ "LayerType", "namespace_n_n_f_s_core.html#a53e8f4b03b2d69b6dab09506bcf6e9b2", [
       [ "DENSE", "namespace_n_n_f_s_core.html#a53e8f4b03b2d69b6dab09506bcf6e9b2a0706fbbd929bd8abc4de386c53d439ff", null ],
       [ "ACTIVATION", "namespace_n_n_f_s_core.html#a53e8f4b03b2d69b6dab09506bcf6e9b2aa62e9496bde05da2a14255d4a533bab9", null ]

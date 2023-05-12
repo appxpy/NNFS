@@ -16,6 +16,7 @@ var class_n_n_f_s_core_1_1_dense =
     [ "l2_biases_regularizer", "class_n_n_f_s_core_1_1_dense.html#a52d4c1cb2050366bdd5662d063380ccf", null ],
     [ "l2_weights_regularizer", "class_n_n_f_s_core_1_1_dense.html#a1f8a32646d2ea531080e6e5bf35882c6", null ],
     [ "parameters", "class_n_n_f_s_core_1_1_dense.html#a483a47b93f09b33b897fdd5ce42e5c5e", null ],
+    [ "shape", "class_n_n_f_s_core_1_1_dense.html#acf6f20fd6909c234df50c90fdbfed72b", null ],
     [ "weights", "class_n_n_f_s_core_1_1_dense.html#ac4286cd394677ff119054d317002bf06", null ],
     [ "weights", "class_n_n_f_s_core_1_1_dense.html#ad5070670671f1636edf90a35ba8d928b", null ],
     [ "weights_optimizer", "class_n_n_f_s_core_1_1_dense.html#a54cbb9e62cabaf1efeb85c8a98bee0f4", null ],

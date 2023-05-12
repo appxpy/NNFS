@@ -1,14 +1,13 @@
 <map id="include/NNFSCore/Optimizer/Optimizer.hpp" name="include/NNFSCore/Optimizer/Optimizer.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="78,5,268,46"/>
-<area shape="rect" id="node2" title=" " alt="" coords="42,94,136,120"/>
-<area shape="rect" id="node3" href="$clue_8hpp.html" title=" " alt="" coords="141,241,269,267"/>
-<area shape="rect" id="node9" href="$_dense_8hpp.html" title=" " alt="" coords="242,94,370,120"/>
-<area shape="rect" id="node4" title=" " alt="" coords="264,315,330,341"/>
-<area shape="rect" id="node5" title=" " alt="" coords="5,315,74,341"/>
-<area shape="rect" id="node6" title=" " alt="" coords="98,315,162,341"/>
-<area shape="rect" id="node7" title=" " alt="" coords="371,315,442,341"/>
-<area shape="rect" id="node8" title=" " alt="" coords="186,315,240,341"/>
-<area shape="rect" id="node10" title=" " alt="" coords="210,168,274,193"/>
-<area shape="rect" id="node11" href="$_layer_8hpp.html" title=" " alt="" coords="298,168,376,193"/>
-<area shape="rect" id="node12" title=" " alt="" coords="292,241,376,267"/>
+<area shape="rect" id="node1" title=" " alt="" coords="135,5,324,46"/>
+<area shape="rect" id="node2" title=" " alt="" coords="98,241,192,267"/>
+<area shape="rect" id="node3" href="$clue_8hpp.html" title=" " alt="" coords="216,241,344,267"/>
+<area shape="rect" id="node9" href="$_dense_8hpp.html" title=" " alt="" coords="29,94,157,120"/>
+<area shape="rect" id="node4" title=" " alt="" coords="200,315,266,341"/>
+<area shape="rect" id="node5" title=" " alt="" coords="291,315,359,341"/>
+<area shape="rect" id="node6" title=" " alt="" coords="384,315,448,341"/>
+<area shape="rect" id="node7" title=" " alt="" coords="14,315,85,341"/>
+<area shape="rect" id="node8" title=" " alt="" coords="123,315,176,341"/>
+<area shape="rect" id="node10" title=" " alt="" coords="26,168,91,193"/>
+<area shape="rect" id="node11" href="$_layer_8hpp.html" title=" " alt="" coords="115,168,192,193"/>
 </map>

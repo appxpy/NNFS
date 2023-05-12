@@ -5,9 +5,9 @@ var indexSectionsWithContent =
   2: "cn",
   3: "acdlmnorst",
   4: "abcdefilnoprstuw~",
-  5: "_clmrst",
-  6: "l",
-  7: "acd",
+  5: "_aclmrst",
+  6: "al",
+  7: "acdnrst",
   8: "cl",
   9: "n"
 };

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['type_0',['type',['../class_n_n_f_s_core_1_1_layer.html#ab48aa4bd54a42fac443decb97c283b04',1,'NNFSCore::Layer::type()'],['../class_n_n_f_s_core_1_1_loss.html#a2d9108d64d008520da718b10ced96eef',1,'NNFSCore::Loss::type()']]]
+  ['softmax_5f_0',['softmax_',['../class_c_c_e_softmax_test.html#a3516260173ca953ad01328b4371a8c16',1,'CCESoftmaxTest']]],
+  ['softmax_5f_1',['Softmax_',['../class_softmax_test.html#ae836dc43352ca65d1fc6f46a86eee544',1,'SoftmaxTest']]]
 ];

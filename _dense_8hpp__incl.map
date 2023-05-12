@@ -1,12 +1,12 @@
 <map id="include/NNFSCore/Layer/Dense.hpp" name="include/NNFSCore/Layer/Dense.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="15,5,182,46"/>
+<area shape="rect" id="node1" title=" " alt="" coords="11,5,178,46"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,241,77,267"/>
-<area shape="rect" id="node3" title=" " alt="" coords="66,94,131,120"/>
-<area shape="rect" id="node4" href="$_layer_8hpp.html" title=" " alt="" coords="154,94,232,120"/>
-<area shape="rect" id="node5" title=" " alt="" coords="67,168,151,193"/>
-<area shape="rect" id="node6" href="$clue_8hpp.html" title=" " alt="" coords="175,168,302,193"/>
-<area shape="rect" id="node7" title=" " alt="" coords="107,241,173,267"/>
-<area shape="rect" id="node8" title=" " alt="" coords="198,241,266,267"/>
-<area shape="rect" id="node9" title=" " alt="" coords="290,241,355,267"/>
-<area shape="rect" id="node10" title=" " alt="" coords="378,241,432,267"/>
+<area shape="rect" id="node3" title=" " alt="" coords="62,94,127,120"/>
+<area shape="rect" id="node4" href="$_layer_8hpp.html" title=" " alt="" coords="150,94,228,120"/>
+<area shape="rect" id="node5" title=" " alt="" coords="62,168,156,193"/>
+<area shape="rect" id="node6" href="$clue_8hpp.html" title=" " alt="" coords="180,168,307,193"/>
+<area shape="rect" id="node7" title=" " alt="" coords="109,241,176,267"/>
+<area shape="rect" id="node8" title=" " alt="" coords="200,241,269,267"/>
+<area shape="rect" id="node9" title=" " alt="" coords="293,241,357,267"/>
+<area shape="rect" id="node10" title=" " alt="" coords="381,241,434,267"/>
 </map>

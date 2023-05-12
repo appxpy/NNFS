@@ -147,10 +147,6 @@ Inheritance diagram for NNFSCore::Model:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a59aa52dc645fcfd35c220849184b15ca"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a59aa52dc645fcfd35c220849184b15ca">~Model</a> ()=default</td></tr>
 <tr class="separator:a59aa52dc645fcfd35c220849184b15ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a873cdf8dd9ae4976e90a2d483dd8ae8f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a873cdf8dd9ae4976e90a2d483dd8ae8f">backward</a> (Eigen::MatrixXd &amp;predicted, const Eigen::MatrixXd &amp;labels)=0</td></tr>
-<tr class="separator:a873cdf8dd9ae4976e90a2d483dd8ae8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a520215952188f22deb9c8758711f5099"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a520215952188f22deb9c8758711f5099">forward</a> (Eigen::MatrixXd &amp;x)=0</td></tr>
-<tr class="separator:a520215952188f22deb9c8758711f5099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d7d2d9d7b6ce94622f9514dcce728af"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_model.html#a1d7d2d9d7b6ce94622f9514dcce728af">fit</a> (const Eigen::MatrixXd &amp;examples, const Eigen::MatrixXd &amp;labels, const Eigen::MatrixXd &amp;test_examples, const Eigen::MatrixXd &amp;test_labels, int epochs, int batch_size, bool verbose=false)=0</td></tr>
 <tr class="separator:a1d7d2d9d7b6ce94622f9514dcce728af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -183,44 +179,6 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a873cdf8dd9ae4976e90a2d483dd8ae8f" name="a873cdf8dd9ae4976e90a2d483dd8ae8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a873cdf8dd9ae4976e90a2d483dd8ae8f">&#9670;&#160;</a></span>backward()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void NNFSCore::Model::backward </td>
-          <td>(</td>
-          <td class="paramtype">Eigen::MatrixXd &amp;&#160;</td>
-          <td class="paramname"><em>predicted</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
-          <td class="paramname"><em>labels</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#a26973bde58f5c182053689701b2bd818">NNFSCore::NeuralNetwork</a>.</p>
-
-</div>
-</div>
 <a id="a1d7d2d9d7b6ce94622f9514dcce728af" name="a1d7d2d9d7b6ce94622f9514dcce728af"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d7d2d9d7b6ce94622f9514dcce728af">&#9670;&#160;</a></span>fit()</h2>
 
@@ -286,34 +244,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#a86f7ff58dac4d05312a8ccc53229da7b">NNFSCore::NeuralNetwork</a>.</p>
-
-</div>
-</div>
-<a id="a520215952188f22deb9c8758711f5099" name="a520215952188f22deb9c8758711f5099"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a520215952188f22deb9c8758711f5099">&#9670;&#160;</a></span>forward()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void NNFSCore::Model::forward </td>
-          <td>(</td>
-          <td class="paramtype">Eigen::MatrixXd &amp;&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_n_n_f_s_core_1_1_neural_network.html#a4f6226ef44c7dfb4f954b28229b909bd">NNFSCore::NeuralNetwork</a>.</p>
 
 </div>
 </div>

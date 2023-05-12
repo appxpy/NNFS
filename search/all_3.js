@@ -12,8 +12,8 @@ var searchData=
   ['ccetest_9',['CCETest',['../class_c_c_e_test.html',1,'']]],
   ['clue_10',['clue',['../namespaceclue.html',1,'']]],
   ['clue_2ehpp_11',['clue.hpp',['../clue_8hpp.html',1,'']]],
-  ['clue_5fis_5factive_12',['clue_is_active',['../clue_8hpp.html#aa4e49a94ae488d92d32ab8044418b3ff',1,'clue.hpp']]],
-  ['clue_5fis_5factive_13',['clue_IS_ACTIVE',['../clue_8hpp.html#a38003c726922b0875c2dca28fd71e09a',1,'clue.hpp']]],
+  ['clue_5fis_5factive_12',['clue_IS_ACTIVE',['../clue_8hpp.html#a38003c726922b0875c2dca28fd71e09a',1,'clue.hpp']]],
+  ['clue_5fis_5factive_13',['clue_is_active',['../clue_8hpp.html#aa4e49a94ae488d92d32ab8044418b3ff',1,'clue.hpp']]],
   ['clue_5fis_5factive_5fbuild_14',['clue_is_active_build',['../clue_8hpp.html#a4f8b30eccb1e197b69366fbe006ae65e',1,'clue.hpp']]],
   ['clue_5fis_5factive_5fbuild_15',['clue_IS_ACTIVE_BUILD',['../clue_8hpp.html#afe05fa3bb4903f87372ed5827a95d228',1,'clue.hpp']]],
   ['clue_5flog_5falert_16',['clue_LOG_ALERT',['../clue_8hpp.html#af5192eb5a914d89d5769bf88347a1a86',1,'clue.hpp']]],
@@ -58,5 +58,6 @@ var searchData=
   ['clue_5fstringify_55',['clue_STRINGIFY',['../clue_8hpp.html#a695277ec56f978fc1c15b4117169dfe5',1,'clue.hpp']]],
   ['clue_5fstringify_5f_56',['clue_STRINGIFY_',['../clue_8hpp.html#a1dc7a0004f452f894d3cd380da04f829',1,'clue.hpp']]],
   ['clue_5fversion_57',['clue_VERSION',['../clue_8hpp.html#a17030cde49c230bc0f1bb90d80771d0e',1,'clue.hpp']]],
-  ['current_5flr_58',['current_lr',['../class_n_n_f_s_core_1_1_optimizer.html#a98341383305613ffefc43ddf7108ee2e',1,'NNFSCore::Optimizer']]]
+  ['compile_58',['compile',['../class_n_n_f_s_core_1_1_neural_network.html#a7cbc2008ec6135d95d8397a3ee248d2e',1,'NNFSCore::NeuralNetwork']]],
+  ['current_5flr_59',['current_lr',['../class_n_n_f_s_core_1_1_optimizer.html#a98341383305613ffefc43ddf7108ee2e',1,'NNFSCore::Optimizer']]]
 ];

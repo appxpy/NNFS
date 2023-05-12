@@ -128,75 +128,78 @@ $(document).ready(function(){initNavTree('_softmax_8hpp_source.html',''); initRe
   <div class="headertitle"><div class="title">Softmax.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_softmax_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SOFTMAX_ACTIVATION_HPP</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SOFTMAX_ACTIVATION_HPP</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_activation_8hpp.html">Activation.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_n_f_s_core.html">NNFSCore</a></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_softmax.html">    8</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_n_n_f_s_core_1_1_softmax.html">Softmax</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_n_n_f_s_core_1_1_activation.html">Activation</a></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_softmax.html#ad7ff06335f1b05413eeef5edd115aab9">   11</a></span>        Eigen::MatrixXd <a class="code hl_variable" href="class_n_n_f_s_core_1_1_softmax.html#ad7ff06335f1b05413eeef5edd115aab9">_forward_output</a>;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_softmax.html#a557077360bc370f81194e84573542717">   13</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_n_f_s_core_1_1_softmax.html#a557077360bc370f81194e84573542717">forward</a>(Eigen::MatrixXd &amp;out, <span class="keyword">const</span> Eigen::MatrixXd &amp;x)<span class="keyword"> override</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">        </span>{</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <a class="code hl_variable" href="class_n_n_f_s_core_1_1_activation.html#a06f65cef583492c88f9090419b48cd09">_forward_input</a> = x;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <a class="code hl_function" href="class_n_n_f_s_core_1_1_softmax.html#a8ff558d7f4e98c7b383a7259742d6ec5">equation</a>(out, x);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <a class="code hl_variable" href="class_n_n_f_s_core_1_1_softmax.html#ad7ff06335f1b05413eeef5edd115aab9">_forward_output</a> = out;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        }</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_softmax.html#ac0ee77d888fe862c92d5246af31ae3ea">   20</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_n_f_s_core_1_1_softmax.html#ac0ee77d888fe862c92d5246af31ae3ea">backward</a>(Eigen::MatrixXd &amp;out, <span class="keyword">const</span> Eigen::MatrixXd &amp;dx)<span class="keyword"> override</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">        </span>{</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <span class="comment">// Create uninitialized array</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            out.resizeLike(dx);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_n_n_f_s_core_1_1_softmax.html#ad7ff06335f1b05413eeef5edd115aab9">_forward_output</a>.rows(); i++)</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                Eigen::MatrixXd single_output = <a class="code hl_variable" href="class_n_n_f_s_core_1_1_softmax.html#ad7ff06335f1b05413eeef5edd115aab9">_forward_output</a>.row(i).transpose();</div>
+<a href="_softmax_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_activation_8hpp.html">Activation.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_n_f_s_core.html">NNFSCore</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_softmax.html">    7</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_n_n_f_s_core_1_1_softmax.html">Softmax</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_n_n_f_s_core_1_1_activation.html">Activation</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_softmax.html#ad7ff06335f1b05413eeef5edd115aab9">   10</a></span>        Eigen::MatrixXd <a class="code hl_variable" href="class_n_n_f_s_core_1_1_softmax.html#ad7ff06335f1b05413eeef5edd115aab9">_forward_output</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_softmax.html#a365da9dfc77c63a598408194d106d62d">   13</a></span>        <a class="code hl_function" href="class_n_n_f_s_core_1_1_softmax.html#a365da9dfc77c63a598408194d106d62d">Softmax</a>() : <a class="code hl_class" href="class_n_n_f_s_core_1_1_activation.html">Activation</a>(<a class="code hl_enumeration" href="namespace_n_n_f_s_core.html#a833ded9c2d34c0b85de4aefd20cf105a">ActivationType</a>::<a class="code hl_enumvalue" href="namespace_n_n_f_s_core.html#a833ded9c2d34c0b85de4aefd20cf105aa1d993169621e0855bad00d71c005cf1b">SOFTMAX</a>) {}</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_softmax.html#a557077360bc370f81194e84573542717">   15</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_n_f_s_core_1_1_softmax.html#a557077360bc370f81194e84573542717">forward</a>(Eigen::MatrixXd &amp;out, <span class="keyword">const</span> Eigen::MatrixXd &amp;x)<span class="keyword"> override</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">        </span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <a class="code hl_variable" href="class_n_n_f_s_core_1_1_activation.html#a06f65cef583492c88f9090419b48cd09">_forward_input</a> = x;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <a class="code hl_function" href="class_n_n_f_s_core_1_1_softmax.html#a8ff558d7f4e98c7b383a7259742d6ec5">equation</a>(out, x);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <a class="code hl_variable" href="class_n_n_f_s_core_1_1_softmax.html#ad7ff06335f1b05413eeef5edd115aab9">_forward_output</a> = out;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_softmax.html#ac0ee77d888fe862c92d5246af31ae3ea">   22</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_n_f_s_core_1_1_softmax.html#ac0ee77d888fe862c92d5246af31ae3ea">backward</a>(Eigen::MatrixXd &amp;out, <span class="keyword">const</span> Eigen::MatrixXd &amp;dx)<span class="keyword"> override</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">        </span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="comment">// Create uninitialized array</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            out.resizeLike(dx);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_n_n_f_s_core_1_1_softmax.html#ad7ff06335f1b05413eeef5edd115aab9">_forward_output</a>.rows(); i++)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            {</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                Eigen::MatrixXd jacobian_matrix = Eigen::MatrixXd::Zero(<a class="code hl_variable" href="class_n_n_f_s_core_1_1_softmax.html#ad7ff06335f1b05413eeef5edd115aab9">_forward_output</a>.cols(), <a class="code hl_variable" href="class_n_n_f_s_core_1_1_softmax.html#ad7ff06335f1b05413eeef5edd115aab9">_forward_output</a>.cols());</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; <a class="code hl_variable" href="class_n_n_f_s_core_1_1_softmax.html#ad7ff06335f1b05413eeef5edd115aab9">_forward_output</a>.cols(); ++j)</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                    jacobian_matrix(j, j) = single_output(j, 0);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                }</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                jacobian_matrix -= single_output * single_output.transpose();</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                out.row(i) = jacobian_matrix * dx.row(i).transpose();</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            }</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        }</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_softmax.html#a8ff558d7f4e98c7b383a7259742d6ec5">   41</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_n_f_s_core_1_1_softmax.html#a8ff558d7f4e98c7b383a7259742d6ec5">equation</a>(Eigen::MatrixXd &amp;out, <span class="keyword">const</span> Eigen::MatrixXd &amp;x)</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            Eigen::MatrixXd expX = x;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; expX.rows(); i++)</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                <span class="keywordtype">double</span> max_val = expX.row(i).maxCoeff();</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                expX.row(i) -= Eigen::VectorXd::Constant(expX.cols(), max_val);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            }</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            expX = expX.array().exp();</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            out = x;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> row = 0; row &lt; x.rows(); ++row)</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            {</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                out.row(row) = expX.row(row) / expX.row(row).sum();</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            }</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    };</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                Eigen::MatrixXd single_output = <a class="code hl_variable" href="class_n_n_f_s_core_1_1_softmax.html#ad7ff06335f1b05413eeef5edd115aab9">_forward_output</a>.row(i).transpose();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                Eigen::MatrixXd jacobian_matrix = Eigen::MatrixXd::Zero(<a class="code hl_variable" href="class_n_n_f_s_core_1_1_softmax.html#ad7ff06335f1b05413eeef5edd115aab9">_forward_output</a>.cols(), <a class="code hl_variable" href="class_n_n_f_s_core_1_1_softmax.html#ad7ff06335f1b05413eeef5edd115aab9">_forward_output</a>.cols());</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; <a class="code hl_variable" href="class_n_n_f_s_core_1_1_softmax.html#ad7ff06335f1b05413eeef5edd115aab9">_forward_output</a>.cols(); ++j)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                    jacobian_matrix(j, j) = single_output(j, 0);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                jacobian_matrix -= single_output * single_output.transpose();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                out.row(i) = jacobian_matrix * dx.row(i).transpose();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_softmax.html#a8ff558d7f4e98c7b383a7259742d6ec5">   43</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_n_f_s_core_1_1_softmax.html#a8ff558d7f4e98c7b383a7259742d6ec5">equation</a>(Eigen::MatrixXd &amp;out, <span class="keyword">const</span> Eigen::MatrixXd &amp;x)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            Eigen::MatrixXd expX = x;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; expX.rows(); i++)</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                <span class="keywordtype">double</span> max_val = expX.row(i).maxCoeff();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                expX.row(i) -= Eigen::VectorXd::Constant(expX.cols(), max_val);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            expX = expX.array().exp();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            out = x;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> row = 0; row &lt; x.rows(); ++row)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                out.row(row) = expX.row(row) / expX.row(row).sum();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    };</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
 <div class="ttc" id="a_activation_8hpp_html"><div class="ttname"><a href="_activation_8hpp.html">Activation.hpp</a></div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_activation_html"><div class="ttname"><a href="class_n_n_f_s_core_1_1_activation.html">NNFSCore::Activation</a></div><div class="ttdoc">Abstract base class for activation functions.</div><div class="ttdef"><b>Definition:</b> Activation.hpp:13</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_activation_html_a06f65cef583492c88f9090419b48cd09"><div class="ttname"><a href="class_n_n_f_s_core_1_1_activation.html#a06f65cef583492c88f9090419b48cd09">NNFSCore::Activation::_forward_input</a></div><div class="ttdeci">Eigen::MatrixXd _forward_input</div><div class="ttdef"><b>Definition:</b> Activation.hpp:18</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_softmax_html"><div class="ttname"><a href="class_n_n_f_s_core_1_1_softmax.html">NNFSCore::Softmax</a></div><div class="ttdef"><b>Definition:</b> Softmax.hpp:9</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_softmax_html_a557077360bc370f81194e84573542717"><div class="ttname"><a href="class_n_n_f_s_core_1_1_softmax.html#a557077360bc370f81194e84573542717">NNFSCore::Softmax::forward</a></div><div class="ttdeci">void forward(Eigen::MatrixXd &amp;out, const Eigen::MatrixXd &amp;x) override</div><div class="ttdef"><b>Definition:</b> Softmax.hpp:13</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_softmax_html_a8ff558d7f4e98c7b383a7259742d6ec5"><div class="ttname"><a href="class_n_n_f_s_core_1_1_softmax.html#a8ff558d7f4e98c7b383a7259742d6ec5">NNFSCore::Softmax::equation</a></div><div class="ttdeci">void equation(Eigen::MatrixXd &amp;out, const Eigen::MatrixXd &amp;x)</div><div class="ttdef"><b>Definition:</b> Softmax.hpp:41</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_softmax_html_ac0ee77d888fe862c92d5246af31ae3ea"><div class="ttname"><a href="class_n_n_f_s_core_1_1_softmax.html#ac0ee77d888fe862c92d5246af31ae3ea">NNFSCore::Softmax::backward</a></div><div class="ttdeci">void backward(Eigen::MatrixXd &amp;out, const Eigen::MatrixXd &amp;dx) override</div><div class="ttdef"><b>Definition:</b> Softmax.hpp:20</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_softmax_html_ad7ff06335f1b05413eeef5edd115aab9"><div class="ttname"><a href="class_n_n_f_s_core_1_1_softmax.html#ad7ff06335f1b05413eeef5edd115aab9">NNFSCore::Softmax::_forward_output</a></div><div class="ttdeci">Eigen::MatrixXd _forward_output</div><div class="ttdef"><b>Definition:</b> Softmax.hpp:11</div></div>
-<div class="ttc" id="anamespace_n_n_f_s_core_html"><div class="ttname"><a href="namespace_n_n_f_s_core.html">NNFSCore</a></div><div class="ttdef"><b>Definition:</b> Activation.hpp:7</div></div>
+<div class="ttc" id="aclass_n_n_f_s_core_1_1_activation_html"><div class="ttname"><a href="class_n_n_f_s_core_1_1_activation.html">NNFSCore::Activation</a></div><div class="ttdoc">Abstract base class for activation functions.</div><div class="ttdef"><b>Definition:</b> Activation.hpp:21</div></div>
+<div class="ttc" id="aclass_n_n_f_s_core_1_1_activation_html_a06f65cef583492c88f9090419b48cd09"><div class="ttname"><a href="class_n_n_f_s_core_1_1_activation.html#a06f65cef583492c88f9090419b48cd09">NNFSCore::Activation::_forward_input</a></div><div class="ttdeci">Eigen::MatrixXd _forward_input</div><div class="ttdef"><b>Definition:</b> Activation.hpp:29</div></div>
+<div class="ttc" id="aclass_n_n_f_s_core_1_1_softmax_html"><div class="ttname"><a href="class_n_n_f_s_core_1_1_softmax.html">NNFSCore::Softmax</a></div><div class="ttdef"><b>Definition:</b> Softmax.hpp:8</div></div>
+<div class="ttc" id="aclass_n_n_f_s_core_1_1_softmax_html_a365da9dfc77c63a598408194d106d62d"><div class="ttname"><a href="class_n_n_f_s_core_1_1_softmax.html#a365da9dfc77c63a598408194d106d62d">NNFSCore::Softmax::Softmax</a></div><div class="ttdeci">Softmax()</div><div class="ttdef"><b>Definition:</b> Softmax.hpp:13</div></div>
+<div class="ttc" id="aclass_n_n_f_s_core_1_1_softmax_html_a557077360bc370f81194e84573542717"><div class="ttname"><a href="class_n_n_f_s_core_1_1_softmax.html#a557077360bc370f81194e84573542717">NNFSCore::Softmax::forward</a></div><div class="ttdeci">void forward(Eigen::MatrixXd &amp;out, const Eigen::MatrixXd &amp;x) override</div><div class="ttdef"><b>Definition:</b> Softmax.hpp:15</div></div>
+<div class="ttc" id="aclass_n_n_f_s_core_1_1_softmax_html_a8ff558d7f4e98c7b383a7259742d6ec5"><div class="ttname"><a href="class_n_n_f_s_core_1_1_softmax.html#a8ff558d7f4e98c7b383a7259742d6ec5">NNFSCore::Softmax::equation</a></div><div class="ttdeci">void equation(Eigen::MatrixXd &amp;out, const Eigen::MatrixXd &amp;x)</div><div class="ttdef"><b>Definition:</b> Softmax.hpp:43</div></div>
+<div class="ttc" id="aclass_n_n_f_s_core_1_1_softmax_html_ac0ee77d888fe862c92d5246af31ae3ea"><div class="ttname"><a href="class_n_n_f_s_core_1_1_softmax.html#ac0ee77d888fe862c92d5246af31ae3ea">NNFSCore::Softmax::backward</a></div><div class="ttdeci">void backward(Eigen::MatrixXd &amp;out, const Eigen::MatrixXd &amp;dx) override</div><div class="ttdef"><b>Definition:</b> Softmax.hpp:22</div></div>
+<div class="ttc" id="aclass_n_n_f_s_core_1_1_softmax_html_ad7ff06335f1b05413eeef5edd115aab9"><div class="ttname"><a href="class_n_n_f_s_core_1_1_softmax.html#ad7ff06335f1b05413eeef5edd115aab9">NNFSCore::Softmax::_forward_output</a></div><div class="ttdeci">Eigen::MatrixXd _forward_output</div><div class="ttdef"><b>Definition:</b> Softmax.hpp:10</div></div>
+<div class="ttc" id="anamespace_n_n_f_s_core_html"><div class="ttname"><a href="namespace_n_n_f_s_core.html">NNFSCore</a></div><div class="ttdef"><b>Definition:</b> Activation.hpp:6</div></div>
+<div class="ttc" id="anamespace_n_n_f_s_core_html_a833ded9c2d34c0b85de4aefd20cf105a"><div class="ttname"><a href="namespace_n_n_f_s_core.html#a833ded9c2d34c0b85de4aefd20cf105a">NNFSCore::ActivationType</a></div><div class="ttdeci">ActivationType</div><div class="ttdef"><b>Definition:</b> Activation.hpp:9</div></div>
+<div class="ttc" id="anamespace_n_n_f_s_core_html_a833ded9c2d34c0b85de4aefd20cf105aa1d993169621e0855bad00d71c005cf1b"><div class="ttname"><a href="namespace_n_n_f_s_core.html#a833ded9c2d34c0b85de4aefd20cf105aa1d993169621e0855bad00d71c005cf1b">NNFSCore::ActivationType::SOFTMAX</a></div><div class="ttdeci">@ SOFTMAX</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

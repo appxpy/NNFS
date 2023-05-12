@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['clue_5fis_5factive_0',['clue_IS_ACTIVE',['../clue_8hpp.html#a38003c726922b0875c2dca28fd71e09a',1,'clue.hpp']]],
-  ['clue_5fis_5factive_1',['clue_is_active',['../clue_8hpp.html#aa4e49a94ae488d92d32ab8044418b3ff',1,'clue.hpp']]],
+  ['clue_5fis_5factive_0',['clue_is_active',['../clue_8hpp.html#aa4e49a94ae488d92d32ab8044418b3ff',1,'clue.hpp']]],
+  ['clue_5fis_5factive_1',['clue_IS_ACTIVE',['../clue_8hpp.html#a38003c726922b0875c2dca28fd71e09a',1,'clue.hpp']]],
   ['clue_5fis_5factive_5fbuild_2',['clue_IS_ACTIVE_BUILD',['../clue_8hpp.html#afe05fa3bb4903f87372ed5827a95d228',1,'clue.hpp']]],
   ['clue_5fis_5factive_5fbuild_3',['clue_is_active_build',['../clue_8hpp.html#a4f8b30eccb1e197b69366fbe006ae65e',1,'clue.hpp']]],
   ['clue_5flog_5falert_4',['clue_LOG_ALERT',['../clue_8hpp.html#af5192eb5a914d89d5769bf88347a1a86',1,'clue.hpp']]],

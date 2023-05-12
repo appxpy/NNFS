@@ -1,15 +1,14 @@
 <map id="include/NNFSCore/Optimizer/RMSProp.hpp" name="include/NNFSCore/Optimizer/RMSProp.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="26,5,215,46"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,168,100,193"/>
-<area shape="rect" id="node3" href="$_optimizer_8hpp.html" title=" " alt="" coords="126,94,227,120"/>
-<area shape="rect" id="node4" href="$clue_8hpp.html" title=" " alt="" coords="245,315,372,341"/>
-<area shape="rect" id="node10" href="$_dense_8hpp.html" title=" " alt="" coords="124,168,253,193"/>
-<area shape="rect" id="node5" title=" " alt="" coords="421,389,487,414"/>
-<area shape="rect" id="node6" title=" " alt="" coords="162,389,231,414"/>
-<area shape="rect" id="node7" title=" " alt="" coords="255,389,319,414"/>
-<area shape="rect" id="node8" title=" " alt="" coords="61,389,132,414"/>
-<area shape="rect" id="node9" title=" " alt="" coords="343,389,397,414"/>
-<area shape="rect" id="node11" title=" " alt="" coords="122,241,186,267"/>
-<area shape="rect" id="node12" href="$_layer_8hpp.html" title=" " alt="" coords="210,241,287,267"/>
-<area shape="rect" id="node13" title=" " alt="" coords="137,315,221,341"/>
+<area shape="rect" id="node1" title=" " alt="" coords="158,5,348,46"/>
+<area shape="rect" id="node2" title=" " alt="" coords="282,315,376,341"/>
+<area shape="rect" id="node3" href="$_optimizer_8hpp.html" title=" " alt="" coords="159,94,259,120"/>
+<area shape="rect" id="node4" href="$clue_8hpp.html" title=" " alt="" coords="131,315,258,341"/>
+<area shape="rect" id="node10" href="$_dense_8hpp.html" title=" " alt="" coords="112,168,240,193"/>
+<area shape="rect" id="node5" title=" " alt="" coords="179,389,245,414"/>
+<area shape="rect" id="node6" title=" " alt="" coords="270,389,338,414"/>
+<area shape="rect" id="node7" title=" " alt="" coords="362,389,427,414"/>
+<area shape="rect" id="node8" title=" " alt="" coords="5,389,77,414"/>
+<area shape="rect" id="node9" title=" " alt="" coords="101,389,154,414"/>
+<area shape="rect" id="node11" title=" " alt="" coords="110,241,175,267"/>
+<area shape="rect" id="node12" href="$_layer_8hpp.html" title=" " alt="" coords="198,241,276,267"/>
 </map>
