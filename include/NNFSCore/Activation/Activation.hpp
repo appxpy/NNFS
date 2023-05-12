@@ -1,10 +1,18 @@
-#ifndef ACTIVATION_HPP
-#define ACTIVATION_HPP
+#pragma once
 
 #include "../Layer/Layer.hpp"
 
 namespace NNFSCore
 {
+
+    enum class ActivationType
+    {
+        RELU,
+        SIGMOID,
+        TANH,
+        SOFTMAX,
+        NONE
+    };
     /**
      * @brief Abstract base class for activation functions.
      *
@@ -12,11 +20,12 @@ namespace NNFSCore
     class Activation : public Layer
     {
     public:
-        Activation() : Layer(LayerType::ACTIVATION) {}
+        ActivationType activation_type;
+
+    public:
+        Activation(ActivationType activation_type) : Layer(LayerType::ACTIVATION), activation_type(activation_type) {}
 
     protected:
         Eigen::MatrixXd _forward_input;
     };
 };
-
-#endif // ACTIVATION_HPP

@@ -1,5 +1,4 @@
-#ifndef DENSE_LAYER_HPP
-#define DENSE_LAYER_HPP
+#pragma once
 
 #include <iostream>
 #include <random>
@@ -40,16 +39,9 @@ namespace NNFSCore
             _weights_optimizer_additional = Eigen::MatrixXd::Zero(n_input, n_output);
 
             _biases_optimizer_additional = Eigen::MatrixXd::Zero(1, n_output);
-
-            LOG_DEBUG("Initial weights are : " << std::endl
-                                               << _weights);
-
-            LOG_DEBUG("Initial biases are : " << std::endl
-                                              << _biases);
         }
 
-        void
-        forward(Eigen::MatrixXd &out, const Eigen::MatrixXd &x)
+        void forward(Eigen::MatrixXd &out, const Eigen::MatrixXd &x)
         {
             _forward_input = x;
             out = x * _weights;
@@ -79,7 +71,6 @@ namespace NNFSCore
             if (_l1_weights_regularizer > 0)
             {
                 Eigen::MatrixXd dL1 = Eigen::MatrixXd::Ones(_weights.rows(), _weights.cols());
-                // dL1.array()(_weights.array() < 0) = -1;
                 dL1 = (_weights.array() < 0).select(-1, dL1);
                 _dweights += _l1_weights_regularizer * dL1;
             }
@@ -198,6 +189,12 @@ namespace NNFSCore
             return _n_input * _n_output + _n_output;
         }
 
+        void shape(int &n_input, int &n_output) const
+        {
+            n_input = _n_input;
+            n_output = _n_output;
+        }
+
     private:
         int _n_input;
         int _n_output;
@@ -222,5 +219,3 @@ namespace NNFSCore
         Eigen::MatrixXd _forward_input;
     };
 }
-
-#endif

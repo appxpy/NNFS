@@ -1,5 +1,4 @@
-#ifndef RELU_ACTIVATION_HPP
-#define RELU_ACTIVATION_HPP
+#pragma once
 
 #include "Activation.hpp"
 
@@ -8,6 +7,8 @@ namespace NNFSCore
     class ReLU : public Activation
     {
     public:
+        ReLU() : Activation(ActivationType::RELU) {}
+
         void forward(Eigen::MatrixXd &out, const Eigen::MatrixXd &x) override
         {
             _forward_input = x;
@@ -21,5 +22,3 @@ namespace NNFSCore
         }
     };
 }
-
-#endif

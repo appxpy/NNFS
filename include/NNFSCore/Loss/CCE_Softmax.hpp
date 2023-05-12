@@ -1,5 +1,4 @@
-#ifndef CCE_SOFTMAX_LOSS_HPP
-#define CCE_SOFTMAX_LOSS_HPP
+#pragma once
 
 #include "CCE.hpp"
 #include "../Activation/Softmax.hpp"
@@ -56,4 +55,3 @@ namespace NNFSCore
     };
 }
 
-#endif

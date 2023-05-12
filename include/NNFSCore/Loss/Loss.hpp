@@ -1,5 +1,4 @@
-#ifndef LOSS_BASE_HPP
-#define LOSS_BASE_HPP
+#pragma once
 
 #include <Eigen/Dense>
 #include "../Utilities/clue.hpp"
@@ -66,5 +65,3 @@ namespace NNFSCore
         }
     };
 }
-
-#endif

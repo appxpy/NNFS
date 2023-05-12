@@ -1,5 +1,4 @@
-#ifndef SIGMOID_ACTIVATION_HPP
-#define SIGMOID_ACTIVATION_HPP
+#pragma once
 
 #include "Activation.hpp"
 
@@ -8,6 +7,8 @@ namespace NNFSCore
     class Sigmoid : public Activation
     {
     public:
+        Sigmoid() : Activation(ActivationType::SIGMOID) {}
+
         void forward(Eigen::MatrixXd &out, const Eigen::MatrixXd &x) override
         {
             _forward_input = x;
@@ -26,5 +27,3 @@ namespace NNFSCore
         Eigen::MatrixXd _forward_output;
     };
 }
-
-#endif

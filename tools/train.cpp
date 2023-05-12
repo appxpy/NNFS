@@ -10,28 +10,6 @@
 
 #include "mnist.cpp"
 
-// void spiral_data(Eigen::MatrixXd &x, Eigen::MatrixXd &y, int number_of_points, int classes)
-// {
-//     Eigen::VectorXi y_vec(number_of_points * classes);
-
-//     for (int j = 0; j < classes; j++)
-//     {
-//         Eigen::VectorXi ix(number_of_points);
-//         for (int i = 0; i < number_of_points; i++)
-//         {
-//             ix(i) = i + j * number_of_points;
-//         }
-//         double r = 0.0;
-//         double t = 0.0;
-//         for (int i = 0; i < number_of_points; i++)
-//         {
-//             r = (double)i / number_of_points;
-//             t = j * 4 + (double)i / number_of_points * 4 + ((double)rand() / RAND_MAX) * 0.2;
-//             x.row(ix(i)) << r * sin(t * 2.5), r * cos(t * 2.5);
-//             y_vec(ix(i)) = j;
-//         }
-//     }
-
 std::pair<Eigen::MatrixXd, Eigen::MatrixXd> create_data(int samples, int classes)
 {
     Eigen::MatrixXd X(samples * classes, 2);
@@ -50,110 +28,90 @@ std::pair<Eigen::MatrixXd, Eigen::MatrixXd> create_data(int samples, int classes
 
 int main()
 {
-    std::cout << "Fetching dataset" << std::endl;
+    LOG_INFO("Fetching dataset");
 
     std::string data_dir = "data";
     auto [x_train, y_train, x_test, y_test] = fetch_mnist(data_dir);
 
-    // Eigen::MatrixXd x_train{{1.0, 2.0, 3.0, 2.5},
-    //                         {2.0, 5.0, -1.0, 2.0},
-    //                         {-1.5, 2.7, 3.3, -0.8}};
-
-    // Eigen::MatrixXd y_train{
-    //     {1.0}, {1.0}, {1.0}};
-
-    // Eigen::MatrixXd x_test{{1.0, 2.0, 3.0, 2.5},
-    //                        {2.0, 5.0, -1.0, 2.0},
-    //                        {-1.5, 2.7, 3.3, -0.8}};
-
-    // Eigen::MatrixXd y_test{
-    //     {1.0}, {1.0}, {1.0}};
-
-    // int number_of_points = 1000; // number of points per class
-    // int classes = 3;             // number of classes
+    // int number_of_points = 100; // number of points per class
+    // int classes = 3;            // number of classes
 
     // auto [x_train, y_train] = create_data(number_of_points, classes);
     // auto [x_test, y_test] = create_data(number_of_points, classes);
 
-    std::cout << "x_train_shape rows: " << x_train.rows() << " cols: " << x_train.cols() << std::endl;
-    // std::cout << "x_train" << std::endl
-    //           << x_train << std::endl;
+    // Shuffle data and labels
+    Eigen::PermutationMatrix<Eigen::Dynamic, Eigen::Dynamic> perm(x_train.rows());
+    perm.setIdentity();
+    std::shuffle(perm.indices().data(), perm.indices().data() + perm.indices().size(), std::mt19937(std::random_device()()));
+    x_train = perm * x_train;
+    y_train = perm * y_train;
 
-    // for (int row = 0; row < x_train.rows(); row++)
-    // {
-    //     for (int col = 0; col < x_train.cols(); col++)
-    //     {
-    //         std::cout << x_train(row, col) << ", ";
-    //     }
-    //     std::cout << std::endl;
-    // }
-    std::cout << "y_train_shape rows: " << y_train.rows() << " cols: " << y_train.cols() << std::endl;
-    // std::cout << "y_train" << std::endl
-    //           << y_train << std::endl;
-    std::cout << "x_test_shape rows: " << x_test.rows() << " cols: " << x_test.cols() << std::endl;
-    std::cout << "y_test_shape rows: " << y_test.rows() << " cols: " << y_test.cols() << std::endl;
+    Eigen::PermutationMatrix<Eigen::Dynamic, Eigen::Dynamic> perm2(x_test.rows());
+    perm2.setIdentity();
+    std::shuffle(perm2.indices().data(), perm2.indices().data() + perm2.indices().size(), std::mt19937(std::random_device()()));
+    x_test = perm2 * x_test;
+    y_test = perm2 * y_test;
 
-    //     // Eigen::MatrixXd x_train(2, 3);
-    //     // Eigen::MatrixXd y_train(2, 3);
+    LOG_DEBUG("Shape of training dataset - rows: " << x_train.rows() << " cols: " << x_train.cols());
+    LOG_DEBUG("Shape of training labels - rows: " << y_train.rows() << " cols: " << y_train.cols());
+    LOG_DEBUG("Shape of validation dataset - rows: " << x_test.rows() << " cols: " << x_test.cols());
+    LOG_DEBUG("Shape of validation labels - rows: " << y_test.rows() << " cols: " << y_test.cols());
 
-    //     // x_train << 0.6, 0.3, 0.2,
-    //     //     0.1, 0.8, 0.5;
-    //     // y_train << 1, 0, 0,
-    //     //     0, 1, 1;
-    std::cout << "Creating model" << std::endl;
-
-    std::vector<std::shared_ptr<NNFSCore::Layer>> layers = {
-        std::make_shared<NNFSCore::Dense>(784, 512, 0, 0, 5e-4, 5e-4),
-        // std::make_shared<NNFSCore::ReLU>(),
-        // std::make_shared<NNFSCore::Dense>(128, 64),
-        std::make_shared<NNFSCore::ReLU>(),
-        std::make_shared<NNFSCore::Dense>(512, 10),
-    };
+    LOG_INFO("Creating model");
 
     std::shared_ptr<NNFSCore::Loss> loss = std::make_shared<NNFSCore::CCESoftmax>(std::make_shared<NNFSCore::Softmax>(), std::make_shared<NNFSCore::CCE>());
-    double learning_rate = .02;
+
+    double learning_rate = .001;
     double decay = 5e-7;
-    // double momentum = .9;
-    // double epsilon = 1e-4;
+    double momentum = .9;
 
-    std::shared_ptr<NNFSCore::Optimizer> optimizer = std::make_shared<NNFSCore::Adam>(learning_rate, decay); // learning_rate, decay
-    // std::shared_ptr<NNFSCore::Optimizer>
-    //     optimizer = std::make_shared<NNFSCore::Adagrad>(learning_rate, decay, epsilon);
+    std::shared_ptr<NNFSCore::Optimizer> optimizer = std::make_shared<NNFSCore::SGD>(learning_rate, decay, momentum); // learning_rate, decay
 
-    std::shared_ptr<NNFSCore::NeuralNetwork>
-        model = std::make_shared<NNFSCore::NeuralNetwork>(
-            layers, loss, optimizer);
-    //     for (const auto &layer_tuple : model->get_layers())
-    //     {
-    //         // Extract the shared pointers from the tuple
-    //         const auto &layer_ptr = std::get<0>(layer_tuple);
-    //         const auto &activation_ptr = std::get<1>(layer_tuple);
+    std::shared_ptr<NNFSCore::NeuralNetwork> model = std::make_shared<NNFSCore::NeuralNetwork>(loss, optimizer);
 
-    //         // Access the members of the objects pointed to by the shared pointers
-    //         std::cout << "Layer with " << layer_ptr->output().cols() << " units, activated with " << typeid(*activation_ptr).name() << std::endl;
-    //     }
+    model->add_layer(std::make_shared<NNFSCore::Dense>(784, 256));
+    model->add_layer(std::make_shared<NNFSCore::ReLU>());
+    model->add_layer(std::make_shared<NNFSCore::Dense>(256, 10));
 
-    std::cout << "Training model" << std::endl;
+    LOG_INFO("Compiling model");
 
-    model->fit(x_train, y_train, x_test, y_test, 20000, 128);
+    model->compile();
 
-    std::cout << "Evaluating trained model" << std::endl;
+    LOG_INFO("Training model");
 
-    // double loss_value = model->evaluate(x_test, y_test);
+    model->fit(x_train, y_train, x_test, y_test, 10, 32);
 
-    // std::cout << "Validation loss: " << loss_value << std::endl;
+    std::string file_path = "MNIST.bin";
 
-    // Eigen::MatrixXd preds = model->predict(x_test);
+    LOG_INFO("Saving model to file " << file_path);
 
-    // std::cout << "First 5 predictions: \n"
-    //           << preds << std::endl;
+    model->save(file_path);
 
-    // std::cout << "First 5 labels: \n"
-    //           << y_test << std::endl;
+    LOG_INFO("Loading model from file " << file_path);
 
-    // double accuracy = (preds.array() == y_test.array()).mean();
+    model->load(file_path);
 
-    // std::cout << "Test set accuracy: " << accuracy << std::endl;
+    LOG_INFO("Evaluating model");
 
-    // return 0;
+    double accuracy;
+    model->accuracy(accuracy, x_test, y_test);
+    LOG_INFO("Test set accuracy: " << accuracy);
+
+    LOG_INFO("Predicting");
+
+    // Slice first 5 rows of test set
+    Eigen::MatrixXd x_test_slice = x_test.topRows(10);
+
+    Eigen::MatrixXd preds = model->predict(x_test_slice);
+
+    Eigen::VectorXi pred_labels;
+    Eigen::VectorXi labels;
+
+    NNFSCore::Metrics::onehotdecode(labels, y_test.topRows(10));
+    NNFSCore::Metrics::onehotdecode(pred_labels, preds);
+
+    LOG_INFO("First 5 predictions: " << pred_labels.transpose());
+    LOG_INFO("First 5 labels:      " << labels.transpose());
+
+    return 0;
 }

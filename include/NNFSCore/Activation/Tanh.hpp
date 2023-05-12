@@ -1,5 +1,4 @@
-#ifndef TANH_ACTIVATION_HPP
-#define TANH_ACTIVATION_HPP
+#pragma once
 
 #include "Activation.hpp"
 
@@ -8,6 +7,8 @@ namespace NNFSCore
     class Tanh : public Activation
     {
     public:
+        Tanh() : Activation(ActivationType::TANH) {}
+
         void forward(Eigen::MatrixXd &out, const Eigen::MatrixXd &x) override
         {
             _forward_input = x;
@@ -26,5 +27,3 @@ namespace NNFSCore
         Eigen::MatrixXd _forward_output;
     };
 }
-
-#endif

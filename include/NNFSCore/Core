@@ -1,4 +1,9 @@
-#define LOG_LEVEL LOG_SEV_NONE
+#define LOG_LEVEL LOG_SEV_INFO
+
+#undef __ARM_NEON
+#undef __ARM_NEON__
+
+#include "Metrics/Metrics.hpp"
 
 #include "Layer/Layer.hpp"
 #include "Layer/Dense.hpp"

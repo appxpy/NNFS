@@ -1,7 +1,5 @@
-#ifndef ADAM_HPP
-#define ADAM_HPP
+#pragma once
 
-#include <Eigen/Dense>
 #include "Optimizer.hpp"
 
 namespace NNFSCore
@@ -75,5 +73,3 @@ namespace NNFSCore
         double _beta_2;
     };
 }
-
-#endif

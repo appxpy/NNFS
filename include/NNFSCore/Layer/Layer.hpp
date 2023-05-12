@@ -1,7 +1,6 @@
-#ifndef LAYER_BASE_HPP
-#define LAYER_BASE_HPP
+#pragma once
 
-#include <Eigen/Core>
+#include <Eigen/Dense>
 #include "../Utilities/clue.hpp"
 
 namespace NNFSCore
@@ -31,5 +30,3 @@ namespace NNFSCore
         virtual void backward(Eigen::MatrixXd &out, const Eigen::MatrixXd &grad_output) = 0;
     };
 }
-
-#endif

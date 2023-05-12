@@ -1,5 +1,4 @@
-#ifndef STOCHASTIC_GRADIENT_DESCENT_HPP
-#define STOCHASTIC_GRADIENT_DESCENT_HPP
+#pragma once
 
 #include <Eigen/Dense>
 #include "Optimizer.hpp"
@@ -68,4 +67,3 @@ namespace NNFSCore
     };
 }
 
-#endif

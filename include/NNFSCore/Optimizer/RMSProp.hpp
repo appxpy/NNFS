@@ -1,5 +1,4 @@
-#ifndef RMSPROP_HPP
-#define RMSPROP_HPP
+#pragma once
 
 #include <Eigen/Dense>
 #include "Optimizer.hpp"
@@ -59,4 +58,3 @@ namespace NNFSCore
     };
 }
 
-#endif

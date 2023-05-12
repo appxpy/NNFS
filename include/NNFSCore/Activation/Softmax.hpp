@@ -1,5 +1,4 @@
-#ifndef SOFTMAX_ACTIVATION_HPP
-#define SOFTMAX_ACTIVATION_HPP
+#pragma once
 
 #include "Activation.hpp"
 
@@ -9,6 +8,9 @@ namespace NNFSCore
     {
     public:
         Eigen::MatrixXd _forward_output;
+
+    public:
+        Softmax() : Activation(ActivationType::SOFTMAX) {}
 
         void forward(Eigen::MatrixXd &out, const Eigen::MatrixXd &x) override
         {
@@ -56,5 +58,3 @@ namespace NNFSCore
         }
     };
 }
-
-#endif

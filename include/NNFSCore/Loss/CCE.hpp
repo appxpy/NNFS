@@ -1,5 +1,4 @@
-#ifndef CCE_LOSS_HPP
-#define CCE_LOSS_HPP
+#pragma once
 
 #include "Loss.hpp"
 
@@ -26,4 +25,3 @@ namespace NNFSCore
     };
 }
 
-#endif

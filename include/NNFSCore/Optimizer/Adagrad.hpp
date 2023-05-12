@@ -1,5 +1,4 @@
-#ifndef ADAGRAD_HPP
-#define ADAGRAD_HPP
+#pragma once
 
 #include <Eigen/Dense>
 #include "Optimizer.hpp"
@@ -57,4 +56,3 @@ namespace NNFSCore
     };
 }
 
-#endif

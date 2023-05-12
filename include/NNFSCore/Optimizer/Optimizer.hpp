@@ -1,5 +1,4 @@
-#ifndef OPTIMIZER_BASE_HPP
-#define OPTIMIZER_BASE_HPP
+#pragma once
 
 #include <Eigen/Dense>
 #include "../Utilities/clue.hpp"
@@ -32,5 +31,3 @@ namespace NNFSCore
         double _current_lr;
     };
 }
-
-#endif
