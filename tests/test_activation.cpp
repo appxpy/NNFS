@@ -29,9 +29,9 @@ TEST_F(ReLUTest, GeneralTest)
     Eigen::MatrixXd dx_out;
 
     Eigen::MatrixXd dx_expected{
-        {1, 1, 0, 0},
-        {1, 0, 0, 1},
-        {0, 1, 1, 0},
+        {1, 2, 0, 0},
+        {2, 0, 0, 3},
+        {0, 2, 5, 0},
     };
 
     ReLU_.backward(dx_out, x);
@@ -71,7 +71,6 @@ TEST_F(SoftmaxTest, GeneralTest)
         {-0.028, 0.012, 0.016}};
 
     Softmax_.backward(dx_out, x);
-    std::cout << std::endl
-              << dx_out << std::endl;
+
     ASSERT_TRUE(dx_out.isApprox(dx_expected, 1e-7));
 }

@@ -5,10 +5,21 @@
 
 namespace NNFSCore
 {
-
+    /**
+     * @brief Metrics class
+     *
+     * @details This class implements the metrics used to evaluate the performance of the model.
+     */
     class Metrics
     {
     public:
+        /**
+         * @brief Calculates the accuracy of the model.
+         *
+         * @param[out] accuracy The accuracy of the model.
+         * @param[in] predicted The predicted data.
+         * @param[in] labels The labels.
+         */
         static void accuracy(double &accuracy, const Eigen::MatrixXd &predicted,
                              const Eigen::MatrixXd &labels)
         {
@@ -36,4 +47,4 @@ namespace NNFSCore
             };
         }
     };
-};
+} // namespace NNFSCore

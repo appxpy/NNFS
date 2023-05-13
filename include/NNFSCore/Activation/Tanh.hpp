@@ -26,4 +26,4 @@ namespace NNFSCore
     private:
         Eigen::MatrixXd _forward_output;
     };
-}
+} // namespace NNFSCore

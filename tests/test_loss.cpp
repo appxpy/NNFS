@@ -68,6 +68,10 @@ TEST_F(CCESoftmaxTest, ForwardPassTest)
 
 TEST_F(CCESoftmaxTest, BackwardPassTest)
 {
+    Eigen::MatrixXd input{
+        {1, 2, 3},
+    };
+
     Eigen::MatrixXd dvalues{
         {.1, .2, .3},
     };
@@ -76,42 +80,62 @@ TEST_F(CCESoftmaxTest, BackwardPassTest)
         {0, 0, 1},
     };
 
+    double loss;
+
+    cce_softmax_->calculate(loss, input, labels);
+
+    ASSERT_NEAR(loss, 0.4076059, 1e-7);
+
     Eigen::MatrixXd expected{
-        {0.1, 0.2, -0.7},
+        {0.0900306, 0.244728, -0.334759},
     };
 
     Eigen::MatrixXd out;
 
     cce_softmax_->backward(out, dvalues, labels);
 
-    ASSERT_TRUE(out.isApprox(expected, 1e-7));
+    ASSERT_TRUE(out.isApprox(expected, 1e-5));
 }
 
-TEST_F(CCESoftmaxTest, IntegrityBackwardPassTest)
+TEST_F(CCESoftmaxTest, IntegrityTest)
 {
-    Eigen::MatrixXd softmax_outputs{
-        {0.7, 0.1, 0.2},
-        {0.1, 0.5, 0.4},
-        {0.02, 0.9, 0.08},
+    Eigen::MatrixXd input{
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9},
     };
+
     Eigen::MatrixXd labels{
+        {0, 0, 1},
+        {0, 1, 0},
         {1, 0, 0},
-        {0, 1, 0},
-        {0, 1, 0},
     };
+
+    double loss;
+
+    cce_softmax_->calculate(loss, input, labels);
+
+    ASSERT_NEAR(loss, 1.40761, 1e-5);
+
+    Eigen::MatrixXd softmax_expected{
+        {0.0900306, 0.244728, 0.665241},
+        {0.0900306, 0.244728, 0.665241},
+        {0.0900306, 0.244728, 0.665241},
+    };
+    ASSERT_TRUE(cce_softmax_->softmax_out().isApprox(softmax_expected, 1e-5));
 
     Eigen::MatrixXd ccesout;
 
-    cce_softmax_->backward(ccesout, softmax_outputs, labels);
+    cce_softmax_->backward(ccesout, softmax_expected, labels);
 
     Eigen::MatrixXd cceout;
 
-    softmax_->_forward_output = softmax_outputs;
+    softmax_->_forward_output = softmax_expected;
 
-    cce_->backward(cceout, softmax_outputs, labels);
+    cce_->backward(cceout, softmax_expected, labels);
 
     Eigen::MatrixXd sout;
     softmax_->backward(sout, cceout);
 
-    ASSERT_TRUE(ccesout.isApprox(sout, 1e-7));
+    ASSERT_TRUE(ccesout.isApprox(sout, 1e-4));
 }

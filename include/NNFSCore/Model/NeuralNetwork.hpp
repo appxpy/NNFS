@@ -53,10 +53,10 @@ namespace NNFSCore
          *
          * @details This function trains the neural network model on the given data for the given number of epochs.
          *
-         * @param[in] examples The training examples
-         * @param[in] labels The training labels
-         * @param[in] test_examples The test examples
-         * @param[in] test_labels The test labels
+         * @param[in] examples Examples to evaluate the model on
+         * @param[in] labels Labels of the examples
+         * @param[in] test_examples Examples to validate the model on
+         * @param[in] test_labels Labels of the validation examples
          * @param[in] epochs The number of epochs to train for
          * @param[in] batch_size The batch size, i.e. the number of examples to train on in each batch
          * @param[in] verbose Whether to print out information about the training process
@@ -675,13 +675,13 @@ namespace NNFSCore
             std::cout << "% ";
         }
 
-        std::vector<std::shared_ptr<Layer>> layers;
-        std::shared_ptr<Loss> loss_object;
-        std::shared_ptr<Optimizer> optimizer_object;
-        int num_layers;
-        int input_dim;
-        int output_dim;
-        bool compiled = false;
+        std::vector<std::shared_ptr<Layer>> layers;  // Layers of the neural network
+        std::shared_ptr<Loss> loss_object;           // Loss function of the neural network
+        std::shared_ptr<Optimizer> optimizer_object; // Optimizer of the neural network
+        int num_layers;                              // Number of layers in the neural network
+        int input_dim;                               // Input dimension of the neural network
+        int output_dim;                              // Output dimension of the neural network
+        bool compiled = false;                       // Indicates whether the neural network has been compiled
     };
 
 } // namespace NNFSCore

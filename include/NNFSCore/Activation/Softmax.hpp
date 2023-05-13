@@ -4,14 +4,28 @@
 
 namespace NNFSCore
 {
+    /**
+     * @brief Softmax activation function
+     *
+     * @details This class implements the softmax activation function.
+     */
     class Softmax : public Activation
     {
     public:
-        Eigen::MatrixXd _forward_output;
+        Eigen::MatrixXd _forward_output; // Output data for forward pass
 
     public:
+        /**
+         * @brief Construct a new Softmax object
+         */
         Softmax() : Activation(ActivationType::SOFTMAX) {}
 
+        /**
+         * @brief Forward pass of the softmax activation function
+         *
+         * @param[out] out Output of the softmax activation function
+         * @param[in] x Input to the softmax activation function
+         */
         void forward(Eigen::MatrixXd &out, const Eigen::MatrixXd &x) override
         {
             _forward_input = x;
@@ -19,6 +33,12 @@ namespace NNFSCore
             _forward_output = out;
         }
 
+        /**
+         * @brief Backward pass of the softmax activation function
+         *
+         * @param[out] out Input gradient
+         * @param[in] dx Output gradient
+         */
         void backward(Eigen::MatrixXd &out, const Eigen::MatrixXd &dx) override
         {
             // Create uninitialized array
@@ -40,6 +60,12 @@ namespace NNFSCore
             }
         }
 
+        /**
+         * @brief Softmax equation
+         *
+         * @param[out] out Output of the softmax activation function
+         * @param[in] x Input to the softmax activation function
+         */
         void equation(Eigen::MatrixXd &out, const Eigen::MatrixXd &x)
         {
             Eigen::MatrixXd expX = x;
@@ -57,4 +83,4 @@ namespace NNFSCore
             }
         }
     };
-}
+} // namespace NNFSCore

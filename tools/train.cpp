@@ -52,40 +52,42 @@ int main()
     x_test = perm2 * x_test;
     y_test = perm2 * y_test;
 
-    LOG_DEBUG("Shape of training dataset - rows: " << x_train.rows() << " cols: " << x_train.cols());
-    LOG_DEBUG("Shape of training labels - rows: " << y_train.rows() << " cols: " << y_train.cols());
-    LOG_DEBUG("Shape of validation dataset - rows: " << x_test.rows() << " cols: " << x_test.cols());
-    LOG_DEBUG("Shape of validation labels - rows: " << y_test.rows() << " cols: " << y_test.cols());
+    // LOG_DEBUG("Shape of training dataset - rows: " << x_train.rows() << " cols: " << x_train.cols());
+    // LOG_DEBUG("Shape of training labels - rows: " << y_train.rows() << " cols: " << y_train.cols());
+    // LOG_DEBUG("Shape of validation dataset - rows: " << x_test.rows() << " cols: " << x_test.cols());
+    // LOG_DEBUG("Shape of validation labels - rows: " << y_test.rows() << " cols: " << y_test.cols());
 
-    LOG_INFO("Creating model");
+    // LOG_INFO("Creating model");
 
-    std::shared_ptr<NNFSCore::Loss> loss = std::make_shared<NNFSCore::CCESoftmax>(std::make_shared<NNFSCore::Softmax>(), std::make_shared<NNFSCore::CCE>());
+    // std::shared_ptr<NNFSCore::Loss> loss = std::make_shared<NNFSCore::CCESoftmax>(std::make_shared<NNFSCore::Softmax>(), std::make_shared<NNFSCore::CCE>());
 
-    double learning_rate = .001;
-    double decay = 5e-7;
-    double momentum = .9;
+    // double learning_rate = .001;
+    // double decay = 5e-7;
+    // double momentum = .9;
 
-    std::shared_ptr<NNFSCore::Optimizer> optimizer = std::make_shared<NNFSCore::SGD>(learning_rate, decay, momentum); // learning_rate, decay
+    // std::shared_ptr<NNFSCore::Optimizer> optimizer = std::make_shared<NNFSCore::SGD>(learning_rate, decay, momentum); // learning_rate, decay
 
-    std::shared_ptr<NNFSCore::NeuralNetwork> model = std::make_shared<NNFSCore::NeuralNetwork>(loss, optimizer);
+    // std::shared_ptr<NNFSCore::NeuralNetwork> model = std::make_shared<NNFSCore::NeuralNetwork>(loss, optimizer);
 
-    model->add_layer(std::make_shared<NNFSCore::Dense>(784, 256));
-    model->add_layer(std::make_shared<NNFSCore::ReLU>());
-    model->add_layer(std::make_shared<NNFSCore::Dense>(256, 10));
+    // model->add_layer(std::make_shared<NNFSCore::Dense>(784, 256));
+    // model->add_layer(std::make_shared<NNFSCore::ReLU>());
+    // model->add_layer(std::make_shared<NNFSCore::Dense>(256, 10));
 
-    LOG_INFO("Compiling model");
+    // LOG_INFO("Compiling model");
 
-    model->compile();
+    // model->compile();
 
-    LOG_INFO("Training model");
+    // LOG_INFO("Training model");
 
-    model->fit(x_train, y_train, x_test, y_test, 10, 32);
+    // model->fit(x_train, y_train, x_test, y_test, 10, 32);
 
     std::string file_path = "MNIST.bin";
 
-    LOG_INFO("Saving model to file " << file_path);
+    // LOG_INFO("Saving model to file " << file_path);
 
-    model->save(file_path);
+    // model->save(file_path);
+
+    std::shared_ptr<NNFSCore::NeuralNetwork> model = std::make_shared<NNFSCore::NeuralNetwork>();
 
     LOG_INFO("Loading model from file " << file_path);
 
@@ -93,9 +95,9 @@ int main()
 
     LOG_INFO("Evaluating model");
 
-    double accuracy;
-    model->accuracy(accuracy, x_test, y_test);
-    LOG_INFO("Test set accuracy: " << accuracy);
+    // double accuracy;
+    // model->accuracy(accuracy, x_test, y_test);
+    // LOG_INFO("Test set accuracy: " << accuracy);
 
     LOG_INFO("Predicting");
 
@@ -110,8 +112,8 @@ int main()
     NNFSCore::Metrics::onehotdecode(labels, y_test.topRows(10));
     NNFSCore::Metrics::onehotdecode(pred_labels, preds);
 
-    LOG_INFO("First 5 predictions: " << pred_labels.transpose());
-    LOG_INFO("First 5 labels:      " << labels.transpose());
+    LOG_INFO("First 10 predictions: " << pred_labels.transpose());
+    LOG_INFO("First 10 labels:      " << labels.transpose());
 
     return 0;
 }

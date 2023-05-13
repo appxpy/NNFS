@@ -6,26 +6,63 @@
 
 namespace NNFSCore
 {
+    /**
+     * @brief Enum class for loss types
+     */
     enum class LossType
     {
         CCE,
         CCE_SOFTMAX
     };
 
+    /**
+     * @brief Base class for all loss functions
+     *
+     * @details This class is the base class for all losses. It provides the interface for all loss functions.
+     */
     class Loss
     {
     public:
-        LossType type;
+        LossType type; // Type of loss function
 
     public:
+        /**
+         * @brief Construct a new Loss object
+         *
+         * @param type Type of loss function
+         */
         Loss(LossType type) : type(type) {}
 
+        /**
+         * @brief Basic destructor
+         */
         virtual ~Loss() = default;
 
+        /**
+         * @brief Forward pass of the loss function
+         *
+         * @param[out] sample_losses Sample losses
+         * @param[in] predictions Predictions
+         * @param[in] labels Labels
+         */
         virtual void forward(Eigen::MatrixXd &sample_losses, const Eigen::MatrixXd &predictions, const Eigen::MatrixXd &labels) const = 0;
 
+        /**
+         * @brief Backward pass of the loss function
+         *
+         * @param[out] out Output gradient
+         * @param[in] predictions Predictions
+         * @param[in] labels Labels
+         */
         virtual void backward(Eigen::MatrixXd &out, const Eigen::MatrixXd &predictions, const Eigen::MatrixXd &labels) const = 0;
 
+        /**
+         * @brief Calculate the loss
+         *
+         * @param[out] loss Loss
+         * @param[in] predictions Predictions
+         * @param[in] labels Labels
+         */
         void calculate(double &loss, const Eigen::MatrixXd &predictions, const Eigen::MatrixXd &labels)
         {
             Eigen::MatrixXd sample_losses;
@@ -33,6 +70,13 @@ namespace NNFSCore
             loss = sample_losses.mean();
         }
 
+        /**
+         * @brief Calculate l1 and l2 regularization loss.
+         *
+         * @param layer Layer to calculate regularization loss
+         *
+         * @return double Regularization loss
+         */
         double regularization_loss(const std::shared_ptr<Dense> &layer)
         {
             double regularization_loss = 0;
@@ -64,4 +108,4 @@ namespace NNFSCore
             return regularization_loss;
         }
     };
-}
+} // namespace NNFSCore

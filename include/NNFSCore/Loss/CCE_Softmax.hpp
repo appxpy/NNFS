@@ -5,11 +5,29 @@
 
 namespace NNFSCore
 {
+    /**
+     * @brief Cross-entropy loss function with softmax activation
+     *
+     * @details This class implements the cross-entropy loss function with softmax activation.
+     */
     class CCESoftmax : public Loss
     {
     public:
+        /**
+         * @brief Construct a new CCESoftmax object
+         *
+         * @param softmax Softmax activation layer
+         * @param cce Cross-entropy loss function
+         */
         CCESoftmax(std::shared_ptr<Softmax> softmax, std::shared_ptr<CCE> cce) : Loss(LossType::CCE_SOFTMAX), _softmax(softmax), _cce(cce) {}
 
+        /**
+         * @brief Forward pass of the CCE loss function with softmax activation
+         *
+         * @param[out] sample_losses Sample losses
+         * @param[in] predictions Predictions
+         * @param[in] labels Labels
+         */
         void forward(Eigen::MatrixXd &sample_losses, const Eigen::MatrixXd &predictions, const Eigen::MatrixXd &labels) const
         {
             Eigen::MatrixXd out;
@@ -19,6 +37,13 @@ namespace NNFSCore
             _cce->forward(sample_losses, out, labels);
         }
 
+        /**
+         * @brief Backward pass of the CCE loss function with softmax activation
+         *
+         * @param[out] out Output gradient
+         * @param[in] predictions Predictions
+         * @param[in] labels Labels
+         */
         void backward(Eigen::MatrixXd &out, const Eigen::MatrixXd &predictions, const Eigen::MatrixXd &labels) const
         {
             Eigen::MatrixXd _predictions = softmax_out();
@@ -43,15 +68,19 @@ namespace NNFSCore
             out /= samples;
         }
 
+        /**
+         * @brief Get the softmax output
+         *
+         * @return Eigen::MatrixXd& Softmax output
+         */
         Eigen::MatrixXd &softmax_out() const
         {
             return _softmax->_forward_output;
         }
 
     private:
-        std::shared_ptr<Softmax> _softmax;
-        std::shared_ptr<CCE> _cce;
-        Eigen::MatrixXd _softmax_out;
+        std::shared_ptr<Softmax> _softmax; // Softmax activation layer
+        std::shared_ptr<CCE> _cce;         // Cross-entropy loss function
+        Eigen::MatrixXd _softmax_out;      // Softmax output
     };
-}
-
+} // namespace NNFSCore
