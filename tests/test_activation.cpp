@@ -1,6 +1,5 @@
 #include "gtest/gtest.h"
-#include <NNFSCore/Activation/ReLU.hpp>
-#include <NNFSCore/Activation/Softmax.hpp>
+#include <NNFSCore/Core>
 
 class ReLUTest : public ::testing::Test
 {

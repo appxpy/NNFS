@@ -12,7 +12,7 @@ SET(CMAKE_C_FLAGS "-g -O3 ${CMAKE_C_FLAGS}") # -ftest-coverage -fopenmp
 
 
 SET(GENERATE_DOCS ON BOOL "Create target for doxygen auto-docs report")
-SET(CODE_COVERAGE OFF BOOL "Create targets for test coverage report")
+SET(CODE_COVERAGE ON BOOL "Create targets for test coverage report")
 
 add_subdirectory(external)
 add_subdirectory(include)
