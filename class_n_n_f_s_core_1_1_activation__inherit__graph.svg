@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Abstract base class for activation functions.">
+<g id="a_node1"><a xlink:title="Base class for all activation functions.">
 <polygon fill="#999999" stroke="#666666" points="281,-74.5 169,-74.5 169,-55.25 281,-55.25 281,-74.5"/>
 <text text-anchor="middle" x="225" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">NNFSCore::Activation</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="class_n_n_f_s_core_1_1_re_l_u.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="class_n_n_f_s_core_1_1_re_l_u.html" target="_top" xlink:title="ReLU activation function.">
 <polygon fill="white" stroke="#666666" points="94,-19.25 0,-19.25 0,0 94,0 94,-19.25"/>
 <text text-anchor="middle" x="47" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFSCore::ReLU</text>
 </a>
@@ -35,7 +35,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="class_n_n_f_s_core_1_1_sigmoid.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="class_n_n_f_s_core_1_1_sigmoid.html" target="_top" xlink:title="Sigmoid activation function.">
 <polygon fill="white" stroke="#666666" points="215.88,-19.25 112.12,-19.25 112.12,0 215.88,0 215.88,-19.25"/>
 <text text-anchor="middle" x="164" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFSCore::Sigmoid</text>
 </a>
@@ -50,7 +50,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="class_n_n_f_s_core_1_1_softmax.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="class_n_n_f_s_core_1_1_softmax.html" target="_top" xlink:title="Softmax activation function.">
 <polygon fill="white" stroke="#666666" points="338.25,-19.25 233.75,-19.25 233.75,0 338.25,0 338.25,-19.25"/>
 <text text-anchor="middle" x="286" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFSCore::Softmax</text>
 </a>
@@ -80,7 +80,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="class_n_n_f_s_core_1_1_layer.html" target="_top" xlink:title="Abstract base class for layers in a neural network.">
+<g id="a_node2"><a xlink:href="class_n_n_f_s_core_1_1_layer.html" target="_top" xlink:title="Base class for all layers.">
 <polygon fill="white" stroke="#666666" points="271.25,-129.75 178.75,-129.75 178.75,-110.5 271.25,-110.5 271.25,-129.75"/>
 <text text-anchor="middle" x="225" y="-116.25" font-family="Helvetica,sans-Serif" font-size="10.00">NNFSCore::Layer</text>
 </a>

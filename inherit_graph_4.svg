@@ -11,7 +11,7 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="class_n_n_f_s_core_1_1_optimizer.html" target="_top" xlink:title=" ">
+<g id="a_node1"><a xlink:href="class_n_n_f_s_core_1_1_optimizer.html" target="_top" xlink:title="Base class for all optimizers.">
 <polygon fill="white" stroke="#666666" points="109.75,-74.25 0,-74.25 0,-55 109.75,-55 109.75,-74.25"/>
 <text text-anchor="middle" x="54.88" y="-60.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFSCore::Optimizer</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node1 -->
 <g id="node2" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:href="class_n_n_f_s_core_1_1_adagrad.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="class_n_n_f_s_core_1_1_adagrad.html" target="_top" xlink:title="Adagrad optimizer (Adaptive Gradient)">
 <polygon fill="white" stroke="#666666" points="253.25,-130.25 148.75,-130.25 148.75,-111 253.25,-111 253.25,-130.25"/>
 <text text-anchor="middle" x="201" y="-116.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFSCore::Adagrad</text>
 </a>
@@ -35,7 +35,7 @@
 <!-- Node2 -->
 <g id="node3" class="node">
 <title>Node2</title>
-<g id="a_node3"><a xlink:href="class_n_n_f_s_core_1_1_adam.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="class_n_n_f_s_core_1_1_adam.html" target="_top" xlink:title="Adam optimizer &#45; Adaptive Moment Estimation, one of the most popular and efficient gradient&#45;based opt...">
 <polygon fill="white" stroke="#666666" points="248,-93.25 154,-93.25 154,-74 248,-74 248,-93.25"/>
 <text text-anchor="middle" x="201" y="-79.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFSCore::Adam</text>
 </a>
@@ -50,7 +50,7 @@
 <!-- Node3 -->
 <g id="node4" class="node">
 <title>Node3</title>
-<g id="a_node4"><a xlink:href="class_n_n_f_s_core_1_1_r_m_s_prop.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="class_n_n_f_s_core_1_1_r_m_s_prop.html" target="_top" xlink:title="Root Mean Square Propagation optimizer.">
 <polygon fill="white" stroke="#666666" points="256.25,-56.25 145.75,-56.25 145.75,-37 256.25,-37 256.25,-56.25"/>
 <text text-anchor="middle" x="201" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFSCore::RMSProp</text>
 </a>
@@ -65,7 +65,7 @@
 <!-- Node4 -->
 <g id="node5" class="node">
 <title>Node4</title>
-<g id="a_node5"><a xlink:href="class_n_n_f_s_core_1_1_s_g_d.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="class_n_n_f_s_core_1_1_s_g_d.html" target="_top" xlink:title="Stochastic Gradient Descent optimizer.">
 <polygon fill="white" stroke="#666666" points="245.75,-19.25 156.25,-19.25 156.25,0 245.75,0 245.75,-19.25"/>
 <text text-anchor="middle" x="201" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFSCore::SGD</text>
 </a>

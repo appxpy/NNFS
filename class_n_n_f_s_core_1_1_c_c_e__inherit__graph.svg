@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Cross&#45;entropy loss function.">
 <polygon fill="#999999" stroke="#666666" points="89.12,-19.25 1.12,-19.25 1.12,0 89.12,0 89.12,-19.25"/>
 <text text-anchor="middle" x="45.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFSCore::CCE</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="class_n_n_f_s_core_1_1_loss.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="class_n_n_f_s_core_1_1_loss.html" target="_top" xlink:title="Base class for all loss functions.">
 <polygon fill="white" stroke="#666666" points="90.25,-74.5 0,-74.5 0,-55.25 90.25,-55.25 90.25,-74.5"/>
 <text text-anchor="middle" x="45.12" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">NNFSCore::Loss</text>
 </a>

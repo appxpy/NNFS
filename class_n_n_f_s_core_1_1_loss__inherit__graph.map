@@ -1,5 +1,5 @@
 <map id="NNFSCore::Loss" name="NNFSCore::Loss">
-<area shape="rect" id="node1" title=" " alt="" coords="87,5,207,31"/>
-<area shape="rect" id="node2" href="$class_n_n_f_s_core_1_1_c_c_e.html" title=" " alt="" coords="5,79,123,105"/>
-<area shape="rect" id="node3" href="$class_n_n_f_s_core_1_1_c_c_e_softmax.html" title=" " alt="" coords="147,79,312,105"/>
+<area shape="rect" id="node1" title="Base class for all loss functions." alt="" coords="87,5,207,31"/>
+<area shape="rect" id="node2" href="$class_n_n_f_s_core_1_1_c_c_e.html" title="Cross&#45;entropy loss function." alt="" coords="5,79,123,105"/>
+<area shape="rect" id="node3" href="$class_n_n_f_s_core_1_1_c_c_e_softmax.html" title="Cross&#45;entropy loss function with softmax activation." alt="" coords="147,79,312,105"/>
 </map>

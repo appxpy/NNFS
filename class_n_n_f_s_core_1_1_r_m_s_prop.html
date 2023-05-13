@@ -58,7 +58,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo_svg.svg"/></td>
+  <td id="projectlogo">
+    <svg width="44" height="44" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" transform="translate(0 0.219971)" fill="var(--page-foreground-color)"/>
+        <path d="M13.44 23.22V10.62H15.186L20.856 20.484V10.62H22.422V23.22H20.694L15.024 13.356V23.22H13.44ZM25.3052 23.22V10.62H27.0512L32.7212 20.484V10.62H34.2872V23.22H32.5592L26.8892 13.356V23.22H25.3052ZM13.44 37.22V24.62H20.604V26.096H15.078V30.65H20.604V32.126H15.078V37.22H13.44ZM30.3156 37.508C28.8876 37.508 27.7716 37.13 26.9676 36.374C26.1636 35.618 25.7616 34.562 25.7616 33.206H27.3996C27.3996 34.082 27.6576 34.778 28.1736 35.294C28.7016 35.81 29.4096 36.068 30.2976 36.068C31.0896 36.068 31.7016 35.888 32.1336 35.528C32.5656 35.156 32.7816 34.64 32.7816 33.98C32.7816 33.428 32.6256 32.984 32.3136 32.648C32.0136 32.312 31.4976 32.018 30.7656 31.766L28.6776 31.028C26.9856 30.488 26.1396 29.384 26.1396 27.716C26.1396 26.708 26.5056 25.892 27.2376 25.268C27.9696 24.644 28.9236 24.332 30.0996 24.332C31.3356 24.332 32.3256 24.68 33.0696 25.376C33.8136 26.072 34.1856 27.008 34.1856 28.184H32.5476C32.5476 27.404 32.3316 26.804 31.8996 26.384C31.4676 25.952 30.8496 25.736 30.0456 25.736C29.3496 25.736 28.7976 25.91 28.3896 26.258C27.9936 26.594 27.7956 27.05 27.7956 27.626C27.7956 28.154 27.9696 28.592 28.3176 28.94C28.6656 29.288 29.2296 29.594 30.0096 29.858L31.9536 30.542C33.6096 31.13 34.4376 32.264 34.4376 33.944C34.4376 35.012 34.0596 35.876 33.3036 36.536C32.5596 37.184 31.5636 37.508 30.3156 37.508Z" fill="var(--page-background-color)"/>
+    </svg>
+  </td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">NNFS
    </div>
@@ -132,6 +137,9 @@ $(document).ready(function(){initNavTree('class_n_n_f_s_core_1_1_r_m_s_prop.html
 </div><!--header-->
 <div class="contents">
 
+<p>Root Mean Square Propagation optimizer.  
+ <a href="class_n_n_f_s_core_1_1_r_m_s_prop.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_r_m_s_prop_8hpp_source.html">RMSProp.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for NNFSCore::RMSProp:</div>
@@ -143,25 +151,35 @@ Inheritance diagram for NNFSCore::RMSProp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5020515d77ece092d9c363c2132fdfdf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_r_m_s_prop.html#a5020515d77ece092d9c363c2132fdfdf">RMSProp</a> (double lr=1e-3, double decay=1e-3, double epsilon=1e-7, double rho=.9)</td></tr>
+<tr class="memdesc:a5020515d77ece092d9c363c2132fdfdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_n_n_f_s_core_1_1_r_m_s_prop.html" title="Root Mean Square Propagation optimizer.">RMSProp</a> object.  <br /></td></tr>
 <tr class="separator:a5020515d77ece092d9c363c2132fdfdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdfcc31f8419893797c70259d2fc47fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_r_m_s_prop.html#afdfcc31f8419893797c70259d2fc47fc">update_params</a> (std::shared_ptr&lt; <a class="el" href="class_n_n_f_s_core_1_1_dense.html">Dense</a> &gt; &amp;layer)</td></tr>
+<tr class="memdesc:afdfcc31f8419893797c70259d2fc47fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the parameters of the layer.  <br /></td></tr>
 <tr class="separator:afdfcc31f8419893797c70259d2fc47fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8edbf69c93ceddf316c94664f07595ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_r_m_s_prop.html#a8edbf69c93ceddf316c94664f07595ab">pre_update_params</a> ()</td></tr>
+<tr class="memdesc:a8edbf69c93ceddf316c94664f07595ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-update parameters (e.g. learning rate decay)  <br /></td></tr>
 <tr class="separator:a8edbf69c93ceddf316c94664f07595ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abca2ca286c22bc10861541f93fda5b4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_r_m_s_prop.html#abca2ca286c22bc10861541f93fda5b4f">post_update_params</a> ()</td></tr>
+<tr class="memdesc:abca2ca286c22bc10861541f93fda5b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post-update parameters (e.g. increase iteration count)  <br /></td></tr>
 <tr class="separator:abca2ca286c22bc10861541f93fda5b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_n_n_f_s_core_1_1_optimizer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_n_n_f_s_core_1_1_optimizer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_n_n_f_s_core_1_1_optimizer.html">NNFSCore::Optimizer</a></td></tr>
 <tr class="memitem:a4ac1d646fad86a4afd2ae984bb8f241e inherit pub_methods_class_n_n_f_s_core_1_1_optimizer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_optimizer.html#a4ac1d646fad86a4afd2ae984bb8f241e">Optimizer</a> (double lr)</td></tr>
+<tr class="memdesc:a4ac1d646fad86a4afd2ae984bb8f241e inherit pub_methods_class_n_n_f_s_core_1_1_optimizer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_n_n_f_s_core_1_1_optimizer.html" title="Base class for all optimizers.">Optimizer</a> object.  <br /></td></tr>
 <tr class="separator:a4ac1d646fad86a4afd2ae984bb8f241e inherit pub_methods_class_n_n_f_s_core_1_1_optimizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74896bae2d978cf952e3d74243f42d6b inherit pub_methods_class_n_n_f_s_core_1_1_optimizer"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_optimizer.html#a74896bae2d978cf952e3d74243f42d6b">~Optimizer</a> ()=default</td></tr>
+<tr class="memdesc:a74896bae2d978cf952e3d74243f42d6b inherit pub_methods_class_n_n_f_s_core_1_1_optimizer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic destructor.  <br /></td></tr>
 <tr class="separator:a74896bae2d978cf952e3d74243f42d6b inherit pub_methods_class_n_n_f_s_core_1_1_optimizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad06b02351d8ab230ed30f21f31d1d101 inherit pub_methods_class_n_n_f_s_core_1_1_optimizer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_optimizer.html#ad06b02351d8ab230ed30f21f31d1d101">update_params</a> (std::shared_ptr&lt; <a class="el" href="class_n_n_f_s_core_1_1_dense.html">Dense</a> &gt; &amp;layer)=0</td></tr>
+<tr class="memdesc:ad06b02351d8ab230ed30f21f31d1d101 inherit pub_methods_class_n_n_f_s_core_1_1_optimizer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the parameters of the layer.  <br /></td></tr>
 <tr class="separator:ad06b02351d8ab230ed30f21f31d1d101 inherit pub_methods_class_n_n_f_s_core_1_1_optimizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9f2f8dd893a370dc092b3bf4360dc70 inherit pub_methods_class_n_n_f_s_core_1_1_optimizer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_optimizer.html#ab9f2f8dd893a370dc092b3bf4360dc70">pre_update_params</a> ()=0</td></tr>
+<tr class="memdesc:ab9f2f8dd893a370dc092b3bf4360dc70 inherit pub_methods_class_n_n_f_s_core_1_1_optimizer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-update parameters (e.g. learning rate decay)  <br /></td></tr>
 <tr class="separator:ab9f2f8dd893a370dc092b3bf4360dc70 inherit pub_methods_class_n_n_f_s_core_1_1_optimizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad42103250aa758f87adf1b7cb3af9bcf inherit pub_methods_class_n_n_f_s_core_1_1_optimizer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_optimizer.html#ad42103250aa758f87adf1b7cb3af9bcf">post_update_params</a> ()=0</td></tr>
+<tr class="memdesc:ad42103250aa758f87adf1b7cb3af9bcf inherit pub_methods_class_n_n_f_s_core_1_1_optimizer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post-update parameters (e.g. increase iteration count)  <br /></td></tr>
 <tr class="separator:ad42103250aa758f87adf1b7cb3af9bcf inherit pub_methods_class_n_n_f_s_core_1_1_optimizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98341383305613ffefc43ddf7108ee2e inherit pub_methods_class_n_n_f_s_core_1_1_optimizer"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_optimizer.html#a98341383305613ffefc43ddf7108ee2e">current_lr</a> ()</td></tr>
+<tr class="memdesc:a98341383305613ffefc43ddf7108ee2e inherit pub_methods_class_n_n_f_s_core_1_1_optimizer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current learning rate.  <br /></td></tr>
 <tr class="separator:a98341383305613ffefc43ddf7108ee2e inherit pub_methods_class_n_n_f_s_core_1_1_optimizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
@@ -172,7 +190,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:abf3b9cf3e00900e078a6d7977e558df9 inherit pro_attribs_class_n_n_f_s_core_1_1_optimizer"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_n_f_s_core_1_1_optimizer.html#abf3b9cf3e00900e078a6d7977e558df9">_current_lr</a></td></tr>
 <tr class="separator:abf3b9cf3e00900e078a6d7977e558df9 inherit pro_attribs_class_n_n_f_s_core_1_1_optimizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Root Mean Square Propagation optimizer. </p>
+<p>This class implements the Root Mean Square Propagation (<a class="el" href="class_n_n_f_s_core_1_1_r_m_s_prop.html" title="Root Mean Square Propagation optimizer.">RMSProp</a>) optimizer. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5020515d77ece092d9c363c2132fdfdf" name="a5020515d77ece092d9c363c2132fdfdf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5020515d77ece092d9c363c2132fdfdf">&#9670;&#160;</a></span>RMSProp()</h2>
 
@@ -219,6 +240,17 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Construct a new <a class="el" href="class_n_n_f_s_core_1_1_r_m_s_prop.html" title="Root Mean Square Propagation optimizer.">RMSProp</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lr</td><td>Learning rate (default: 1e-3) </td></tr>
+    <tr><td class="paramname">decay</td><td>Learning rate decay (default: 1e-3) </td></tr>
+    <tr><td class="paramname">epsilon</td><td>Epsilon - to avoid division by zero (default: 1e-7) </td></tr>
+    <tr><td class="paramname">rho</td><td><a class="el" href="class_n_n_f_s_core_1_1_r_m_s_prop.html" title="Root Mean Square Propagation optimizer.">RMSProp</a> uses "rho" to calculate an exponentially weighted average over the square of the gradients. (default: .9) </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -244,6 +276,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Post-update parameters (e.g. increase iteration count) </p>
 
 <p>Implements <a class="el" href="class_n_n_f_s_core_1_1_optimizer.html#ad42103250aa758f87adf1b7cb3af9bcf">NNFSCore::Optimizer</a>.</p>
 
@@ -272,6 +306,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Pre-update parameters (e.g. learning rate decay) </p>
+
 <p>Implements <a class="el" href="class_n_n_f_s_core_1_1_optimizer.html#ab9f2f8dd893a370dc092b3bf4360dc70">NNFSCore::Optimizer</a>.</p>
 
 </div>
@@ -299,6 +335,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Update the parameters of the layer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">layer</td><td><a class="el" href="class_n_n_f_s_core_1_1_layer.html" title="Base class for all layers.">Layer</a> to update </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="class_n_n_f_s_core_1_1_optimizer.html#ad06b02351d8ab230ed30f21f31d1d101">NNFSCore::Optimizer</a>.</p>
 
