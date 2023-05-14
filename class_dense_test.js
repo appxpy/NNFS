@@ -1,4 +1,4 @@
 var class_dense_test =
 [
-    [ "linear_", "class_dense_test.html#a8043d5d0d821dde6820e323cd106726c", null ]
+    [ "dense_", "class_dense_test.html#a6ef34ac45d343665cabe0e44b6899fff", null ]
 ];

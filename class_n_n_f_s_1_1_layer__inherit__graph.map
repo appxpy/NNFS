@@ -1,0 +1,9 @@
+<map id="NNFS::Layer" name="NNFS::Layer">
+<area shape="rect" id="node1" title="Base class for all layers." alt="" coords="272,5,368,31"/>
+<area shape="rect" id="node2" href="$class_n_n_f_s_1_1_activation.html" title="Base class for all activation functions." alt="" coords="191,79,313,105"/>
+<area shape="rect" id="node7" href="$class_n_n_f_s_1_1_dense.html" title="Dense layer." alt="" coords="337,79,439,105"/>
+<area shape="rect" id="node3" href="$class_n_n_f_s_1_1_re_l_u.html" title="ReLU activation function." alt="" coords="5,153,104,178"/>
+<area shape="rect" id="node4" href="$class_n_n_f_s_1_1_sigmoid.html" title="Sigmoid activation function." alt="" coords="128,153,240,178"/>
+<area shape="rect" id="node5" href="$class_n_n_f_s_1_1_softmax.html" title="Softmax activation function." alt="" coords="264,153,376,178"/>
+<area shape="rect" id="node6" href="$class_n_n_f_s_1_1_tanh.html" title=" " alt="" coords="400,153,493,178"/>
+</map>

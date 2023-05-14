@@ -1,5 +1,0 @@
-<map id="NNFSCore::ReLU" name="NNFSCore::ReLU">
-<area shape="rect" id="node1" title="ReLU activation function." alt="" coords="17,153,143,178"/>
-<area shape="rect" id="node2" href="$class_n_n_f_s_core_1_1_activation.html" title="Base class for all activation functions." alt="" coords="5,79,155,105"/>
-<area shape="rect" id="node3" href="$class_n_n_f_s_core_1_1_layer.html" title="Base class for all layers." alt="" coords="18,5,142,31"/>
-</map>

@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Doxygen Awesome" />
 <meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
 <!-- END twitter metadata -->
-<title>NNFS: include/NNFSCore/Optimizer/RMSProp.hpp Source File</title>
+<title>NNFS: include/NNFS/Optimizer/RMSProp.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -138,18 +138,18 @@ $(document).ready(function(){initNavTree('_r_m_s_prop_8hpp_source.html',''); ini
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;Eigen/Dense&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_optimizer_8hpp.html">Optimizer.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_n_f_s_core.html">NNFSCore</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_n_f_s.html">NNFS</a></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_r_m_s_prop.html">   13</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_n_n_f_s_core_1_1_r_m_s_prop.html">RMSProp</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_n_n_f_s_core_1_1_optimizer.html">Optimizer</a></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_n_n_f_s_1_1_r_m_s_prop.html">   13</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_n_n_f_s_1_1_r_m_s_prop.html">RMSProp</a> : <a class="code hl_class" href="class_n_n_f_s_1_1_optimizer.html">Optimizer</a></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_r_m_s_prop.html#a5020515d77ece092d9c363c2132fdfdf">   24</a></span>        <a class="code hl_function" href="class_n_n_f_s_core_1_1_r_m_s_prop.html#a5020515d77ece092d9c363c2132fdfdf">RMSProp</a>(<span class="keywordtype">double</span> lr = 1e-3, <span class="keywordtype">double</span> decay = 1e-3, <span class="keywordtype">double</span> epsilon = 1e-7, <span class="keywordtype">double</span> rho = .9) : <a class="code hl_class" href="class_n_n_f_s_core_1_1_optimizer.html">Optimizer</a>(lr),</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                                                                                                 _decay(decay),</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                                                                                                 _iterations(0),</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                                                                                                 _epsilon(epsilon),</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                                                                                                 _rho(rho) {}</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_n_n_f_s_1_1_r_m_s_prop.html#ac693c94036059937cdda368849d63d69">   24</a></span>        <a class="code hl_function" href="class_n_n_f_s_1_1_r_m_s_prop.html#ac693c94036059937cdda368849d63d69">RMSProp</a>(<span class="keywordtype">double</span> lr = 1e-3, <span class="keywordtype">double</span> decay = 1e-3, <span class="keywordtype">double</span> epsilon = 1e-7, <span class="keywordtype">double</span> rho = .9) : <a class="code hl_class" href="class_n_n_f_s_1_1_optimizer.html">Optimizer</a>(lr, decay),</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                                                                                                 _epsilon(epsilon),</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                                                                                                 _rho(rho)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        }</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_r_m_s_prop.html#afdfcc31f8419893797c70259d2fc47fc">   35</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_n_f_s_core_1_1_r_m_s_prop.html#afdfcc31f8419893797c70259d2fc47fc">update_params</a>(std::shared_ptr&lt;Dense&gt; &amp;layer)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_n_n_f_s_1_1_r_m_s_prop.html#a82b46c1ab57b50d6bb862e1b80c77143">   35</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_n_f_s_1_1_r_m_s_prop.html#a82b46c1ab57b50d6bb862e1b80c77143">update_params</a>(std::shared_ptr&lt;Dense&gt; &amp;layer)</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        {</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            Eigen::MatrixXd weights = layer-&gt;weights();</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            Eigen::MatrixXd biases = layer-&gt;biases();</div>
@@ -162,8 +162,8 @@ $(document).ready(function(){initNavTree('_r_m_s_prop_8hpp_source.html',''); ini
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            weights_cache = _rho * weights_cache + (1 - _rho) * dweights.cwisePow(2);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            biases_cache = _rho * biases_cache + (1 - _rho) * dbiases.cwisePow(2);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            weights += (-<a class="code hl_variable" href="class_n_n_f_s_core_1_1_optimizer.html#abf3b9cf3e00900e078a6d7977e558df9">_current_lr</a> * dweights.array() / (weights_cache.cwisePow(.5).array() + _epsilon)).matrix();</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            biases += (-<a class="code hl_variable" href="class_n_n_f_s_core_1_1_optimizer.html#abf3b9cf3e00900e078a6d7977e558df9">_current_lr</a> * dbiases.array() / (biases_cache.cwisePow(.5).array() + _epsilon)).matrix();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            weights += (-<a class="code hl_variable" href="class_n_n_f_s_1_1_optimizer.html#aee62a4f25100de00510b582f5f321160">_current_lr</a> * dweights.array() / (weights_cache.cwisePow(.5).array() + _epsilon)).matrix();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            biases += (-<a class="code hl_variable" href="class_n_n_f_s_1_1_optimizer.html#aee62a4f25100de00510b582f5f321160">_current_lr</a> * dbiases.array() / (biases_cache.cwisePow(.5).array() + _epsilon)).matrix();</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            layer-&gt;weights_optimizer(weights_cache);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            layer-&gt;biases_optimizer(biases_cache);</div>
@@ -172,42 +172,24 @@ $(document).ready(function(){initNavTree('_r_m_s_prop_8hpp_source.html',''); ini
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            layer-&gt;biases(biases);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_r_m_s_prop.html#a8edbf69c93ceddf316c94664f07595ab">   61</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_n_f_s_core_1_1_r_m_s_prop.html#a8edbf69c93ceddf316c94664f07595ab">pre_update_params</a>()</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">if</span> (_decay &gt; 0)</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                <a class="code hl_variable" href="class_n_n_f_s_core_1_1_optimizer.html#abf3b9cf3e00900e078a6d7977e558df9">_current_lr</a> = <a class="code hl_variable" href="class_n_n_f_s_core_1_1_optimizer.html#ad8349127e06d40a7f71f908fa4f75d77">_lr</a> * (1. / (1. + _decay * _iterations));</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            }</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_r_m_s_prop.html#abca2ca286c22bc10861541f93fda5b4f">   72</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_n_f_s_core_1_1_r_m_s_prop.html#abca2ca286c22bc10861541f93fda5b4f">post_update_params</a>()</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            _iterations += 1;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordtype">double</span> _decay;   <span class="comment">// Learning rate decay</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordtype">int</span> _iterations; <span class="comment">// Iteration count</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordtype">double</span> _epsilon; <span class="comment">// Epsilon - to avoid division by zero</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordtype">double</span> _rho;     <span class="comment">// RMSProp uses &quot;rho&quot; to calculate an exponentially weighted average over the square of the gradients.</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    };</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>} <span class="comment">// namespace NNFSCore</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordtype">double</span> _epsilon; <span class="comment">// Epsilon - to avoid division by zero</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordtype">double</span> _rho;     <span class="comment">// RMSProp uses &quot;rho&quot; to calculate an exponentially weighted average over the square of the gradients.</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    };</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>} <span class="comment">// namespace NNFS</span></div>
 <div class="ttc" id="a_optimizer_8hpp_html"><div class="ttname"><a href="_optimizer_8hpp.html">Optimizer.hpp</a></div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_optimizer_html"><div class="ttname"><a href="class_n_n_f_s_core_1_1_optimizer.html">NNFSCore::Optimizer</a></div><div class="ttdoc">Base class for all optimizers.</div><div class="ttdef"><b>Definition:</b> Optimizer.hpp:15</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_optimizer_html_abf3b9cf3e00900e078a6d7977e558df9"><div class="ttname"><a href="class_n_n_f_s_core_1_1_optimizer.html#abf3b9cf3e00900e078a6d7977e558df9">NNFSCore::Optimizer::_current_lr</a></div><div class="ttdeci">double _current_lr</div><div class="ttdef"><b>Definition:</b> Optimizer.hpp:58</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_optimizer_html_ad8349127e06d40a7f71f908fa4f75d77"><div class="ttname"><a href="class_n_n_f_s_core_1_1_optimizer.html#ad8349127e06d40a7f71f908fa4f75d77">NNFSCore::Optimizer::_lr</a></div><div class="ttdeci">const double _lr</div><div class="ttdef"><b>Definition:</b> Optimizer.hpp:57</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_r_m_s_prop_html"><div class="ttname"><a href="class_n_n_f_s_core_1_1_r_m_s_prop.html">NNFSCore::RMSProp</a></div><div class="ttdoc">Root Mean Square Propagation optimizer.</div><div class="ttdef"><b>Definition:</b> RMSProp.hpp:14</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_r_m_s_prop_html_a5020515d77ece092d9c363c2132fdfdf"><div class="ttname"><a href="class_n_n_f_s_core_1_1_r_m_s_prop.html#a5020515d77ece092d9c363c2132fdfdf">NNFSCore::RMSProp::RMSProp</a></div><div class="ttdeci">RMSProp(double lr=1e-3, double decay=1e-3, double epsilon=1e-7, double rho=.9)</div><div class="ttdoc">Construct a new RMSProp object.</div><div class="ttdef"><b>Definition:</b> RMSProp.hpp:24</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_r_m_s_prop_html_a8edbf69c93ceddf316c94664f07595ab"><div class="ttname"><a href="class_n_n_f_s_core_1_1_r_m_s_prop.html#a8edbf69c93ceddf316c94664f07595ab">NNFSCore::RMSProp::pre_update_params</a></div><div class="ttdeci">void pre_update_params()</div><div class="ttdoc">Pre-update parameters (e.g. learning rate decay)</div><div class="ttdef"><b>Definition:</b> RMSProp.hpp:61</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_r_m_s_prop_html_abca2ca286c22bc10861541f93fda5b4f"><div class="ttname"><a href="class_n_n_f_s_core_1_1_r_m_s_prop.html#abca2ca286c22bc10861541f93fda5b4f">NNFSCore::RMSProp::post_update_params</a></div><div class="ttdeci">void post_update_params()</div><div class="ttdoc">Post-update parameters (e.g. increase iteration count)</div><div class="ttdef"><b>Definition:</b> RMSProp.hpp:72</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_r_m_s_prop_html_afdfcc31f8419893797c70259d2fc47fc"><div class="ttname"><a href="class_n_n_f_s_core_1_1_r_m_s_prop.html#afdfcc31f8419893797c70259d2fc47fc">NNFSCore::RMSProp::update_params</a></div><div class="ttdeci">void update_params(std::shared_ptr&lt; Dense &gt; &amp;layer)</div><div class="ttdoc">Update the parameters of the layer.</div><div class="ttdef"><b>Definition:</b> RMSProp.hpp:35</div></div>
-<div class="ttc" id="anamespace_n_n_f_s_core_html"><div class="ttname"><a href="namespace_n_n_f_s_core.html">NNFSCore</a></div><div class="ttdef"><b>Definition:</b> Activation.hpp:6</div></div>
+<div class="ttc" id="aclass_n_n_f_s_1_1_optimizer_html"><div class="ttname"><a href="class_n_n_f_s_1_1_optimizer.html">NNFS::Optimizer</a></div><div class="ttdoc">Base class for all optimizers.</div><div class="ttdef"><b>Definition:</b> Optimizer.hpp:15</div></div>
+<div class="ttc" id="aclass_n_n_f_s_1_1_optimizer_html_aee62a4f25100de00510b582f5f321160"><div class="ttname"><a href="class_n_n_f_s_1_1_optimizer.html#aee62a4f25100de00510b582f5f321160">NNFS::Optimizer::_current_lr</a></div><div class="ttdeci">double _current_lr</div><div class="ttdef"><b>Definition:</b> Optimizer.hpp:77</div></div>
+<div class="ttc" id="aclass_n_n_f_s_1_1_r_m_s_prop_html"><div class="ttname"><a href="class_n_n_f_s_1_1_r_m_s_prop.html">NNFS::RMSProp</a></div><div class="ttdoc">Root Mean Square Propagation optimizer.</div><div class="ttdef"><b>Definition:</b> RMSProp.hpp:14</div></div>
+<div class="ttc" id="aclass_n_n_f_s_1_1_r_m_s_prop_html_a82b46c1ab57b50d6bb862e1b80c77143"><div class="ttname"><a href="class_n_n_f_s_1_1_r_m_s_prop.html#a82b46c1ab57b50d6bb862e1b80c77143">NNFS::RMSProp::update_params</a></div><div class="ttdeci">void update_params(std::shared_ptr&lt; Dense &gt; &amp;layer)</div><div class="ttdoc">Update the parameters of the layer.</div><div class="ttdef"><b>Definition:</b> RMSProp.hpp:35</div></div>
+<div class="ttc" id="aclass_n_n_f_s_1_1_r_m_s_prop_html_ac693c94036059937cdda368849d63d69"><div class="ttname"><a href="class_n_n_f_s_1_1_r_m_s_prop.html#ac693c94036059937cdda368849d63d69">NNFS::RMSProp::RMSProp</a></div><div class="ttdeci">RMSProp(double lr=1e-3, double decay=1e-3, double epsilon=1e-7, double rho=.9)</div><div class="ttdoc">Construct a new RMSProp object.</div><div class="ttdef"><b>Definition:</b> RMSProp.hpp:24</div></div>
+<div class="ttc" id="anamespace_n_n_f_s_html"><div class="ttname"><a href="namespace_n_n_f_s.html">NNFS</a></div><div class="ttdef"><b>Definition:</b> Activation.hpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_b83ee6e98edabda9ce26bff501159cde.html">NNFSCore</a></li><li class="navelem"><a class="el" href="dir_6158402e19ce394dc9fd746184496139.html">Optimizer</a></li><li class="navelem"><a class="el" href="_r_m_s_prop_8hpp.html">RMSProp.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e35bf39e4fee933b811e79d0e6a4be13.html">NNFS</a></li><li class="navelem"><a class="el" href="dir_dc6bd0b194df736e276328fb2fb40902.html">Optimizer</a></li><li class="navelem"><a class="el" href="_r_m_s_prop_8hpp.html">RMSProp.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>

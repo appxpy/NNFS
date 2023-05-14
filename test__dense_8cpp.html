@@ -138,12 +138,11 @@ $(document).ready(function(){initNavTree('test__dense_8cpp.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;gtest/gtest.h&quot;</code><br />
-<code>#include &lt;<a class="el" href="_dense_8hpp_source.html">NNFSCore/Layer/Dense.hpp</a>&gt;</code><br />
-<code>#include &lt;Eigen/Dense&gt;</code><br />
+<code>#include &lt;NNFS/Core&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for test_dense.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="test__dense_8cpp__incl.svg" width="452" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="test__dense_8cpp__incl.svg" width="219" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
@@ -154,23 +153,29 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a12e572fd5903c2d3cbd42e1f4ae14c46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__dense_8cpp.html#a12e572fd5903c2d3cbd42e1f4ae14c46">LOG_LEVEL_</a></td></tr>
-<tr class="separator:a12e572fd5903c2d3cbd42e1f4ae14c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b87e0d3bf5853bcbb0b66a7c48fdc05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__dense_8cpp.html#a0b87e0d3bf5853bcbb0b66a7c48fdc05">LOG_LEVEL</a>&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#ace844b8da68a888321700252da4061a9">LOG_SEV_NONE</a></td></tr>
+<tr class="separator:a0b87e0d3bf5853bcbb0b66a7c48fdc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a42846c2f62fa0b82bd907f14ed109d25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__dense_8cpp.html#a42846c2f62fa0b82bd907f14ed109d25">TEST_F</a> (<a class="el" href="class_dense_test.html">DenseTest</a>, BackwardPassTest)</td></tr>
 <tr class="separator:a42846c2f62fa0b82bd907f14ed109d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed16d6a442d4c35a1e97d735e9f769c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__dense_8cpp.html#a0ed16d6a442d4c35a1e97d735e9f769c">TEST_F</a> (<a class="el" href="class_dense_test.html">DenseTest</a>, IncorrectDimensionsTest)</td></tr>
+<tr class="separator:a0ed16d6a442d4c35a1e97d735e9f769c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a427bc8774efeb906891d015a4ebdfa27"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__dense_8cpp.html#a427bc8774efeb906891d015a4ebdfa27">TEST_F</a> (<a class="el" href="class_dense_test.html">DenseTest</a>, ShapeAndParametersTest)</td></tr>
+<tr class="separator:a427bc8774efeb906891d015a4ebdfa27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9c168261b73dcd0603e951d3f0c333"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__dense_8cpp.html#afa9c168261b73dcd0603e951d3f0c333">TEST_F</a> (<a class="el" href="class_dense_test.html">DenseTest</a>, RegularizationTest)</td></tr>
+<tr class="separator:afa9c168261b73dcd0603e951d3f0c333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a12e572fd5903c2d3cbd42e1f4ae14c46" name="a12e572fd5903c2d3cbd42e1f4ae14c46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12e572fd5903c2d3cbd42e1f4ae14c46">&#9670;&#160;</a></span>LOG_LEVEL_</h2>
+<a id="a0b87e0d3bf5853bcbb0b66a7c48fdc05" name="a0b87e0d3bf5853bcbb0b66a7c48fdc05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b87e0d3bf5853bcbb0b66a7c48fdc05">&#9670;&#160;</a></span>LOG_LEVEL</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LOG_LEVEL_</td>
+          <td class="memname">#define LOG_LEVEL&#160;&#160;&#160;<a class="el" href="clue_8hpp.html#ace844b8da68a888321700252da4061a9">LOG_SEV_NONE</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -179,7 +184,7 @@ Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a42846c2f62fa0b82bd907f14ed109d25" name="a42846c2f62fa0b82bd907f14ed109d25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42846c2f62fa0b82bd907f14ed109d25">&#9670;&#160;</a></span>TEST_F()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a42846c2f62fa0b82bd907f14ed109d25">&#9670;&#160;</a></span>TEST_F() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,6 +199,90 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">BackwardPassTest&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ed16d6a442d4c35a1e97d735e9f769c" name="a0ed16d6a442d4c35a1e97d735e9f769c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ed16d6a442d4c35a1e97d735e9f769c">&#9670;&#160;</a></span>TEST_F() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_dense_test.html">DenseTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IncorrectDimensionsTest&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa9c168261b73dcd0603e951d3f0c333" name="afa9c168261b73dcd0603e951d3f0c333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa9c168261b73dcd0603e951d3f0c333">&#9670;&#160;</a></span>TEST_F() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_dense_test.html">DenseTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RegularizationTest&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a427bc8774efeb906891d015a4ebdfa27" name="a427bc8774efeb906891d015a4ebdfa27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a427bc8774efeb906891d015a4ebdfa27">&#9670;&#160;</a></span>TEST_F() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_dense_test.html">DenseTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ShapeAndParametersTest&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>

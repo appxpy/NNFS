@@ -1,11 +1,9 @@
-<map id="include/NNFSCore/Activation/Activation.hpp" name="include/NNFSCore/Activation/Activation.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="156,5,348,46"/>
-<area shape="rect" id="node2" href="$_re_l_u_8hpp.html" title=" " alt="" coords="289,94,482,135"/>
-<area shape="rect" id="node3" href="$_neural_network_8hpp.html" title=" " alt="" coords="224,271,393,312"/>
-<area shape="rect" id="node5" href="$_sigmoid_8hpp.html" title=" " alt="" coords="145,183,338,223"/>
-<area shape="rect" id="node6" href="$_softmax_8hpp.html" title=" " alt="" coords="516,94,708,135"/>
-<area shape="rect" id="node9" href="$_tanh_8hpp.html" title=" " alt="" coords="23,94,215,135"/>
-<area shape="rect" id="node4" href="$test__activation_8cpp.html" title=" " alt="" coords="412,190,575,216"/>
-<area shape="rect" id="node7" href="$_c_c_e___softmax_8hpp.html" title=" " alt="" coords="649,183,813,223"/>
-<area shape="rect" id="node8" href="$test__loss_8cpp.html" title=" " alt="" coords="724,279,855,305"/>
+<map id="include/NNFS/Activation/Activation.hpp" name="include/NNFS/Activation/Activation.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="245,5,411,46"/>
+<area shape="rect" id="node2" href="$_re_l_u_8hpp.html" title=" " alt="" coords="5,183,171,223"/>
+<area shape="rect" id="node3" href="$_neural_network_8hpp.html" title=" " alt="" coords="317,271,459,312"/>
+<area shape="rect" id="node4" href="$_sigmoid_8hpp.html" title=" " alt="" coords="245,183,411,223"/>
+<area shape="rect" id="node5" href="$_softmax_8hpp.html" title=" " alt="" coords="365,94,531,135"/>
+<area shape="rect" id="node7" href="$_tanh_8hpp.html" title=" " alt="" coords="580,94,745,135"/>
+<area shape="rect" id="node6" href="$_c_c_e___softmax_8hpp.html" title=" " alt="" coords="485,183,651,223"/>
 </map>

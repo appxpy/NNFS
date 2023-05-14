@@ -1,13 +1,13 @@
-<map id="include/NNFSCore/Loss/Loss.hpp" name="include/NNFSCore/Loss/Loss.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="148,5,311,46"/>
-<area shape="rect" id="node2" title=" " alt="" coords="98,241,192,267"/>
-<area shape="rect" id="node3" href="$clue_8hpp.html" title=" " alt="" coords="216,241,344,267"/>
-<area shape="rect" id="node9" href="$_dense_8hpp.html" title=" " alt="" coords="29,94,157,120"/>
-<area shape="rect" id="node4" title=" " alt="" coords="200,315,266,341"/>
-<area shape="rect" id="node5" title=" " alt="" coords="291,315,359,341"/>
-<area shape="rect" id="node6" title=" " alt="" coords="384,315,448,341"/>
-<area shape="rect" id="node7" title=" " alt="" coords="14,315,85,341"/>
-<area shape="rect" id="node8" title=" " alt="" coords="123,315,176,341"/>
-<area shape="rect" id="node10" title=" " alt="" coords="26,168,91,193"/>
-<area shape="rect" id="node11" href="$_layer_8hpp.html" title=" " alt="" coords="115,168,192,193"/>
+<map id="include/NNFS/Loss/Loss.hpp" name="include/NNFS/Loss/Loss.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="133,5,326,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="98,226,192,252"/>
+<area shape="rect" id="node3" href="$clue_8hpp.html" title=" " alt="" coords="216,226,344,252"/>
+<area shape="rect" id="node9" href="$_dense_8hpp.html" title=" " alt="" coords="29,79,157,105"/>
+<area shape="rect" id="node4" title=" " alt="" coords="200,300,266,326"/>
+<area shape="rect" id="node5" title=" " alt="" coords="291,300,359,326"/>
+<area shape="rect" id="node6" title=" " alt="" coords="384,300,448,326"/>
+<area shape="rect" id="node7" title=" " alt="" coords="14,300,85,326"/>
+<area shape="rect" id="node8" title=" " alt="" coords="123,300,176,326"/>
+<area shape="rect" id="node10" title=" " alt="" coords="26,153,91,178"/>
+<area shape="rect" id="node11" href="$_layer_8hpp.html" title=" " alt="" coords="115,153,192,178"/>
 </map>

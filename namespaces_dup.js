@@ -9,5 +9,5 @@ var namespaces_dup =
       [ "to_severities_text", "namespaceclue.html#a45e26564cd175f91df901508c8df56f3", null ],
       [ "to_severity_text", "namespaceclue.html#a479200e719fa7a129c318cac32d946e8", null ]
     ] ],
-    [ "NNFSCore", "namespace_n_n_f_s_core.html", "namespace_n_n_f_s_core" ]
+    [ "NNFS", "namespace_n_n_f_s.html", "namespace_n_n_f_s" ]
 ];

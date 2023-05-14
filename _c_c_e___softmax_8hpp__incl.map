@@ -1,5 +1,5 @@
-<map id="include/NNFSCore/Loss/CCE_Softmax.hpp" name="include/NNFSCore/Loss/CCE_Softmax.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="191,5,354,46"/>
+<map id="include/NNFS/Loss/CCE_Softmax.hpp" name="include/NNFS/Loss/CCE_Softmax.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="189,5,355,46"/>
 <area shape="rect" id="node2" href="$_c_c_e_8hpp.html" title=" " alt="" coords="166,94,237,120"/>
 <area shape="rect" id="node14" href="$_softmax_8hpp.html" title=" " alt="" coords="311,94,476,120"/>
 <area shape="rect" id="node3" href="$_loss_8hpp.html" title=" " alt="" coords="158,168,232,193"/>

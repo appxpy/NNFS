@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Doxygen Awesome" />
 <meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
 <!-- END twitter metadata -->
-<title>NNFS: include/NNFSCore/Optimizer/Adam.hpp Source File</title>
+<title>NNFS: include/NNFS/Optimizer/Adam.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -137,93 +137,74 @@ $(document).ready(function(){initNavTree('_adam_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_optimizer_8hpp.html">Optimizer.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_n_f_s_core.html">NNFSCore</a></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_n_f_s.html">NNFS</a></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_adam.html">   12</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_n_n_f_s_core_1_1_adam.html">Adam</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_n_n_f_s_core_1_1_optimizer.html">Optimizer</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_n_n_f_s_1_1_adam.html">   12</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_n_n_f_s_1_1_adam.html">Adam</a> : <a class="code hl_class" href="class_n_n_f_s_1_1_optimizer.html">Optimizer</a></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    {</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_adam.html#abe7934e6fc135f0ea01abe655987b029">   24</a></span>        <a class="code hl_function" href="class_n_n_f_s_core_1_1_adam.html#abe7934e6fc135f0ea01abe655987b029">Adam</a>(<span class="keywordtype">double</span> lr = 1e-3, <span class="keywordtype">double</span> decay = .0, <span class="keywordtype">double</span> epsilon = 1e-7, <span class="keywordtype">double</span> beta_1 = .9, <span class="keywordtype">double</span> beta_2 = .999) : <a class="code hl_class" href="class_n_n_f_s_core_1_1_optimizer.html">Optimizer</a>(lr),</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                                                                                                                     _decay(decay),</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                                                                                                                     _iterations(0),</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                                                                                                                     _epsilon(epsilon),</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                                                                                                                     _beta_1(beta_1),</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                                                                                                                     _beta_2(beta_2) {}</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_adam.html#ad09feded7ea2c228cf55640e54977725">   36</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_n_f_s_core_1_1_adam.html#ad09feded7ea2c228cf55640e54977725">update_params</a>(std::shared_ptr&lt;Dense&gt; &amp;layer)</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            Eigen::MatrixXd weights = layer-&gt;weights();</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            Eigen::MatrixXd biases = layer-&gt;biases();</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            Eigen::MatrixXd dweights = layer-&gt;dweights();</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            Eigen::MatrixXd dbiases = layer-&gt;dbiases();</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            Eigen::MatrixXd weights_cache = layer-&gt;weights_optimizer();</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            Eigen::MatrixXd biases_cache = layer-&gt;biases_optimizer();</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            Eigen::MatrixXd weights_momentums = layer-&gt;weights_optimizer_additional();</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            Eigen::MatrixXd biases_momentums = layer-&gt;biases_optimizer_additional();</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            weights_momentums = _beta_1 * weights_momentums + (1 - _beta_1) * dweights;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            biases_momentums = _beta_1 * biases_momentums + (1 - _beta_1) * dbiases;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            Eigen::MatrixXd weights_momentums_corrected = weights_momentums / (1 - std::pow(_beta_1, (_iterations + 1)));</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            Eigen::MatrixXd biases_momentums_corrected = biases_momentums / (1 - std::pow(_beta_1, (_iterations + 1)));</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            weights_cache = _beta_2 * weights_cache + (1 - _beta_2) * dweights.cwisePow(2);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            biases_cache = _beta_2 * biases_cache + (1 - _beta_2) * dbiases.cwisePow(2);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            Eigen::MatrixXd weights_cache_corrected = weights_cache / (1 - std::pow(_beta_2, (_iterations + 1)));</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            Eigen::MatrixXd biases_cache_corrected = biases_cache / (1 - std::pow(_beta_2, (_iterations + 1)));</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            weights += ((-<a class="code hl_variable" href="class_n_n_f_s_core_1_1_optimizer.html#abf3b9cf3e00900e078a6d7977e558df9">_current_lr</a> * weights_momentums_corrected).array() / (weights_cache_corrected.cwisePow(.5).array() + _epsilon)).matrix();</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            biases += ((-<a class="code hl_variable" href="class_n_n_f_s_core_1_1_optimizer.html#abf3b9cf3e00900e078a6d7977e558df9">_current_lr</a> * biases_momentums_corrected).array() / (biases_cache_corrected.cwisePow(.5).array() + _epsilon)).matrix();</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            layer-&gt;weights_optimizer(weights_cache);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            layer-&gt;biases_optimizer(biases_cache);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            layer-&gt;weights_optimizer_additional(weights_momentums);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            layer-&gt;biases_optimizer_additional(biases_momentums);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            layer-&gt;weights(weights);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            layer-&gt;biases(biases);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_adam.html#a7676458f044a428e560a1ca6f09e48bc">   77</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_n_f_s_core_1_1_adam.html#a7676458f044a428e560a1ca6f09e48bc">pre_update_params</a>()</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        {</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordflow">if</span> (_decay &gt; 0)</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                <a class="code hl_variable" href="class_n_n_f_s_core_1_1_optimizer.html#abf3b9cf3e00900e078a6d7977e558df9">_current_lr</a> = <a class="code hl_variable" href="class_n_n_f_s_core_1_1_optimizer.html#ad8349127e06d40a7f71f908fa4f75d77">_lr</a> * (1. / (1. + _decay * _iterations));</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            }</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        }</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_n_n_f_s_core_1_1_adam.html#a42f7a4af1e5021dee2f223482c025b66">   88</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_n_f_s_core_1_1_adam.html#a42f7a4af1e5021dee2f223482c025b66">post_update_params</a>()</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        {</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            _iterations += 1;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordtype">double</span> _decay;   <span class="comment">// Learning rate decay</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordtype">int</span> _iterations; <span class="comment">// Iteration count</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordtype">double</span> _epsilon; <span class="comment">// Epsilon value to avoid division by zero</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordtype">double</span> _beta_1;  <span class="comment">// Exponential decay rate for the first moment estimates</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keywordtype">double</span> _beta_2;  <span class="comment">// Exponential decay rate for the second moment estimates</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    };</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>} <span class="comment">// namespace NNFSCore</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_n_n_f_s_1_1_adam.html#a6f2d0811fa0e0ef5ddce7ddfc222ace0">   24</a></span>        <a class="code hl_function" href="class_n_n_f_s_1_1_adam.html#a6f2d0811fa0e0ef5ddce7ddfc222ace0">Adam</a>(<span class="keywordtype">double</span> lr = 1e-3, <span class="keywordtype">double</span> decay = .0, <span class="keywordtype">double</span> epsilon = 1e-7, <span class="keywordtype">double</span> beta_1 = .9, <span class="keywordtype">double</span> beta_2 = .999) : <a class="code hl_class" href="class_n_n_f_s_1_1_optimizer.html">Optimizer</a>(lr, decay),</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                                                                                                                     _epsilon(epsilon),</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                                                                                                                     _beta_1(beta_1),</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                                                                                                                     _beta_2(beta_2) {}</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_n_n_f_s_1_1_adam.html#abf66beeed7692e67300fdced809a1a95">   34</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_n_f_s_1_1_adam.html#abf66beeed7692e67300fdced809a1a95">update_params</a>(std::shared_ptr&lt;Dense&gt; &amp;layer)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            Eigen::MatrixXd weights = layer-&gt;weights();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            Eigen::MatrixXd biases = layer-&gt;biases();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            Eigen::MatrixXd dweights = layer-&gt;dweights();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            Eigen::MatrixXd dbiases = layer-&gt;dbiases();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            Eigen::MatrixXd weights_cache = layer-&gt;weights_optimizer();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            Eigen::MatrixXd biases_cache = layer-&gt;biases_optimizer();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            Eigen::MatrixXd weights_momentums = layer-&gt;weights_optimizer_additional();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            Eigen::MatrixXd biases_momentums = layer-&gt;biases_optimizer_additional();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            weights_momentums = _beta_1 * weights_momentums + (1 - _beta_1) * dweights;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            biases_momentums = _beta_1 * biases_momentums + (1 - _beta_1) * dbiases;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            Eigen::MatrixXd weights_momentums_corrected = weights_momentums / (1 - std::pow(_beta_1, (<a class="code hl_variable" href="class_n_n_f_s_1_1_optimizer.html#aabd645d739cd194359e3e819c77f7e13">_iterations</a> + 1)));</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            Eigen::MatrixXd biases_momentums_corrected = biases_momentums / (1 - std::pow(_beta_1, (<a class="code hl_variable" href="class_n_n_f_s_1_1_optimizer.html#aabd645d739cd194359e3e819c77f7e13">_iterations</a> + 1)));</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            weights_cache = _beta_2 * weights_cache + (1 - _beta_2) * dweights.cwisePow(2);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            biases_cache = _beta_2 * biases_cache + (1 - _beta_2) * dbiases.cwisePow(2);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            Eigen::MatrixXd weights_cache_corrected = weights_cache / (1 - std::pow(_beta_2, (<a class="code hl_variable" href="class_n_n_f_s_1_1_optimizer.html#aabd645d739cd194359e3e819c77f7e13">_iterations</a> + 1)));</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            Eigen::MatrixXd biases_cache_corrected = biases_cache / (1 - std::pow(_beta_2, (<a class="code hl_variable" href="class_n_n_f_s_1_1_optimizer.html#aabd645d739cd194359e3e819c77f7e13">_iterations</a> + 1)));</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            weights += ((-<a class="code hl_variable" href="class_n_n_f_s_1_1_optimizer.html#aee62a4f25100de00510b582f5f321160">_current_lr</a> * weights_momentums_corrected).array() / (weights_cache_corrected.cwisePow(.5).array() + _epsilon)).matrix();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            biases += ((-<a class="code hl_variable" href="class_n_n_f_s_1_1_optimizer.html#aee62a4f25100de00510b582f5f321160">_current_lr</a> * biases_momentums_corrected).array() / (biases_cache_corrected.cwisePow(.5).array() + _epsilon)).matrix();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            layer-&gt;weights_optimizer(weights_cache);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            layer-&gt;biases_optimizer(biases_cache);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            layer-&gt;weights_optimizer_additional(weights_momentums);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            layer-&gt;biases_optimizer_additional(biases_momentums);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            layer-&gt;weights(weights);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            layer-&gt;biases(biases);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordtype">double</span> _epsilon; <span class="comment">// Epsilon value to avoid division by zero</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordtype">double</span> _beta_1;  <span class="comment">// Exponential decay rate for the first moment estimates</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordtype">double</span> _beta_2;  <span class="comment">// Exponential decay rate for the second moment estimates</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    };</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>} <span class="comment">// namespace NNFS</span></div>
 <div class="ttc" id="a_optimizer_8hpp_html"><div class="ttname"><a href="_optimizer_8hpp.html">Optimizer.hpp</a></div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_adam_html"><div class="ttname"><a href="class_n_n_f_s_core_1_1_adam.html">NNFSCore::Adam</a></div><div class="ttdoc">Adam optimizer - Adaptive Moment Estimation, one of the most popular and efficient gradient-based opt...</div><div class="ttdef"><b>Definition:</b> Adam.hpp:13</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_adam_html_a42f7a4af1e5021dee2f223482c025b66"><div class="ttname"><a href="class_n_n_f_s_core_1_1_adam.html#a42f7a4af1e5021dee2f223482c025b66">NNFSCore::Adam::post_update_params</a></div><div class="ttdeci">void post_update_params()</div><div class="ttdoc">Post-update parameters (e.g. increase iteration count)</div><div class="ttdef"><b>Definition:</b> Adam.hpp:88</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_adam_html_a7676458f044a428e560a1ca6f09e48bc"><div class="ttname"><a href="class_n_n_f_s_core_1_1_adam.html#a7676458f044a428e560a1ca6f09e48bc">NNFSCore::Adam::pre_update_params</a></div><div class="ttdeci">void pre_update_params()</div><div class="ttdoc">Pre-update parameters (e.g. learning rate decay)</div><div class="ttdef"><b>Definition:</b> Adam.hpp:77</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_adam_html_abe7934e6fc135f0ea01abe655987b029"><div class="ttname"><a href="class_n_n_f_s_core_1_1_adam.html#abe7934e6fc135f0ea01abe655987b029">NNFSCore::Adam::Adam</a></div><div class="ttdeci">Adam(double lr=1e-3, double decay=.0, double epsilon=1e-7, double beta_1=.9, double beta_2=.999)</div><div class="ttdoc">Construct a new Adam object.</div><div class="ttdef"><b>Definition:</b> Adam.hpp:24</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_adam_html_ad09feded7ea2c228cf55640e54977725"><div class="ttname"><a href="class_n_n_f_s_core_1_1_adam.html#ad09feded7ea2c228cf55640e54977725">NNFSCore::Adam::update_params</a></div><div class="ttdeci">void update_params(std::shared_ptr&lt; Dense &gt; &amp;layer)</div><div class="ttdoc">Update the parameters of the layer.</div><div class="ttdef"><b>Definition:</b> Adam.hpp:36</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_optimizer_html"><div class="ttname"><a href="class_n_n_f_s_core_1_1_optimizer.html">NNFSCore::Optimizer</a></div><div class="ttdoc">Base class for all optimizers.</div><div class="ttdef"><b>Definition:</b> Optimizer.hpp:15</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_optimizer_html_abf3b9cf3e00900e078a6d7977e558df9"><div class="ttname"><a href="class_n_n_f_s_core_1_1_optimizer.html#abf3b9cf3e00900e078a6d7977e558df9">NNFSCore::Optimizer::_current_lr</a></div><div class="ttdeci">double _current_lr</div><div class="ttdef"><b>Definition:</b> Optimizer.hpp:58</div></div>
-<div class="ttc" id="aclass_n_n_f_s_core_1_1_optimizer_html_ad8349127e06d40a7f71f908fa4f75d77"><div class="ttname"><a href="class_n_n_f_s_core_1_1_optimizer.html#ad8349127e06d40a7f71f908fa4f75d77">NNFSCore::Optimizer::_lr</a></div><div class="ttdeci">const double _lr</div><div class="ttdef"><b>Definition:</b> Optimizer.hpp:57</div></div>
-<div class="ttc" id="anamespace_n_n_f_s_core_html"><div class="ttname"><a href="namespace_n_n_f_s_core.html">NNFSCore</a></div><div class="ttdef"><b>Definition:</b> Activation.hpp:6</div></div>
+<div class="ttc" id="aclass_n_n_f_s_1_1_adam_html"><div class="ttname"><a href="class_n_n_f_s_1_1_adam.html">NNFS::Adam</a></div><div class="ttdoc">Adam optimizer - Adaptive Moment Estimation, one of the most popular and efficient gradient-based opt...</div><div class="ttdef"><b>Definition:</b> Adam.hpp:13</div></div>
+<div class="ttc" id="aclass_n_n_f_s_1_1_adam_html_a6f2d0811fa0e0ef5ddce7ddfc222ace0"><div class="ttname"><a href="class_n_n_f_s_1_1_adam.html#a6f2d0811fa0e0ef5ddce7ddfc222ace0">NNFS::Adam::Adam</a></div><div class="ttdeci">Adam(double lr=1e-3, double decay=.0, double epsilon=1e-7, double beta_1=.9, double beta_2=.999)</div><div class="ttdoc">Construct a new Adam object.</div><div class="ttdef"><b>Definition:</b> Adam.hpp:24</div></div>
+<div class="ttc" id="aclass_n_n_f_s_1_1_adam_html_abf66beeed7692e67300fdced809a1a95"><div class="ttname"><a href="class_n_n_f_s_1_1_adam.html#abf66beeed7692e67300fdced809a1a95">NNFS::Adam::update_params</a></div><div class="ttdeci">void update_params(std::shared_ptr&lt; Dense &gt; &amp;layer)</div><div class="ttdoc">Update the parameters of the layer.</div><div class="ttdef"><b>Definition:</b> Adam.hpp:34</div></div>
+<div class="ttc" id="aclass_n_n_f_s_1_1_optimizer_html"><div class="ttname"><a href="class_n_n_f_s_1_1_optimizer.html">NNFS::Optimizer</a></div><div class="ttdoc">Base class for all optimizers.</div><div class="ttdef"><b>Definition:</b> Optimizer.hpp:15</div></div>
+<div class="ttc" id="aclass_n_n_f_s_1_1_optimizer_html_aabd645d739cd194359e3e819c77f7e13"><div class="ttname"><a href="class_n_n_f_s_1_1_optimizer.html#aabd645d739cd194359e3e819c77f7e13">NNFS::Optimizer::_iterations</a></div><div class="ttdeci">int _iterations</div><div class="ttdef"><b>Definition:</b> Optimizer.hpp:78</div></div>
+<div class="ttc" id="aclass_n_n_f_s_1_1_optimizer_html_aee62a4f25100de00510b582f5f321160"><div class="ttname"><a href="class_n_n_f_s_1_1_optimizer.html#aee62a4f25100de00510b582f5f321160">NNFS::Optimizer::_current_lr</a></div><div class="ttdeci">double _current_lr</div><div class="ttdef"><b>Definition:</b> Optimizer.hpp:77</div></div>
+<div class="ttc" id="anamespace_n_n_f_s_html"><div class="ttname"><a href="namespace_n_n_f_s.html">NNFS</a></div><div class="ttdef"><b>Definition:</b> Activation.hpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_b83ee6e98edabda9ce26bff501159cde.html">NNFSCore</a></li><li class="navelem"><a class="el" href="dir_6158402e19ce394dc9fd746184496139.html">Optimizer</a></li><li class="navelem"><a class="el" href="_adam_8hpp.html">Adam.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e35bf39e4fee933b811e79d0e6a4be13.html">NNFS</a></li><li class="navelem"><a class="el" href="dir_dc6bd0b194df736e276328fb2fb40902.html">Optimizer</a></li><li class="navelem"><a class="el" href="_adam_8hpp.html">Adam.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>

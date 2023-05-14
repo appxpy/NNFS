@@ -1,4 +1,0 @@
-<map id="NNFSCore::Adam" name="NNFSCore::Adam">
-<area shape="rect" id="node1" title="Adam optimizer &#45; Adaptive Moment Estimation, one of the most popular and efficient gradient&#45;based opt..." alt="" coords="16,79,141,105"/>
-<area shape="rect" id="node2" href="$class_n_n_f_s_core_1_1_optimizer.html" title="Base class for all optimizers." alt="" coords="5,5,152,31"/>
-</map>

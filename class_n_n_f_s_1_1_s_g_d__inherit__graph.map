@@ -1,0 +1,4 @@
+<map id="NNFS::SGD" name="NNFS::SGD">
+<area shape="rect" id="node1" title="Stochastic Gradient Descent optimizer." alt="" coords="19,79,111,105"/>
+<area shape="rect" id="node2" href="$class_n_n_f_s_1_1_optimizer.html" title="Base class for all optimizers." alt="" coords="5,5,125,31"/>
+</map>

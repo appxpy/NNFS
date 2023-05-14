@@ -1,0 +1,7 @@
+<map id="NNFS::Optimizer" name="NNFS::Optimizer">
+<area shape="rect" id="node1" title="Base class for all optimizers." alt="" coords="198,5,317,31"/>
+<area shape="rect" id="node2" href="$class_n_n_f_s_1_1_adagrad.html" title="Adagrad optimizer (Adaptive Gradient)" alt="" coords="5,79,118,105"/>
+<area shape="rect" id="node3" href="$class_n_n_f_s_1_1_adam.html" title="Adam optimizer &#45; Adaptive Moment Estimation, one of the most popular and efficient gradient&#45;based opt..." alt="" coords="142,79,240,105"/>
+<area shape="rect" id="node4" href="$class_n_n_f_s_1_1_r_m_s_prop.html" title="Root Mean Square Propagation optimizer." alt="" coords="264,79,384,105"/>
+<area shape="rect" id="node5" href="$class_n_n_f_s_1_1_s_g_d.html" title="Stochastic Gradient Descent optimizer." alt="" coords="409,79,501,105"/>
+</map>

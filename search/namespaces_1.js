@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nnfscore_0',['NNFSCore',['../namespace_n_n_f_s_core.html',1,'']]]
+  ['nnfs_0',['NNFS',['../namespace_n_n_f_s.html',1,'']]]
 ];

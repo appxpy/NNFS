@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_n_n_f_s_core_1_1_loss.html" title="Base class for all loss functions." alt="" coords="5,31,126,56"/>
-<area shape="rect" id="node2" href="$class_n_n_f_s_core_1_1_c_c_e.html" title="Cross&#45;entropy loss function." alt="" coords="198,5,315,31"/>
-<area shape="rect" id="node3" href="$class_n_n_f_s_core_1_1_c_c_e_softmax.html" title="Cross&#45;entropy loss function with softmax activation." alt="" coords="174,55,339,80"/>
+<area shape="rect" id="node1" href="$class_n_n_f_s_1_1_loss.html" title="Base class for all loss functions." alt="" coords="5,31,99,56"/>
+<area shape="rect" id="node2" href="$class_n_n_f_s_1_1_c_c_e.html" title="Cross&#45;entropy loss function." alt="" coords="171,5,261,31"/>
+<area shape="rect" id="node3" href="$class_n_n_f_s_1_1_c_c_e_softmax.html" title="Cross&#45;entropy loss function with softmax activation." alt="" coords="147,55,285,80"/>
 </map>
