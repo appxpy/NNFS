@@ -10,7 +10,7 @@ namespace NNFS
      *
      * @details This class implements the Adagrad optimizer.
      */
-    class Adagrad : Optimizer
+    class Adagrad : public Optimizer
     {
     public:
         /**

@@ -9,7 +9,7 @@ namespace NNFS
      *
      * @details This class implements the Adam optimizer.
      */
-    class Adam : Optimizer
+    class Adam : public Optimizer
     {
     public:
         /**

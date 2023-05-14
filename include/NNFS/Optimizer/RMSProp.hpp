@@ -10,7 +10,7 @@ namespace NNFS
      *
      * @details This class implements the Root Mean Square Propagation (RMSProp) optimizer.
      */
-    class RMSProp : Optimizer
+    class RMSProp : public Optimizer
     {
     public:
         /**
