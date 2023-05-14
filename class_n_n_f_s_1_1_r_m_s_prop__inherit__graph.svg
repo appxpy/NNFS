@@ -29,8 +29,8 @@
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="#8b1a1a" d="M45.12,-44.21C45.12,-35.77 45.12,-26.33 45.12,-19.61"/>
-<polygon fill="#8b1a1a" stroke="#8b1a1a" points="41.63,-44.08 45.12,-54.08 48.63,-44.08 41.63,-44.08"/>
+<path fill="none" stroke="#63b8ff" d="M45.12,-44.21C45.12,-35.77 45.12,-26.33 45.12,-19.61"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="41.63,-44.08 45.12,-54.08 48.63,-44.08 41.63,-44.08"/>
 </g>
 </g>
 </svg>
