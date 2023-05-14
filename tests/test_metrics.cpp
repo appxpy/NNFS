@@ -1,11 +1,10 @@
 #include "gtest/gtest.h"
-#include <NNFSCore/Metrics/Metrics.hpp>
-#include <Eigen/Dense>
+#include <NNFS/Core>
 
 class MetricsTest : public ::testing::Test
 {
 protected:
-    NNFSCore::Metrics metrics_;
+    NNFS::Metrics metrics_;
 };
 
 TEST_F(MetricsTest, AccuracyTest)
@@ -24,5 +23,5 @@ TEST_F(MetricsTest, AccuracyTest)
 
     metrics_.accuracy(accuracy, predictions, labels);
 
-    ASSERT_NEAR(accuracy, 0.6666667, 1e-7);
+    EXPECT_NEAR(accuracy, 0.6666667, 1e-7);
 }

@@ -3,14 +3,14 @@
 #include <Eigen/Dense>
 #include "Optimizer.hpp"
 
-namespace NNFSCore
+namespace NNFS
 {
     /**
      * @brief Adagrad optimizer (Adaptive Gradient)
      *
      * @details This class implements the Adagrad optimizer.
      */
-    class Adagrad : public Optimizer
+    class Adagrad : Optimizer
     {
     public:
         /**
@@ -20,9 +20,7 @@ namespace NNFSCore
          * @param decay Learning rate decay (default: 0.0)
          * @param epsilon Epsilon value to avoid division by zero (default: 1e-7)
          */
-        Adagrad(double lr, double decay = 0.0, double epsilon = 1e-7) : Optimizer(lr),
-                                                                        _decay(decay),
-                                                                        _iterations(0),
+        Adagrad(double lr, double decay = 0.0, double epsilon = 1e-7) : Optimizer(lr, decay),
                                                                         _epsilon(epsilon) {}
 
         /**
@@ -54,28 +52,7 @@ namespace NNFSCore
             layer->biases(biases);
         }
 
-        /**
-         * @brief Pre-update parameters (e.g. learning rate decay)
-         */
-        void pre_update_params()
-        {
-            if (_decay > 0)
-            {
-                _current_lr = _lr * (1. / (1. + _decay * _iterations));
-            }
-        }
-
-        /**
-         * @brief Post-update parameters (e.g. increase iteration count)
-         */
-        void post_update_params()
-        {
-            _iterations += 1;
-        }
-
     private:
-        double _decay;   // Learning rate decay
-        int _iterations; // Iteration count
         double _epsilon; // Epsilon - to avoid division by zero
     };
-} // namespace NNFSCore
+} // namespace NNFS

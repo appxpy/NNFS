@@ -2,7 +2,7 @@
 
 #include "Activation.hpp"
 
-namespace NNFSCore
+namespace NNFS
 {
     /**
      * @brief Softmax activation function
@@ -83,4 +83,4 @@ namespace NNFSCore
             }
         }
     };
-} // namespace NNFSCore
+} // namespace NNFS

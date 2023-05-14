@@ -3,7 +3,7 @@
 #include <Eigen/Dense>
 #include "../Utilities/clue.hpp"
 
-namespace NNFSCore
+namespace NNFS
 {
     /**
      * @brief Enum class for layer types
@@ -53,4 +53,4 @@ namespace NNFSCore
          */
         virtual void backward(Eigen::MatrixXd &out, const Eigen::MatrixXd &dx) = 0;
     };
-} // namespace NNFSCore
+} // namespace NNFS

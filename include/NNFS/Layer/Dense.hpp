@@ -4,7 +4,7 @@
 #include <random>
 #include "Layer.hpp"
 
-namespace NNFSCore
+namespace NNFS
 {
 
     /**
@@ -99,7 +99,7 @@ namespace NNFSCore
             {
                 Eigen::MatrixXd dL1 = Eigen::MatrixXd::Ones(_biases.rows(), _biases.cols());
                 dL1 = (_biases.array() < 0).select(-1, dL1);
-                _dbiases += _l1_biases_regularizer * dL1.colwise().sum().transpose();
+                _dbiases += _l1_biases_regularizer * dL1;
             }
             // L2 on biases
             if (_l2_biases_regularizer > 0)
@@ -354,4 +354,4 @@ namespace NNFSCore
 
         Eigen::MatrixXd _forward_input; // Forward input
     };
-} // namespace NNFSCore
+} // namespace NNFS

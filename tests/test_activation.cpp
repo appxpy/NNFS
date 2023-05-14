@@ -1,10 +1,10 @@
 #include "gtest/gtest.h"
-#include <NNFSCore/Core>
+#include <NNFS/Core>
 
 class ReLUTest : public ::testing::Test
 {
 protected:
-    NNFSCore::ReLU ReLU_;
+    NNFS::ReLU ReLU_;
 };
 
 TEST_F(ReLUTest, GeneralTest)
@@ -23,7 +23,7 @@ TEST_F(ReLUTest, GeneralTest)
     };
     ReLU_.forward(x_out, x);
 
-    ASSERT_TRUE(x_out.isApprox(x_expected, 1e-7));
+    EXPECT_TRUE(x_out.isApprox(x_expected, 1e-7));
 
     Eigen::MatrixXd dx_out;
 
@@ -35,13 +35,13 @@ TEST_F(ReLUTest, GeneralTest)
 
     ReLU_.backward(dx_out, x);
 
-    ASSERT_TRUE(dx_out.isApprox(dx_expected, 1e-7));
+    EXPECT_TRUE(dx_out.isApprox(dx_expected, 1e-7));
 }
 
 class SoftmaxTest : public ::testing::Test
 {
 protected:
-    NNFSCore::Softmax Softmax_;
+    NNFS::Softmax Softmax_;
 };
 
 TEST_F(SoftmaxTest, GeneralTest)
@@ -56,7 +56,7 @@ TEST_F(SoftmaxTest, GeneralTest)
     };
     Softmax_.forward(x_out, x);
 
-    ASSERT_TRUE(x_out.isApprox(x_expected, 1e-7));
+    EXPECT_TRUE(x_out.isApprox(x_expected, 1e-7));
 
     Eigen::MatrixXd x_custom_out{
         {0.7, 0.2, 0.1},
@@ -71,5 +71,67 @@ TEST_F(SoftmaxTest, GeneralTest)
 
     Softmax_.backward(dx_out, x);
 
-    ASSERT_TRUE(dx_out.isApprox(dx_expected, 1e-7));
+    EXPECT_TRUE(dx_out.isApprox(dx_expected, 1e-7));
+}
+
+class SigmoidTest : public ::testing::Test
+{
+protected:
+    NNFS::Sigmoid Sigmoid_;
+};
+
+TEST_F(SigmoidTest, GeneralTest)
+{
+    Eigen::MatrixXd x{
+        {0, .2, .3},
+    };
+    Eigen::MatrixXd x_out;
+
+    Eigen::MatrixXd x_expected{
+        {0.5, 0.549834, 0.574443},
+    };
+
+    Sigmoid_.forward(x_out, x);
+
+    EXPECT_TRUE(x_out.isApprox(x_expected, 1e-5));
+
+    Eigen::MatrixXd dx_out;
+
+    Eigen::MatrixXd dx_expected{
+        {0, 0.0495033, 0.0733375}};
+
+    Sigmoid_.backward(dx_out, x);
+
+    EXPECT_TRUE(dx_out.isApprox(dx_expected, 1e-5));
+}
+
+class TanhTest : public ::testing::Test
+{
+protected:
+    NNFS::Tanh Tanh_;
+};
+
+TEST_F(TanhTest, GeneralTest)
+{
+    Eigen::MatrixXd x{
+        {0, .2, .3},
+    };
+    Eigen::MatrixXd x_out;
+
+    Eigen::MatrixXd x_expected{
+        {0, 0.197375, 0.291313},
+    };
+
+    Tanh_.forward(x_out, x);
+
+    EXPECT_TRUE(x_out.isApprox(x_expected, 1e-5));
+
+    Eigen::MatrixXd dx_out;
+
+    Eigen::MatrixXd dx_expected{
+        {0, 0.192209, 0.274541}};
+
+    Tanh_.backward(dx_out, x);
+
+    EXPECT_TRUE(dx_out.isApprox(dx_expected, 1e-5));
 }

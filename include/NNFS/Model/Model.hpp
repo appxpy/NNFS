@@ -5,7 +5,7 @@
 #include "../Layer/Layer.hpp"
 #include "../Loss/Loss.hpp"
 
-namespace NNFSCore
+namespace NNFS
 {
 
     /**
@@ -61,4 +61,4 @@ namespace NNFSCore
         virtual void forward(Eigen::MatrixXd &x) = 0;
     };
 
-} // namespace NNFSCore
+} // namespace NNFS

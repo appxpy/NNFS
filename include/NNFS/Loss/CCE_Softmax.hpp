@@ -3,7 +3,7 @@
 #include "CCE.hpp"
 #include "../Activation/Softmax.hpp"
 
-namespace NNFSCore
+namespace NNFS
 {
     /**
      * @brief Cross-entropy loss function with softmax activation
@@ -83,4 +83,4 @@ namespace NNFSCore
         std::shared_ptr<CCE> _cce;         // Cross-entropy loss function
         Eigen::MatrixXd _softmax_out;      // Softmax output
     };
-} // namespace NNFSCore
+} // namespace NNFS

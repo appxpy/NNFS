@@ -2,7 +2,7 @@
 
 #include "Activation.hpp"
 
-namespace NNFSCore
+namespace NNFS
 {
     /**
      * @brief ReLU activation function
@@ -41,4 +41,4 @@ namespace NNFSCore
             out = dx.array() * (_forward_input.array() > 0).cast<double>();
         }
     };
-} // namespace NNFSCore
+} // namespace NNFS

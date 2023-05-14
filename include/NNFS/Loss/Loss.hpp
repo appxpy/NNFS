@@ -4,7 +4,7 @@
 #include "../Utilities/clue.hpp"
 #include "../Layer/Dense.hpp"
 
-namespace NNFSCore
+namespace NNFS
 {
     /**
      * @brief Enum class for loss types
@@ -108,4 +108,4 @@ namespace NNFSCore
             return regularization_loss;
         }
     };
-} // namespace NNFSCore
+} // namespace NNFS

@@ -2,7 +2,7 @@
 
 #include "Activation.hpp"
 
-namespace NNFSCore
+namespace NNFS
 {
     /**
      * @brief Sigmoid activation function
@@ -46,4 +46,4 @@ namespace NNFSCore
     private:
         Eigen::MatrixXd _forward_output; // Output data for forward pass
     };
-} // namespace NNFSCore
+} // namespace NNFS

@@ -1,14 +1,14 @@
-add_executable(nnfs_tests test_loss.cpp test_dense.cpp test_activation.cpp test_metrics.cpp) # test_callback.cpp  test_layer.cpp test_neural_network.cpp
-target_link_libraries(nnfs_tests PRIVATE NNFS::NNFSCore GTest::gtest_main)
+add_executable(nnfs_tests test_loss.cpp test_dense.cpp test_activation.cpp test_metrics.cpp test_optimizer.cpp) # test_callback.cpp  test_layer.cpp test_neural_network.cpp
+target_link_libraries(nnfs_tests PRIVATE NNFSProject::NNFS GTest::gtest_main)
 target_compile_options(nnfs_tests PRIVATE)
 
 include(GoogleTest)
 gtest_discover_tests(nnfs_tests)
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-set(COVERAGE_EXCLUDES ".*external.*" ".*tests.*")
+set(COVERAGE_EXCLUDES ".*external.*" ".*tests.*" ".*clue.hpp")
 else()
-set(COVERAGE_EXCLUDES "${CMAKE_SOURCE_DIR}/external/*" "${CMAKE_SOURCE_DIR}/tests/*")
+set(COVERAGE_EXCLUDES "${CMAKE_SOURCE_DIR}/external/*" "${CMAKE_SOURCE_DIR}/tests/*" "${CMAKE_SOURCE_DIR}/include/NNFS/Utilities/clue.hpp")
 endif()
 
 if (CODE_COVERAGE)

@@ -3,7 +3,7 @@
 #include <Eigen/Dense>
 #include "Optimizer.hpp"
 
-namespace NNFSCore
+namespace NNFS
 {
     /**
      * @brief Stochastic Gradient Descent optimizer
@@ -20,9 +20,7 @@ namespace NNFSCore
          * @param decay Learning rate decay (default: 0.0)
          * @param momentum Momentum (default: 0.0)
          */
-        SGD(double lr, double decay = 0.0, double momentum = 0.0) : Optimizer(lr),
-                                                                    _decay(decay),
-                                                                    _iterations(0),
+        SGD(double lr, double decay = 0.0, double momentum = 0.0) : Optimizer(lr, decay),
                                                                     _momentum(momentum) {}
 
         /**
@@ -64,28 +62,7 @@ namespace NNFSCore
             layer->biases(biases);
         }
 
-        /**
-         * @brief Pre-update parameters (e.g. learning rate decay)
-         */
-        void pre_update_params()
-        {
-            if (_decay > 0)
-            {
-                _current_lr = _lr * (1. / (1. + _decay * _iterations));
-            }
-        }
-
-        /**
-         * @brief Post-update parameters (e.g. increase iteration count)
-         */
-        void post_update_params()
-        {
-            _iterations += 1;
-        }
-
     private:
-        double _decay;    // Learning rate decay
-        int _iterations;  // Iteration count
         double _momentum; // Momentum
     };
-} // namespace NNFSCore
+} // namespace NNFS

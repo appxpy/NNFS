@@ -2,7 +2,7 @@
 
 #include "Activation.hpp"
 
-namespace NNFSCore
+namespace NNFS
 {
     class Tanh : public Activation
     {
@@ -26,4 +26,4 @@ namespace NNFSCore
     private:
         Eigen::MatrixXd _forward_output;
     };
-} // namespace NNFSCore
+} // namespace NNFS

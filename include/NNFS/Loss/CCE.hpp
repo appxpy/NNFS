@@ -2,7 +2,7 @@
 
 #include "Loss.hpp"
 
-namespace NNFSCore
+namespace NNFS
 {
     /**
      * @brief Cross-entropy loss function
@@ -45,4 +45,4 @@ namespace NNFSCore
             out /= m;
         }
     };
-} // namespace NNFSCore
+} // namespace NNFS

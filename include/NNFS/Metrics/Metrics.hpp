@@ -3,7 +3,7 @@
 #include <Eigen/Dense>
 #include "../Utilities/clue.hpp"
 
-namespace NNFSCore
+namespace NNFS
 {
     /**
      * @brief Metrics class
@@ -47,4 +47,4 @@ namespace NNFSCore
             };
         }
     };
-} // namespace NNFSCore
+} // namespace NNFS

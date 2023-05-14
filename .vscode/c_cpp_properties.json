@@ -4,7 +4,8 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/external/eigen/**"
+                "${workspaceFolder}/external/eigen/**",
+                "${workspaceFolder}/include/NNFS/"
             ],
             "defines": [],
             "compilerPath": "/opt/homebrew/opt/llvm@14/bin/clang",

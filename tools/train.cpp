@@ -6,7 +6,7 @@
 
 #include <Eigen/Core>
 
-#include <NNFSCore/Core>
+#include <NNFS/Core>
 
 #include "mnist.cpp"
 
@@ -59,19 +59,19 @@ int main()
 
     // LOG_INFO("Creating model");
 
-    // std::shared_ptr<NNFSCore::Loss> loss = std::make_shared<NNFSCore::CCESoftmax>(std::make_shared<NNFSCore::Softmax>(), std::make_shared<NNFSCore::CCE>());
+    // std::shared_ptr<NNFS::Loss> loss = std::make_shared<NNFS::CCESoftmax>(std::make_shared<NNFS::Softmax>(), std::make_shared<NNFS::CCE>());
 
     // double learning_rate = .001;
     // double decay = 5e-7;
     // double momentum = .9;
 
-    // std::shared_ptr<NNFSCore::Optimizer> optimizer = std::make_shared<NNFSCore::SGD>(learning_rate, decay, momentum); // learning_rate, decay
+    // std::shared_ptr<NNFS::Optimizer> optimizer = std::make_shared<NNFS::SGD>(learning_rate, decay, momentum); // learning_rate, decay
 
-    // std::shared_ptr<NNFSCore::NeuralNetwork> model = std::make_shared<NNFSCore::NeuralNetwork>(loss, optimizer);
+    // std::shared_ptr<NNFS::NeuralNetwork> model = std::make_shared<NNFS::NeuralNetwork>(loss, optimizer);
 
-    // model->add_layer(std::make_shared<NNFSCore::Dense>(784, 256));
-    // model->add_layer(std::make_shared<NNFSCore::ReLU>());
-    // model->add_layer(std::make_shared<NNFSCore::Dense>(256, 10));
+    // model->add_layer(std::make_shared<NNFS::Dense>(784, 256));
+    // model->add_layer(std::make_shared<NNFS::ReLU>());
+    // model->add_layer(std::make_shared<NNFS::Dense>(256, 10));
 
     // LOG_INFO("Compiling model");
 
@@ -87,7 +87,7 @@ int main()
 
     // model->save(file_path);
 
-    std::shared_ptr<NNFSCore::NeuralNetwork> model = std::make_shared<NNFSCore::NeuralNetwork>();
+    std::shared_ptr<NNFS::NeuralNetwork> model = std::make_shared<NNFS::NeuralNetwork>();
 
     LOG_INFO("Loading model from file " << file_path);
 
@@ -109,8 +109,8 @@ int main()
     Eigen::VectorXi pred_labels;
     Eigen::VectorXi labels;
 
-    NNFSCore::Metrics::onehotdecode(labels, y_test.topRows(10));
-    NNFSCore::Metrics::onehotdecode(pred_labels, preds);
+    NNFS::Metrics::onehotdecode(labels, y_test.topRows(10));
+    NNFS::Metrics::onehotdecode(pred_labels, preds);
 
     LOG_INFO("First 10 predictions: " << pred_labels.transpose());
     LOG_INFO("First 10 labels:      " << labels.transpose());

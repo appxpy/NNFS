@@ -4,7 +4,7 @@
 #include "../Utilities/clue.hpp"
 #include "../Layer/Dense.hpp"
 
-namespace NNFSCore
+namespace NNFS
 {
     /**
      * @brief Base class for all optimizers
@@ -19,7 +19,7 @@ namespace NNFSCore
          *
          * @param lr Learning rate
          */
-        Optimizer(double lr) : _lr(lr), _current_lr(lr) {}
+        Optimizer(double lr, double decay) : _lr(lr), _current_lr(lr), _iterations(0), _decay(decay) {}
 
         /**
          * @brief Basic destructor
@@ -36,12 +36,21 @@ namespace NNFSCore
         /**
          * @brief Pre-update parameters (e.g. learning rate decay)
          */
-        virtual void pre_update_params() = 0;
+        void pre_update_params()
+        {
+            if (_decay > 0)
+            {
+                _current_lr = _lr * (1. / (1. + _decay * _iterations));
+            }
+        }
 
         /**
          * @brief Post-update parameters (e.g. increase iteration count)
          */
-        virtual void post_update_params() = 0;
+        void post_update_params()
+        {
+            _iterations += 1;
+        }
 
         /**
          * @brief Get the current learning rate
@@ -53,8 +62,20 @@ namespace NNFSCore
             return _current_lr;
         }
 
+        /**
+         * @brief Get current iteration count
+         *
+         * @return int Current iteration count
+         */
+        int &iterations()
+        {
+            return _iterations;
+        }
+
     protected:
         const double _lr;   // Learning rate (constant)
         double _current_lr; // Current learning rate
+        int _iterations;    // Iteration count
+        double _decay;      // Learning rate decay
     };
-} // namespace NNFSCore
+} // namespace NNFS

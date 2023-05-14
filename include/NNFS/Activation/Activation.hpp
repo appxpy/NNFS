@@ -2,7 +2,7 @@
 
 #include "../Layer/Layer.hpp"
 
-namespace NNFSCore
+namespace NNFS
 {
     /**
      * @brief Enum class for activation types
@@ -36,4 +36,4 @@ namespace NNFSCore
     protected:
         Eigen::MatrixXd _forward_input; // Input data for forward pass
     };
-} // namespace NNFSCore
+} // namespace NNFS

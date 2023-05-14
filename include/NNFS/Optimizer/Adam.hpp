@@ -2,14 +2,14 @@
 
 #include "Optimizer.hpp"
 
-namespace NNFSCore
+namespace NNFS
 {
     /**
      * @brief Adam optimizer - Adaptive Moment Estimation, one of the most popular and efficient gradient-based optimization algorithms
      *
      * @details This class implements the Adam optimizer.
      */
-    class Adam : public Optimizer
+    class Adam : Optimizer
     {
     public:
         /**
@@ -21,9 +21,7 @@ namespace NNFSCore
          * @param beta_1 Exponential decay rate for the first moment estimates (default: 0.9)
          * @param beta_2 Exponential decay rate for the second moment estimates (default: 0.999)
          */
-        Adam(double lr = 1e-3, double decay = .0, double epsilon = 1e-7, double beta_1 = .9, double beta_2 = .999) : Optimizer(lr),
-                                                                                                                     _decay(decay),
-                                                                                                                     _iterations(0),
+        Adam(double lr = 1e-3, double decay = .0, double epsilon = 1e-7, double beta_1 = .9, double beta_2 = .999) : Optimizer(lr, decay),
                                                                                                                      _epsilon(epsilon),
                                                                                                                      _beta_1(beta_1),
                                                                                                                      _beta_2(beta_2) {}
@@ -71,30 +69,9 @@ namespace NNFSCore
             layer->biases(biases);
         }
 
-        /**
-         * @brief Pre-update parameters (e.g. learning rate decay)
-         */
-        void pre_update_params()
-        {
-            if (_decay > 0)
-            {
-                _current_lr = _lr * (1. / (1. + _decay * _iterations));
-            }
-        }
-
-        /**
-         * @brief Post-update parameters (e.g. increase iteration count)
-         */
-        void post_update_params()
-        {
-            _iterations += 1;
-        }
-
     private:
-        double _decay;   // Learning rate decay
-        int _iterations; // Iteration count
         double _epsilon; // Epsilon value to avoid division by zero
         double _beta_1;  // Exponential decay rate for the first moment estimates
         double _beta_2;  // Exponential decay rate for the second moment estimates
     };
-} // namespace NNFSCore
+} // namespace NNFS

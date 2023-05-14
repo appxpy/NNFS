@@ -1,4 +1,6 @@
+#ifndef LOG_LEVEL
 #define LOG_LEVEL LOG_SEV_INFO
+#endif // LOG_LEVEL
 
 #undef __ARM_NEON
 #undef __ARM_NEON__

@@ -3,14 +3,14 @@
 #include <Eigen/Dense>
 #include "Optimizer.hpp"
 
-namespace NNFSCore
+namespace NNFS
 {
     /**
      * @brief Root Mean Square Propagation optimizer
      *
      * @details This class implements the Root Mean Square Propagation (RMSProp) optimizer.
      */
-    class RMSProp : public Optimizer
+    class RMSProp : Optimizer
     {
     public:
         /**
@@ -21,11 +21,11 @@ namespace NNFSCore
          * @param epsilon Epsilon - to avoid division by zero (default: 1e-7)
          * @param rho RMSProp uses "rho" to calculate an exponentially weighted average over the square of the gradients. (default: .9)
          */
-        RMSProp(double lr = 1e-3, double decay = 1e-3, double epsilon = 1e-7, double rho = .9) : Optimizer(lr),
-                                                                                                 _decay(decay),
-                                                                                                 _iterations(0),
+        RMSProp(double lr = 1e-3, double decay = 1e-3, double epsilon = 1e-7, double rho = .9) : Optimizer(lr, decay),
                                                                                                  _epsilon(epsilon),
-                                                                                                 _rho(rho) {}
+                                                                                                 _rho(rho)
+        {
+        }
 
         /**
          * @brief Update the parameters of the layer
@@ -55,29 +55,8 @@ namespace NNFSCore
             layer->biases(biases);
         }
 
-        /**
-         * @brief Pre-update parameters (e.g. learning rate decay)
-         */
-        void pre_update_params()
-        {
-            if (_decay > 0)
-            {
-                _current_lr = _lr * (1. / (1. + _decay * _iterations));
-            }
-        }
-
-        /**
-         * @brief Post-update parameters (e.g. increase iteration count)
-         */
-        void post_update_params()
-        {
-            _iterations += 1;
-        }
-
     private:
-        double _decay;   // Learning rate decay
-        int _iterations; // Iteration count
         double _epsilon; // Epsilon - to avoid division by zero
         double _rho;     // RMSProp uses "rho" to calculate an exponentially weighted average over the square of the gradients.
     };
-} // namespace NNFSCore
+} // namespace NNFS

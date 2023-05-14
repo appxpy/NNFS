@@ -23,7 +23,7 @@
 
 #include "../Optimizer/Optimizer.hpp"
 
-namespace NNFSCore
+namespace NNFS
 {
 
     /**
@@ -213,7 +213,7 @@ namespace NNFSCore
 
             if (num_layers == 0)
             {
-                LOG_ERROR("Please add at least one layer to your neural network using the NNFSCore::add_layer method before compiling to ensure proper model functionality.");
+                LOG_ERROR("Please add at least one layer to your neural network using the NNFS::add_layer method before compiling to ensure proper model functionality.");
                 return;
             }
 
@@ -684,4 +684,4 @@ namespace NNFSCore
         bool compiled = false;                       // Indicates whether the neural network has been compiled
     };
 
-} // namespace NNFSCore
+} // namespace NNFS

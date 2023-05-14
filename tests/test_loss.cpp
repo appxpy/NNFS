@@ -1,21 +1,21 @@
 #include "gtest/gtest.h"
-#include <NNFSCore/Loss/CCE.hpp>
-#include <NNFSCore/Loss/CCE_Softmax.hpp>
-#include <NNFSCore/Activation/Softmax.hpp>
-#include <Eigen/Dense>
+
+#define LOG_LEVEL LOG_SEV_NONE
+
+#include <NNFS/Core>
 
 class CCETest : public ::testing::Test
 {
 protected:
-    NNFSCore::CCE cce_;
+    NNFS::CCE cce_;
 };
 
 class CCESoftmaxTest : public ::testing::Test
 {
 protected:
-    std::shared_ptr<NNFSCore::Softmax> softmax_ = std::make_shared<NNFSCore::Softmax>();
-    std::shared_ptr<NNFSCore::CCE> cce_ = std::make_shared<NNFSCore::CCE>();
-    std::shared_ptr<NNFSCore::CCESoftmax> cce_softmax_ = std::make_shared<NNFSCore::CCESoftmax>(softmax_, cce_);
+    std::shared_ptr<NNFS::Softmax> softmax_ = std::make_shared<NNFS::Softmax>();
+    std::shared_ptr<NNFS::CCE> cce_ = std::make_shared<NNFS::CCE>();
+    std::shared_ptr<NNFS::CCESoftmax> cce_softmax_ = std::make_shared<NNFS::CCESoftmax>(softmax_, cce_);
 };
 
 TEST_F(CCETest, ForwardPassTest)
@@ -28,7 +28,7 @@ TEST_F(CCETest, ForwardPassTest)
         0.1, 0.8, 0.1;
     double loss;
     cce_.calculate(loss, y_pred, y_true);
-    ASSERT_NEAR(1.177, loss, 0.01);
+    EXPECT_NEAR(1.177, loss, 0.01);
 }
 
 TEST_F(CCETest, BackwardPassTest)
@@ -46,7 +46,7 @@ TEST_F(CCETest, BackwardPassTest)
         {-0, -0, -5},
     };
     cce_.backward(out, y_pred, y_true);
-    ASSERT_TRUE(out.isApprox(expected_out, 1e-7));
+    EXPECT_TRUE(out.isApprox(expected_out, 1e-7));
 }
 
 TEST_F(CCESoftmaxTest, ForwardPassTest)
@@ -63,7 +63,7 @@ TEST_F(CCESoftmaxTest, ForwardPassTest)
 
     cce_softmax_->calculate(loss, input, labels);
 
-    ASSERT_NEAR(loss, 0.4076059, 1e-7);
+    EXPECT_NEAR(loss, 0.4076059, 1e-7);
 }
 
 TEST_F(CCESoftmaxTest, BackwardPassTest)
@@ -84,7 +84,7 @@ TEST_F(CCESoftmaxTest, BackwardPassTest)
 
     cce_softmax_->calculate(loss, input, labels);
 
-    ASSERT_NEAR(loss, 0.4076059, 1e-7);
+    EXPECT_NEAR(loss, 0.4076059, 1e-7);
 
     Eigen::MatrixXd expected{
         {0.0900306, 0.244728, -0.334759},
@@ -94,7 +94,7 @@ TEST_F(CCESoftmaxTest, BackwardPassTest)
 
     cce_softmax_->backward(out, dvalues, labels);
 
-    ASSERT_TRUE(out.isApprox(expected, 1e-5));
+    EXPECT_TRUE(out.isApprox(expected, 1e-5));
 }
 
 TEST_F(CCESoftmaxTest, IntegrityTest)
@@ -115,14 +115,14 @@ TEST_F(CCESoftmaxTest, IntegrityTest)
 
     cce_softmax_->calculate(loss, input, labels);
 
-    ASSERT_NEAR(loss, 1.40761, 1e-5);
+    EXPECT_NEAR(loss, 1.40761, 1e-5);
 
     Eigen::MatrixXd softmax_expected{
         {0.0900306, 0.244728, 0.665241},
         {0.0900306, 0.244728, 0.665241},
         {0.0900306, 0.244728, 0.665241},
     };
-    ASSERT_TRUE(cce_softmax_->softmax_out().isApprox(softmax_expected, 1e-5));
+    EXPECT_TRUE(cce_softmax_->softmax_out().isApprox(softmax_expected, 1e-5));
 
     Eigen::MatrixXd ccesout;
 
@@ -137,5 +137,39 @@ TEST_F(CCESoftmaxTest, IntegrityTest)
     Eigen::MatrixXd sout;
     softmax_->backward(sout, cceout);
 
-    ASSERT_TRUE(ccesout.isApprox(sout, 1e-4));
+    EXPECT_TRUE(ccesout.isApprox(sout, 1e-4));
+}
+
+TEST_F(CCESoftmaxTest, RegularizationLossTest)
+{
+    std::shared_ptr<NNFS::Dense> dense_optimization_ = std::make_shared<NNFS::Dense>(4, 3, 0.01, 0.01, 0.01, 0.01);
+    Eigen::MatrixXd weights(4, 3);
+    weights << 0.1, 0.2, 0.3,
+        0.4, 0.5, 0.6,
+        0.7, 0.8, 0.9,
+        1.0, 1.1, 1.2;
+    Eigen::MatrixXd biases(1, 3);
+    biases << 0.1, 0.2, 0.3;
+    dense_optimization_->weights(weights);
+    dense_optimization_->biases(biases);
+
+    Eigen::MatrixXd inputs(3, 4);
+    inputs << 1, 2, 3, 2.5,
+        2., 5., -1., 2,
+        -1.5, 2.7, 3.3, -0.8;
+
+    Eigen::MatrixXd expected_out{
+        {5.6, 6.55, 7.5},
+        {3.6, 4.5, 5.4},
+        {2.54, 3.01, 3.48},
+    };
+
+    Eigen::MatrixXd out;
+    dense_optimization_->forward(out, inputs);
+
+    EXPECT_TRUE(out.isApprox(expected_out, 1e-7));
+
+    double loss = cce_softmax_->regularization_loss(dense_optimization_);
+
+    EXPECT_NEAR(loss, 0.222, 1e-3);
 }

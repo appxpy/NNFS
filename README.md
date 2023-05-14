@@ -2,7 +2,7 @@
 
 This is a pet project developed by [appxpy](https://github.com/appxpy) and [brazenoptimist](https://github.com/brazenoptimist) for educational purposes at the Higher School of Economics (HSE) in Moscow. The project aims to build a simple neural network from scratch using C++17.
 
-NNFS includes the header-only core library "NNFSCore" that allows users to build their custom neural networks for educational purposes. Users can configure layers and activation functions according to their needs.
+NNFS includes the header-only core library "NNFS" that allows users to build their custom neural networks for educational purposes. Users can configure layers and activation functions according to their needs.
 
 ## Getting Started
 
@@ -35,7 +35,7 @@ make
 ## Architecture
 The NNFS project is organized into the following directories:
 
-- `include/NNFSCore`: Contains the header-only core library, which includes layers, activation functions, and loss functions.
+- `include/NNFS`: Contains the header-only core library, which includes layers, activation functions, and loss functions.
 - `tools`: Contains the source code for the built executables for training and interactive paint testing.
 - `tests`: Contains test cases for the core library using the Google Test framework.
 - `external`: Contains submodules for the Eigen and Google Test libraries.
@@ -63,7 +63,7 @@ cd tests
 
 ## Examples
 
-An example of using the NNFSCore library to create a custom neural network can be found in the `tools` directory as `nnfs_example.cpp`.
+An example of using the NNFS library to create a custom neural network can be found in the `tools` directory as `nnfs_example.cpp`.
 
 ## Contributing
 
