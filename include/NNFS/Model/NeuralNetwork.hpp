@@ -574,11 +574,19 @@ namespace NNFS
             if (sample.cols() != input_dim)
             {
                 LOG_ERROR("Input dimension of the neural network does not match the dimension of the provided sample.");
-                return Eigen::MatrixXd();
+                return Eigen::MatrixXd::Zero(sample.rows(), sample.cols());
             }
 
             Eigen::MatrixXd prediction = sample;
             forward(prediction);
+
+            if (layers[layers.size() - 1]->type != LayerType::ACTIVATION) {
+                Softmax softmax = Softmax();
+                Eigen::MatrixXd prediction_softmax = prediction;
+                softmax.forward(prediction_softmax, prediction);
+                return prediction_softmax;
+            }
+
             return prediction;
         }
 
