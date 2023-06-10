@@ -272,13 +272,6 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
-         <widget class="QPushButton" name="predict">
-          <property name="text">
-           <string>Predict</string>
-          </property>
-         </widget>
-        </item>
-        <item>
          <widget class="QPushButton" name="restartButton">
           <property name="text">
            <string>Reset</string>

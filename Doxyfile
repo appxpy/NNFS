@@ -919,6 +919,7 @@ WARN_LOGFILE           =
 
 INPUT                  = include \
                          tests \
+                         tools \
                          README.md
 
 # This tag can be used to specify the character encoding of the source files
@@ -1351,7 +1352,7 @@ HTML_EXTRA_FILES       = docs/doxygen-awesome-darkmode-toggle.js \
                          docs/doxygen-awesome-paragraph-link.js \
                          docs/doxygen-custom/toggle-alternative-theme.js \
                          docs/doxygen-awesome-interactive-toc.js \
-                         docs/doxygen-awesome-tabs.js
+                         docs/doxygen-awesome-tabs.js 
 
 # The HTML_COLORSTYLE tag can be used to specify if the generated HTML output
 # should be rendered with a dark or light theme.
