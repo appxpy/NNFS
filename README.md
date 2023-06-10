@@ -174,7 +174,7 @@ make
 
 #### Example Usage
 
-![](example.gif)
+![](https://github.com/appxpy/NNFS/blob/main/example.gif?raw=True)
 
 
 ## Contributing
