@@ -66,7 +66,7 @@ cd tests
 
 An example of using the NNFS library to create a custom neural network can be found in the `tools` directory.
 
-### **Training executable**
+### Training executable
 
 This program demonstrates how to create and train a neural network using the NNFS (Neural Network From Scratch) library. The neural network is trained on the MNIST dataset, which consists of handwritten digit images. It could be found in `tools/train.cpp`.
 
@@ -81,7 +81,7 @@ The program performs the following steps:
 7. Evaluates the model's accuracy on the test dataset.
 8. Makes predictions on a subset of the test dataset and compares them with the actual labels.
 
-#### **Steps to Reproduce**
+#### Steps to Reproduce
 
 To create and train your own neural network using the NNFS library, follow these steps:
 
@@ -143,11 +143,11 @@ Please note that this is a simplified explanation of the code. Additional code a
 
 ---
 
-### **Paint application**
+### Paint application
 
 This interactive paint application allows users to draw on a canvas using a mouse and predicts the digit represented by the user's drawing using a neural network. The application is built using the Qt framework and the project's NNFS library.
 
-#### **Features**
+#### Features
 
 - Draw freely on the canvas using the mouse.
 - Real-time prediction of the digit based on the user's drawing.
@@ -155,7 +155,7 @@ This interactive paint application allows users to draw on a canvas using a mous
 - Highlighting of the predicted digit.
 
 
-#### **Running the application**
+#### Running the application
 
 To run the paint application, follow these steps:
 
@@ -172,7 +172,7 @@ make
 
 6. To clear the canvas and start a new drawing, click the "Restart" button.
 
-#### **Example Usage**
+#### Example Usage
 
 ![](example.gif)
 
