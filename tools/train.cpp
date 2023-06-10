@@ -3,6 +3,7 @@
 #include <string>
 #include <cmath>
 #include <memory>
+#include <unistd.h>
 
 #include <Eigen/Core>
 
@@ -40,73 +41,74 @@ int main()
     // auto [x_test, y_test] = create_data(number_of_points, classes);
 
     // Shuffle data and labels
-    Eigen::PermutationMatrix<Eigen::Dynamic, Eigen::Dynamic> perm(x_train.rows());
-    perm.setIdentity();
-    std::shuffle(perm.indices().data(), perm.indices().data() + perm.indices().size(), std::mt19937(std::random_device()()));
-    x_train = perm * x_train;
-    y_train = perm * y_train;
+    // Eigen::PermutationMatrix<Eigen::Dynamic, Eigen::Dynamic> perm(x_train.rows());
+    // perm.setIdentity();
+    // std::shuffle(perm.indices().data(), perm.indices().data() + perm.indices().size(), std::mt19937(std::random_device()()));
+    // x_train = perm * x_train;
+    // y_train = perm * y_train;
 
-    Eigen::PermutationMatrix<Eigen::Dynamic, Eigen::Dynamic> perm2(x_test.rows());
-    perm2.setIdentity();
-    std::shuffle(perm2.indices().data(), perm2.indices().data() + perm2.indices().size(), std::mt19937(std::random_device()()));
-    x_test = perm2 * x_test;
-    y_test = perm2 * y_test;
+    // Eigen::PermutationMatrix<Eigen::Dynamic, Eigen::Dynamic> perm2(x_test.rows());
+    // perm2.setIdentity();
+    // std::shuffle(perm2.indices().data(), perm2.indices().data() + perm2.indices().size(), std::mt19937(std::random_device()()));
+    // x_test = perm2 * x_test;
+    // y_test = perm2 * y_test;
 
-    LOG_DEBUG("Shape of training dataset - rows: " << x_train.rows() << " cols: " << x_train.cols());
-    LOG_DEBUG("Shape of training labels - rows: " << y_train.rows() << " cols: " << y_train.cols());
-    LOG_DEBUG("Shape of validation dataset - rows: " << x_test.rows() << " cols: " << x_test.cols());
-    LOG_DEBUG("Shape of validation labels - rows: " << y_test.rows() << " cols: " << y_test.cols());
+    // LOG_DEBUG("Shape of training dataset - rows: " << x_train.rows() << " cols: " << x_train.cols());
+    // LOG_DEBUG("Shape of training labels - rows: " << y_train.rows() << " cols: " << y_train.cols());
+    // LOG_DEBUG("Shape of validation dataset - rows: " << x_test.rows() << " cols: " << x_test.cols());
+    // LOG_DEBUG("Shape of validation labels - rows: " << y_test.rows() << " cols: " << y_test.cols());
 
-    LOG_INFO("Creating model");
+    // LOG_INFO("Creating model");
 
-    std::shared_ptr<NNFS::Loss> loss = std::make_shared<NNFS::CCESoftmax>(std::make_shared<NNFS::Softmax>(), std::make_shared<NNFS::CCE>());
+    // std::shared_ptr<NNFS::Loss> loss = std::make_shared<NNFS::CCESoftmax>(std::make_shared<NNFS::Softmax>(), std::make_shared<NNFS::CCE>());
 
-    double learning_rate = 1e-3;
-    double decay = 1e-3;
+    // double learning_rate = 1e-3;
+    // double decay = 1e-3;
 
-    std::shared_ptr<NNFS::Optimizer> optimizer = std::make_shared<NNFS::Adam>(learning_rate, decay); // learning_rate, decay
+    // std::shared_ptr<NNFS::Optimizer> optimizer = std::make_shared<NNFS::Adam>(learning_rate, decay); // learning_rate, decay
 
-    std::shared_ptr<NNFS::NeuralNetwork> model = std::make_shared<NNFS::NeuralNetwork>(loss, optimizer);
+    // std::shared_ptr<NNFS::NeuralNetwork> model = std::make_shared<NNFS::NeuralNetwork>(loss, optimizer);
 
-    model->add_layer(std::make_shared<NNFS::Dense>(784, 128));
-    model->add_layer(std::make_shared<NNFS::ReLU>());
-    model->add_layer(std::make_shared<NNFS::Dense>(128, 128));
-    model->add_layer(std::make_shared<NNFS::ReLU>());
-    model->add_layer(std::make_shared<NNFS::Dense>(128, 10));
+    // model->add_layer(std::make_shared<NNFS::Dense>(784, 128));
+    // model->add_layer(std::make_shared<NNFS::ReLU>());
+    // model->add_layer(std::make_shared<NNFS::Dense>(128, 128));
+    // model->add_layer(std::make_shared<NNFS::ReLU>());
+    // model->add_layer(std::make_shared<NNFS::Dense>(128, 10));
 
-    LOG_INFO("Compiling model");
+    // LOG_INFO("Compiling model");
 
-    model->compile();
+    // model->compile();
 
-    LOG_INFO("Training model");
+    // LOG_INFO("Training model");
 
-    model->fit(x_train, y_train, x_test, y_test, 100, 128);
+    // model->fit(x_train, y_train, x_test, y_test, 100, 128);
 
     std::string file_path = "MNIST.bin";
+    char* home_dir = getenv("HOME");
+    file_path = strcat(home_dir,"/MNIST.bin");
+    // LOG_INFO("Saving model to file " << file_path);
 
-    LOG_INFO("Saving model to file " << file_path);
+    // model->save(file_path);
 
-    model->save(file_path);
-
-    // std::shared_ptr<NNFS::NeuralNetwork> model = std::make_shared<NNFS::NeuralNetwork>();
+    std::shared_ptr<NNFS::NeuralNetwork> model = std::make_shared<NNFS::NeuralNetwork>();
 
     LOG_INFO("Loading model from file " << file_path);
-
     model->load(file_path);
 
     LOG_INFO("Evaluating model");
 
-    // double accuracy;
-    // model->accuracy(accuracy, x_test, y_test);
-    // LOG_INFO("Test set accuracy: " << accuracy);
+    double accuracy;
+    model->accuracy(accuracy, x_test, y_test);
+    LOG_INFO("Test set accuracy: " << accuracy);
 
     LOG_INFO("Predicting");
 
     // Slice first 5 rows of test set
     Eigen::MatrixXd x_test_slice = x_test.topRows(10);
 
+    LOG_INFO(x_test_slice.row(0).reshaped(28,28));
     Eigen::MatrixXd preds = model->predict(x_test_slice);
-
+    LOG_INFO(preds);
     Eigen::VectorXi pred_labels;
     Eigen::VectorXi labels;
 

@@ -116,11 +116,14 @@
         "*.inc": "cpp",
         "__memory": "cpp",
         "*.expression": "cpp",
-        "__verbose_abort": "cpp"
+        "__verbose_abort": "cpp",
+        "qlabel": "cpp",
+        "qwidget": "cpp"
     },
     "cmake.buildTask": false,
     "cmake.statusbar.visibility": "default",
     "C_Cpp.default.forcedInclude": [
         "${workspaceFolder}/.vscode/eigen_fix.h"
-    ]
+    ],
+    "yaml.customTags": []
 }

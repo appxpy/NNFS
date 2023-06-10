@@ -11,7 +11,7 @@ SET(CMAKE_CXX_FLAGS "-g -O3 ${CMAKE_CXX_FLAGS}") # -fprofile-arcs -ftest-coverag
 SET(CMAKE_C_FLAGS "-g -O3 ${CMAKE_C_FLAGS}") # -ftest-coverage -fopenmp 
 
 
-SET(GENERATE_DOCS OFF) # "Create target for doxygen auto-docs report"
+SET(GENERATE_DOCS ON) # "Create target for doxygen auto-docs report"
 SET(CODE_COVERAGE ON) # "Create targets for test coverage report"
 
 add_subdirectory(external)
