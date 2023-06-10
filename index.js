@@ -8,13 +8,13 @@ var index =
     [ "Dependencies", "index.html#autotoc_md6", null ],
     [ "Testing", "index.html#autotoc_md7", null ],
     [ "Examples", "index.html#autotoc_md8", [
-      [ "<strong>Training executable</strong>", "index.html#autotoc_md9", [
-        [ "<strong>Steps to Reproduce</strong>", "index.html#autotoc_md10", null ]
+      [ "Training executable", "index.html#autotoc_md9", [
+        [ "Steps to Reproduce", "index.html#autotoc_md10", null ]
       ] ],
-      [ "<strong>Paint application</strong>", "index.html#autotoc_md12", [
-        [ "<strong>Features</strong>", "index.html#autotoc_md13", null ],
-        [ "<strong>Running the application</strong>", "index.html#autotoc_md14", null ],
-        [ "<strong>Example Usage</strong>", "index.html#autotoc_md15", null ]
+      [ "Paint application", "index.html#autotoc_md12", [
+        [ "Features", "index.html#autotoc_md13", null ],
+        [ "Running the application", "index.html#autotoc_md14", null ],
+        [ "Example Usage", "index.html#autotoc_md15", null ]
       ] ]
     ] ],
     [ "Contributing", "index.html#autotoc_md16", null ],
