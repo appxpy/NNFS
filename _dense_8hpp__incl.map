@@ -1,12 +1,22 @@
 <map id="include/NNFS/Layer/Dense.hpp" name="include/NNFS/Layer/Dense.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="25,5,164,46"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,241,77,267"/>
-<area shape="rect" id="node3" title=" " alt="" coords="62,94,127,120"/>
-<area shape="rect" id="node4" href="$_layer_8hpp.html" title=" " alt="" coords="150,94,228,120"/>
-<area shape="rect" id="node5" title=" " alt="" coords="62,168,156,193"/>
-<area shape="rect" id="node6" href="$clue_8hpp.html" title=" " alt="" coords="180,168,307,193"/>
-<area shape="rect" id="node7" title=" " alt="" coords="109,241,176,267"/>
-<area shape="rect" id="node8" title=" " alt="" coords="200,241,269,267"/>
-<area shape="rect" id="node9" title=" " alt="" coords="293,241,357,267"/>
-<area shape="rect" id="node10" title=" " alt="" coords="381,241,434,267"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="25,5,164,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,241,77,267"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,48,65,70,53,95,45,129,41,165,41,226,36,226,35,165,39,129,48,93,60,67,75,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="62,94,127,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="97,46,97,79,92,79,92,46"/>
+<area shape="rect" id="Node000004" href="$_layer_8hpp.html" title=" " alt="" coords="150,94,228,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="119,44,165,82,162,86,116,48"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="62,168,156,193"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="177,122,135,160,131,156,174,118"/>
+<area shape="rect" id="Node000006" href="$clue_8hpp.html" title=" " alt="" coords="180,168,307,193"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="200,118,228,154,223,157,196,122"/>
+<area shape="poly" id="edge9_Node000006_Node000002" title=" " alt="" coords="210,196,90,239,88,233,208,191"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="109,241,176,267"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="228,196,173,235,170,230,225,192"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="200,241,269,267"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="245,194,240,227,235,226,239,193"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="293,241,357,267"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="259,192,302,229,299,233,256,196"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="381,241,434,267"/>
+<area shape="poly" id="edge10_Node000006_Node000010" title=" " alt="" coords="273,191,369,233,366,238,270,196"/>
 </map>

@@ -23,6 +23,15 @@ var hierarchy =
       [ "NNFS::RMSProp", "class_n_n_f_s_1_1_r_m_s_prop.html", null ],
       [ "NNFS::SGD", "class_n_n_f_s_1_1_s_g_d.html", null ]
     ] ],
+    [ "QLabel", null, [
+      [ "Canvas", "class_canvas.html", null ]
+    ] ],
+    [ "QMainWindow", null, [
+      [ "Paint", "class_paint.html", null ]
+    ] ],
+    [ "QObject", null, [
+      [ "TestCanvas", "class_test_canvas.html", null ]
+    ] ],
     [ "testing::Test", null, [
       [ "AdagradTest", "class_adagrad_test.html", null ],
       [ "AdamTest", "class_adam_test.html", null ],

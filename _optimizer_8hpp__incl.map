@@ -1,13 +1,26 @@
 <map id="include/NNFS/Optimizer/Optimizer.hpp" name="include/NNFS/Optimizer/Optimizer.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="148,5,310,46"/>
-<area shape="rect" id="node2" title=" " alt="" coords="98,241,192,267"/>
-<area shape="rect" id="node3" href="$clue_8hpp.html" title=" " alt="" coords="216,241,344,267"/>
-<area shape="rect" id="node9" href="$_dense_8hpp.html" title=" " alt="" coords="29,94,157,120"/>
-<area shape="rect" id="node4" title=" " alt="" coords="200,315,266,341"/>
-<area shape="rect" id="node5" title=" " alt="" coords="291,315,359,341"/>
-<area shape="rect" id="node6" title=" " alt="" coords="384,315,448,341"/>
-<area shape="rect" id="node7" title=" " alt="" coords="14,315,85,341"/>
-<area shape="rect" id="node8" title=" " alt="" coords="123,315,176,341"/>
-<area shape="rect" id="node10" title=" " alt="" coords="26,168,91,193"/>
-<area shape="rect" id="node11" href="$_layer_8hpp.html" title=" " alt="" coords="115,168,192,193"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="148,5,310,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="98,241,192,267"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,47,229,114,221,155,206,195,192,216,175,233,171,230,188,212,201,192,216,154,224,114,227,46"/>
+<area shape="rect" id="Node000003" href="$clue_8hpp.html" title=" " alt="" coords="216,241,344,267"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="238,46,250,93,278,226,273,227,245,95,232,47"/>
+<area shape="rect" id="Node000009" href="$_dense_8hpp.html" title=" " alt="" coords="29,94,157,120"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="197,49,128,89,125,84,194,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="200,315,266,341"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="274,269,251,304,247,301,270,266"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="291,315,359,341"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="290,266,312,301,307,304,285,269"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="384,315,448,341"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="304,265,381,305,379,310,302,270"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="14,315,85,341"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="242,270,100,314,98,309,240,265"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="123,315,176,341"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="259,270,186,310,183,305,256,265"/>
+<area shape="poly" id="edge9_Node000009_Node000007" title=" " alt="" coords="68,123,39,142,27,154,17,169,11,185,9,203,12,239,23,273,37,301,32,303,18,275,7,240,3,203,6,184,12,166,23,151,36,138,65,118"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="26,168,91,193"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="90,121,73,155,68,153,85,119"/>
+<area shape="rect" id="Node000011" href="$_layer_8hpp.html" title=" " alt="" coords="115,168,192,193"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="105,118,136,154,132,158,101,122"/>
+<area shape="poly" id="edge12_Node000011_Node000002" title=" " alt="" coords="155,194,151,227,146,226,149,193"/>
+<area shape="poly" id="edge13_Node000011_Node000003" title=" " alt="" coords="176,192,247,231,244,236,173,196"/>
 </map>

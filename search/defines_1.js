@@ -7,7 +7,7 @@ var searchData=
   ['log_5ferror_4',['LOG_ERROR',['../clue_8hpp.html#aced66975c154ea0e2a8ec3bc818b4e08',1,'clue.hpp']]],
   ['log_5fexpression_5',['LOG_EXPRESSION',['../clue_8hpp.html#abb94611fe85d1ceb7a2c75c059f166a2',1,'clue.hpp']]],
   ['log_5finfo_6',['LOG_INFO',['../clue_8hpp.html#aeb4f36db01bd128c7afeac5889dac311',1,'clue.hpp']]],
-  ['log_5flevel_7',['LOG_LEVEL',['../test__dense_8cpp.html#a0b87e0d3bf5853bcbb0b66a7c48fdc05',1,'LOG_LEVEL():&#160;test_dense.cpp'],['../test__loss_8cpp.html#a0b87e0d3bf5853bcbb0b66a7c48fdc05',1,'LOG_LEVEL():&#160;test_loss.cpp']]],
+  ['log_5flevel_7',['LOG_LEVEL',['../test__dense_8cpp.html#a0b87e0d3bf5853bcbb0b66a7c48fdc05',1,'LOG_LEVEL:&#160;test_dense.cpp'],['../test__loss_8cpp.html#a0b87e0d3bf5853bcbb0b66a7c48fdc05',1,'LOG_LEVEL:&#160;test_loss.cpp']]],
   ['log_5flogged_5fseverities_8',['LOG_LOGGED_SEVERITIES',['../clue_8hpp.html#a51d08f9565fe1f0d6cb12389be387111',1,'clue.hpp']]],
   ['log_5fnotice_9',['LOG_NOTICE',['../clue_8hpp.html#ad89ee324d180cdcd7defcc709ff9ca42',1,'clue.hpp']]],
   ['log_5fsev_5falert_10',['LOG_SEV_ALERT',['../clue_8hpp.html#ae58ddcadb453ba677c57bbb482fd1af0',1,'clue.hpp']]],

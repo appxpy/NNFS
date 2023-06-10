@@ -1,4 +1,5 @@
 <map id="include/NNFS/Model/Model.hpp" name="include/NNFS/Model/Model.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,148,46"/>
-<area shape="rect" id="node2" href="$_neural_network_8hpp.html" title=" " alt="" coords="5,94,148,135"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,148,46"/>
+<area shape="rect" id="Node000002" href="$_neural_network_8hpp.html" title=" " alt="" coords="5,94,148,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,61,79,94,74,94,74,61"/>
 </map>

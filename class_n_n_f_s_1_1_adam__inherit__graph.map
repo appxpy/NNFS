@@ -1,4 +1,5 @@
 <map id="NNFS::Adam" name="NNFS::Adam">
-<area shape="rect" id="node1" title="Adam optimizer &#45; Adaptive Moment Estimation, one of the most popular and efficient gradient&#45;based opt..." alt="" coords="16,79,114,105"/>
-<area shape="rect" id="node2" href="$class_n_n_f_s_1_1_optimizer.html" title="Base class for all optimizers." alt="" coords="5,5,125,31"/>
+<area shape="rect" id="Node000001" title="Adam optimizer &#45; Adaptive Moment Estimation, one of the most popular and efficient gradient&#45;based opt..." alt="" coords="16,79,114,105"/>
+<area shape="rect" id="Node000002" href="$class_n_n_f_s_1_1_optimizer.html" title="Base class for all optimizers." alt="" coords="5,5,125,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,46,68,79,62,79,62,46"/>
 </map>

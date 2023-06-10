@@ -1,16 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,301,98,327"/>
-<area shape="rect" id="node2" href="$class_adagrad_test.html" title=" " alt="" coords="159,5,254,31"/>
-<area shape="rect" id="node3" href="$class_adam_test.html" title=" " alt="" coords="166,55,247,80"/>
-<area shape="rect" id="node4" href="$class_c_c_e_softmax_test.html" title=" " alt="" coords="146,104,267,130"/>
-<area shape="rect" id="node5" href="$class_c_c_e_test.html" title=" " alt="" coords="170,153,243,179"/>
-<area shape="rect" id="node6" href="$class_dense_test.html" title=" " alt="" coords="164,203,249,228"/>
-<area shape="rect" id="node7" href="$class_metrics_test.html" title=" " alt="" coords="161,252,252,278"/>
-<area shape="rect" id="node8" href="$class_optimizer_test.html" title=" " alt="" coords="155,301,258,327"/>
-<area shape="rect" id="node9" href="$class_r_m_sprop_test.html" title=" " alt="" coords="156,351,257,376"/>
-<area shape="rect" id="node10" href="$class_re_l_u_test.html" title=" " alt="" coords="166,400,247,426"/>
-<area shape="rect" id="node11" href="$class_s_g_d_test.html" title=" " alt="" coords="169,449,244,475"/>
-<area shape="rect" id="node12" href="$class_sigmoid_test.html" title=" " alt="" coords="159,499,254,524"/>
-<area shape="rect" id="node13" href="$class_softmax_test.html" title=" " alt="" coords="159,548,254,574"/>
-<area shape="rect" id="node14" href="$class_tanh_test.html" title=" " alt="" coords="168,597,245,623"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,69,31"/>
+<area shape="rect" id="Node000001" href="$class_canvas.html" title="The Canvas class represents a custom widget for drawing on a canvas." alt="" coords="117,5,182,31"/>
+<area shape="poly" id="edge14_Node000000_Node000001" title=" " alt="" coords="83,16,116,16,116,21,83,21"/>
 </map>

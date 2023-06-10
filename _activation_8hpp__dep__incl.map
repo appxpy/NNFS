@@ -1,9 +1,20 @@
 <map id="include/NNFS/Activation/Activation.hpp" name="include/NNFS/Activation/Activation.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="245,5,411,46"/>
-<area shape="rect" id="node2" href="$_re_l_u_8hpp.html" title=" " alt="" coords="5,183,171,223"/>
-<area shape="rect" id="node3" href="$_neural_network_8hpp.html" title=" " alt="" coords="317,271,459,312"/>
-<area shape="rect" id="node4" href="$_sigmoid_8hpp.html" title=" " alt="" coords="245,183,411,223"/>
-<area shape="rect" id="node5" href="$_softmax_8hpp.html" title=" " alt="" coords="365,94,531,135"/>
-<area shape="rect" id="node7" href="$_tanh_8hpp.html" title=" " alt="" coords="580,94,745,135"/>
-<area shape="rect" id="node6" href="$_c_c_e___softmax_8hpp.html" title=" " alt="" coords="485,183,651,223"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="245,5,411,46"/>
+<area shape="rect" id="Node000002" href="$_re_l_u_8hpp.html" title=" " alt="" coords="5,183,171,223"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="265,55,227,73,191,96,142,141,105,184,101,180,138,137,188,92,224,69,262,50"/>
+<area shape="rect" id="Node000003" href="$_neural_network_8hpp.html" title=" " alt="" coords="317,271,459,312"/>
+<area shape="poly" id="edge11_Node000001_Node000003" title=" " alt="" coords="297,58,266,93,238,135,229,157,225,179,226,201,236,222,252,240,272,255,318,275,315,280,269,260,248,244,231,225,221,202,219,179,224,156,233,132,262,89,294,54"/>
+<area shape="rect" id="Node000004" href="$_sigmoid_8hpp.html" title=" " alt="" coords="245,183,411,223"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="331,61,331,182,325,182,325,61"/>
+<area shape="rect" id="Node000005" href="$_softmax_8hpp.html" title=" " alt="" coords="365,94,531,135"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="368,53,422,91,419,96,365,57"/>
+<area shape="rect" id="Node000007" href="$_tanh_8hpp.html" title=" " alt="" coords="580,94,745,135"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="419,48,587,91,586,96,418,53"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="171,225,321,268,319,273,169,230"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="352,234,377,269,372,272,348,237"/>
+<area shape="poly" id="edge8_Node000005_Node000003" title=" " alt="" coords="445,150,425,224,402,272,397,270,420,222,440,149"/>
+<area shape="rect" id="Node000006" href="$_c_c_e___softmax_8hpp.html" title=" " alt="" coords="485,183,651,223"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="488,141,542,180,539,184,485,146"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="515,232,430,273,428,268,513,228"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="675,149,678,187,674,207,665,225,651,237,632,247,580,264,519,277,460,285,459,280,518,271,578,259,630,242,648,232,661,222,669,205,673,187,670,149"/>
 </map>

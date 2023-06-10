@@ -9,43 +9,49 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 78.5)">
 <title>NNFS::Loss</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Base class for all loss functions.">
+<g id="a_Node000001"><a xlink:title="Base class for all loss functions.">
 <polygon fill="#999999" stroke="#666666" points="120.88,-74.5 50.88,-74.5 50.88,-55.25 120.88,-55.25 120.88,-74.5"/>
 <text text-anchor="middle" x="85.88" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">NNFS::Loss</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="class_n_n_f_s_1_1_c_c_e.html" target="_top" xlink:title="Cross&#45;entropy loss function.">
+<g id="a_Node000002"><a xlink:href="class_n_n_f_s_1_1_c_c_e.html" target="_top" xlink:title="Cross&#45;entropy loss function.">
 <polygon fill="white" stroke="#666666" points="67.75,-19.25 0,-19.25 0,0 67.75,0 67.75,-19.25"/>
 <text text-anchor="middle" x="33.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFS::CCE</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M69.74,-47.35C60.8,-38.2 50.04,-27.18 42.65,-19.61"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="66.8,-49.37 76.29,-54.08 71.81,-44.48 66.8,-49.37"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="class_n_n_f_s_1_1_c_c_e_softmax.html" target="_top" xlink:title="Cross&#45;entropy loss function with softmax activation.">
+<g id="a_Node000003"><a xlink:href="class_n_n_f_s_1_1_c_c_e_softmax.html" target="_top" xlink:title="Cross&#45;entropy loss function with softmax activation.">
 <polygon fill="white" stroke="#666666" points="189.75,-19.25 86,-19.25 86,0 189.75,0 189.75,-19.25"/>
 <text text-anchor="middle" x="137.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFS::CCESoftmax</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M102.01,-47.35C110.95,-38.2 121.71,-27.18 129.1,-19.61"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="99.94,-44.48 95.46,-54.08 104.95,-49.37 99.94,-44.48"/>
+</a>
+</g>
 </g>
 </g>
 </svg>

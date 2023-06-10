@@ -9,9 +9,9 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 167.5)">
 <title>include/NNFS/Activation/Softmax.hpp</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="169.38,-163.5 45.38,-163.5 45.38,-133 169.38,-133 169.38,-163.5"/>
 <text text-anchor="start" x="53.38" y="-150" font-family="Helvetica,sans-Serif" font-size="10.00">include/NNFS/Activation</text>
 <text text-anchor="middle" x="107.38" y="-138.75" font-family="Helvetica,sans-Serif" font-size="10.00">/Softmax.hpp</text>
@@ -19,9 +19,9 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="_c_c_e___softmax_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="_c_c_e___softmax_8hpp.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="124.75,-97 0,-97 0,-66.5 124.75,-66.5 124.75,-97"/>
 <text text-anchor="start" x="8" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">include/NNFS/Loss/CCE</text>
 <text text-anchor="middle" x="62.38" y="-72.25" font-family="Helvetica,sans-Serif" font-size="10.00">_Softmax.hpp</text>
@@ -29,15 +29,18 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M91.05,-123.85C84.86,-114.98 78,-105.15 72.55,-97.33"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="88.57,-125.42 97.16,-131.61 94.31,-121.41 88.57,-125.42"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="_neural_network_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="_neural_network_8hpp.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="160.75,-30.5 54,-30.5 54,0 160.75,0 160.75,-30.5"/>
 <text text-anchor="start" x="62" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">include/NNFS/Model</text>
 <text text-anchor="middle" x="107.38" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">/NeuralNetwork.hpp</text>
@@ -45,16 +48,22 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge3_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M122.78,-123.18C127.09,-115.17 131.19,-105.99 133.38,-97 136.58,-83.83 136.58,-79.67 133.38,-66.5 130.26,-53.71 123.28,-40.54 117.34,-30.9"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="119.31,-121.19 117.34,-131.6 125.37,-124.69 119.31,-121.19"/>
+</a>
+</g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
+<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M78.7,-57.35C84.89,-48.48 91.75,-38.65 97.2,-30.83"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="75.44,-54.91 72.59,-65.11 81.18,-58.92 75.44,-54.91"/>
+</a>
+</g>
 </g>
 </g>
 </svg>

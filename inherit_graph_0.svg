@@ -9,103 +9,121 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 134.25)">
 <title>Graphical Class Hierarchy</title>
 <!-- Node0 -->
-<g id="node1" class="node">
+<g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="class_n_n_f_s_1_1_layer.html" target="_top" xlink:title="Base class for all layers.">
+<g id="a_Node000000"><a xlink:href="class_n_n_f_s_1_1_layer.html" target="_top" xlink:title="Base class for all layers.">
 <polygon fill="white" stroke="#666666" points="72.25,-55.25 0,-55.25 0,-36 72.25,-36 72.25,-55.25"/>
 <text text-anchor="middle" x="36.12" y="-41.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFS::Layer</text>
 </a>
 </g>
 </g>
 <!-- Node1 -->
-<g id="node2" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:href="class_n_n_f_s_1_1_activation.html" target="_top" xlink:title="Base class for all activation functions.">
+<g id="a_Node000001"><a xlink:href="class_n_n_f_s_1_1_activation.html" target="_top" xlink:title="Base class for all activation functions.">
 <polygon fill="white" stroke="#666666" points="200,-74.25 108.25,-74.25 108.25,-55 200,-55 200,-74.25"/>
 <text text-anchor="middle" x="154.12" y="-60.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFS::Activation</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node1 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000000_Node000001" class="edge">
 <title>Node0&#45;&gt;Node1</title>
+<g id="a_edge1_Node000000_Node000001"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M83.38,-53.2C91.51,-54.53 99.95,-55.92 108.05,-57.24"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="83.99,-49.59 73.56,-51.43 82.86,-56.5 83.99,-49.59"/>
+</a>
+</g>
 </g>
 <!-- Node6 -->
-<g id="node7" class="node">
+<g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_node7"><a xlink:href="class_n_n_f_s_1_1_dense.html" target="_top" xlink:title="Dense layer.">
+<g id="a_Node000006"><a xlink:href="class_n_n_f_s_1_1_dense.html" target="_top" xlink:title="Dense layer.">
 <polygon fill="white" stroke="#666666" points="192.12,-37.25 116.12,-37.25 116.12,-18 192.12,-18 192.12,-37.25"/>
 <text text-anchor="middle" x="154.12" y="-23.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFS::Dense</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node6 -->
-<g id="edge6" class="edge">
+<g id="edge6_Node000000_Node000006" class="edge">
 <title>Node0&#45;&gt;Node6</title>
+<g id="a_edge6_Node000000_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M83.17,-38.48C94.03,-36.79 105.48,-35.02 115.9,-33.4"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="82.9,-35.13 73.56,-40.13 83.98,-42.05 82.9,-35.13"/>
+</a>
+</g>
 </g>
 <!-- Node2 -->
-<g id="node3" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node3"><a xlink:href="class_n_n_f_s_1_1_re_l_u.html" target="_top" xlink:title="ReLU activation function.">
+<g id="a_Node000002"><a xlink:href="class_n_n_f_s_1_1_re_l_u.html" target="_top" xlink:title="ReLU activation function.">
 <polygon fill="white" stroke="#666666" points="315,-130.25 241.25,-130.25 241.25,-111 315,-111 315,-130.25"/>
 <text text-anchor="middle" x="278.12" y="-116.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFS::ReLU</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge2_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M185.83,-79.29C200.9,-86.43 219.36,-95.07 236,-102.62 241.82,-105.27 248.13,-108.06 254.02,-110.64"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="187.53,-75.75 177,-74.62 184.53,-82.07 187.53,-75.75"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node4" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node4"><a xlink:href="class_n_n_f_s_1_1_sigmoid.html" target="_top" xlink:title="Sigmoid activation function.">
+<g id="a_Node000003"><a xlink:href="class_n_n_f_s_1_1_sigmoid.html" target="_top" xlink:title="Sigmoid activation function.">
 <polygon fill="white" stroke="#666666" points="319.88,-93.25 236.38,-93.25 236.38,-74 319.88,-74 319.88,-93.25"/>
 <text text-anchor="middle" x="278.12" y="-79.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFS::Sigmoid</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge3_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M210.9,-73.31C219.44,-74.64 228.12,-75.99 236.26,-77.26"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="211.63,-69.73 201.21,-71.65 210.55,-76.64 211.63,-69.73"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node5" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node5"><a xlink:href="class_n_n_f_s_1_1_softmax.html" target="_top" xlink:title="Softmax activation function.">
+<g id="a_Node000004"><a xlink:href="class_n_n_f_s_1_1_softmax.html" target="_top" xlink:title="Softmax activation function.">
 <polygon fill="white" stroke="#666666" points="320.25,-56.25 236,-56.25 236,-37 320.25,-37 320.25,-56.25"/>
 <text text-anchor="middle" x="278.12" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFS::Softmax</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
+<g id="a_edge4_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M211.06,-56.37C219.41,-55.14 227.89,-53.89 235.86,-52.71"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="210.59,-53.05 201.21,-57.97 211.61,-59.98 210.59,-53.05"/>
+</a>
+</g>
 </g>
 <!-- Node5 -->
-<g id="node6" class="node">
+<g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_node6"><a xlink:href="class_n_n_f_s_1_1_tanh.html" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="class_n_n_f_s_1_1_tanh.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="313.12,-19.25 243.12,-19.25 243.12,0 313.12,0 313.12,-19.25"/>
 <text text-anchor="middle" x="278.12" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFS::Tanh</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
-<g id="edge5" class="edge">
+<g id="edge5_Node000001_Node000005" class="edge">
 <title>Node1&#45;&gt;Node5</title>
+<g id="a_edge5_Node000001_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M191.38,-50.46C194.31,-49.2 197.21,-47.91 200,-46.62 216.42,-39.02 219.7,-35.48 236,-27.62 241.62,-24.92 247.74,-22.15 253.5,-19.61"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="190.31,-47.53 182.42,-54.61 193,-54 190.31,-47.53"/>
+</a>
+</g>
 </g>
 </g>
 </svg>

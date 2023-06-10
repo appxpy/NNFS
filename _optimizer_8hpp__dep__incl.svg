@@ -9,9 +9,9 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 101)">
 <title>include/NNFS/Optimizer/Optimizer.hpp</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="386.25,-97 264.5,-97 264.5,-66.5 386.25,-66.5 386.25,-97"/>
 <text text-anchor="start" x="272.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">include/NNFS/Optimizer</text>
 <text text-anchor="middle" x="325.38" y="-72.25" font-family="Helvetica,sans-Serif" font-size="10.00">/Optimizer.hpp</text>
@@ -19,9 +19,9 @@
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="_neural_network_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="_neural_network_8hpp.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="106.75,-30.5 0,-30.5 0,0 106.75,0 106.75,-30.5"/>
 <text text-anchor="start" x="8" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">include/NNFS/Model</text>
 <text text-anchor="middle" x="53.38" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">/NeuralNetwork.hpp</text>
@@ -29,15 +29,18 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M253.82,-63.78C207.75,-52.86 148.86,-38.89 106.86,-28.93"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="252.8,-67.37 263.33,-66.27 254.41,-60.56 252.8,-67.37"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="_adagrad_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="_adagrad_8hpp.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="246.25,-30.5 124.5,-30.5 124.5,0 246.25,0 246.25,-30.5"/>
 <text text-anchor="start" x="132.5" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">include/NNFS/Optimizer</text>
 <text text-anchor="middle" x="185.38" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">/Adagrad.hpp</text>
@@ -45,15 +48,18 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M283.81,-61.6C262.42,-51.75 236.77,-39.93 217.02,-30.83"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="282.06,-65.11 292.61,-66.11 284.99,-58.75 282.06,-65.11"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="_adam_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="_adam_8hpp.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="386.25,-30.5 264.5,-30.5 264.5,0 386.25,0 386.25,-30.5"/>
 <text text-anchor="start" x="272.5" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">include/NNFS/Optimizer</text>
 <text text-anchor="middle" x="325.38" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">/Adam.hpp</text>
@@ -61,15 +67,18 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M325.38,-55.38C325.38,-47.05 325.38,-38.08 325.38,-30.83"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="321.88,-55.11 325.38,-65.11 328.88,-55.11 321.88,-55.11"/>
+</a>
+</g>
 </g>
 <!-- Node5 -->
-<g id="node5" class="node">
+<g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="_r_m_s_prop_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="_r_m_s_prop_8hpp.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="526.25,-30.5 404.5,-30.5 404.5,0 526.25,0 526.25,-30.5"/>
 <text text-anchor="start" x="412.5" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">include/NNFS/Optimizer</text>
 <text text-anchor="middle" x="465.38" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">/RMSProp.hpp</text>
@@ -77,15 +86,18 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
-<g id="edge4" class="edge">
+<g id="edge4_Node000001_Node000005" class="edge">
 <title>Node1&#45;&gt;Node5</title>
+<g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M366.94,-61.6C388.33,-51.75 413.98,-39.93 433.73,-30.83"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="365.76,-58.75 358.14,-66.11 368.69,-65.11 365.76,-58.75"/>
+</a>
+</g>
 </g>
 <!-- Node6 -->
-<g id="node6" class="node">
+<g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="_s_g_d_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="_s_g_d_8hpp.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="666.25,-30.5 544.5,-30.5 544.5,0 666.25,0 666.25,-30.5"/>
 <text text-anchor="start" x="552.5" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">include/NNFS/Optimizer</text>
 <text text-anchor="middle" x="605.38" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">/SGD.hpp</text>
@@ -93,10 +105,13 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
-<g id="edge5" class="edge">
+<g id="edge5_Node000001_Node000006" class="edge">
 <title>Node1&#45;&gt;Node6</title>
+<g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M397.18,-64.21C442.75,-53.71 501.08,-40.27 544.4,-30.3"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="396.44,-61.02 387.48,-66.67 398.01,-67.84 396.44,-61.02"/>
+</a>
+</g>
 </g>
 </g>
 </svg>

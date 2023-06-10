@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['parameters_0',['parameters',['../class_n_n_f_s_1_1_dense.html#a774217b1b22804c2808eedf97032f852',1,'NNFS::Dense']]],
-  ['post_5fupdate_5fparams_1',['post_update_params',['../class_n_n_f_s_1_1_optimizer.html#a45c6a6b4f317e4b062c7fa8769d852a5',1,'NNFS::Optimizer']]],
-  ['pre_5fupdate_5fparams_2',['pre_update_params',['../class_n_n_f_s_1_1_optimizer.html#a8798cfa199d95cadad3eef21a313ad1a',1,'NNFS::Optimizer']]],
-  ['predict_3',['predict',['../class_n_n_f_s_1_1_neural_network.html#a4e9b7be6f4e4309cc086ae631a48fa8f',1,'NNFS::NeuralNetwork']]]
+  ['onehotdecode_0',['onehotdecode',['../class_n_n_f_s_1_1_metrics.html#adc5ecdfb4cdebec3b5779abdc333edeb',1,'NNFS::Metrics']]],
+  ['optimizer_1',['Optimizer',['../class_n_n_f_s_1_1_optimizer.html',1,'NNFS::Optimizer'],['../class_n_n_f_s_1_1_optimizer.html#a59562664cbb5a3c3653bc4eec1628005',1,'NNFS::Optimizer::Optimizer()']]],
+  ['optimizer_2',['optimizer',['../class_optimizer_test.html#ac5ba801d366e194a98e0fdccb00106c6',1,'OptimizerTest']]],
+  ['optimizer_2ehpp_3',['Optimizer.hpp',['../_optimizer_8hpp.html',1,'']]],
+  ['optimizertest_4',['OptimizerTest',['../class_optimizer_test.html',1,'']]],
+  ['output_5fsize_5',['output_size',['../class_adagrad_test.html#aa8d17aa6a112f350ebbce07a03db7543',1,'AdagradTest::output_size'],['../class_r_m_sprop_test.html#adf509779ba75cacfca1caf196b1fd4b1',1,'RMSpropTest::output_size'],['../class_s_g_d_test.html#afc6b195288fa6d24a34e1e5acff49f21',1,'SGDTest::output_size'],['../class_adam_test.html#a6400844fd3fa2d61ba5656f78d7db0ee',1,'AdamTest::output_size']]]
 ];

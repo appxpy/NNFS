@@ -1,0 +1,21 @@
+<map id="tools/paint/test_canvas.h" name="tools/paint/test_canvas.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="130,5,296,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="90,79,160,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,34,153,72,149,67,196,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="184,79,242,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,31,216,64,210,64,210,31"/>
+<area shape="rect" id="Node000004" href="$canvas_8h.html" title=" " alt="" coords="266,79,339,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="230,29,278,68,275,72,226,34"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,153,77,178"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="266,106,92,153,90,148,265,101"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="101,153,165,178"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="275,108,176,149,174,144,273,103"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="189,153,290,178"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="294,107,262,143,258,140,290,103"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="315,153,418,178"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="315,103,348,140,344,143,311,107"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="442,153,515,178"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="333,103,436,144,434,149,331,108"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="539,153,623,178"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="340,100,525,147,524,152,339,105"/>
+</map>

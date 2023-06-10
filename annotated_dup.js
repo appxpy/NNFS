@@ -22,15 +22,18 @@ var annotated_dup =
     ] ],
     [ "AdagradTest", "class_adagrad_test.html", "class_adagrad_test" ],
     [ "AdamTest", "class_adam_test.html", "class_adam_test" ],
+    [ "Canvas", "class_canvas.html", "class_canvas" ],
     [ "CCESoftmaxTest", "class_c_c_e_softmax_test.html", "class_c_c_e_softmax_test" ],
     [ "CCETest", "class_c_c_e_test.html", "class_c_c_e_test" ],
     [ "DenseTest", "class_dense_test.html", "class_dense_test" ],
     [ "MetricsTest", "class_metrics_test.html", "class_metrics_test" ],
     [ "OptimizerTest", "class_optimizer_test.html", "class_optimizer_test" ],
+    [ "Paint", "class_paint.html", "class_paint" ],
     [ "ReLUTest", "class_re_l_u_test.html", "class_re_l_u_test" ],
     [ "RMSpropTest", "class_r_m_sprop_test.html", "class_r_m_sprop_test" ],
     [ "SGDTest", "class_s_g_d_test.html", "class_s_g_d_test" ],
     [ "SigmoidTest", "class_sigmoid_test.html", "class_sigmoid_test" ],
     [ "SoftmaxTest", "class_softmax_test.html", "class_softmax_test" ],
-    [ "TanhTest", "class_tanh_test.html", "class_tanh_test" ]
+    [ "TanhTest", "class_tanh_test.html", "class_tanh_test" ],
+    [ "TestCanvas", "class_test_canvas.html", null ]
 ];

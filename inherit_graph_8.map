@@ -1,0 +1,29 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,301,98,327"/>
+<area shape="rect" id="Node000001" href="$class_adagrad_test.html" title=" " alt="" coords="159,5,254,31"/>
+<area shape="poly" id="edge17_Node000000_Node000001" title=" " alt="" coords="52,286,59,235,75,170,102,101,121,69,144,40,158,29,161,34,148,44,125,72,107,104,80,171,65,236,57,287"/>
+<area shape="rect" id="Node000002" href="$class_adam_test.html" title=" " alt="" coords="166,55,247,80"/>
+<area shape="poly" id="edge18_Node000000_Node000002" title=" " alt="" coords="55,286,64,244,81,192,107,138,124,112,144,89,164,76,167,81,147,94,128,116,112,140,86,194,69,245,60,288"/>
+<area shape="rect" id="Node000003" href="$class_c_c_e_softmax_test.html" title=" " alt="" coords="146,104,267,130"/>
+<area shape="poly" id="edge19_Node000000_Node000003" title=" " alt="" coords="58,286,88,214,113,174,144,139,160,128,163,132,147,143,117,177,93,216,63,288"/>
+<area shape="rect" id="Node000004" href="$class_c_c_e_test.html" title=" " alt="" coords="170,153,243,179"/>
+<area shape="poly" id="edge20_Node000000_Node000004" title=" " alt="" coords="64,287,97,237,119,211,144,188,168,175,171,179,147,192,123,215,101,241,69,290"/>
+<area shape="rect" id="Node000005" href="$class_dense_test.html" title=" " alt="" coords="164,203,249,228"/>
+<area shape="poly" id="edge21_Node000000_Node000005" title=" " alt="" coords="75,289,107,263,144,237,166,226,168,231,147,242,110,267,79,294"/>
+<area shape="rect" id="Node000006" href="$class_metrics_test.html" title=" " alt="" coords="161,252,252,278"/>
+<area shape="poly" id="edge22_Node000000_Node000006" title=" " alt="" coords="107,294,163,276,164,281,109,299"/>
+<area shape="rect" id="Node000007" href="$class_optimizer_test.html" title=" " alt="" coords="155,301,258,327"/>
+<area shape="poly" id="edge23_Node000000_Node000007" title=" " alt="" coords="112,312,155,312,155,317,112,317"/>
+<area shape="rect" id="Node000008" href="$class_r_m_sprop_test.html" title=" " alt="" coords="156,351,257,376"/>
+<area shape="poly" id="edge24_Node000000_Node000008" title=" " alt="" coords="109,330,164,347,163,353,107,335"/>
+<area shape="rect" id="Node000009" href="$class_re_l_u_test.html" title=" " alt="" coords="166,400,247,426"/>
+<area shape="poly" id="edge25_Node000000_Node000009" title=" " alt="" coords="79,335,110,361,147,387,168,397,166,402,144,391,107,365,75,339"/>
+<area shape="rect" id="Node000010" href="$class_s_g_d_test.html" title=" " alt="" coords="169,449,244,475"/>
+<area shape="poly" id="edge26_Node000000_Node000010" title=" " alt="" coords="69,339,101,388,123,414,147,436,169,449,167,453,144,440,119,417,97,391,64,342"/>
+<area shape="rect" id="Node000011" href="$class_sigmoid_test.html" title=" " alt="" coords="159,499,254,524"/>
+<area shape="poly" id="edge27_Node000000_Node000011" title=" " alt="" coords="63,340,93,412,117,451,147,485,163,496,160,500,144,490,113,454,88,414,58,342"/>
+<area shape="rect" id="Node000012" href="$class_softmax_test.html" title=" " alt="" coords="159,548,254,574"/>
+<area shape="poly" id="edge28_Node000000_Node000012" title=" " alt="" coords="60,341,69,383,86,435,112,488,128,513,147,535,162,545,159,550,144,539,124,516,107,491,81,437,64,384,55,342"/>
+<area shape="rect" id="Node000013" href="$class_tanh_test.html" title=" " alt="" coords="168,597,245,623"/>
+<area shape="poly" id="edge29_Node000000_Node000013" title=" " alt="" coords="57,342,65,393,80,457,107,525,125,556,147,584,170,599,167,603,144,588,121,559,102,527,75,459,59,394,52,342"/>
+</map>

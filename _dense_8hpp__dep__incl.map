@@ -1,13 +1,27 @@
 <map id="include/NNFS/Layer/Dense.hpp" name="include/NNFS/Layer/Dense.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="379,5,518,46"/>
-<area shape="rect" id="node2" href="$_loss_8hpp.html" title=" " alt="" coords="177,102,371,127"/>
-<area shape="rect" id="node5" href="$_neural_network_8hpp.html" title=" " alt="" coords="269,360,412,401"/>
-<area shape="rect" id="node7" href="$_optimizer_8hpp.html" title=" " alt="" coords="630,94,792,135"/>
-<area shape="rect" id="node3" href="$_c_c_e_8hpp.html" title=" " alt="" coords="5,190,196,216"/>
-<area shape="rect" id="node6" href="$_model_8hpp.html" title=" " alt="" coords="269,271,412,312"/>
-<area shape="rect" id="node4" href="$_c_c_e___softmax_8hpp.html" title=" " alt="" coords="24,271,190,312"/>
-<area shape="rect" id="node8" href="$_adagrad_8hpp.html" title=" " alt="" coords="537,183,699,223"/>
-<area shape="rect" id="node9" href="$_adam_8hpp.html" title=" " alt="" coords="723,183,886,223"/>
-<area shape="rect" id="node10" href="$_r_m_s_prop_8hpp.html" title=" " alt="" coords="910,183,1072,223"/>
-<area shape="rect" id="node11" href="$_s_g_d_8hpp.html" title=" " alt="" coords="1097,183,1259,223"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="379,5,518,46"/>
+<area shape="rect" id="Node000002" href="$_loss_8hpp.html" title=" " alt="" coords="177,102,371,127"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="397,55,299,103,297,99,395,50"/>
+<area shape="rect" id="Node000005" href="$_neural_network_8hpp.html" title=" " alt="" coords="269,360,412,401"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="456,61,460,112,460,177,450,247,440,281,425,313,404,341,378,362,374,357,400,337,421,311,435,279,445,246,455,177,455,112,451,61"/>
+<area shape="rect" id="Node000007" href="$_optimizer_8hpp.html" title=" " alt="" coords="630,94,792,135"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="522,48,652,91,651,96,521,53"/>
+<area shape="rect" id="Node000003" href="$_c_c_e_8hpp.html" title=" " alt="" coords="5,190,196,216"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="238,137,126,192,124,187,235,132"/>
+<area shape="poly" id="edge7_Node000002_Node000005" title=" " alt="" coords="267,142,256,177,248,220,248,267,252,289,260,311,280,337,305,357,302,362,276,341,255,313,247,291,243,267,243,220,251,175,261,140"/>
+<area shape="rect" id="Node000006" href="$_model_8hpp.html" title=" " alt="" coords="269,271,412,312"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="286,140,336,270,331,272,281,142"/>
+<area shape="rect" id="Node000004" href="$_c_c_e___softmax_8hpp.html" title=" " alt="" coords="24,271,190,312"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="105,230,108,271,103,271,100,231"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="174,315,288,357,286,362,173,320"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="343,327,343,360,338,360,338,327"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="617,136,569,156,526,185,513,200,505,215,497,247,490,279,482,296,469,314,435,342,397,362,394,357,432,337,465,310,478,294,485,278,492,246,500,214,508,197,523,181,566,151,615,131"/>
+<area shape="rect" id="Node000008" href="$_adagrad_8hpp.html" title=" " alt="" coords="537,183,699,223"/>
+<area shape="poly" id="edge11_Node000007_Node000008" title=" " alt="" coords="681,147,641,184,637,180,678,143"/>
+<area shape="rect" id="Node000009" href="$_adam_8hpp.html" title=" " alt="" coords="723,183,886,223"/>
+<area shape="poly" id="edge12_Node000007_Node000009" title=" " alt="" coords="745,143,785,180,782,184,741,147"/>
+<area shape="rect" id="Node000010" href="$_r_m_s_prop_8hpp.html" title=" " alt="" coords="910,183,1072,223"/>
+<area shape="poly" id="edge13_Node000007_Node000010" title=" " alt="" coords="790,137,928,180,927,185,788,142"/>
+<area shape="rect" id="Node000011" href="$_s_g_d_8hpp.html" title=" " alt="" coords="1097,183,1259,223"/>
+<area shape="poly" id="edge14_Node000007_Node000011" title=" " alt="" coords="807,130,1085,180,1097,182,1096,188,1084,185,807,135"/>
 </map>

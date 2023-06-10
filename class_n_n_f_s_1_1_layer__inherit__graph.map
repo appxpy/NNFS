@@ -1,9 +1,15 @@
 <map id="NNFS::Layer" name="NNFS::Layer">
-<area shape="rect" id="node1" title="Base class for all layers." alt="" coords="272,5,368,31"/>
-<area shape="rect" id="node2" href="$class_n_n_f_s_1_1_activation.html" title="Base class for all activation functions." alt="" coords="191,79,313,105"/>
-<area shape="rect" id="node7" href="$class_n_n_f_s_1_1_dense.html" title="Dense layer." alt="" coords="337,79,439,105"/>
-<area shape="rect" id="node3" href="$class_n_n_f_s_1_1_re_l_u.html" title="ReLU activation function." alt="" coords="5,153,104,178"/>
-<area shape="rect" id="node4" href="$class_n_n_f_s_1_1_sigmoid.html" title="Sigmoid activation function." alt="" coords="128,153,240,178"/>
-<area shape="rect" id="node5" href="$class_n_n_f_s_1_1_softmax.html" title="Softmax activation function." alt="" coords="264,153,376,178"/>
-<area shape="rect" id="node6" href="$class_n_n_f_s_1_1_tanh.html" title=" " alt="" coords="400,153,493,178"/>
+<area shape="rect" id="Node000001" title="Base class for all layers." alt="" coords="272,5,368,31"/>
+<area shape="rect" id="Node000002" href="$class_n_n_f_s_1_1_activation.html" title="Base class for all activation functions." alt="" coords="191,79,313,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,43,265,80,261,77,297,40"/>
+<area shape="rect" id="Node000007" href="$class_n_n_f_s_1_1_dense.html" title="Dense layer." alt="" coords="337,79,439,105"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="343,40,378,77,374,80,339,43"/>
+<area shape="rect" id="Node000003" href="$class_n_n_f_s_1_1_re_l_u.html" title="ReLU activation function." alt="" coords="5,153,104,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="206,113,89,155,87,150,204,108"/>
+<area shape="rect" id="Node000004" href="$class_n_n_f_s_1_1_sigmoid.html" title="Sigmoid activation function." alt="" coords="128,153,240,178"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="233,117,197,154,193,150,229,113"/>
+<area shape="rect" id="Node000005" href="$class_n_n_f_s_1_1_softmax.html" title="Softmax activation function." alt="" coords="264,153,376,178"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="275,113,310,150,306,154,271,117"/>
+<area shape="rect" id="Node000006" href="$class_n_n_f_s_1_1_tanh.html" title=" " alt="" coords="400,153,493,178"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="299,108,414,150,412,155,297,113"/>
 </map>

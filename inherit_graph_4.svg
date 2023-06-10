@@ -9,73 +9,85 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 134.25)">
 <title>Graphical Class Hierarchy</title>
 <!-- Node0 -->
-<g id="node1" class="node">
+<g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="class_n_n_f_s_1_1_optimizer.html" target="_top" xlink:title="Base class for all optimizers.">
+<g id="a_Node000000"><a xlink:href="class_n_n_f_s_1_1_optimizer.html" target="_top" xlink:title="Base class for all optimizers.">
 <polygon fill="white" stroke="#666666" points="89.5,-74.25 0,-74.25 0,-55 89.5,-55 89.5,-74.25"/>
 <text text-anchor="middle" x="44.75" y="-60.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFS::Optimizer</text>
 </a>
 </g>
 </g>
 <!-- Node1 -->
-<g id="node2" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:href="class_n_n_f_s_1_1_adagrad.html" target="_top" xlink:title="Adagrad optimizer (Adaptive Gradient)">
+<g id="a_Node000001"><a xlink:href="class_n_n_f_s_1_1_adagrad.html" target="_top" xlink:title="Adagrad optimizer (Adaptive Gradient)">
 <polygon fill="white" stroke="#666666" points="212.75,-130.25 128.5,-130.25 128.5,-111 212.75,-111 212.75,-130.25"/>
 <text text-anchor="middle" x="170.62" y="-116.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFS::Adagrad</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node1 -->
-<g id="edge1" class="edge">
+<g id="edge10_Node000000_Node000001" class="edge">
 <title>Node0&#45;&gt;Node1</title>
+<g id="a_edge10_Node000000_Node000001"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M75.62,-79.36C90.52,-86.58 108.86,-95.27 125.5,-102.62 131.55,-105.3 138.13,-108.06 144.32,-110.59"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="77.45,-75.87 66.92,-74.63 74.38,-82.16 77.45,-75.87"/>
+</a>
+</g>
 </g>
 <!-- Node2 -->
-<g id="node3" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node3"><a xlink:href="class_n_n_f_s_1_1_adam.html" target="_top" xlink:title="Adam optimizer &#45; Adaptive Moment Estimation, one of the most popular and efficient gradient&#45;based opt...">
+<g id="a_Node000002"><a xlink:href="class_n_n_f_s_1_1_adam.html" target="_top" xlink:title="Adam optimizer &#45; Adaptive Moment Estimation, one of the most popular and efficient gradient&#45;based opt...">
 <polygon fill="white" stroke="#666666" points="207.5,-93.25 133.75,-93.25 133.75,-74 207.5,-74 207.5,-93.25"/>
 <text text-anchor="middle" x="170.62" y="-79.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFS::Adam</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node2 -->
-<g id="edge2" class="edge">
+<g id="edge11_Node000000_Node000002" class="edge">
 <title>Node0&#45;&gt;Node2</title>
+<g id="a_edge11_Node000000_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M100.38,-73C111.59,-74.72 123.14,-76.49 133.5,-78.08"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="101.19,-69.43 90.77,-71.38 100.13,-76.35 101.19,-69.43"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node4" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node4"><a xlink:href="class_n_n_f_s_1_1_r_m_s_prop.html" target="_top" xlink:title="Root Mean Square Propagation optimizer.">
+<g id="a_Node000003"><a xlink:href="class_n_n_f_s_1_1_r_m_s_prop.html" target="_top" xlink:title="Root Mean Square Propagation optimizer.">
 <polygon fill="white" stroke="#666666" points="215.75,-56.25 125.5,-56.25 125.5,-37 215.75,-37 215.75,-56.25"/>
 <text text-anchor="middle" x="170.62" y="-42.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFS::RMSProp</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node3 -->
-<g id="edge3" class="edge">
+<g id="edge12_Node000000_Node000003" class="edge">
 <title>Node0&#45;&gt;Node3</title>
+<g id="a_edge12_Node000000_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M100.53,-56.67C108.82,-55.46 117.29,-54.23 125.33,-53.06"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="100.17,-53.33 90.77,-58.23 101.17,-60.25 100.17,-53.33"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
-<g id="node5" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node5"><a xlink:href="class_n_n_f_s_1_1_s_g_d.html" target="_top" xlink:title="Stochastic Gradient Descent optimizer.">
+<g id="a_Node000004"><a xlink:href="class_n_n_f_s_1_1_s_g_d.html" target="_top" xlink:title="Stochastic Gradient Descent optimizer.">
 <polygon fill="white" stroke="#666666" points="205.25,-19.25 136,-19.25 136,0 205.25,0 205.25,-19.25"/>
 <text text-anchor="middle" x="170.62" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFS::SGD</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node4 -->
-<g id="edge4" class="edge">
+<g id="edge13_Node000000_Node000004" class="edge">
 <title>Node0&#45;&gt;Node4</title>
+<g id="a_edge13_Node000000_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M76.27,-50.05C91.06,-43.1 109.13,-34.76 125.5,-27.62 131.57,-24.98 138.15,-22.23 144.34,-19.7"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="75.16,-47.18 67.62,-54.62 78.15,-53.51 75.16,-47.18"/>
+</a>
+</g>
 </g>
 </g>
 </svg>

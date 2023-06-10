@@ -9,28 +9,31 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 78.5)">
 <title>NNFS::Model</title>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Abstract base class for the model in a neural network.">
+<g id="a_Node000001"><a xlink:title="Abstract base class for the model in a neural network.">
 <polygon fill="#999999" stroke="#666666" points="94,-74.5 19.5,-74.5 19.5,-55.25 94,-55.25 94,-74.5"/>
 <text text-anchor="middle" x="56.75" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">NNFS::Model</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="class_n_n_f_s_1_1_neural_network.html" target="_top" xlink:title="A neural network model.">
+<g id="a_Node000002"><a xlink:href="class_n_n_f_s_1_1_neural_network.html" target="_top" xlink:title="A neural network model.">
 <polygon fill="white" stroke="#666666" points="113.5,-19.25 0,-19.25 0,0 113.5,0 113.5,-19.25"/>
 <text text-anchor="middle" x="56.75" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">NNFS::NeuralNetwork</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M56.75,-44.21C56.75,-35.77 56.75,-26.33 56.75,-19.61"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="53.25,-44.08 56.75,-54.08 60.25,-44.08 53.25,-44.08"/>
+</a>
+</g>
 </g>
 </g>
 </svg>
