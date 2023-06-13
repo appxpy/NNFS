@@ -18,6 +18,7 @@ namespace NNFS
          * @brief Construct a new Optimizer object
          *
          * @param lr Learning rate
+         * @param decay Learning rate decay (default: 0.0)
          */
         Optimizer(double lr, double decay) : _lr(lr), _current_lr(lr), _iterations(0), _decay(decay) {}
 

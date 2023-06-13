@@ -72,9 +72,9 @@ protected:
     void mouseReleaseEvent(QMouseEvent *event) override;
 
 private:
-    bool drawing; ///< Flag indicating whether the user is currently drawing.
-    QImage image; ///< The image used as the canvas.
-    QPointF lastPoint; ///< The last recorded point where the mouse was pressed or moved.
+    bool drawing;                                                 ///< Flag indicating whether the user is currently drawing.
+    QImage image;                                                 ///< The image used as the canvas.
+    QPointF lastPoint;                                            ///< The last recorded point where the mouse was pressed or moved.
     Eigen::MatrixXd image_matrix = Eigen::MatrixXd::Zero(1, 784); ///< The matrix representation of the image on the canvas.
 };
 

@@ -88,7 +88,6 @@ To create and train your own neural network using the NNFS library, follow these
 1. Install the NNFS library into your cmake project.
 2. Download and preprocess the MNIST dataset (if not already available) using the fetch_mnist function.
 3. Create the neural network model by adding layers to an instance of `NNFS::NeuralNetwork` class. For example:
-
 ```cpp
 std::shared_ptr<NNFS::NeuralNetwork> model = std::make_shared<NNFS::NeuralNetwork>();
 model->add_layer(std::make_shared<NNFS::Dense>(784, 128));
@@ -98,45 +97,33 @@ model->add_layer(std::make_shared<NNFS::ReLU>());
 model->add_layer(std::make_shared<NNFS::Dense>(128, 10));
 ```
 4. Compile the model by calling the compile method:
-
 ```cpp
 model->compile();
 ```
-
 5. Train the model on the training dataset using the `fit` method. Specify the number of epochs and the batch size. For example:
-
 ```cpp
 model->fit(x_train, y_train, x_test, y_test, 20, 128);
 ```
-
 6. Save the trained model to a file using the `save` method:
-
 ```cpp
 std::string file_path = "path/to/save/model.bin";
 model->save(file_path);
 ```
-
 7. Load the saved model from the file using the `load` method:
-
 ```cpp
 std::shared_ptr<NNFS::NeuralNetwork> model = std::make_shared<NNFS::NeuralNetwork>();
 model->load(file_path);
 ```
-
 8. Evaluate the model's accuracy on the test dataset using the `accuracy` method:
-
 ```cpp
 double accuracy;
 model->accuracy(accuracy, x_test, y_test);
 std::cout << "Test set accuracy: " << accuracy << std::endl;
 ```
-
 9. Make predictions using the `predict` method. Pass the input data to the method and obtain the predicted outputs:
-
 ```cpp
 Eigen::MatrixXd predictions = model->predict(input_data);
 ```
-
 10. Perform any necessary post-processing on the predictions and compare them with the actual labels to evaluate the model's performance.
 
 Please note that this is a simplified explanation of the code. Additional code and configuration may be required depending on the specific implementation and requirements. If you need more information, please, follow the [documentation](https://appxpy.github.io/NNFS).
