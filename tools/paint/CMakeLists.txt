@@ -60,7 +60,7 @@ endif()
 
 enable_testing(true)
 
-add_executable(tests test_canvas.h test_canvas.cpp canvas.h canvas.cpp)
+add_executable(tests test_canvas.h test_canvas.cpp canvas.h canvas.cpp paint.ui paint.cpp paint.h)
 add_test(NAME CanvasTest COMMAND tests)
 
 target_link_libraries(tests PRIVATE Qt${QT_VERSION_MAJOR}::Test Eigen3::Eigen NNFSProject::NNFS Qt${QT_VERSION_MAJOR}::Widgets)

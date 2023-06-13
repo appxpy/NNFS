@@ -1,5 +1,4 @@
 #include "test_canvas.h"
-#include <iostream>
 
 void TestCanvas::testClearImage_positive()
 {
