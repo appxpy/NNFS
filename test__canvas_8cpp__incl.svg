@@ -12,8 +12,8 @@
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="264.38,-185 129.12,-185 129.12,-165.75 264.38,-165.75 264.38,-185"/>
-<text text-anchor="middle" x="196.75" y="-171.5" font-family="Helvetica,sans-Serif" font-size="10.00">tools/paint/test_canvas.cpp</text>
+<polygon fill="#999999" stroke="#666666" points="223.38,-185 88.12,-185 88.12,-165.75 223.38,-165.75 223.38,-185"/>
+<text text-anchor="middle" x="155.75" y="-171.5" font-family="Helvetica,sans-Serif" font-size="10.00">tools/paint/test_canvas.cpp</text>
 </a>
 </g>
 </g>
@@ -30,26 +30,8 @@
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M189.98,-165.58C184.38,-158.3 176.24,-147.73 169.3,-138.73"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="171.54,-136.9 162.67,-131.11 165.99,-141.17 171.54,-136.9"/>
-</a>
-</g>
-</g>
-<!-- Node12 -->
-<g id="Node000012" class="node">
-<title>Node12</title>
-<g id="a_Node000012"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="265.5,-129.75 212,-129.75 212,-110.5 265.5,-110.5 265.5,-129.75"/>
-<text text-anchor="middle" x="238.75" y="-116.25" font-family="Helvetica,sans-Serif" font-size="10.00">iostream</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node12 -->
-<g id="edge11_Node000001_Node000012" class="edge">
-<title>Node1&#45;&gt;Node12</title>
-<g id="a_edge11_Node000001_Node000012"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M203.69,-165.58C209.43,-158.3 217.76,-147.73 224.87,-138.73"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="228.22,-141.13 231.66,-131.11 222.72,-136.79 228.22,-141.13"/>
+<path fill="none" stroke="#63b8ff" d="M155.75,-165.58C155.75,-158.92 155.75,-149.49 155.75,-141.03"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="159.25,-141.11 155.75,-131.11 152.25,-141.11 159.25,-141.11"/>
 </a>
 </g>
 </g>

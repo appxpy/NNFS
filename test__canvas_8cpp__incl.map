@@ -1,9 +1,7 @@
 <map id="tools/paint/test_canvas.cpp" name="tools/paint/test_canvas.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="178,5,358,31"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="123,5,303,31"/>
 <area shape="rect" id="Node000002" href="$test__canvas_8h.html" title=" " alt="" coords="162,79,264,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="261,33,233,69,229,65,257,30"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="288,79,359,105"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="279,30,307,65,303,69,275,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,31,216,64,210,64,210,31"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="90,153,160,178"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="200,107,153,145,149,141,196,103"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="184,153,242,178"/>

@@ -202,43 +202,29 @@ Steps to Reproduce</h3>
 <ol type="1">
 <li>Install the <a class="el" href="namespace_n_n_f_s.html">NNFS</a> library into your cmake project.</li>
 <li>Download and preprocess the MNIST dataset (if not already available) using the fetch_mnist function.</li>
-<li>Create the neural network model by adding layers to an instance of <code><a class="el" href="class_n_n_f_s_1_1_neural_network.html" title="A neural network model.">NNFS::NeuralNetwork</a></code> class. For example:</li>
-</ol>
-<div class="fragment"><div class="line">std::shared_ptr&lt;NNFS::NeuralNetwork&gt; model = std::make_shared&lt;NNFS::NeuralNetwork&gt;();</div>
+<li>Create the neural network model by adding layers to an instance of <code><a class="el" href="class_n_n_f_s_1_1_neural_network.html" title="A neural network model.">NNFS::NeuralNetwork</a></code> class. For example: <div class="fragment"><div class="line">std::shared_ptr&lt;NNFS::NeuralNetwork&gt; model = std::make_shared&lt;NNFS::NeuralNetwork&gt;();</div>
 <div class="line">model-&gt;add_layer(std::make_shared&lt;NNFS::Dense&gt;(784, 128));</div>
 <div class="line">model-&gt;add_layer(std::make_shared&lt;NNFS::ReLU&gt;());</div>
 <div class="line">model-&gt;add_layer(std::make_shared&lt;NNFS::Dense&gt;(128, 128));</div>
 <div class="line">model-&gt;add_layer(std::make_shared&lt;NNFS::ReLU&gt;());</div>
 <div class="line">model-&gt;add_layer(std::make_shared&lt;NNFS::Dense&gt;(128, 10));</div>
-</div><!-- fragment --><ol type="1">
-<li>Compile the model by calling the compile method:</li>
-</ol>
-<div class="fragment"><div class="line">model-&gt;compile();</div>
-</div><!-- fragment --><ol type="1">
-<li>Train the model on the training dataset using the <code>fit</code> method. Specify the number of epochs and the batch size. For example:</li>
-</ol>
-<div class="fragment"><div class="line">model-&gt;fit(x_train, y_train, x_test, y_test, 20, 128);</div>
-</div><!-- fragment --><ol type="1">
-<li>Save the trained model to a file using the <code>save</code> method:</li>
-</ol>
-<div class="fragment"><div class="line">std::string file_path = <span class="stringliteral">&quot;path/to/save/model.bin&quot;</span>;</div>
+</div><!-- fragment --></li>
+<li>Compile the model by calling the compile method: <div class="fragment"><div class="line">model-&gt;compile();</div>
+</div><!-- fragment --></li>
+<li>Train the model on the training dataset using the <code>fit</code> method. Specify the number of epochs and the batch size. For example: <div class="fragment"><div class="line">model-&gt;fit(x_train, y_train, x_test, y_test, 20, 128);</div>
+</div><!-- fragment --></li>
+<li>Save the trained model to a file using the <code>save</code> method: <div class="fragment"><div class="line">std::string file_path = <span class="stringliteral">&quot;path/to/save/model.bin&quot;</span>;</div>
 <div class="line">model-&gt;save(file_path);</div>
-</div><!-- fragment --><ol type="1">
-<li>Load the saved model from the file using the <code>load</code> method:</li>
-</ol>
-<div class="fragment"><div class="line">std::shared_ptr&lt;NNFS::NeuralNetwork&gt; model = std::make_shared&lt;NNFS::NeuralNetwork&gt;();</div>
+</div><!-- fragment --></li>
+<li>Load the saved model from the file using the <code>load</code> method: <div class="fragment"><div class="line">std::shared_ptr&lt;NNFS::NeuralNetwork&gt; model = std::make_shared&lt;NNFS::NeuralNetwork&gt;();</div>
 <div class="line">model-&gt;load(file_path);</div>
-</div><!-- fragment --><ol type="1">
-<li>Evaluate the model's accuracy on the test dataset using the <code>accuracy</code> method:</li>
-</ol>
-<div class="fragment"><div class="line"><span class="keywordtype">double</span> accuracy;</div>
+</div><!-- fragment --></li>
+<li>Evaluate the model's accuracy on the test dataset using the <code>accuracy</code> method: <div class="fragment"><div class="line"><span class="keywordtype">double</span> accuracy;</div>
 <div class="line">model-&gt;accuracy(accuracy, x_test, y_test);</div>
 <div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;Test set accuracy: &quot;</span> &lt;&lt; accuracy &lt;&lt; std::endl;</div>
-</div><!-- fragment --><ol type="1">
-<li>Make predictions using the <code>predict</code> method. Pass the input data to the method and obtain the predicted outputs:</li>
-</ol>
-<div class="fragment"><div class="line">Eigen::MatrixXd predictions = model-&gt;predict(input_data);</div>
-</div><!-- fragment --><ol type="1">
+</div><!-- fragment --></li>
+<li>Make predictions using the <code>predict</code> method. Pass the input data to the method and obtain the predicted outputs: <div class="fragment"><div class="line">Eigen::MatrixXd predictions = model-&gt;predict(input_data);</div>
+</div><!-- fragment --></li>
 <li>Perform any necessary post-processing on the predictions and compare them with the actual labels to evaluate the model's performance.</li>
 </ol>
 <p>Please note that this is a simplified explanation of the code. Additional code and configuration may be required depending on the specific implementation and requirements. If you need more information, please, follow the <a href="https://appxpy.github.io/NNFS">documentation</a>.</p>
